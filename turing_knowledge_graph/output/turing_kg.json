@@ -1,0 +1,480 @@
+{
+  "nodes": [
+    {
+      "id": "Alan_Turing",
+      "label": "Alan Turing",
+      "type": "PERSON",
+      "desc": "英国数学家、计算机科学先驱 (1912–1954)"
+    },
+    {
+      "id": "Alonzo_Church",
+      "label": "Alonzo Church",
+      "type": "PERSON",
+      "desc": "美国数学家，λ演算创始人"
+    },
+    {
+      "id": "John_von_Neumann",
+      "label": "John von Neumann",
+      "type": "PERSON",
+      "desc": "匈牙利裔美国数学家，冯·诺依曼架构提出者"
+    },
+    {
+      "id": "Claude_Shannon",
+      "label": "Claude Shannon",
+      "type": "PERSON",
+      "desc": "美国数学家，信息论创始人"
+    },
+    {
+      "id": "Max_Newman",
+      "label": "Max Newman",
+      "type": "PERSON",
+      "desc": "英国数学家，图灵的导师与同事"
+    },
+    {
+      "id": "Gordon_Welchman",
+      "label": "Gordon Welchman",
+      "type": "PERSON",
+      "desc": "英国数学家，Bombe 协同设计者"
+    },
+    {
+      "id": "Hugh_Alexander",
+      "label": "Hugh Alexander",
+      "type": "PERSON",
+      "desc": "英国国际象棋冠军，布莱切利园密码学家"
+    },
+    {
+      "id": "Christopher_Morcom",
+      "label": "Christopher Morcom",
+      "type": "PERSON",
+      "desc": "图灵的挚友，早年去世对其影响深远"
+    },
+    {
+      "id": "Cambridge",
+      "label": "University of Cambridge",
+      "type": "ORG",
+      "desc": "英国顶尖研究型大学"
+    },
+    {
+      "id": "Princeton",
+      "label": "Princeton University",
+      "type": "ORG",
+      "desc": "美国常青藤大学"
+    },
+    {
+      "id": "Bletchley_Park",
+      "label": "Bletchley Park",
+      "type": "ORG",
+      "desc": "二战期间英国密码破译中心"
+    },
+    {
+      "id": "GCCS",
+      "label": "GC&CS",
+      "type": "ORG",
+      "desc": "英国政府密码与电报学校"
+    },
+    {
+      "id": "NPL",
+      "label": "NPL",
+      "type": "ORG",
+      "desc": "英国国家物理实验室"
+    },
+    {
+      "id": "Univ_Manchester",
+      "label": "Univ. of Manchester",
+      "type": "ORG",
+      "desc": "英国研究型大学，Manchester Mark 1 发源地"
+    },
+    {
+      "id": "Royal_Society",
+      "label": "Royal Society",
+      "type": "ORG",
+      "desc": "英国皇家学会，世界最古老科学学会之一"
+    },
+    {
+      "id": "ACM",
+      "label": "ACM",
+      "type": "ORG",
+      "desc": "美国计算机协会"
+    },
+    {
+      "id": "London",
+      "label": "London",
+      "type": "GPE",
+      "desc": "英国首都，图灵出生地"
+    },
+    {
+      "id": "Manchester",
+      "label": "Manchester",
+      "type": "GPE",
+      "desc": "英国大城市，图灵晚年工作地"
+    },
+    {
+      "id": "Princeton_City",
+      "label": "Princeton",
+      "type": "GPE",
+      "desc": "美国新泽西州城市"
+    },
+    {
+      "id": "Turing_Machine",
+      "label": "Turing Machine",
+      "type": "CONCEPT",
+      "desc": "理论计算模型，可模拟任何算法过程"
+    },
+    {
+      "id": "Halting_Problem",
+      "label": "Halting Problem",
+      "type": "CONCEPT",
+      "desc": "图灵证明不可判定的经典问题"
+    },
+    {
+      "id": "Computability",
+      "label": "Computability Theory",
+      "type": "CONCEPT",
+      "desc": "研究哪些问题可被算法解决的理论"
+    },
+    {
+      "id": "Turing_Test",
+      "label": "Turing Test",
+      "type": "CONCEPT",
+      "desc": "判断机器是否表现出人类智能的测试"
+    },
+    {
+      "id": "AI",
+      "label": "Artificial Intelligence",
+      "type": "CONCEPT",
+      "desc": "使计算机展现智能行为的研究领域"
+    },
+    {
+      "id": "Morphogenesis",
+      "label": "Morphogenesis",
+      "type": "CONCEPT",
+      "desc": "生物形态发生的数学模型（反应-扩散）"
+    },
+    {
+      "id": "Lambda_Calculus",
+      "label": "Lambda Calculus",
+      "type": "CONCEPT",
+      "desc": "Church 提出的形式化计算模型"
+    },
+    {
+      "id": "Cryptanalysis",
+      "label": "Cryptanalysis",
+      "type": "CONCEPT",
+      "desc": "密码分析学，研究破解密码的方法"
+    },
+    {
+      "id": "Paper_Computable",
+      "label": "On Computable Numbers",
+      "type": "WORK",
+      "desc": "1936年论文，引入图灵机概念"
+    },
+    {
+      "id": "Paper_CMI",
+      "label": "Computing Machinery and Intelligence",
+      "type": "WORK",
+      "desc": "1950年论文，提出图灵测试"
+    },
+    {
+      "id": "Paper_Morpho",
+      "label": "The Chemical Basis of Morphogenesis",
+      "type": "WORK",
+      "desc": "1952年论文，创立数学生物学分支"
+    },
+    {
+      "id": "ACE_Computer",
+      "label": "Automatic Computing Engine",
+      "type": "WORK",
+      "desc": "图灵在NPL设计的早期存储程序计算机"
+    },
+    {
+      "id": "Manchester_Mark1",
+      "label": "Manchester Mark 1",
+      "type": "WORK",
+      "desc": "世界上最早的存储程序计算机之一"
+    },
+    {
+      "id": "Enigma",
+      "label": "Enigma Machine",
+      "type": "DEVICE",
+      "desc": "德军在二战中使用的加密机器"
+    },
+    {
+      "id": "Bombe",
+      "label": "Bombe",
+      "type": "DEVICE",
+      "desc": "图灵等人设计的电机解密装置，用于破解 Enigma"
+    },
+    {
+      "id": "WWII",
+      "label": "World War II",
+      "type": "EVENT",
+      "desc": "1939–1945年全球规模战争"
+    },
+    {
+      "id": "OBE",
+      "label": "OBE",
+      "type": "AWARD",
+      "desc": "大英帝国勋章，因二战贡献而授予"
+    },
+    {
+      "id": "FRS",
+      "label": "Fellow of Royal Society",
+      "type": "AWARD",
+      "desc": "英国皇家学会会士，1951年"
+    },
+    {
+      "id": "ACM_Award",
+      "label": "ACM Turing Award",
+      "type": "AWARD",
+      "desc": "计算机领域最高奖，以图灵命名"
+    },
+    {
+      "id": "Royal_Pardon",
+      "label": "Royal Pardon",
+      "type": "AWARD",
+      "desc": "2013年英王室对图灵的追授赦免"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Alan_Turing",
+      "target": "London",
+      "relation": "出生于 (born in)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Cambridge",
+      "relation": "就读于 (studied at)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Princeton",
+      "relation": "获博士学位于 (PhD at)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Alonzo_Church",
+      "relation": "师从 (supervised by)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Bletchley_Park",
+      "relation": "工作于 (worked at)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "GCCS",
+      "relation": "所属机构 (member of)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "NPL",
+      "relation": "工作于 (worked at)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Univ_Manchester",
+      "relation": "工作于 (worked at)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Max_Newman",
+      "relation": "合作者 (collaborated with)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Gordon_Welchman",
+      "relation": "合作者 (collaborated with)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Hugh_Alexander",
+      "relation": "合作者 (collaborated with)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Christopher_Morcom",
+      "relation": "挚友 (close friend)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "John_von_Neumann",
+      "relation": "影响了 (influenced)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Claude_Shannon",
+      "relation": "影响了 (influenced)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Turing_Machine",
+      "relation": "提出了 (proposed)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Halting_Problem",
+      "relation": "证明了 (proved)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Turing_Test",
+      "relation": "提出了 (proposed)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Morphogenesis",
+      "relation": "创立了 (founded)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Cryptanalysis",
+      "relation": "贡献于 (contributed to)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Paper_Computable",
+      "relation": "发表了 (published)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Paper_CMI",
+      "relation": "发表了 (published)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Paper_Morpho",
+      "relation": "发表了 (published)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "ACE_Computer",
+      "relation": "设计了 (designed)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Bombe",
+      "relation": "设计了 (designed)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "WWII",
+      "relation": "为...做出贡献 (contributed to)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Manchester_Mark1",
+      "relation": "参与研发 (contributed to)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Royal_Society",
+      "relation": "当选会士 (elected FRS)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "OBE",
+      "relation": "荣获 (awarded)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "FRS",
+      "relation": "当选 (elected)"
+    },
+    {
+      "source": "Alan_Turing",
+      "target": "Royal_Pardon",
+      "relation": "获得 (received)"
+    },
+    {
+      "source": "Alonzo_Church",
+      "target": "Alan_Turing",
+      "relation": "影响了 (influenced)"
+    },
+    {
+      "source": "Gordon_Welchman",
+      "target": "Bombe",
+      "relation": "协同设计 (co-designed)"
+    },
+    {
+      "source": "Cambridge",
+      "target": "Royal_Society",
+      "relation": "关联机构 (affiliated with)"
+    },
+    {
+      "source": "Bletchley_Park",
+      "target": "GCCS",
+      "relation": "隶属于 (part of)"
+    },
+    {
+      "source": "ACM",
+      "target": "ACM_Award",
+      "relation": "设立 (established)"
+    },
+    {
+      "source": "Turing_Machine",
+      "target": "Computability",
+      "relation": "是基础 (foundation of)"
+    },
+    {
+      "source": "Turing_Test",
+      "target": "AI",
+      "relation": "是评估标准 (metric for)"
+    },
+    {
+      "source": "Lambda_Calculus",
+      "target": "Turing_Machine",
+      "relation": "等价于/启发了 (equivalent/inspired)"
+    },
+    {
+      "source": "Paper_Computable",
+      "target": "Turing_Machine",
+      "relation": "引入了 (introduced)"
+    },
+    {
+      "source": "Paper_Computable",
+      "target": "Halting_Problem",
+      "relation": "证明了 (proved)"
+    },
+    {
+      "source": "Paper_Computable",
+      "target": "Computability",
+      "relation": "奠定了 (laid foundation of)"
+    },
+    {
+      "source": "Paper_CMI",
+      "target": "Turing_Test",
+      "relation": "提出了 (proposed)"
+    },
+    {
+      "source": "Paper_CMI",
+      "target": "AI",
+      "relation": "奠定了 (laid foundation of)"
+    },
+    {
+      "source": "Paper_Morpho",
+      "target": "Morphogenesis",
+      "relation": "描述了 (described)"
+    },
+    {
+      "source": "ACE_Computer",
+      "target": "Manchester_Mark1",
+      "relation": "先于/启发了 (preceded/inspired)"
+    },
+    {
+      "source": "Bombe",
+      "target": "Enigma",
+      "relation": "用于破解 (used to break)"
+    },
+    {
+      "source": "WWII",
+      "target": "Bletchley_Park",
+      "relation": "催生了 (led to establishment of)"
+    },
+    {
+      "source": "ACM_Award",
+      "target": "Alan_Turing",
+      "relation": "以...命名 (named after)"
+    }
+  ]
+}
