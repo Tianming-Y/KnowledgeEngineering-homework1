@@ -1,0 +1,36 @@
+Alan Mathison Turing was born on 23 June 1912 in Maida Vale, London, England.
+He was a British mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist.
+Turing studied mathematics at King's College, Cambridge, where he was elected a Fellow in 1935.
+He then pursued a PhD at Princeton University under Alonzo Church, completing it in 1938.
+
+In 1936, Turing published his landmark paper "On Computable Numbers, with an Application to the Entscheidungsproblem",
+in which he introduced the concept of the Turing Machine — a theoretical model of computation capable of simulating
+any algorithmic process. This work laid the foundations of computer science and computability theory.
+
+During World War II, Turing worked at Bletchley Park, the centre of British cryptanalysis and signals intelligence.
+He joined the Government Code and Cypher School (GC&CS) and made vital contributions to breaking the Enigma cipher
+used by Nazi Germany. Working alongside Gordon Welchman, Hugh Alexander, and Max Newman, Turing designed the
+electromechanical Bombe, which greatly accelerated the decryption of Enigma messages.
+His wartime work is estimated to have shortened the war by two to four years.
+
+After the war, Turing worked at the National Physical Laboratory (NPL) in London, where he designed the Automatic
+Computing Engine (ACE), one of the earliest stored-program computer designs.
+In 1948, he moved to the University of Manchester to work on the Manchester Mark 1 computer.
+
+In 1950, Turing published "Computing Machinery and Intelligence" in the journal Mind, posing the question
+"Can machines think?" and proposing the Turing Test as a measure of machine intelligence.
+This paper is widely regarded as the founding document of Artificial Intelligence research.
+
+In 1952, Turing published "The Chemical Basis of Morphogenesis" in the Philosophical Transactions of the Royal Society,
+describing a mathematical model for how biological patterns (such as animal stripes and spots) arise through
+reaction-diffusion systems. This work founded the field of mathematical biology.
+
+Turing was elected a Fellow of the Royal Society (FRS) in 1951, and was awarded an OBE in 1946
+for his services during World War II.
+
+Alan Turing died on 7 June 1954 in Wilmslow, Cheshire, England, at the age of 41.
+In 2009, British Prime Minister Gordon Brown issued a formal apology on behalf of the British government
+for the persecution Turing suffered due to his homosexuality.
+In 2013, Queen Elizabeth II granted Turing a posthumous royal pardon.
+Since 2021, Turing's portrait has appeared on the British fifty pound note.
+The annual ACM Turing Award, often called the Nobel Prize of Computing, was named in his honour.
