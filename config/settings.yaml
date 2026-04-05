@@ -1,0 +1,59 @@
+# ============================================================
+# 图灵知识图谱 — 全局配置文件
+# ============================================================
+
+# ---------- 数据采集模块 ----------
+crawler:
+  seed_page: "Alan Turing"           # BFS 起始页面
+  max_depth: 2                       # 最大爬取深度 (0=仅种子页面)
+  max_pages: 80                      # 最大爬取页面总数
+  request_interval: 1.0              # 相邻请求间隔（秒）
+  user_agent: "TuringKG-Bot/1.0 (Academic Project; contact: your-email@example.com)"
+  language: "en"                     # Wikipedia 语言版本
+
+  # 相关性过滤
+  relevance:
+    seed_keywords:                   # 标题必须包含至少一个关键词（不区分大小写）
+      - turing
+      - computation
+      - computable
+      - cryptography
+      - cryptanalysis
+      - enigma
+      - bombe
+      - bletchley
+      - artificial intelligence
+      - church
+      - manchester
+      - cambridge
+      - princeton
+      - halting problem
+      - turing machine
+      - turing test
+      - computer science
+      - algorithm
+      - logic
+      - morphogenesis
+    excluded_prefixes:               # 排除的 Wikipedia 命名空间前缀
+      - "Wikipedia:"
+      - "File:"
+      - "Template:"
+      - "Category:"
+      - "Help:"
+      - "Portal:"
+      - "Draft:"
+      - "Module:"
+      - "MediaWiki:"
+      - "Talk:"
+      - "User:"
+    excluded_suffixes:               # 排除以这些后缀结尾的页面
+      - "(disambiguation)"
+
+# ---------- 数据路径 ----------
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  dictionaries: "data/dictionaries"
+  output_entities: "output/entities"
+  output_graphs: "output/graphs"
+  output_visualizations: "output/visualizations"
