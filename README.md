@@ -43,8 +43,9 @@ KG-Turing/
 │   ├── ner/                         #   模块 2：实体识别与消歧
 │   │   ├── __init__.py
 │   │   ├── ner_pipeline.py          #    NER 主流程（使用 spaCy）
-│   │   ├── spacy_ner.py             #    spaCy 预训练 / 微调 NER
-│   │   ├── entity_linker.py         #    实体消歧与 Wikidata 链接
+│   │   ├── spacy_ner.py             #    spaCy 预训练 / 简易预测接口
+│   │   ├── entity_linker.py         #    实体消歧（Wikidata 候选检索 + 可选向量排序）
+│   │   └── batch_process.py         #    批量处理脚本：批量 NER/EL、合并为 JSONL、进度显示
 │   │
 │   ├── relation_extraction/         #   模块 3：关系抽取（待完善）
 │   │   ├── __init__.py
@@ -196,7 +197,7 @@ KG-Turing/
 | 组件     | 技术                                | 说明                                                                 |
 | -------- | ----------------------------------- | -------------------------------------------------------------------- |
 | 基础 NER | `spaCy`                             | Transformer / CNN 预训练模型，识别 PERSON、ORG、GPE、DATE 等通用实体 |
-| 实体消歧 | `spaCy EntityLinker` + Wikidata API | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                    |
+| 实体消歧 | 自定义 `src/ner/entity_linker.py` + Wikidata API（可选使用 `sentence-transformers` 进行向量相似度排序） | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                    |
 | 指代消解 | `coreferee` 或 `spaCy` 实验性组件   | 将代词 (he/his/it) 还原为对应实体，提高下游召回率                    |
 
 #### 3.2.3 实体消歧策略
@@ -230,7 +231,7 @@ KG-Turing/
     "start": 0,
     "end": 11,
     "wikidata_qid": "Q7251",
-    "confidence": 0.98,
+    "link_confidence": 0.98,
     "source": "spacy"
   },
   {
@@ -239,10 +240,39 @@ KG-Turing/
     "start": 156,
     "end": 170,
     "wikidata_qid": "Q163310",
-    "confidence": 1.0,
+    "link_confidence": 1.0,
     "source": "rule"
   }
 ]
+```
+
+#### 3.2.6 批处理脚本与输出说明
+
+项目提供一个可直接运行的批处理脚本 `src/ner/batch_process.py`，用于对 `data/processed/` 中的 JSON 文档批量执行 NER 与可选的实体消歧，并支持将结果合并为单个 JSONL 文件以便后续处理。主要特性：
+
+- 支持 `--link` 参数开启/关闭 Wikidata 消歧（`--link True` 开启）。
+- 支持 `--max-docs N` 仅处理前 N 个文档用于快速验证（例如 `--max-docs 1`）。
+- 默认会把输出合并为 `output/entities_all.jsonl`（也可通过 `--output-dir` 指定其它路径）；合并写入使用临时文件 + `os.replace` 做原子替换，避免中间态损坏。
+- 运行时在控制台显示 `tqdm` 进度条，并统计已识别实体数与已关联的实体数。
+- 输出格式已精简：每个实体仅保留消歧后的选中项字段（`wikidata_qid`、`wikidata_label`、`wikidata_description`、`link_confidence`），不再写出完整的 `link_candidates` 列表（候选列表可在 `src/ner/entity_linker.py` 中查看或在开发时保留）。
+
+示例用法：
+
+```bash
+# 只做 NER，不做消歧（快速）
+python src/ner/batch_process.py --link False --max-docs 1
+
+# 启用消歧并处理前5个文档
+python src/ner/batch_process.py --link True --max-docs 5
+
+# 全量运行（示例，耗时且会对 Wikidata 发出多次请求）
+python src/ner/batch_process.py --link True
+```
+
+运行结果示例：`output/entities_all.jsonl` 中每一行为一个 JSON 对象，形式类似：
+
+```json
+{"doc": "Alan Turing Year.json", "entities": [{"mention":"Alan Turing","type":"PERSON","start":91,"end":102,"source":"spacy","wikidata_qid":"Q7251","wikidata_label":"Alan Turing","link_confidence":1.0}, ...]}
 ```
 
 ---
@@ -317,6 +347,7 @@ python -m spacy download en_core_web_sm
 | `matplotlib`                    | 静态图谱可视化           |
 | `pyyaml`                        | 配置文件解析             |
 | `sentence-transformers`（可选） | 实体消歧上下文相似度计算 |
+| `tqdm`                         | 控制台进度条、批处理可视化 |
 
 ---
 
@@ -325,10 +356,10 @@ python -m spacy download en_core_web_sm
 | 阶段    | 模块           | 状态     |
 | ------- | -------------- | -------- |
 | Phase 1 | 数据采集       | ✅ 已完成 |
-| Phase 1 | 实体识别与消歧 | 🔲 进行中 |
-| Phase 2 | 关系抽取       | ⬜ 待开始 |
-| Phase 3 | 知识图谱构建   | ⬜ 待开始 |
-| Phase 4 | 可视化 & 查询  | ⬜ 待开始 |
+| Phase 2 | 实体识别与消歧 | ✅ 已完成 |
+| Phase 3 | 关系抽取       | ⬜ 待开始 |
+| Phase 4 | 知识图谱构建   | ⬜ 待开始 |
+| Phase 5 | 可视化 & 查询  | ⬜ 待开始 |
 
 ---
 
