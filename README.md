@@ -194,11 +194,11 @@ KG-Turing/
 
 #### 3.2.2 技术选型
 
-| 组件     | 技术                                | 说明                                                                 |
-| -------- | ----------------------------------- | -------------------------------------------------------------------- |
-| 基础 NER | `spaCy`                             | Transformer / CNN 预训练模型，识别 PERSON、ORG、GPE、DATE 等通用实体 |
-| 实体消歧 | 自定义 `src/ner/entity_linker.py` + Wikidata API（可选使用 `sentence-transformers` 进行向量相似度排序） | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                    |
-| 指代消解 | `coreferee` 或 `spaCy` 实验性组件   | 将代词 (he/his/it) 还原为对应实体，提高下游召回率                    |
+| 组件     | 技术               | 说明                                                                 |
+| -------- | ------------------ | -------------------------------------------------------------------- |
+| 基础 NER | `spaCy`            | Transformer / CNN 预训练模型，识别 PERSON、ORG、GPE、DATE 等通用实体 |
+| 实体消歧 | Wikidata API       | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                    |
+| 指代消解 | `spaCy` 实验性组件 | 将代词 (he/his/it) 还原为对应实体，提高下游召回率                    |
 
 #### 3.2.3 实体消歧策略
 
@@ -337,17 +337,17 @@ python -m spacy download en_core_web_sm
 
 ## 五、主要依赖
 
-| 包名                            | 用途                     |
-| ------------------------------- | ------------------------ |
-| `requests`                      | HTTP 请求                |
-| `beautifulsoup4`                | HTML 解析                |
-| `wikipedia-api`                 | Wikipedia 结构化数据获取 |
-| `spacy`                         | NER、依存解析、实体链接  |
-| `networkx`                      | 图结构构建与算法         |
-| `matplotlib`                    | 静态图谱可视化           |
-| `pyyaml`                        | 配置文件解析             |
-| `sentence-transformers`（可选） | 实体消歧上下文相似度计算 |
-| `tqdm`                         | 控制台进度条、批处理可视化 |
+| 包名                            | 用途                       |
+| ------------------------------- | -------------------------- |
+| `requests`                      | HTTP 请求                  |
+| `beautifulsoup4`                | HTML 解析                  |
+| `wikipedia-api`                 | Wikipedia 结构化数据获取   |
+| `spacy`                         | NER、依存解析、实体链接    |
+| `networkx`                      | 图结构构建与算法           |
+| `matplotlib`                    | 静态图谱可视化             |
+| `pyyaml`                        | 配置文件解析               |
+| `sentence-transformers`（可选） | 实体消歧上下文相似度计算   |
+| `tqdm`                          | 控制台进度条、批处理可视化 |
 
 ---
 

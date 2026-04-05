@@ -9,7 +9,7 @@ build/
 # 爬取数据
 
 # 输出文件
-output/
+
 
 # IDE / 编辑器
 .vscode/
