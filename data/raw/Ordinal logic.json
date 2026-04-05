@@ -1,0 +1,35 @@
+{
+  "title": "Ordinal logic",
+  "url": "https://en.wikipedia.org/wiki/Ordinal_logic",
+  "summary": "In mathematics, ordinal logic is a logic associated with an ordinal number by recursively adding elements to a sequence of previous logics. The concept was introduced in 1938 by Alan Turing in his PhD dissertation at Princeton in view of Gödel's incompleteness theorems.\nWhile Gödel showed that every recursively enumerable axiomatic system that can interpret basic arithmetic suffers from some form of incompleteness, Turing focused on a method so that a complete system of logic may be constructed from a given system of logic. By repeating the process, a sequence L1, L2, … of logic is obtained, each more complete than the previous one. A logic L can then be constructed in which the provable theorems are the totality of theorems provable with the help of the L1, L2, … etc. Thus Turing showed how one can associate logic with any constructive ordinal.\n\n",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "In mathematics , ordinal logic is a logic associated with an ordinal number by recursively adding elements to a sequence of previous logics. The concept was introduced in 1938 by Alan Turing in his PhD dissertation at Princeton in view of Gödel's incompleteness theorems .\nWhile Gödel showed that every recursively enumerable axiomatic system that can interpret basic arithmetic suffers from some form of incompleteness, Turing focused on a method so that a complete system of logic may be constructed from a given system of logic. By repeating the process, a sequence L1, L2, … of logic is obtained, each more complete than the previous one. A logic L can then be constructed in which the provable theorems are the totality of theorems provable with the help of the L1, L2, … etc. Thus Turing showed how one can associate logic with any constructive ordinal ."
+    }
+  ],
+  "infobox": {},
+  "categories": [
+    "All stub articles",
+    "Mathematical logic",
+    "Mathematical logic stubs",
+    "Ordinal numbers",
+    "Systems of formal logic"
+  ],
+  "outlinks": [
+    "Alan Turing",
+    "Axiomatic system",
+    "Computably enumerable set",
+    "Constructive ordinal",
+    "Gödel",
+    "Gödel's incompleteness theorems",
+    "ISBN (identifier)",
+    "Mathematical logic",
+    "Mathematics",
+    "Ordinal number",
+    "Princeton",
+    "Solomon Feferman",
+    "Systems of Logic Based on Ordinals"
+  ],
+  "crawl_depth": 1
+}

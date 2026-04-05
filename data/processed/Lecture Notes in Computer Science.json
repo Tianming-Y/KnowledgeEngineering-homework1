@@ -1,0 +1,75 @@
+{
+  "title": "Lecture Notes in Computer Science",
+  "url": "https://en.wikipedia.org/wiki/Lecture_Notes_in_Computer_Science",
+  "summary": "Lecture Notes in Computer Science is a series of computer science books published by Springer Science+Business Media since 1973.",
+  "summary_sentences": [
+    "Lecture Notes in Computer Science is a series of computer science books published by Springer Science+Business Media since 1973."
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "Lecture Notes in Computer Science is a series of computer science books published by Springer Science+Business Media since 1973.",
+      "sentences": [
+        "Lecture Notes in Computer Science is a series of computer science books published by Springer Science+Business Media since 1973."
+      ]
+    },
+    {
+      "heading": "Overview",
+      "text": "The series contains proceedings , post- proceedings , monographs , and Festschrifts . In addition, tutorials , state-of-the-art surveys, and \"hot topics\" are increasingly being included. [ citation needed ]\nThe series is indexed by DBLP .",
+      "sentences": [
+        "The series contains proceedings , post- proceedings , monographs , and Festschrifts .",
+        "In addition, tutorials , state-of-the-art surveys, and \"hot topics\" are increasingly being included.",
+        "[ citation needed ]\nThe series is indexed by DBLP ."
+      ]
+    }
+  ],
+  "infobox": {
+    "Discipline": "Computer science",
+    "Language": "English",
+    "Edited by": "Gerard Goos, Juris Hartmanis",
+    "History": "1973–present",
+    "Publisher": "Springer Science+Business Media",
+    "ISO 4": "Lect. Notes Comput. Sci.",
+    "MathSciNet": "Lecture Notes in Comput. Sci.",
+    "ISSN": "0302-9743 (print) 1611-3349 (web)",
+    "OCLC no.": "884059121"
+  },
+  "categories": [
+    "Academic journals established in 1973",
+    "All articles needing additional references",
+    "All articles with unsourced statements",
+    "All stub articles",
+    "Articles needing additional references from April 2024",
+    "Articles with short description",
+    "Articles with unsourced statements from July 2019",
+    "Books of lectures",
+    "Computer book stubs",
+    "Computer science books",
+    "Conference proceedings published in books",
+    "Non-fiction book series",
+    "Official website different in Wikidata and Wikipedia",
+    "Short description is different from Wikidata",
+    "Springer Science+Business Media",
+    "Use dmy dates from December 2014"
+  ],
+  "outlinks": [
+    "British Computer Society",
+    "Computer science",
+    "DBLP",
+    "Electronic Workshops in Computing",
+    "Festschrift",
+    "ISO 4 (infobox)",
+    "ISSN (identifier)",
+    "Lecture Notes in Mathematics",
+    "Lecture Notes in Physics",
+    "MathSciNet (infobox)",
+    "Monograph",
+    "Monographiae Biologicae",
+    "OCLC (identifier)",
+    "Proceedings",
+    "Springer Science+Business Media",
+    "State-of-the-art",
+    "Tutorial"
+  ],
+  "crawl_depth": 1
+}

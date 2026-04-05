@@ -1,0 +1,183 @@
+{
+  "title": "Turing reduction",
+  "url": "https://en.wikipedia.org/wiki/Turing_reduction",
+  "summary": "In computability theory, a Turing reduction from a decision problem \n \n \n \n A\n \n \n {\\displaystyle A}\n \n to a decision problem \n \n \n \n B\n \n \n {\\displaystyle B}\n \n is an oracle machine that decides problem \n \n \n \n A\n \n \n {\\displaystyle A}\n \n given an oracle for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n (Rogers 1967, Soare 1987) in finitely many steps. It can be understood as an algorithm that could be used to solve \n \n \n \n A\n \n \n {\\displaystyle A}\n \n if it had access to a subroutine for solving \n \n \n \n B\n \n \n {\\displaystyle B}\n \n. The concept can be analogously applied to function problems.\nIf a Turing reduction from \n \n \n \n A\n \n \n {\\displaystyle A}\n \n to \n \n \n \n B\n \n \n {\\displaystyle B}\n \n exists, then every algorithm for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n can be used to produce an algorithm for \n \n \n \n A\n \n \n {\\displaystyle A}\n \n, by inserting the algorithm for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n at each place where the oracle machine computing \n \n \n \n A\n \n \n {\\displaystyle A}\n \n queries the oracle for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n. However, because the oracle machine may query the oracle a large number of times, the resulting algorithm may require more time asymptotically than either the algorithm for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n or the oracle machine computing \n \n \n \n A\n \n \n {\\displaystyle A}\n \n. A Turing reduction in which the oracle machine runs in polynomial time is known as a Cook reduction.\nThe first formal definition of relative computability, then called relative reducibility, was given by Alan Turing in 1939 in terms of oracle machines. Later in 1943 and 1952 Stephen Kleene defined an equivalent concept in terms of recursive functions. In 1944 Emil Post used the term \"Turing reducibility\" to refer to the concept.",
+  "summary_sentences": [
+    "In computability theory, a Turing reduction from a decision problem \n \n \n \n A\n \n \n {\\displaystyle A}\n \n to a decision problem \n \n \n \n B\n \n \n {\\displaystyle B}\n \n is an oracle machine that decides problem \n \n \n \n A\n \n \n {\\displaystyle A}\n \n given an oracle for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n (Rogers 1967, Soare 1987) in finitely many steps.",
+    "It can be understood as an algorithm that could be used to solve \n \n \n \n A\n \n \n {\\displaystyle A}\n \n if it had access to a subroutine for solving \n \n \n \n B\n \n \n {\\displaystyle B}\n \n.",
+    "The concept can be analogously applied to function problems.",
+    "If a Turing reduction from \n \n \n \n A\n \n \n {\\displaystyle A}\n \n to \n \n \n \n B\n \n \n {\\displaystyle B}\n \n exists, then every algorithm for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n can be used to produce an algorithm for \n \n \n \n A\n \n \n {\\displaystyle A}\n \n, by inserting the algorithm for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n at each place where the oracle machine computing \n \n \n \n A\n \n \n {\\displaystyle A}\n \n queries the oracle for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n.",
+    "However, because the oracle machine may query the oracle a large number of times, the resulting algorithm may require more time asymptotically than either the algorithm for \n \n \n \n B\n \n \n {\\displaystyle B}\n \n or the oracle machine computing \n \n \n \n A\n \n \n {\\displaystyle A}\n \n.",
+    "A Turing reduction in which the oracle machine runs in polynomial time is known as a Cook reduction.",
+    "The first formal definition of relative computability, then called relative reducibility, was given by Alan Turing in 1939 in terms of oracle machines.",
+    "Later in 1943 and 1952 Stephen Kleene defined an equivalent concept in terms of recursive functions.",
+    "In 1944 Emil Post used the term \"Turing reducibility\" to refer to the concept."
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "In computability theory , a Turing reduction from a decision problem A {\\displaystyle A} to a decision problem B {\\displaystyle B} is an oracle machine that decides problem A {\\displaystyle A} given an oracle for B {\\displaystyle B} (Rogers 1967, Soare 1987) in finitely many steps. It can be understood as an algorithm that could be used to solve A {\\displaystyle A} if it had access to a subroutine for solving B {\\displaystyle B} . The concept can be analogously applied to function problems .\nIf a Turing reduction from A {\\displaystyle A} to B {\\displaystyle B} exists, then every algorithm for B {\\displaystyle B} can be used to produce an algorithm for A {\\displaystyle A} , by inserting the algorithm for B {\\displaystyle B} at each place where the oracle machine computing A {\\displaystyle A} queries the oracle for B {\\displaystyle B} . However, because the oracle machine may query the oracle a large number of times, the resulting algorithm may require more time asymptotically than either the algorithm for B {\\displaystyle B} or the oracle machine computing A {\\displaystyle A} . A Turing reduction in which the oracle machine runs in polynomial time is known as a Cook reduction .\nThe first formal definition of relative computability, then called relative reducibility, was given by Alan Turing in 1939 in terms of oracle machines . Later in 1943 and 1952 Stephen Kleene defined an equivalent concept in terms of recursive functions . In 1944 Emil Post used the term \"Turing reducibility\" to refer to the concept.",
+      "sentences": [
+        "In computability theory , a Turing reduction from a decision problem A {\\displaystyle A} to a decision problem B {\\displaystyle B} is an oracle machine that decides problem A {\\displaystyle A} given an oracle for B {\\displaystyle B} (Rogers 1967, Soare 1987) in finitely many steps.",
+        "It can be understood as an algorithm that could be used to solve A {\\displaystyle A} if it had access to a subroutine for solving B {\\displaystyle B} .",
+        "The concept can be analogously applied to function problems .",
+        "If a Turing reduction from A {\\displaystyle A} to B {\\displaystyle B} exists, then every algorithm for B {\\displaystyle B} can be used to produce an algorithm for A {\\displaystyle A} , by inserting the algorithm for B {\\displaystyle B} at each place where the oracle machine computing A {\\displaystyle A} queries the oracle for B {\\displaystyle B} .",
+        "However, because the oracle machine may query the oracle a large number of times, the resulting algorithm may require more time asymptotically than either the algorithm for B {\\displaystyle B} or the oracle machine computing A {\\displaystyle A} .",
+        "A Turing reduction in which the oracle machine runs in polynomial time is known as a Cook reduction .",
+        "The first formal definition of relative computability, then called relative reducibility, was given by Alan Turing in 1939 in terms of oracle machines .",
+        "Later in 1943 and 1952 Stephen Kleene defined an equivalent concept in terms of recursive functions .",
+        "In 1944 Emil Post used the term \"Turing reducibility\" to refer to the concept."
+      ]
+    },
+    {
+      "heading": "Definition",
+      "text": "Given two sets A , B ⊆ N {\\displaystyle A,B\\subseteq \\mathbb {N} } of natural numbers, we say A {\\displaystyle A} is Turing reducible to B {\\displaystyle B} and write\nif and only if there is an oracle machine that computes the characteristic function of A when run with oracle B . In this case, we also say A is B -recursive and B -computable .\nIf there is an oracle machine that, when run with oracle B , computes a partial function with domain A , then A is said to be B - recursively enumerable and B -computably enumerable .\nWe say A {\\displaystyle A} is Turing equivalent to B {\\displaystyle B} and write A ≡ T B {\\displaystyle A\\equiv _{T}B\\,} if both A ≤ T B {\\displaystyle A\\leq _{T}B} and B ≤ T A . {\\displaystyle B\\leq _{T}A.} The equivalence classes of Turing equivalent sets are called Turing degrees . The Turing degree of a set X {\\displaystyle X} is written deg ( X ) {\\displaystyle {\\textbf {deg}}(X)} .\nGiven a set X ⊆ P ( N ) {\\displaystyle {\\mathcal {X}}\\subseteq {\\mathcal {P}}(\\mathbb {N} )} , a set A ⊆ N {\\displaystyle A\\subseteq \\mathbb {N} } is called Turing hard for X {\\displaystyle {\\mathcal {X}}} if X ≤ T A {\\displaystyle X\\leq _{T}A} for all X ∈ X {\\displaystyle X\\in {\\mathcal {X}}} . If additionally A ∈ X {\\displaystyle A\\in {\\mathcal {X}}} then A {\\displaystyle A} is called Turing complete for X {\\displaystyle {\\mathcal {X}}} .",
+      "sentences": [
+        "Given two sets A , B ⊆ N {\\displaystyle A,B\\subseteq \\mathbb {N} } of natural numbers, we say A {\\displaystyle A} is Turing reducible to B {\\displaystyle B} and write\nif and only if there is an oracle machine that computes the characteristic function of A when run with oracle B .",
+        "In this case, we also say A is B -recursive and B -computable .",
+        "If there is an oracle machine that, when run with oracle B , computes a partial function with domain A , then A is said to be B - recursively enumerable and B -computably enumerable .",
+        "We say A {\\displaystyle A} is Turing equivalent to B {\\displaystyle B} and write A ≡ T B {\\displaystyle A\\equiv _{T}B\\,} if both A ≤ T B {\\displaystyle A\\leq _{T}B} and B ≤ T A .",
+        "{\\displaystyle B\\leq _{T}A.} The equivalence classes of Turing equivalent sets are called Turing degrees .",
+        "The Turing degree of a set X {\\displaystyle X} is written deg ( X ) {\\displaystyle {\\textbf {deg}}(X)} .",
+        "Given a set X ⊆ P ( N ) {\\displaystyle {\\mathcal {X}}\\subseteq {\\mathcal {P}}(\\mathbb {N} )} , a set A ⊆ N {\\displaystyle A\\subseteq \\mathbb {N} } is called Turing hard for X {\\displaystyle {\\mathcal {X}}} if X ≤ T A {\\displaystyle X\\leq _{T}A} for all X ∈ X {\\displaystyle X\\in {\\mathcal {X}}} .",
+        "If additionally A ∈ X {\\displaystyle A\\in {\\mathcal {X}}} then A {\\displaystyle A} is called Turing complete for X {\\displaystyle {\\mathcal {X}}} ."
+      ]
+    },
+    {
+      "heading": "Relation of Turing completeness to computational universality",
+      "text": "Turing completeness, as just defined above, corresponds only partially to Turing completeness in the sense of computational universality. Specifically, a Turing machine is a universal Turing machine if its halting problem (i.e., the set of inputs for which it eventually halts) is many-one complete for the set X {\\displaystyle {\\mathcal {X}}} of recursively enumerable sets. Thus, a necessary but insufficient condition for a machine to be computationally universal, is that the machine's halting problem be Turing-complete for X {\\displaystyle {\\mathcal {X}}} . Insufficient because it may still be the case that, the language accepted by the machine is not itself recursively enumerable.",
+      "sentences": [
+        "Turing completeness, as just defined above, corresponds only partially to Turing completeness in the sense of computational universality.",
+        "Specifically, a Turing machine is a universal Turing machine if its halting problem (i.e., the set of inputs for which it eventually halts) is many-one complete for the set X {\\displaystyle {\\mathcal {X}}} of recursively enumerable sets.",
+        "Thus, a necessary but insufficient condition for a machine to be computationally universal, is that the machine's halting problem be Turing-complete for X {\\displaystyle {\\mathcal {X}}} .",
+        "Insufficient because it may still be the case that, the language accepted by the machine is not itself recursively enumerable."
+      ]
+    },
+    {
+      "heading": "Example",
+      "text": "Let W e {\\displaystyle W_{e}} denote the set of input values for which the Turing machine with index e halts. Then the sets A = { e ∣ e ∈ W e } {\\displaystyle A=\\{e\\mid e\\in W_{e}\\}} and B = { ( e , n ) ∣ n ∈ W e } {\\displaystyle B=\\{(e,n)\\mid n\\in W_{e}\\}} are Turing equivalent (here ( − , − ) {\\displaystyle (-,-)} denotes an effective pairing function ). A reduction showing A ≤ T B {\\displaystyle A\\leq _{T}B} can be constructed using the fact that e ∈ A ⇔ ( e , e ) ∈ B {\\displaystyle e\\in A\\Leftrightarrow (e,e)\\in B} . Given a pair ( e , n ) {\\displaystyle (e,n)} , a new index i ( e , n ) {\\displaystyle i(e,n)} can be constructed using the s mn theorem such that the program coded by i ( e , n ) {\\displaystyle i(e,n)} ignores its input and merely simulates the computation of the machine with index e on input n . In particular, the machine with index i ( e , n ) {\\displaystyle i(e,n)} either halts on every input or halts on no input. Thus i ( e , n ) ∈ A ⇔ ( e , n ) ∈ B {\\displaystyle i(e,n)\\in A\\Leftrightarrow (e,n)\\in B} holds for all e and n . Because the function i is computable, this shows B ≤ T A {\\displaystyle B\\leq _{T}A} . The reductions presented here are not only Turing reductions but many-one reductions , discussed below.",
+      "sentences": [
+        "Let W e {\\displaystyle W_{e}} denote the set of input values for which the Turing machine with index e halts.",
+        "Then the sets A = { e ∣ e ∈ W e } {\\displaystyle A=\\{e\\mid e\\in W_{e}\\}} and B = { ( e , n ) ∣ n ∈ W e } {\\displaystyle B=\\{(e,n)\\mid n\\in W_{e}\\}} are Turing equivalent (here ( − , − ) {\\displaystyle (-,-)} denotes an effective pairing function ).",
+        "A reduction showing A ≤ T B {\\displaystyle A\\leq _{T}B} can be constructed using the fact that e ∈ A ⇔ ( e , e ) ∈ B {\\displaystyle e\\in A\\Leftrightarrow (e,e)\\in B} .",
+        "Given a pair ( e , n ) {\\displaystyle (e,n)} , a new index i ( e , n ) {\\displaystyle i(e,n)} can be constructed using the s mn theorem such that the program coded by i ( e , n ) {\\displaystyle i(e,n)} ignores its input and merely simulates the computation of the machine with index e on input n .",
+        "In particular, the machine with index i ( e , n ) {\\displaystyle i(e,n)} either halts on every input or halts on no input.",
+        "Thus i ( e , n ) ∈ A ⇔ ( e , n ) ∈ B {\\displaystyle i(e,n)\\in A\\Leftrightarrow (e,n)\\in B} holds for all e and n .",
+        "Because the function i is computable, this shows B ≤ T A {\\displaystyle B\\leq _{T}A} .",
+        "The reductions presented here are not only Turing reductions but many-one reductions , discussed below."
+      ]
+    },
+    {
+      "heading": "The use of a reduction",
+      "text": "Since every reduction from a set A {\\displaystyle A} to a set B {\\displaystyle B} has to determine whether a single element is in A {\\displaystyle A} in only finitely many steps, it can only make finitely many queries of membership in the set B {\\displaystyle B} . When the amount of information about the set B {\\displaystyle B} used to compute a single bit of A {\\displaystyle A} is discussed, this is made precise by the use function. Formally, the use of a reduction is the function that sends each natural number n {\\displaystyle n} to the largest natural number m {\\displaystyle m} whose membership in the set B {\\displaystyle B} was queried by the reduction while determining the membership of n {\\displaystyle n} in A {\\displaystyle A} .",
+      "sentences": [
+        "Since every reduction from a set A {\\displaystyle A} to a set B {\\displaystyle B} has to determine whether a single element is in A {\\displaystyle A} in only finitely many steps, it can only make finitely many queries of membership in the set B {\\displaystyle B} .",
+        "When the amount of information about the set B {\\displaystyle B} used to compute a single bit of A {\\displaystyle A} is discussed, this is made precise by the use function.",
+        "Formally, the use of a reduction is the function that sends each natural number n {\\displaystyle n} to the largest natural number m {\\displaystyle m} whose membership in the set B {\\displaystyle B} was queried by the reduction while determining the membership of n {\\displaystyle n} in A {\\displaystyle A} ."
+      ]
+    },
+    {
+      "heading": "Stronger reductions",
+      "text": "There are two common ways of producing reductions stronger than Turing reducibility. The first way is to limit the number and manner of oracle queries.\nThe second way to produce a stronger reducibility notion is to limit the computational resources that the program implementing the Turing reduction may use. These limits on the computational complexity of the reduction are important when studying subrecursive classes such as P . A set A is polynomial-time reducible to a set B {\\displaystyle B} if there is a Turing reduction of A {\\displaystyle A} to B {\\displaystyle B} that runs in polynomial time. The concept of log-space reduction is similar.\nThese reductions are stronger in the sense that they provide a finer distinction into equivalence classes, and satisfy more restrictive requirements than Turing reductions. Consequently, such reductions are harder to find. There may be no way to build a many-one reduction from one set to another even when a Turing reduction for the same sets exists.",
+      "sentences": [
+        "There are two common ways of producing reductions stronger than Turing reducibility.",
+        "The first way is to limit the number and manner of oracle queries.",
+        "The second way to produce a stronger reducibility notion is to limit the computational resources that the program implementing the Turing reduction may use.",
+        "These limits on the computational complexity of the reduction are important when studying subrecursive classes such as P .",
+        "A set A is polynomial-time reducible to a set B {\\displaystyle B} if there is a Turing reduction of A {\\displaystyle A} to B {\\displaystyle B} that runs in polynomial time.",
+        "The concept of log-space reduction is similar.",
+        "These reductions are stronger in the sense that they provide a finer distinction into equivalence classes, and satisfy more restrictive requirements than Turing reductions.",
+        "Consequently, such reductions are harder to find.",
+        "There may be no way to build a many-one reduction from one set to another even when a Turing reduction for the same sets exists."
+      ]
+    },
+    {
+      "heading": "Weaker reductions",
+      "text": "According to the Church–Turing thesis , a Turing reduction is the most general form of an effectively calculable reduction. Nevertheless, weaker reductions are also considered. Set A {\\displaystyle A} is said to be arithmetical in B {\\displaystyle B} if A {\\displaystyle A} is definable by a formula of Peano arithmetic with B {\\displaystyle B} as a parameter. The set A {\\displaystyle A} is hyperarithmetical in B {\\displaystyle B} if there is a recursive ordinal α {\\displaystyle \\alpha } such that A {\\displaystyle A} is computable from B ( α ) {\\displaystyle B^{(\\alpha )}} , the α -iterated Turing jump of B {\\displaystyle B} . The notion of relative constructibility is an important reducibility notion in set theory .",
+      "sentences": [
+        "According to the Church–Turing thesis , a Turing reduction is the most general form of an effectively calculable reduction.",
+        "Nevertheless, weaker reductions are also considered.",
+        "Set A {\\displaystyle A} is said to be arithmetical in B {\\displaystyle B} if A {\\displaystyle A} is definable by a formula of Peano arithmetic with B {\\displaystyle B} as a parameter.",
+        "The set A {\\displaystyle A} is hyperarithmetical in B {\\displaystyle B} if there is a recursive ordinal α {\\displaystyle \\alpha } such that A {\\displaystyle A} is computable from B ( α ) {\\displaystyle B^{(\\alpha )}} , the α -iterated Turing jump of B {\\displaystyle B} .",
+        "The notion of relative constructibility is an important reducibility notion in set theory ."
+      ]
+    }
+  ],
+  "infobox": {},
+  "categories": [
+    "Alan Turing",
+    "Articles with short description",
+    "Reduction (complexity)",
+    "Short description matches Wikidata"
+  ],
+  "outlinks": [
+    "Alan Turing",
+    "Algorithm",
+    "Annals of Mathematics",
+    "Arithmetical set",
+    "Bulletin of the American Mathematical Society",
+    "Church–Turing thesis",
+    "Computability theory",
+    "Computable function",
+    "Computable set",
+    "Computational complexity theory",
+    "Computing Machinery and Intelligence",
+    "Constructible universe",
+    "Decision problem",
+    "Doi (identifier)",
+    "Emil Leon Post",
+    "Emil Post",
+    "Equivalence class",
+    "Function problem",
+    "Halting problem",
+    "Hartley Rogers",
+    "Hyperarithmetical hierarchy",
+    "ISBN (identifier)",
+    "If and only if",
+    "Indicator function",
+    "Karp reduction",
+    "Legacy of Alan Turing",
+    "List of things named after Alan Turing",
+    "Log-space reduction",
+    "Many-one reduction",
+    "Martin Davis (mathematician)",
+    "Mu-recursive function",
+    "Notices of the American Mathematical Society",
+    "On Computable Numbers, with an Application to the Entscheidungsproblem",
+    "Oracle machine",
+    "PDF",
+    "P (complexity)",
+    "Pairing function",
+    "Partial function",
+    "Partial order",
+    "Peano arithmetic",
+    "Polynomial-time reduction",
+    "Polynomial time",
+    "Preorder",
+    "Proceedings of the London Mathematical Society",
+    "Recursive ordinal",
+    "Recursively enumerable set",
+    "Robert I. Soare",
+    "Set theory",
+    "Smn theorem",
+    "Stephen Kleene",
+    "Subroutine",
+    "Systems of Logic Based on Ordinals",
+    "The Chemical Basis of Morphogenesis",
+    "Total order",
+    "Truth table reduction",
+    "Turing's proof",
+    "Turing completeness",
+    "Turing degree",
+    "Turing jump",
+    "Turing machine",
+    "Turing pattern",
+    "Turing test",
+    "Turochamp",
+    "Undecidable problem",
+    "Universal Turing machine",
+    "Unorganized machine",
+    "Well-founded"
+  ],
+  "crawl_depth": 1
+}

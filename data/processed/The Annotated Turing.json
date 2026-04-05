@@ -1,0 +1,75 @@
+{
+  "title": "The Annotated Turing",
+  "url": "https://en.wikipedia.org/wiki/The_Annotated_Turing",
+  "summary": "The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine is a book by Charles Petzold, published in 2008 by John Wiley & Sons, Inc.\nPetzold annotates Alan Turing's paper \"On Computable Numbers, with an Application to the Entscheidungsproblem\". The book takes readers sentence by sentence through Turing's paper, providing explanations, further examples, corrections, and biographical information.",
+  "summary_sentences": [
+    "The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine is a book by Charles Petzold, published in 2008 by John Wiley & Sons, Inc.",
+    "Petzold annotates Alan Turing's paper \"On Computable Numbers, with an Application to the Entscheidungsproblem\".",
+    "The book takes readers sentence by sentence through Turing's paper, providing explanations, further examples, corrections, and biographical information."
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine is a book by Charles Petzold , published in 2008 by John Wiley & Sons, Inc.\nPetzold annotates Alan Turing 's paper \"On Computable Numbers, with an Application to the Entscheidungsproblem \". The book takes readers sentence by sentence through Turing's paper, providing explanations, further examples, corrections, and biographical information. [ citation needed ]",
+      "sentences": [
+        "The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine is a book by Charles Petzold , published in 2008 by John Wiley & Sons, Inc.",
+        "Petzold annotates Alan Turing 's paper \"On Computable Numbers, with an Application to the Entscheidungsproblem \".",
+        "The book takes readers sentence by sentence through Turing's paper, providing explanations, further examples, corrections, and biographical information.",
+        "[ citation needed ]"
+      ]
+    }
+  ],
+  "infobox": {
+    "Author": "Charles Petzold",
+    "Language": "English",
+    "Subject": "Mathematics and computing",
+    "Genre": "Non-fiction",
+    "Publisher": "John Wiley & Sons",
+    "Publication date": "2008",
+    "Media type": "Print ( paperback )",
+    "Pages": "372",
+    "ISBN": "978-0-470-22905-7",
+    "OCLC": "2008022829",
+    "Dewey Decimal": "511.3/52 22",
+    "LC Class": "QA267 .P48"
+  },
+  "categories": [
+    "2008 non-fiction books",
+    "All articles needing additional references",
+    "All articles with unsourced statements",
+    "All stub articles",
+    "Annotated editions",
+    "Articles needing additional references from September 2020",
+    "Articles with short description",
+    "Articles with unsourced statements from November 2017",
+    "Books about Alan Turing",
+    "Mathematics books",
+    "Mathematics literature stubs",
+    "Short description is different from Wikidata",
+    "Wiley (publisher) books"
+  ],
+  "outlinks": [
+    "Academic publishing",
+    "Alan Turing",
+    "Alan Turing: The Enigma",
+    "American Mathematical Society",
+    "Charles Petzold",
+    "Computing",
+    "Dewey Decimal Classification",
+    "Entscheidungsproblem",
+    "ISBN (identifier)",
+    "John Wiley & Sons",
+    "John Wiley & Sons, Inc.",
+    "LCC (identifier)",
+    "Mathematics",
+    "Non-fiction",
+    "Notices of the AMS",
+    "OCLC (identifier)",
+    "Paperback",
+    "Prof: Alan Turing Decoded",
+    "The Turing Guide",
+    "University of Maryland at College Park",
+    "YouTube"
+  ],
+  "crawl_depth": 1
+}
