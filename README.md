@@ -11,7 +11,7 @@
 | 模块               | 说明                                                                            |
 | ------------------ | ------------------------------------------------------------------------------- |
 | **数据采集**       | 从维基百科（Wikipedia）自动爬取图灵及其关联页面的结构化 / 非结构化信息          |
-| **实体识别与消歧** | 融合预训练 NER 模型与领域词典，识别多类型实体，并通过 Wikidata 实体链接完成消歧 |
+| **实体识别与消歧** | 基于 `spaCy` 预训练 NER 模型识别多类型实体，并通过 Wikidata 实体链接完成消歧 |
 | **关系抽取**       | 从文本中抽取实体间的语义关系，形成三元组                                        |
 | **知识图谱构建**   | 将三元组存储为有向图结构，支持增量更新与持久化                                  |
 | **可视化**         | 生成多视角的图谱可视化图片及交互式页面                                          |
@@ -42,11 +42,9 @@ KG-Turing/
 │   │
 │   ├── ner/                         #   模块 2：实体识别与消歧
 │   │   ├── __init__.py
-│   │   ├── ner_pipeline.py          #    NER 融合主流程
-│   │   ├── spacy_ner.py             #    spaCy 预训练模型 NER
-│   │   ├── rule_ner.py              #    规则 / 领域词典匹配
+│   │   ├── ner_pipeline.py          #    NER 主流程（使用 spaCy）
+│   │   ├── spacy_ner.py             #    spaCy 预训练 / 微调 NER
 │   │   ├── entity_linker.py         #    实体消歧与 Wikidata 链接
-│   │   └── domain_dict.py           #    领域词典管理与加载
 │   │
 │   ├── relation_extraction/         #   模块 3：关系抽取（待完善）
 │   │   ├── __init__.py
@@ -66,8 +64,7 @@ KG-Turing/
 │
 ├── data/
 │   ├── raw/                         # 爬取的原始数据（HTML / JSON）
-│   ├── processed/                   # 清洗后的结构化文本
-│   └── dictionaries/                # 领域词典文件
+│   └── processed/                   # 清洗后的结构化文本
 │
 ├── output/                          # 运行输出
 │   ├── entities/                    #    NER 识别结果
@@ -198,66 +195,9 @@ KG-Turing/
 
 | 组件     | 技术                                             | 说明                                                                 |
 | -------- | ------------------------------------------------ | -------------------------------------------------------------------- |
-| 基础 NER | `spaCy`（`en_core_web_trf` 或 `en_core_web_sm`） | Transformer / CNN 预训练模型，识别 PERSON、ORG、GPE、DATE 等通用实体 |
-| 领域 NER | 基于 `spaCy EntityRuler` 的规则词典              | 识别通用模型难以覆盖的领域实体：CONCEPT、WORK、DEVICE、AWARD 等      |
+| 基础 NER | `spaCy` | Transformer / CNN 预训练模型，识别 PERSON、ORG、GPE、DATE 等通用实体 |
 | 实体消歧 | `spaCy EntityLinker` + Wikidata API              | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                    |
 | 指代消解 | `coreferee` 或 `spaCy` 实验性组件                | 将代词 (he/his/it) 还原为对应实体，提高下游召回率                    |
-
-#### 3.2.3 NER 融合流程
-
-```
-        清洗后文本（data/processed/）
-                │
-    ┌───────────┴───────────┐
-    ▼                       ▼
-┌──────────────┐   ┌──────────────────┐
-│ spacy_ner.py │   │   rule_ner.py    │
-│ (预训练模型)  │   │ (EntityRuler +   │
-│              │   │  领域词典)        │
-│ → PERSON     │   │ → CONCEPT        │
-│ → ORG        │   │ → WORK           │
-│ → GPE        │   │ → DEVICE         │
-│ → DATE ...   │   │ → AWARD ...      │
-└──────┬───────┘   └────────┬─────────┘
-       │                    │
-       └────────┬───────────┘
-                ▼
-    ┌───────────────────────┐
-    │  ner_pipeline.py      │
-    │  ① Span 对齐与融合    │
-    │  ② 重叠消解（规则优先）│
-    │  ③ 置信度过滤          │
-    └───────────┬───────────┘
-                ▼
-    ┌───────────────────────┐
-    │  entity_linker.py     │
-    │  ① 候选实体生成        │
-    │  ② Wikidata QID 查询  │
-    │  ③ 上下文相似度排序    │
-    │  ④ 最终消歧决策        │
-    └───────────┬───────────┘
-                ▼
-       实体列表 (mention, type, QID, confidence)
-            → output/entities/
-```
-
-#### 3.2.4 领域词典设计
-
-词典文件存储在 `data/dictionaries/` 下，采用 JSONL 格式，便于增量维护：
-
-```jsonl
-{"label": "CONCEPT", "pattern": "Turing Machine"}
-{"label": "CONCEPT", "pattern": "Halting Problem"}
-{"label": "CONCEPT", "pattern": "Turing Test"}
-{"label": "CONCEPT", "pattern": "Church-Turing thesis"}
-{"label": "WORK",    "pattern": "On Computable Numbers"}
-{"label": "DEVICE",  "pattern": "Bombe"}
-{"label": "DEVICE",  "pattern": "Enigma"}
-{"label": "AWARD",   "pattern": "ACM Turing Award"}
-{"label": "AWARD",   "pattern": "Order of the British Empire"}
-```
-
-词典由 `domain_dict.py` 加载，自动注入到 spaCy 的 `EntityRuler` 管道中。
 
 #### 3.2.5 实体消歧策略
 

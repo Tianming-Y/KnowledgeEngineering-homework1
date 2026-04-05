@@ -53,7 +53,6 @@ crawler:
 paths:
   raw_data: "data/raw"
   processed_data: "data/processed"
-  dictionaries: "data/dictionaries"
   output_entities: "output/entities"
   output_graphs: "output/graphs"
   output_visualizations: "output/visualizations"
