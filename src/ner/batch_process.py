@@ -27,6 +27,8 @@ if _PROJECT_ROOT not in sys.path:
 
 from src.ner import load_model
 from src.ner.ner_pipeline import process_text
+from src.ner.spacy_ner import predict
+from src.ner.entity_linker import link_mentions
 
 
 def extract_text_from_doc(doc: dict) -> str:
@@ -80,6 +82,7 @@ def process_all(
     link: bool = False,
     top_k: int = 5,
     max_docs: Optional[int] = None,
+    link_verbose: bool = False,
 ):
     """处理 `processed_dir` 中的 JSON 文件。
 
@@ -128,8 +131,41 @@ def process_all(
                     continue
 
                 text = extract_text_from_doc(doc)
-                res = process_text(text, nlp=nlp, link=link, top_k=top_k)
-                ents = res.get("entities", [])
+                # Run NER first so we know entity count for streaming display
+                ents = predict(text, nlp=nlp)
+                ent_count = len(ents)
+                # Define on_link callback to stream per-entity status
+                linked_count_acc = {"v": 0}
+
+                def _on_link(out):
+                    # increment counter
+                    linked_count_acc["v"] += 1
+                    i = linked_count_acc["v"]
+                    mention = out.get("mention")
+                    s = out.get("start")
+                    t = out.get("end")
+                    used_emb = out.get("used_embedding", False)
+                    cand_count = out.get("link_candidates_count")
+                    if cand_count is None:
+                        cand_count = len(out.get("link_candidates") or [])
+                    qid = out.get("wikidata_qid")
+                    conf = out.get("link_confidence")
+                    pbar.write(
+                        f"  - Entity {i}/{ent_count}: '{mention}' [{s}:{t}] candidates={cand_count} used_embedding={used_emb} qid={qid} confidence={conf}"
+                    )
+
+                if link:
+                    linked_ents = link_mentions(
+                        ents,
+                        text,
+                        top_k=top_k,
+                        verbose=link_verbose,
+                        on_link=_on_link if link_verbose else None,
+                    )
+                else:
+                    linked_ents = ents
+
+                ents = linked_ents
                 ent_count = len(ents)
                 linked_count = sum(
                     1 for e in ents if isinstance(e, dict) and e.get("wikidata_qid")
@@ -198,6 +234,12 @@ def main():
         "--link", default=False, type=lambda v: v.lower() in ("1", "true", "yes")
     )
     parser.add_argument("--top-k", default=3, type=int)
+    parser.add_argument(
+        "--link-verbose",
+        default=False,
+        type=lambda v: v.lower() in ("1", "true", "yes"),
+        help="Print per-entity linking details to console",
+    )
     parser.add_argument("--max-docs", default=None, type=int)
     args = parser.parse_args()
 
@@ -212,6 +254,7 @@ def main():
         link=args.link,
         top_k=args.top_k,
         max_docs=args.max_docs,
+        link_verbose=args.link_verbose,
     )
 
 

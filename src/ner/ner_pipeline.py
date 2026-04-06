@@ -13,7 +13,12 @@ from .entity_linker import link_mentions
 
 
 def process_text(
-    text: str, nlp=None, link: bool = True, top_k: int = 5
+    text: str,
+    nlp=None,
+    link: bool = True,
+    top_k: int = 5,
+    link_verbose: bool = False,
+    link_stream=None,
 ) -> Dict[str, Any]:
     """对单个文本执行 NER + 可选消歧，返回结构化结果。"""
     if nlp is None:
@@ -21,7 +26,9 @@ def process_text(
     ents = predict(text, nlp=nlp)
     # predict 返回单文档实体列表
     if link:
-        linked = link_mentions(ents, text, top_k=top_k)
+        linked = link_mentions(
+            ents, text, top_k=top_k, verbose=link_verbose, on_link=link_stream
+        )
     else:
         linked = ents
 
@@ -34,6 +41,7 @@ def process_texts(
     model_name: str = "en_core_web_sm",
     link: bool = True,
     top_k: int = 5,
+    link_verbose: bool = False,
 ) -> List[Dict[str, Any]]:
     """批量处理文本并将每个文档结果保存到 `output_dir`。"""
     if output_dir is None:
@@ -43,7 +51,9 @@ def process_texts(
     nlp = load_model(model_name)
     results: List[Dict[str, Any]] = []
     for i, text in enumerate(texts):
-        res = process_text(text, nlp=nlp, link=link, top_k=top_k)
+        res = process_text(
+            text, nlp=nlp, link=link, top_k=top_k, link_verbose=link_verbose
+        )
         results.append(res)
         path = os.path.join(output_dir, f"doc_{i}.json")
         with open(path, "w", encoding="utf-8") as fh:
