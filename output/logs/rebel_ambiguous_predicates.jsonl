@@ -1,0 +1,6 @@
+{"predicate": "creator", "best_match": "authored", "similarity": 0.6438}
+{"predicate": "date of death", "best_match": "cause_of_death", "similarity": 0.5648}
+{"predicate": "employer", "best_match": "field_of_work", "similarity": 0.5942}
+{"predicate": "influenced by", "best_match": "authored_by", "similarity": 0.6175}
+{"predicate": "location", "best_match": "birth_place", "similarity": 0.5608}
+{"predicate": "owned by", "best_match": "authored_by", "similarity": 0.6109}

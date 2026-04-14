@@ -9,3 +9,5 @@ lxml>=4.9
 sentence-transformers>=2.2.0
 tqdm>=4.65
 pytest>=7.0
+transformers>=4.30.0
+accelerate>=0.21.0

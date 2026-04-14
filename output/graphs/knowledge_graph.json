@@ -1,0 +1,2771 @@
+{
+  "nodes": [
+    {
+      "id": "Alan Turing Year",
+      "label": "Alan Turing Year",
+      "type": "PERSON",
+      "wikidata_qid": "Q4707947",
+      "description": "international observance"
+    },
+    {
+      "id": "ATY",
+      "label": "ATY",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Artificial intelligence Cognitive science Computer science Computing Cryptography Developmental biology Mathematics Philosophy of mind Psychology",
+      "label": "Artificial intelligence Cognitive science Computer science Computing Cryptography Developmental biology Mathematics Philosophy of mind Psychology",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Turing Centenary Advisory Committee",
+      "label": "Turing Centenary Advisory Committee",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Alan Turing",
+      "label": "Alan Turing",
+      "type": "PERSON",
+      "wikidata_qid": "Q7251",
+      "description": "English computer scientist (1912–1954)"
+    },
+    {
+      "id": "Maida Vale , London, England",
+      "label": "Maida Vale , London, England",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Wilmslow , Cheshire, England",
+      "label": "Wilmslow , Cheshire, England",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Suicide by cyanide poisoning",
+      "label": "Suicide by cyanide poisoning",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "University of Cambridge",
+      "label": "University of Cambridge",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Princeton University",
+      "label": "Princeton University",
+      "type": "ORG",
+      "wikidata_qid": "Q1708210",
+      "description": "independent publisher with close connections to Princeton University"
+    },
+    {
+      "id": "Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction \" The Chemical Basis of Morphogenesis \" Turing paradox",
+      "label": "Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction \" The Chemical Basis of Morphogenesis \" Turing paradox",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Smith's Prize",
+      "label": "Smith's Prize",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Logic mathematics cryptanalysis computer science mathematical and theoretical biology",
+      "label": "Logic mathematics cryptanalysis computer science mathematical and theoretical biology",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "University of Manchester Government Code and Cypher School National Physical Laboratory",
+      "label": "University of Manchester Government Code and Cypher School National Physical Laboratory",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Systems of Logic Based on Ordinals",
+      "label": "Systems of Logic Based on Ordinals",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Alonzo Church",
+      "label": "Alonzo Church",
+      "type": "ORG",
+      "wikidata_qid": "Q92741",
+      "description": "American mathematician and logician (1903–1995)"
+    },
+    {
+      "id": "Robin Gandy Beatrice Worsley",
+      "label": "Robin Gandy Beatrice Worsley",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Alan Turing: The Enigma",
+      "label": "Alan Turing: The Enigma",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Andrew Hodges",
+      "label": "Andrew Hodges",
+      "type": "PERSON",
+      "wikidata_qid": "Q450154",
+      "description": "mathematician and popular science author"
+    },
+    {
+      "id": "English",
+      "label": "English",
+      "type": "LANGUAGE",
+      "wikidata_qid": "Q328",
+      "description": "English-language edition of Wikipedia"
+    },
+    {
+      "id": "Biography",
+      "label": "Biography",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "1983",
+      "label": "1983",
+      "type": "DATE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "United Kingdom",
+      "label": "United Kingdom",
+      "type": "UNKNOWN",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "The Alan Turing Year, 2012",
+      "label": "The Alan Turing Year, 2012",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "London",
+      "label": "London",
+      "type": "GPE",
+      "wikidata_qid": "Q84",
+      "description": "capital and largest city of England and the United Kingdom"
+    },
+    {
+      "id": "England",
+      "label": "England",
+      "type": "GPE",
+      "wikidata_qid": "Q179876",
+      "description": "historic kingdom on the British Isles (927–1649; 1660–1707)"
+    },
+    {
+      "id": "the United Kingdom",
+      "label": "the United Kingdom",
+      "type": "GPE",
+      "wikidata_qid": "Q174193",
+      "description": "historical sovereign state (1801–1922)"
+    },
+    {
+      "id": "Cambridge",
+      "label": "Cambridge",
+      "type": "GPE",
+      "wikidata_qid": "Q35794",
+      "description": "collegiate public research university in Cambridge, England, United Kingdom"
+    },
+    {
+      "id": "Church",
+      "label": "Church",
+      "type": "ORG",
+      "wikidata_qid": "Q34651",
+      "description": "ecclesiological term"
+    },
+    {
+      "id": "Enigma",
+      "label": "Enigma",
+      "type": "PRODUCT",
+      "wikidata_qid": "Q18416439",
+      "description": "musical group"
+    },
+    {
+      "id": "The Chemical Basis of Morphogenesis",
+      "label": "The Chemical Basis of Morphogenesis",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "Q769913",
+      "description": "1952 article by Alan Turing"
+    },
+    {
+      "id": "al",
+      "label": "al",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Hodges",
+      "label": "Hodges",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Alan Turing Law",
+      "label": "the Alan Turing Law",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "23 June 1912",
+      "label": "23 June 1912",
+      "type": "DATE",
+      "wikidata_qid": "Q69259054",
+      "description": "date in Gregorian calendar"
+    },
+    {
+      "id": "Cambridge University",
+      "label": "Cambridge University",
+      "type": "ORG",
+      "wikidata_qid": "Q5025572",
+      "description": "Parliamentary constituency in the United Kingdom, 1801-1950"
+    },
+    {
+      "id": "The Alan Turing Centenary Conference",
+      "label": "The Alan Turing Centenary Conference",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the University of Manchester",
+      "label": "the University of Manchester",
+      "type": "ORG",
+      "wikidata_qid": "Q230899",
+      "description": "public research university in Manchester, England, United Kingdom"
+    },
+    {
+      "id": "Twitter",
+      "label": "Twitter",
+      "type": "PERSON",
+      "wikidata_qid": "Q918",
+      "description": "American social networking service founded in 2006"
+    },
+    {
+      "id": "The Turing Year",
+      "label": "The Turing Year",
+      "type": "EVENT",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "2012",
+      "label": "2012",
+      "type": "DATE",
+      "wikidata_qid": "Q1489579",
+      "description": "natural number"
+    },
+    {
+      "id": "Alan Turing - His Work",
+      "label": "Alan Turing - His Work",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "John Dermot Turing",
+      "label": "John Dermot Turing",
+      "type": "PERSON",
+      "wikidata_qid": "Q43075535",
+      "description": "British solicitor and author"
+    },
+    {
+      "id": "Bill",
+      "label": "Bill",
+      "type": "PERSON",
+      "wikidata_qid": "Q686822",
+      "description": "draft legal act presented in a legislature for consideration"
+    },
+    {
+      "id": "the British Government",
+      "label": "the British Government",
+      "type": "ORG",
+      "wikidata_qid": "Q59641861",
+      "description": "doctoral thesis by P. Bell"
+    },
+    {
+      "id": "John Leech",
+      "label": "John Leech",
+      "type": "PERSON",
+      "wikidata_qid": "Q750033",
+      "description": "British Liberal Democrat politician"
+    },
+    {
+      "id": "Manchester Withington",
+      "label": "Manchester Withington",
+      "type": "PERSON",
+      "wikidata_qid": "Q3336781",
+      "description": "Parliamentary constituency in the United Kingdom, 1918 onwards"
+    },
+    {
+      "id": "Ed Miliband",
+      "label": "Ed Miliband",
+      "type": "ORG",
+      "wikidata_qid": "Q216594",
+      "description": "British politician (born 1969)"
+    },
+    {
+      "id": "the Labour Party",
+      "label": "the Labour Party",
+      "type": "ORG",
+      "wikidata_qid": "Q56660525",
+      "description": "book; published in 2000 reprinted 2001"
+    },
+    {
+      "id": "Cameron",
+      "label": "Cameron",
+      "type": "ORG",
+      "wikidata_qid": "Q24993844",
+      "description": "parish in Fife, Scotland, UK"
+    },
+    {
+      "id": "The Conservative Party",
+      "label": "The Conservative Party",
+      "type": "ORG",
+      "wikidata_qid": "Q5869155",
+      "description": "aspect of history"
+    },
+    {
+      "id": "Private",
+      "label": "Private",
+      "type": "ORG",
+      "wikidata_qid": "Q37001495",
+      "description": "family name"
+    },
+    {
+      "id": "October 2016",
+      "label": "October 2016",
+      "type": "DATE",
+      "wikidata_qid": "Q27498044",
+      "description": "large cyberattack that affected Europe and North America in 2016"
+    },
+    {
+      "id": "Stonewall",
+      "label": "Stonewall",
+      "type": "PERSON",
+      "wikidata_qid": "Q975048",
+      "description": "census-designated place in Gillespie County, Texas, United States"
+    },
+    {
+      "id": "LGBT",
+      "label": "LGBT",
+      "type": "ORG",
+      "wikidata_qid": "Q1662673",
+      "description": "interdisciplinary academic field devoted to analysing gender identity and gendered representation"
+    },
+    {
+      "id": "James Chalmers",
+      "label": "James Chalmers",
+      "type": "PERSON",
+      "wikidata_qid": "Q101530859",
+      "description": "Est 1713 - 25 Aug 1764 Aberdeen"
+    },
+    {
+      "id": "the University of Glasgow",
+      "label": "the University of Glasgow",
+      "type": "ORG",
+      "wikidata_qid": "Q99948563",
+      "description": "UK Statutory Instrument 1980 No. 715"
+    },
+    {
+      "id": "Northern Ireland",
+      "label": "Northern Ireland",
+      "type": "GPE",
+      "wikidata_qid": "Q7604693",
+      "description": "secondary legislation in Northern Ireland"
+    },
+    {
+      "id": "Scotland",
+      "label": "Scotland",
+      "type": "GPE",
+      "wikidata_qid": "Q230791",
+      "description": "historic sovereign kingdom on the British Isles from the 9th century and up to 1707"
+    },
+    {
+      "id": "Michael Cashman",
+      "label": "Michael Cashman",
+      "type": "PERSON",
+      "wikidata_qid": "Q662660",
+      "description": "British politician (born 1950)"
+    },
+    {
+      "id": "Lords",
+      "label": "Lords",
+      "type": "ORG",
+      "wikidata_qid": "Q6680182",
+      "description": "1984 video game"
+    },
+    {
+      "id": "Matt Houlbrook",
+      "label": "Matt Houlbrook",
+      "type": "PERSON",
+      "wikidata_qid": "Q41555603",
+      "description": "British academic historian"
+    },
+    {
+      "id": "the University of Birmingham",
+      "label": "the University of Birmingham",
+      "type": "ORG",
+      "wikidata_qid": "Q122684994",
+      "description": "single academy trust"
+    },
+    {
+      "id": "King's College",
+      "label": "King's College",
+      "type": "ORG",
+      "wikidata_qid": "Q245247",
+      "description": "public research university in London, United Kingdom"
+    },
+    {
+      "id": "Cypher School",
+      "label": "Cypher School",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Bletchley Park",
+      "label": "Bletchley Park",
+      "type": "FAC",
+      "wikidata_qid": "Q155921",
+      "description": "WWII code-breaking site and British country house, and museum, United Kingdom"
+    },
+    {
+      "id": "the Automatic Computing Engine",
+      "label": "the Automatic Computing Engine",
+      "type": "ORG",
+      "wikidata_qid": "Q58950012",
+      "description": "scientific article published in Nature"
+    },
+    {
+      "id": "the National Physical Laboratory",
+      "label": "the National Physical Laboratory",
+      "type": "ORG",
+      "wikidata_qid": "Q60109752",
+      "description": "article published in 1932"
+    },
+    {
+      "id": "Max Newman's",
+      "label": "Max Newman's",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Gordon Brown",
+      "label": "Gordon Brown",
+      "type": "PERSON",
+      "wikidata_qid": "Q5584916",
+      "description": "English footballer born in 1929"
+    },
+    {
+      "id": "British",
+      "label": "British",
+      "type": "NORP",
+      "wikidata_qid": "Q1973",
+      "description": "province of Canada"
+    },
+    {
+      "id": "2017",
+      "label": "2017",
+      "type": "DATE",
+      "wikidata_qid": "Q25052149",
+      "description": "general election held in United Kingdom"
+    },
+    {
+      "id": "2019",
+      "label": "2019",
+      "type": "DATE",
+      "wikidata_qid": "Q25274",
+      "description": "year"
+    },
+    {
+      "id": "German",
+      "label": "German",
+      "type": "NORP",
+      "wikidata_qid": "Q188",
+      "description": "West Germanic language native to Central Europe"
+    },
+    {
+      "id": "the Second World War",
+      "label": "the Second World War",
+      "type": "EVENT",
+      "wikidata_qid": "Q362",
+      "description": "1939–1945 global conflict"
+    },
+    {
+      "id": "Nazi",
+      "label": "Nazi",
+      "type": "NORP",
+      "wikidata_qid": "Q37495593",
+      "description": "family name"
+    },
+    {
+      "id": "Max Newman 's",
+      "label": "Max Newman 's",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "John Robert Turing",
+      "label": "John Robert Turing",
+      "type": "PERSON",
+      "wikidata_qid": "Q76197804",
+      "description": "(1793-1828)"
+    },
+    {
+      "id": "Scottish",
+      "label": "Scottish",
+      "type": "NORP",
+      "wikidata_qid": "Q211113",
+      "description": "council area of Scotland"
+    },
+    {
+      "id": "Irish",
+      "label": "Irish",
+      "type": "NORP",
+      "wikidata_qid": "Q9142",
+      "description": "language native to Ireland"
+    },
+    {
+      "id": "County Tipperary",
+      "label": "County Tipperary",
+      "type": "ORG",
+      "wikidata_qid": "Q184618",
+      "description": "county in Ireland"
+    },
+    {
+      "id": "County Longford",
+      "label": "County Longford",
+      "type": "PERSON",
+      "wikidata_qid": "Q100558735",
+      "description": "Irish Statutory Instrument S.I. No. 6/1965"
+    },
+    {
+      "id": "County Clare",
+      "label": "County Clare",
+      "type": "GPE",
+      "wikidata_qid": "Q106184641",
+      "description": "1831 United Kingdom of Great Britain and Ireland Act of Parliament 1 & 2 Will 4 c. 27"
+    },
+    {
+      "id": "Ballsbridge",
+      "label": "Ballsbridge",
+      "type": "GPE",
+      "wikidata_qid": "Q104261197",
+      "description": "townland in Pembroke East, County Dublin, Ireland"
+    },
+    {
+      "id": "Dublin",
+      "label": "Dublin",
+      "type": "GPE",
+      "wikidata_qid": "Q16865980",
+      "description": "family name"
+    },
+    {
+      "id": "the Bengal Army",
+      "label": "the Bengal Army",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "British India",
+      "label": "British India",
+      "type": "ORG",
+      "wikidata_qid": "Q129286",
+      "description": "British colonial rule on the Indian subcontinent (1858–1947)"
+    },
+    {
+      "id": "Dermot Turing",
+      "label": "Dermot Turing",
+      "type": "ORG",
+      "wikidata_qid": "Q43075535",
+      "description": "British solicitor and author"
+    },
+    {
+      "id": "John Ferrier Turing",
+      "label": "John Ferrier Turing",
+      "type": "PERSON",
+      "wikidata_qid": "Q76197853",
+      "description": "(1908-1983)"
+    },
+    {
+      "id": "Natural Wonders",
+      "label": "Natural Wonders",
+      "type": "ORG",
+      "wikidata_qid": "Q73983266",
+      "description": "Book"
+    },
+    {
+      "id": "Edwin Tenney Brewster",
+      "label": "Edwin Tenney Brewster",
+      "type": "PERSON",
+      "wikidata_qid": "Q60528313",
+      "description": "American physicist and popular science writer (1866–1960)"
+    },
+    {
+      "id": "Baston Lodge",
+      "label": "Baston Lodge",
+      "type": "FAC",
+      "wikidata_qid": "Q26486888",
+      "description": "Villa in St Leonards-on-Sea, Hastings, UK"
+    },
+    {
+      "id": "St Leonards",
+      "label": "St Leonards",
+      "type": "ORG",
+      "wikidata_qid": "Q5355974",
+      "description": "former state electoral district of New South Wales, Australia"
+    },
+    {
+      "id": "23 June 2012",
+      "label": "23 June 2012",
+      "type": "DATE",
+      "wikidata_qid": "Q17982261",
+      "description": "date"
+    },
+    {
+      "id": "Sherborne School",
+      "label": "Sherborne School",
+      "type": "ORG",
+      "wikidata_qid": "Q2278254",
+      "description": "school in Sherborne, Dorset, England, UK"
+    },
+    {
+      "id": "Sherborne in Dorset",
+      "label": "Sherborne in Dorset",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "Q115984240",
+      "description": "article published in 1984"
+    },
+    {
+      "id": "Christopher Collan Morcom",
+      "label": "Christopher Collan Morcom",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "13 July 1911",
+      "label": "13 July 1911",
+      "type": "DATE",
+      "wikidata_qid": "Q69258466",
+      "description": "date in Gregorian calendar"
+    },
+    {
+      "id": "Morcom",
+      "label": "Morcom",
+      "type": "ORG",
+      "wikidata_qid": "Q16896846",
+      "description": "village in Dorset, England, UK"
+    },
+    {
+      "id": "Frances Isobel Morcom",
+      "label": "Frances Isobel Morcom",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "13 February 1933",
+      "label": "13 February 1933",
+      "type": "DATE",
+      "wikidata_qid": "Q69269953",
+      "description": "date in Gregorian calendar"
+    },
+    {
+      "id": "Trinity",
+      "label": "Trinity",
+      "type": "ORG",
+      "wikidata_qid": "Q105396010",
+      "description": "given name"
+    },
+    {
+      "id": "King's",
+      "label": "King's",
+      "type": "ORG",
+      "wikidata_qid": "Q245247",
+      "description": "public research university in London, United Kingdom"
+    },
+    {
+      "id": "Max Newman",
+      "label": "Max Newman",
+      "type": "PERSON",
+      "wikidata_qid": "Q707155",
+      "description": "British mathematician (1897–1984)"
+    },
+    {
+      "id": "On Computable Numbers",
+      "label": "On Computable Numbers",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "Q20895949",
+      "description": "master's thesis by Alan Turing, 1936"
+    },
+    {
+      "id": "28 May of that year",
+      "label": "28 May of that year",
+      "type": "DATE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Kurt Gödel",
+      "label": "Kurt Gödel",
+      "type": "PERSON",
+      "wikidata_qid": "Q41390",
+      "description": "Austrian-American logician, mathematician, and philosopher of mathematics (1906-1978)"
+    },
+    {
+      "id": "1931",
+      "label": "1931",
+      "type": "DATE",
+      "wikidata_qid": "Q19241575",
+      "description": "natural number"
+    },
+    {
+      "id": "Entscheidungsproblem",
+      "label": "Entscheidungsproblem",
+      "type": "GPE",
+      "wikidata_qid": "Q818888",
+      "description": "ability to solve a problem in an effective manner"
+    },
+    {
+      "id": "David Hilbert",
+      "label": "David Hilbert",
+      "type": "PERSON",
+      "wikidata_qid": "Q41585",
+      "description": "German mathematician (1862–1943)"
+    },
+    {
+      "id": "Universal Machine'",
+      "label": "Universal Machine'",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "Q2491922",
+      "description": "Polish general-purpose machine gun"
+    },
+    {
+      "id": "John von Neumann",
+      "label": "John von Neumann",
+      "type": "PERSON",
+      "wikidata_qid": "Q17455",
+      "description": "Hungarian and American mathematician and physicist (1903–1957)"
+    },
+    {
+      "id": "Briggs",
+      "label": "Briggs",
+      "type": "PERSON",
+      "wikidata_qid": "Q530161",
+      "description": "Irish paleontologist (born 1950)"
+    },
+    {
+      "id": "Bletchley and Turing's",
+      "label": "Bletchley and Turing's",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Nazi Germany",
+      "label": "Nazi Germany",
+      "type": "ORG",
+      "wikidata_qid": "Q7319",
+      "description": "Germany in the time of National Socialism"
+    },
+    {
+      "id": "Polish",
+      "label": "Polish",
+      "type": "NORP",
+      "wikidata_qid": "Q809",
+      "description": "West Slavic language"
+    },
+    {
+      "id": "Warsaw",
+      "label": "Warsaw",
+      "type": "GPE",
+      "wikidata_qid": "Q144488",
+      "description": "largest university in Poland"
+    },
+    {
+      "id": "Germany",
+      "label": "Germany",
+      "type": "GPE",
+      "wikidata_qid": "Q41304",
+      "description": "Germany in the years 1918/1919–1933"
+    },
+    {
+      "id": "4 September 1939",
+      "label": "4 September 1939",
+      "type": "DATE",
+      "wikidata_qid": "Q69273667",
+      "description": "date in Gregorian calendar"
+    },
+    {
+      "id": "1948",
+      "label": "1948",
+      "type": "DATE",
+      "wikidata_qid": "Q8403",
+      "description": "Games of the XIV Olympiad, in London, Great Britain"
+    },
+    {
+      "id": "George VI",
+      "label": "George VI",
+      "type": "PERSON",
+      "wikidata_qid": "Q5545492",
+      "description": "English artist (1833-1893)"
+    },
+    {
+      "id": "the British Empire",
+      "label": "the British Empire",
+      "type": "GPE",
+      "wikidata_qid": "Q56491577",
+      "description": "doctoral thesis"
+    },
+    {
+      "id": "Winston Churchill",
+      "label": "Winston Churchill",
+      "type": "ORG",
+      "wikidata_qid": "Q8016",
+      "description": "British statesman, soldier and writer (1874–1965)"
+    },
+    {
+      "id": "Milner-Barry",
+      "label": "Milner-Barry",
+      "type": "PERSON",
+      "wikidata_qid": "Q571435",
+      "description": "British codebreaker, civil servant, and chess player (1906–1995)"
+    },
+    {
+      "id": "Banburismus",
+      "label": "Banburismus",
+      "type": "ORG",
+      "wikidata_qid": "Q4119888",
+      "description": "cryptanalytic process developed by Alan Turing during World War II"
+    },
+    {
+      "id": "Abraham Wald",
+      "label": "Abraham Wald",
+      "type": "PERSON",
+      "wikidata_qid": "Q240772",
+      "description": "American mathematician, statistician, and scientist (1902–1950)"
+    },
+    {
+      "id": "US Navy",
+      "label": "US Navy",
+      "type": "ORG",
+      "wikidata_qid": "Q27713755",
+      "description": "journal"
+    },
+    {
+      "id": "the United States",
+      "label": "the United States",
+      "type": "GPE",
+      "wikidata_qid": "Q30",
+      "description": "country located primarily in North America"
+    },
+    {
+      "id": "Hut 8",
+      "label": "Hut 8",
+      "type": "FAC",
+      "wikidata_qid": "Q3304448",
+      "description": "section in the Government Code and Cypher School at Bletchley Park"
+    },
+    {
+      "id": "Hugh Alexander",
+      "label": "Hugh Alexander",
+      "type": "PERSON",
+      "wikidata_qid": "Q539878",
+      "description": "British cryptanalyst, chess player, and chess writer (1909–1974)"
+    },
+    {
+      "id": "Alexander",
+      "label": "Alexander",
+      "type": "PERSON",
+      "wikidata_qid": "Q23852288",
+      "description": "article in Otto's encyclopedia"
+    },
+    {
+      "id": "Tommy Flowers",
+      "label": "Tommy Flowers",
+      "type": "PERSON",
+      "wikidata_qid": "Q954437",
+      "description": "British engineer, helped to design Colossus during World War II (1905–1998)"
+    },
+    {
+      "id": "Colossus",
+      "label": "Colossus",
+      "type": "ORG",
+      "wikidata_qid": "Q60374769",
+      "description": "1989 edition"
+    },
+    {
+      "id": "Bell Labs",
+      "label": "Bell Labs",
+      "type": "ORG",
+      "wikidata_qid": "Q217365",
+      "description": "research and scientific development company"
+    },
+    {
+      "id": "US",
+      "label": "US",
+      "type": "GPE",
+      "wikidata_qid": "Q30",
+      "description": "country located primarily in North America"
+    },
+    {
+      "id": "the Secret Service's",
+      "label": "the Secret Service's",
+      "type": "ORG",
+      "wikidata_qid": "Q67651387",
+      "description": "item in the National Archives and Records Administration's holdings"
+    },
+    {
+      "id": "Radio Security Service",
+      "label": "Radio Security Service",
+      "type": "ORG",
+      "wikidata_qid": "Q65244295",
+      "description": ""
+    },
+    {
+      "id": "Delilah",
+      "label": "Delilah",
+      "type": "PERSON",
+      "wikidata_qid": "Q937827",
+      "description": "woman described in the Book of Judges"
+    },
+    {
+      "id": "SIGSALY",
+      "label": "SIGSALY",
+      "type": "ORG",
+      "wikidata_qid": "Q6120011",
+      "description": "secure speech system"
+    },
+    {
+      "id": "First Draft of a Report",
+      "label": "First Draft of a Report",
+      "type": "ORG",
+      "wikidata_qid": "Q5452926",
+      "description": "incomplete document containing the first published description of the logical design of a computer using the stored-program concept"
+    },
+    {
+      "id": "Von Neumann 's",
+      "label": "Von Neumann 's",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Official Secrets Act",
+      "label": "the Official Secrets Act",
+      "type": "LAW",
+      "wikidata_qid": "Q99849964",
+      "description": "UK Statutory Instrument 2003 No. 1918"
+    },
+    {
+      "id": "Intelligent Machinery",
+      "label": "Intelligent Machinery",
+      "type": "ORG",
+      "wikidata_qid": "Q20895966",
+      "description": "report by Alan Turing to NPL, 1948"
+    },
+    {
+      "id": "late 1947",
+      "label": "late 1947",
+      "type": "DATE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Pilot ACE",
+      "label": "the Pilot ACE",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Heinz Billing",
+      "label": "Heinz Billing",
+      "type": "PERSON",
+      "wikidata_qid": "Q98042",
+      "description": "German physicists (1914-2017)"
+    },
+    {
+      "id": "the Max Planck Institute for Physics",
+      "label": "the Max Planck Institute for Physics",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "CAPTCHA",
+      "label": "CAPTCHA",
+      "type": "ORG",
+      "wikidata_qid": "Q107387231",
+      "description": "Python library"
+    },
+    {
+      "id": "Joan Clarke",
+      "label": "Joan Clarke",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Regal Cinema",
+      "label": "the Regal Cinema",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Oxford Road",
+      "label": "Oxford Road",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Murray",
+      "label": "Murray",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Donald Maclean",
+      "label": "Donald Maclean",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Soviet Union",
+      "label": "the Soviet Union",
+      "type": "GPE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "UK",
+      "label": "UK",
+      "type": "GPE",
+      "wikidata_qid": "Q145",
+      "description": "island country in north-west Europe"
+    },
+    {
+      "id": "John",
+      "label": "John",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Franz Greenbaum",
+      "label": "Franz Greenbaum",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Walt Disney",
+      "label": "Walt Disney",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Snow White",
+      "label": "Snow White",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "John Graham-Cumming",
+      "label": "John Graham-Cumming",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "The Imitation Game",
+      "label": "The Imitation Game",
+      "type": "WORK_OF_ART",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "2014",
+      "label": "2014",
+      "type": "DATE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "kitāb al-ḥisāb al-hindī",
+      "label": "kitāb al-ḥisāb al-hindī",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Muḥammad",
+      "label": "Muḥammad",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "kitab al-jam'",
+      "label": "kitab al-jam'",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Latinization of Al-Khwarizmi's",
+      "label": "the Latinization of Al-Khwarizmi's",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Dixit Algoritmi",
+      "label": "Dixit Algoritmi",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Geoffrey Chaucer",
+      "label": "Geoffrey Chaucer",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "The Canterbury Tales",
+      "label": "The Canterbury Tales",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "the Ifa Oracle",
+      "label": "the Ifa Oracle",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Babylonian",
+      "label": "Babylonian",
+      "type": "NORP",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Shuruppak",
+      "label": "Shuruppak",
+      "type": "GPE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Sumerian",
+      "label": "Sumerian",
+      "type": "NORP",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Euclidean",
+      "label": "Euclidean",
+      "type": "NORP",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Euclid's Elements",
+      "label": "Euclid's Elements",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Ada Lovelace",
+      "label": "Ada Lovelace",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Charles Babbage",
+      "label": "Charles Babbage",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Hollerith",
+      "label": "Hollerith",
+      "type": "PERSON",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "c. 1870s",
+      "label": "c. 1870s",
+      "type": "DATE",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "Böhm-Jacopini",
+      "label": "Böhm-Jacopini",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    },
+    {
+      "id": "SEQUENCE",
+      "label": "SEQUENCE",
+      "type": "ORG",
+      "wikidata_qid": "",
+      "description": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "Alan Turing Year",
+      "target": "ATY",
+      "relation": "abbreviation",
+      "confidence": 1.0,
+      "sentence": "Abbreviation: ATY",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing Year",
+      "target": "Artificial intelligence Cognitive science Computer science Computing Cryptography Developmental biology Mathematics Philosophy of mind Psychology",
+      "relation": "discipline",
+      "confidence": 1.0,
+      "sentence": "Discipline: Artificial intelligence Cognitive science Computer science Computing Cryptography Developmental biology Mathematics Philosophy of mind Psychology",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing Year",
+      "target": "Turing Centenary Advisory Committee",
+      "relation": "published_by",
+      "confidence": 1.0,
+      "sentence": "Publisher: Turing Centenary Advisory Committee",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing Year",
+      "target": "Alan Turing",
+      "relation": "subject",
+      "confidence": 0.8,
+      "sentence": "Alan Turing Year is known on Twitter as Alan Turing Years.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing Year",
+      "target": "Twitter",
+      "relation": "instance of",
+      "confidence": 1.0,
+      "sentence": "Alan Turing Year is known on Twitter as Alan Turing Years.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Maida Vale , London, England",
+      "relation": "birth_place",
+      "confidence": 1.0,
+      "sentence": "Born: Alan Mathison Turing ( 1912-06-23 ) 23 June 1912 Maida Vale , London, England",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Wilmslow , Cheshire, England",
+      "relation": "death_place",
+      "confidence": 1.0,
+      "sentence": "Died: 7 June 1954 (1954-06-07) (aged 41) Wilmslow , Cheshire, England",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Suicide by cyanide poisoning",
+      "relation": "cause_of_death",
+      "confidence": 1.0,
+      "sentence": "Cause of death: Suicide by cyanide poisoning",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "University of Cambridge",
+      "relation": "educated_at",
+      "confidence": 1.0,
+      "sentence": "Alma mater: University of Cambridge ( MA ) Princeton University ( PhD )",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Princeton University",
+      "relation": "educated_at",
+      "confidence": 1.0,
+      "sentence": "Alma mater: University of Cambridge ( MA ) Princeton University ( PhD )",
+      "doc": "",
+      "provenance": "infobox,silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction \" The Chemical Basis of Morphogenesis \" Turing paradox",
+      "relation": "known_for",
+      "confidence": 1.0,
+      "sentence": "Known for: Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction \" The Chemical Basis of Morphogenesis \" Turing paradox",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Smith's Prize",
+      "relation": "award_received",
+      "confidence": 1.0,
+      "sentence": "Awards: Smith's Prize (1936)",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Logic mathematics cryptanalysis computer science mathematical and theoretical biology",
+      "relation": "field_of_work",
+      "confidence": 1.0,
+      "sentence": "Fields: Logic mathematics cryptanalysis computer science mathematical and theoretical biology",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "University of Manchester Government Code and Cypher School National Physical Laboratory",
+      "relation": "worked_at",
+      "confidence": 1.0,
+      "sentence": "Institutions: University of Manchester Government Code and Cypher School National Physical Laboratory",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Systems of Logic Based on Ordinals",
+      "relation": "authored",
+      "confidence": 1.0,
+      "sentence": "Thesis: Systems of Logic Based on Ordinals (1938)",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Alonzo Church",
+      "relation": "doctoral_advisor",
+      "confidence": 1.0,
+      "sentence": "Doctoral advisor: Alonzo Church",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Robin Gandy Beatrice Worsley",
+      "relation": "doctoral_student",
+      "confidence": 1.0,
+      "sentence": "Doctoral students: Robin Gandy Beatrice Worsley",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Alan Turing Year",
+      "relation": "subject",
+      "confidence": 0.8,
+      "sentence": "Barry Cooper\nThe international impact of Turing's work is reflected in the list of countries in which Alan Turing Year was celebrated, including: Bolivia, Brazil, Canada, China, Czech Republic, France, Germany, Hong Kong, India, Israel, Italy, Netherlands, Mexico, New Zealand, Norway, Philippines, Portugal, Spain, Switzerland, the U.K., and the U.S.A.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Andrew Hodges",
+      "relation": "authored_by",
+      "confidence": 0.8,
+      "sentence": "Barry Cooper ; Turing's biographer Andrew Hodges ; Wendy Hall , first person from outside North America elected President of the Association for Computing Machinery in July 2008; Simon Singh ; Hugh Loebner sponsor of the Loebner Prize for Artificial Intelligence (annual science contest based on the famous Turing test ) cyberneticist Kevin Warwick , author of 'March of the Machines' and 'I, Cyborg', and committee member Daniela Derbyshire, who is also handling international co-ordination of marketing and publicity.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "England",
+      "relation": "birth_place",
+      "confidence": 0.8,
+      "sentence": "Born in London, Turing was raised in southern England.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "the United Kingdom",
+      "relation": "publication_place",
+      "confidence": 0.8,
+      "sentence": "Turing's father's civil service commission was still active during Turing's childhood years, and his parents travelled between Hastings in the United Kingdom and India, leaving their two sons to stay with a retired Army couple.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Cambridge",
+      "relation": "educated_at",
+      "confidence": 0.8,
+      "sentence": "There, Turing studied the undergraduate course in Schedule B from February 1931 to November 1934 at King's College, Cambridge , where he was awarded first-class honours in mathematics.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Church",
+      "relation": "doctoral_advisor",
+      "confidence": 0.8,
+      "sentence": "Although Turing's proof was published shortly after Church's equivalent proof using his lambda calculus , Turing's approach is considerably more accessible and intuitive than Church's.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Enigma",
+      "relation": "known_for",
+      "confidence": 0.8,
+      "sentence": "Within weeks of arriving at Bletchley Park, Turing had specified an electromechanical machine called the bombe , which could break Enigma more effectively than the Polish bomba kryptologiczna , from which its name was derived.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "London",
+      "relation": "birth_place",
+      "confidence": 0.8,
+      "sentence": "Between 1945 and 1947, Turing lived in Hampton , London, while he worked on the design of the ACE (Automatic Computing Engine) at the National Physical Laboratory (NPL) .",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "The Chemical Basis of Morphogenesis",
+      "relation": "known_for",
+      "confidence": 0.8,
+      "sentence": "When Turing was 39 years old in 1951, he turned to mathematical biology , finally publishing his masterpiece \" The Chemical Basis of Morphogenesis \" in January 1952.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "the Alan Turing Law",
+      "relation": "has effect",
+      "confidence": 1.0,
+      "sentence": "Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the \"architect\" of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "1983",
+      "relation": "publication_date",
+      "confidence": 0.8,
+      "sentence": "Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Cambridge University",
+      "relation": "educated_at",
+      "confidence": 1.0,
+      "sentence": "Some of these were linked to places with special significance in Turing's life, such as Cambridge University , the University of Manchester , Bletchley Park , Princeton University .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "23 June 1912",
+      "relation": "date of birth",
+      "confidence": 1.0,
+      "sentence": "Alan Mathison Turing (; 23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "2017",
+      "relation": "point in time",
+      "confidence": 1.0,
+      "sentence": "The term \"Alan Turing law\" is used informally to refer to a 2017 law in the UK that retroactively pardoned men cautioned or convicted under historical legislation that outlawed homosexual acts.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "2019",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "The audience vote in a 2019 BBC series named Turing the greatest scientist of the 20th century.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Nazi",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "It is fair to say we owe much to Alan Turing for the fact that we are not under Nazi rule today.\"",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "23 June 2012",
+      "relation": "point in time",
+      "confidence": 1.0,
+      "sentence": "The plaque was unveiled on 23 June 2012, the centenary of Turing's birth.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Morcom",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "In a later letter, also written to Morcom's mother, Turing wrote:",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Max Newman",
+      "relation": "doctoral_student",
+      "confidence": 1.0,
+      "sentence": "In mid-April 1936, Turing sent Max Newman the first draft typescript of his investigations.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Universal Machine'",
+      "relation": "subclass of",
+      "confidence": 1.0,
+      "sentence": "It also included a notion of a 'Universal Machine' (now known as a universal Turing machine ), with the idea that such a machine could perform the tasks of any other computation machine (as indeed could Church's lambda calculus).",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "John von Neumann",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "John von Neumann acknowledged that the central concept of the modern computer was due to Turing's paper.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "Murray",
+      "relation": "winner",
+      "confidence": 1.0,
+      "sentence": "Murray told Turing that he and the burglar were acquainted, and Turing reported the crime to the police.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing",
+      "target": "UK",
+      "relation": "country",
+      "confidence": 1.0,
+      "sentence": "Kjell intended to visit Turing in the UK but the authorities intercepted Kjell's postcard detailing his travel arrangements and were able to intercept and deport him before the two could meet.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing: The Enigma",
+      "target": "Andrew Hodges",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Author: Andrew Hodges",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing: The Enigma",
+      "target": "English",
+      "relation": "language",
+      "confidence": 1.0,
+      "sentence": "Language: English",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing: The Enigma",
+      "target": "Alan Turing",
+      "relation": "subject",
+      "confidence": 1.0,
+      "sentence": "Subject: Alan Turing (1912–1954)",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing: The Enigma",
+      "target": "Biography",
+      "relation": "genre",
+      "confidence": 1.0,
+      "sentence": "Genre: Biography",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing: The Enigma",
+      "target": "1983",
+      "relation": "publication_date",
+      "confidence": 1.0,
+      "sentence": "Published: 1983 (Burnett Books/ Hutchinson , UK & Simon & Schuster , USA)",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Alan Turing: The Enigma",
+      "target": "United Kingdom",
+      "relation": "publication_place",
+      "confidence": 1.0,
+      "sentence": "Publication place: United Kingdom",
+      "doc": "",
+      "provenance": "infobox"
+    },
+    {
+      "source": "Andrew Hodges",
+      "target": "Alan Turing",
+      "relation": "field_of_work",
+      "confidence": 1.0,
+      "sentence": "Turing biographer Andrew Hodges theorised that Turing deliberately made his death look accidental in order to shield his mother from the knowledge that he had killed himself.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "1983",
+      "target": "Alan Turing",
+      "relation": "publication_date",
+      "confidence": 0.8,
+      "sentence": "Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "The Alan Turing Year, 2012",
+      "target": "Alan Turing",
+      "relation": "subject",
+      "confidence": 0.8,
+      "sentence": "The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "The Alan Turing Year, 2012",
+      "target": "23 June 1912",
+      "relation": "date of birth",
+      "confidence": 1.0,
+      "sentence": "The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "London",
+      "target": "Alan Turing",
+      "relation": "birth_place",
+      "confidence": 0.8,
+      "sentence": "Born in London, Turing was raised in southern England.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "England",
+      "target": "Alan Turing",
+      "relation": "birth_place",
+      "confidence": 0.8,
+      "sentence": "Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the \"architect\" of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "England",
+      "target": "the Alan Turing Law",
+      "relation": "birth_place",
+      "confidence": 0.8,
+      "sentence": "Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the \"architect\" of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "England",
+      "target": "the United Kingdom",
+      "relation": "country",
+      "confidence": 1.0,
+      "sentence": "As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "England",
+      "target": "London",
+      "relation": "capital",
+      "confidence": 1.0,
+      "sentence": "Born in London, Turing was raised in southern England.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the United Kingdom",
+      "target": "England",
+      "relation": "contains administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Church",
+      "target": "Alan Turing",
+      "relation": "doctoral_advisor",
+      "confidence": 0.8,
+      "sentence": "That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Enigma",
+      "target": "1983",
+      "relation": "publication_date",
+      "confidence": 0.8,
+      "sentence": "Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Enigma",
+      "target": "Alan Turing",
+      "relation": "subject",
+      "confidence": 0.8,
+      "sentence": "Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Enigma",
+      "target": "Andrew Hodges",
+      "relation": "authored_by",
+      "confidence": 0.8,
+      "sentence": "Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Enigma",
+      "target": "Nazi Germany",
+      "relation": "country of origin",
+      "confidence": 1.0,
+      "sentence": "He concentrated on cryptanalysis of the Enigma cipher machine used by Nazi Germany , together with Dilly Knox , a senior GC&CS codebreaker.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Enigma",
+      "target": "German",
+      "relation": "owned by",
+      "confidence": 1.0,
+      "sentence": "Turing decided to tackle the particularly difficult problem of cracking the German naval use of Enigma \"because no one else was doing anything about it and I could have it to myself\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "al",
+      "target": "Alan Turing",
+      "relation": "published_by",
+      "confidence": 0.8,
+      "sentence": "found that in mice, removal of Hox genes causes an increase in the number of digits without an increase in the overall size of the limb, suggesting that Hox genes control digit formation by tuning the wavelength of a Turing-type mechanism.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "Hodges",
+      "target": "Alan Turing",
+      "relation": "authored_by",
+      "confidence": 0.8,
+      "sentence": "who, in his review of Hodges' book, recalls \"Turing's vulnerable position in the Cold War political climate\" and points out that \"Turing was found dead by a maid, who discovered him 'lying neatly in his bed'—hardly what one would expect of \"a man fighting for life against the suffocation induced by cyanide poisoning.\" Turing had given no hint of suicidal inclinations to his friends and had made no effort to put his affairs in order.",
+      "doc": "",
+      "provenance": "silver"
+    },
+    {
+      "source": "the Alan Turing Law",
+      "target": "Alan Turing",
+      "relation": "facet of",
+      "confidence": 1.0,
+      "sentence": "Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the \"architect\" of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "The Alan Turing Centenary Conference",
+      "target": "the University of Manchester",
+      "relation": "location",
+      "confidence": 1.0,
+      "sentence": "The Alan Turing Centenary Conference was held at the University of Manchester during June 2012.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "The Turing Year",
+      "target": "2012",
+      "relation": "point in time",
+      "confidence": 1.0,
+      "sentence": "The Turing Year was coordinated by the Turing Centenary Advisory Committee (TCAC), representing a range of expertise and organisational involvement in the 2012 celebrations.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alan Turing - His Work",
+      "target": "John Dermot Turing",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Members of TCAC include Honorary President, Sir John Dermot Turing; The Chair and founder of the committee, mathematician and author of Alan Turing - His Work and Impact S.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Bill",
+      "target": "the British Government",
+      "relation": "legislated by",
+      "confidence": 1.0,
+      "sentence": "To implement the pardon, the British Government announced on 20 October 2016 that it would support an amendment to the Policing and Crime Bill that would provide a posthumous pardon, and provide a process whereby those still living could apply to have these offences disregarded.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Bill",
+      "target": "Private",
+      "relation": "instance of",
+      "confidence": 1.0,
+      "sentence": "In June 2016, John Nicolson MP introduced a Private Member's Bill , the Sexual Offences (Pardons Etc.) Bill 2016–17, intended to implement the proposal.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Bill",
+      "target": "October 2016",
+      "relation": "point in time",
+      "confidence": 1.0,
+      "sentence": "In October 2016, the Conservative government announced that, instead of supporting the Private Member's Bill's original proposal for a blanket pardon for all, it would enact the proposed changes through an amendment to the forthcoming Policing and Crime Bill 2016 .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the British Government",
+      "target": "the United Kingdom",
+      "relation": "country",
+      "confidence": 1.0,
+      "sentence": "As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "John Leech",
+      "target": "Manchester Withington",
+      "relation": "member of political party",
+      "confidence": 1.0,
+      "sentence": "Manchester Withington MP John Leech, often described as 'the architect' of the Alan Turing Law, led a high-profile campaign to pardon Turing and submitted several bills to parliament, leading to the eventual posthumous pardon.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Ed Miliband",
+      "target": "the Labour Party",
+      "relation": "member of political party",
+      "confidence": 1.0,
+      "sentence": "While in opposition, the Labour Party under Ed Miliband announced that it would introduce an Alan Turing law if elected at the 2015 general election.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Cameron",
+      "target": "The Conservative Party",
+      "relation": "member of political party",
+      "confidence": 1.0,
+      "sentence": "The Conservative Party under Cameron subsequently announced the same policy.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Stonewall",
+      "target": "LGBT",
+      "relation": "field_of_work",
+      "confidence": 1.0,
+      "sentence": "Nicolson disagreed and, backed by the LGBT campaign group Stonewall , said that the government was attempting to \"hijack\" the law by announcing the amendment just prior to the second reading of his Private Member's Bill, and said that his bill already excluded cases where the offence was still considered a crime.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "James Chalmers",
+      "target": "the University of Glasgow",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "This would still have to be done through the disregard process, leading to possible cases in which it would not be clear whether or not a pardon had been granted, described by James Chalmers, Regius Professor of Law at the University of Glasgow , as a \" Schrödinger's pardon \".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Northern Ireland",
+      "target": "Scotland",
+      "relation": "shares border with",
+      "confidence": 1.0,
+      "sentence": "Groups in Northern Ireland and Scotland campaigned for equivalent laws in their jurisdictions.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Scotland",
+      "target": "Northern Ireland",
+      "relation": "shares border with",
+      "confidence": 1.0,
+      "sentence": "Groups in Northern Ireland and Scotland campaigned for equivalent laws in their jurisdictions.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Michael Cashman",
+      "target": "Lords",
+      "relation": "position held",
+      "confidence": 1.0,
+      "sentence": "The assembly consented on 28 November, and Lexden's proposal was accepted at Lords report stage on 12 December, along with one from Michael Cashman extending the power of disregard and pardon to further offences.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Matt Houlbrook",
+      "target": "the University of Birmingham",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "Matt Houlbrook, Professor of Cultural History at the University of Birmingham , said that the announcement was of both \"symbolic and practical importance\" to gay men still living with the offences on their criminal record, but noted that using Alan Turing as a figurehead retroactively gave him an identity as a \"gay martyr\" that he never sought in life.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "King's College",
+      "target": "Cambridge",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Cypher School",
+      "target": "Bletchley Park",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Bletchley Park",
+      "target": "Cypher School",
+      "relation": "has part",
+      "confidence": 1.0,
+      "sentence": "During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Automatic Computing Engine",
+      "target": "the National Physical Laboratory",
+      "relation": "manufacturer",
+      "confidence": 1.0,
+      "sentence": "After the war, Turing worked at the National Physical Laboratory, where he designed the Automatic Computing Engine, one of the first designs for a stored-program computer.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Max Newman's",
+      "target": "the University of Manchester",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Gordon Brown",
+      "target": "British",
+      "relation": "position held",
+      "confidence": 1.0,
+      "sentence": "Following a campaign in 2009, British prime minister Gordon Brown made an official public apology for \"the appalling way [Turing] was treated\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "British",
+      "target": "1948",
+      "relation": "point in time",
+      "confidence": 1.0,
+      "sentence": "Turing tried out for the 1948 British Olympic team , but he was hampered by an injury.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "German",
+      "target": "the Second World War",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "During the Second World War, Turing was a leading participant in the breaking of German ciphers at Bletchley Park .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "German",
+      "target": "Enigma",
+      "relation": "owner of",
+      "confidence": 1.0,
+      "sentence": "Turing decided to tackle the particularly difficult problem of cracking the German naval use of Enigma \"because no one else was doing anything about it and I could have it to myself\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Nazi",
+      "target": "Alan Turing",
+      "relation": "discoverer or inventor",
+      "confidence": 1.0,
+      "sentence": "It is fair to say we owe much to Alan Turing for the fact that we are not under Nazi rule today.\"",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Max Newman 's",
+      "target": "the University of Manchester",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "In 1948, Turing joined Max Newman 's Computing Machine Laboratory at the University of Manchester , where he contributed to the development of early Manchester computers and became interested in mathematical biology .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "John Robert Turing",
+      "target": "Scottish",
+      "relation": "country of citizenship",
+      "confidence": 1.0,
+      "sentence": "John Robert Turing, from a Scottish family of merchants that had been based in the Netherlands and included a baronet .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Irish",
+      "target": "County Tipperary",
+      "relation": "contains administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "County Tipperary",
+      "target": "Irish",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "County Longford",
+      "target": "Irish",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "County Clare",
+      "target": "Irish",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Ballsbridge",
+      "target": "Dublin",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "Bartholomew's Church on Clyde Road in Ballsbridge , Dublin .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Bengal Army",
+      "target": "British India",
+      "relation": "country",
+      "confidence": 1.0,
+      "sentence": "Julius's work with the ICS brought the family to British India, where his grandfather had been a general in the Bengal Army .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Dermot Turing",
+      "target": "John Ferrier Turing",
+      "relation": "father",
+      "confidence": 1.0,
+      "sentence": "Turing had an elder brother, John Ferrier Turing, father of Dermot Turing , 12th Baronet of the Turing baronets .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Natural Wonders",
+      "target": "Edwin Tenney Brewster",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "In 1922, he discovered Natural Wonders Every Child Should Know by Edwin Tenney Brewster .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Baston Lodge",
+      "target": "St Leonards",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "At Hastings, Turing stayed at Baston Lodge , Upper Maze Hill, St Leonards-on-Sea , now marked with a blue plaque.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Sherborne School",
+      "target": "Sherborne in Dorset",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "In 1926, at the age of 13, he went on to Sherborne School , an independent boarding school in the market town of Sherborne in Dorset, where he boarded at Westcott House.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Christopher Collan Morcom",
+      "target": "13 July 1911",
+      "relation": "date of birth",
+      "confidence": 1.0,
+      "sentence": "At Sherborne, Turing formed a significant friendship with fellow pupil Christopher Collan Morcom (13 July 1911 – 13 February 1930), who has been described as Turing's first love.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Morcom",
+      "target": "Frances Isobel Morcom",
+      "relation": "mother",
+      "confidence": 1.0,
+      "sentence": "In a letter to Morcom's mother, Frances Isobel Morcom (née Swan), Turing wrote:\nTuring's relationship with Morcom's mother continued long after Morcom's death, with her sending gifts to Turing, and him sending letters, typically on Morcom's birthday.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Morcom",
+      "target": "13 February 1933",
+      "relation": "date of death",
+      "confidence": 1.0,
+      "sentence": "A day before the third anniversary of Morcom's death (13 February 1933), he wrote to Mrs.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Morcom",
+      "target": "Alan Turing",
+      "relation": "creator",
+      "confidence": 1.0,
+      "sentence": "In a later letter, also written to Morcom's mother, Turing wrote:",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Trinity",
+      "target": "Cambridge",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "King's",
+      "target": "Cambridge",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Max Newman",
+      "target": "Alan Turing",
+      "relation": "doctoral_student",
+      "confidence": 1.0,
+      "sentence": "In mid-April 1936, Turing sent Max Newman the first draft typescript of his investigations.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "On Computable Numbers",
+      "target": "28 May of that year",
+      "relation": "publication_date",
+      "confidence": 1.0,
+      "sentence": "Finally, on 28 May of that year, he finished and delivered his 36-page paper for publication called \" On Computable Numbers, with an Application to the Entscheidungsproblem \".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Kurt Gödel",
+      "target": "1931",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "In this paper, Turing reformulated Kurt Gödel 's 1931 results on the limits of proof and computation, replacing Gödel's universal arithmetic-based formal language with the formal and simple hypothetical devices that became known as Turing machines .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "1931",
+      "target": "Kurt Gödel",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "In this paper, Turing reformulated Kurt Gödel 's 1931 results on the limits of proof and computation, replacing Gödel's universal arithmetic-based formal language with the formal and simple hypothetical devices that became known as Turing machines .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Entscheidungsproblem",
+      "target": "David Hilbert",
+      "relation": "discoverer or inventor",
+      "confidence": 1.0,
+      "sentence": "The Entscheidungsproblem (decision problem) was originally posed by German mathematician David Hilbert in 1928.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "John von Neumann",
+      "target": "Alan Turing",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "John von Neumann acknowledged that the central concept of the modern computer was due to Turing's paper.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Briggs",
+      "target": "Bletchley and Turing's",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "The historian and wartime codebreaker Asa Briggs has said, \"You needed exceptional talent, you needed genius at Bletchley and Turing's was that genius.\"\nFrom September 1938, Turing worked part-time with the Government Code and Cypher School (GC&CS), the British codebreaking organisation.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Polish",
+      "target": "Warsaw",
+      "relation": "located in the administrative territorial entity",
+      "confidence": 1.0,
+      "sentence": "Soon after the July 1939 meeting near Warsaw at which the Polish Cipher Bureau gave the British and French details of the wiring of Enigma machine's rotors and their method of decrypting Enigma machine 's messages, Turing and Knox developed a broader solution.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Germany",
+      "target": "4 September 1939",
+      "relation": "point in time",
+      "confidence": 1.0,
+      "sentence": "On 4 September 1939, the day after the UK declared war on Germany, Turing reported to Bletchley Park, the wartime station of GC&CS.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "George VI",
+      "target": "the British Empire",
+      "relation": "award_received",
+      "confidence": 1.0,
+      "sentence": "Thus, even though Turing was appointed an Officer of the Order of the British Empire (OBE) in 1946 by King George VI for his wartime services, his work remained secret for many years.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Winston Churchill",
+      "target": "Alan Turing",
+      "relation": "influenced by",
+      "confidence": 1.0,
+      "sentence": "On 28 October they wrote directly to Winston Churchill explaining their difficulties, with Turing as the first named.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Milner-Barry",
+      "target": "Bletchley Park",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "The cryptographers at Bletchley Park did not know of the Prime Minister's response, but as Milner-Barry recalled, \"All that we did notice was that almost from that day the rough ways began miraculously to be made smooth.\" More than two hundred bombes were in operation by the end of the war.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Banburismus",
+      "target": "Abraham Wald",
+      "relation": "discoverer or inventor",
+      "confidence": 1.0,
+      "sentence": "That same night, he also conceived of the idea of Banburismus , a sequential statistical technique (what Abraham Wald later called sequential analysis ) to assist in breaking the naval Enigma, \"though I was not sure that it would work in practice, and was not, in fact, sure until some days had actually broken\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Abraham Wald",
+      "target": "Banburismus",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "That same night, he also conceived of the idea of Banburismus , a sequential statistical technique (what Abraham Wald later called sequential analysis ) to assist in breaking the naval Enigma, \"though I was not sure that it would work in practice, and was not, in fact, sure until some days had actually broken\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "US Navy",
+      "target": "the United States",
+      "relation": "country",
+      "confidence": 1.0,
+      "sentence": "Turing travelled to the United States in November 1942 and worked with US Navy cryptanalysts on the naval Enigma and bombe construction in Washington.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Hut 8",
+      "target": "Hugh Alexander",
+      "relation": "chairperson",
+      "confidence": 1.0,
+      "sentence": "During his absence, Hugh Alexander had officially assumed the position of head of Hut 8, although Alexander had been de facto head for some time (Turing having little interest in the day-to-day running of the section).",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Hut 8",
+      "target": "Joan Clarke",
+      "relation": "has part",
+      "confidence": 1.0,
+      "sentence": "In 1941, Turing proposed marriage to Hut 8 colleague Joan Clarke , a fellow mathematician and cryptanalyst, but their engagement was short-lived.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Alexander",
+      "target": "Alan Turing",
+      "relation": "influenced by",
+      "confidence": 1.0,
+      "sentence": "Alexander wrote of Turing's contribution:",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Tommy Flowers",
+      "target": "Colossus",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "He also introduced the Tunny team to Tommy Flowers who, under the guidance of Max Newman , went on to build the Colossus computer , the world's first programmable digital electronic computer, which replaced a simpler prior machine (the Heath Robinson ), and whose superior speed allowed the statistical decryption techniques to be applied usefully to the messages.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Colossus",
+      "target": "Tommy Flowers",
+      "relation": "discoverer or inventor",
+      "confidence": 1.0,
+      "sentence": "He also introduced the Tunny team to Tommy Flowers who, under the guidance of Max Newman , went on to build the Colossus computer , the world's first programmable digital electronic computer, which replaced a simpler prior machine (the Heath Robinson ), and whose superior speed allowed the statistical decryption techniques to be applied usefully to the messages.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Colossus",
+      "target": "Alan Turing",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Some have mistakenly said that Turing was a key figure in the design of the Colossus computer.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Bell Labs",
+      "target": "US",
+      "relation": "country",
+      "confidence": 1.0,
+      "sentence": "Following his work at Bell Labs in the US, Turing pursued the idea of electronic enciphering of speech in the telephone system.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Secret Service's",
+      "target": "Radio Security Service",
+      "relation": "subsidiary",
+      "confidence": 1.0,
+      "sentence": "In the latter part of the war, he moved to work for the Secret Service's Radio Security Service (later HMGCC ) at Hanslope Park .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Radio Security Service",
+      "target": "the Secret Service's",
+      "relation": "parent organization",
+      "confidence": 1.0,
+      "sentence": "In the latter part of the war, he moved to work for the Secret Service's Radio Security Service (later HMGCC ) at Hanslope Park .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Delilah",
+      "target": "Alan Turing",
+      "relation": "discoverer or inventor",
+      "confidence": 1.0,
+      "sentence": "Though the system worked fully, with Turing demonstrating it to officials by encrypting and decrypting a recording of a Winston Churchill speech, Delilah was not adopted for use.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "SIGSALY",
+      "target": "Bell Labs",
+      "relation": "developer",
+      "confidence": 1.0,
+      "sentence": "Turing also consulted with Bell Labs on the development of SIGSALY , a secure voice system that was used in the later years of the war.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "First Draft of a Report",
+      "target": "Von Neumann 's",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Von Neumann 's incomplete First Draft of a Report on the EDVAC had predated Turing's paper, but it was much less detailed and, according to John R.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Official Secrets Act",
+      "target": "Bletchley Park",
+      "relation": "subject",
+      "confidence": 1.0,
+      "sentence": "Although ACE was a feasible design, the effect of the Official Secrets Act surrounding the wartime work at Bletchley Park made it impossible for Turing to explain the basis of his analysis of how a computer installation involving human operators would work.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Intelligent Machinery",
+      "target": "late 1947",
+      "relation": "publication_date",
+      "confidence": 1.0,
+      "sentence": "In late 1947 he returned to Cambridge for a sabbatical year during which he produced a seminal work on Intelligent Machinery that was not published in his lifetime.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Pilot ACE",
+      "target": "Cambridge",
+      "relation": "manufacturer",
+      "confidence": 1.0,
+      "sentence": "While he was at Cambridge, the Pilot ACE was being built in his absence.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Heinz Billing",
+      "target": "the Max Planck Institute for Physics",
+      "relation": "employer",
+      "confidence": 1.0,
+      "sentence": "According to the memoirs of the German computer pioneer Heinz Billing from the Max Planck Institute for Physics , published by Genscher, Düsseldorf, there was a meeting between Turing and Konrad Zuse .",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "CAPTCHA",
+      "target": "Alan Turing",
+      "relation": "instance of",
+      "confidence": 1.0,
+      "sentence": "A reversed form of the Turing test is widely used on the Internet; the CAPTCHA test is intended to determine whether the user is a human or a computer.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Joan Clarke",
+      "target": "Hut 8",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "In 1941, Turing proposed marriage to Hut 8 colleague Joan Clarke , a fellow mathematician and cryptanalyst, but their engagement was short-lived.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Regal Cinema",
+      "target": "Oxford Road",
+      "relation": "located on street",
+      "confidence": 1.0,
+      "sentence": "Turing was walking along Manchester's Oxford Road when he met Murray just outside the Regal Cinema and invited him to lunch.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Murray",
+      "target": "Alan Turing",
+      "relation": "award_received",
+      "confidence": 1.0,
+      "sentence": "Murray told Turing that he and the burglar were acquainted, and Turing reported the crime to the police.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Donald Maclean",
+      "target": "the Soviet Union",
+      "relation": "country of citizenship",
+      "confidence": 1.0,
+      "sentence": "His trial took place only months after the defection to the Soviet Union of Guy Burgess and Donald Maclean , in summer 1951, after which the Foreign Office started to consider anyone known to be homosexual as a potential security risk.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "John",
+      "target": "Franz Greenbaum",
+      "relation": "sibling",
+      "confidence": 1.0,
+      "sentence": "Turing's brother, John, identified the body the following day and took the advice given by Franz Greenbaum to accept the verdict of the inquest , as there was little prospect of establishing that the death was accidental.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Franz Greenbaum",
+      "target": "John",
+      "relation": "sibling",
+      "confidence": 1.0,
+      "sentence": "Turing's brother, John, identified the body the following day and took the advice given by Franz Greenbaum to accept the verdict of the inquest , as there was little prospect of establishing that the death was accidental.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Walt Disney",
+      "target": "Snow White",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "Hodges and a later biographer, David Leavitt , have both speculated that Turing was re-enacting a scene from the Walt Disney film Snow White and the Seven Dwarfs (1937), his favourite fairy tale.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Snow White",
+      "target": "Walt Disney",
+      "relation": "producer",
+      "confidence": 1.0,
+      "sentence": "Hodges and a later biographer, David Leavitt , have both speculated that Turing was re-enacting a scene from the Walt Disney film Snow White and the Seven Dwarfs (1937), his favourite fairy tale.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "John Graham-Cumming",
+      "target": "British",
+      "relation": "country of citizenship",
+      "confidence": 1.0,
+      "sentence": "In August 2009, British programmer John Graham-Cumming started a petition urging the British government to apologise for Turing's prosecution as a homosexual.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "The Imitation Game",
+      "target": "Alan Turing",
+      "relation": "subject",
+      "confidence": 1.0,
+      "sentence": "At the British premiere of a film based on Turing's life, The Imitation Game , the producers thanked Leech for bringing the topic to public attention and securing Turing's pardon.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "The Imitation Game",
+      "target": "2014",
+      "relation": "publication_date",
+      "confidence": 1.0,
+      "sentence": "The 2014 film The Imitation Game is loosely based on the book, with dramatization.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "kitāb al-ḥisāb al-hindī",
+      "target": "Muḥammad",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Around 825 AD, Persian scientist and polymath Muḥammad ibn Mūsā al-Khwārizmī wrote kitāb al-ḥisāb al-hindī (\"Book of Indian computation\") and kitab al-jam' wa'l-tafriq al-ḥisāb al-hindī (\"Addition and subtraction in Indian arithmetic\").",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "kitab al-jam'",
+      "target": "Muḥammad",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Around 825 AD, Persian scientist and polymath Muḥammad ibn Mūsā al-Khwārizmī wrote kitāb al-ḥisāb al-hindī (\"Book of Indian computation\") and kitab al-jam' wa'l-tafriq al-ḥisāb al-hindī (\"Addition and subtraction in Indian arithmetic\").",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Latinization of Al-Khwarizmi's",
+      "target": "Dixit Algoritmi",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "Here, alghoarismi or algoritmi is the Latinization of Al-Khwarizmi's name; the text starts with the phrase Dixit Algoritmi , or \"Thus spoke Al-Khwarizmi\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Dixit Algoritmi",
+      "target": "the Latinization of Al-Khwarizmi's",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "Here, alghoarismi or algoritmi is the Latinization of Al-Khwarizmi's name; the text starts with the phrase Dixit Algoritmi , or \"Thus spoke Al-Khwarizmi\".",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Geoffrey Chaucer",
+      "target": "The Canterbury Tales",
+      "relation": "notable work",
+      "confidence": 1.0,
+      "sentence": "By the time Geoffrey Chaucer wrote The Canterbury Tales in the late 14th century, he used a variant of the same word in describing augrym stones , stones used for place-value calculation.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "The Canterbury Tales",
+      "target": "Geoffrey Chaucer",
+      "relation": "authored_by",
+      "confidence": 1.0,
+      "sentence": "By the time Geoffrey Chaucer wrote The Canterbury Tales in the late 14th century, he used a variant of the same word in describing augrym stones , stones used for place-value calculation.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "the Ifa Oracle",
+      "target": "Babylonian",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "This includes in Babylonian mathematics (around 2500 BC), Egyptian mathematics (around 1550 BC), Indian mathematics (around 800 BC and later), the Ifa Oracle (around 500 BC), Greek mathematics (around 240 BC), Chinese mathematics (around 200 BC and later) , and Arabic mathematics (around 800 AD).",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Shuruppak",
+      "target": "Sumerian",
+      "relation": "time period",
+      "confidence": 1.0,
+      "sentence": "A Sumerian clay tablet found in Shuruppak near Baghdad and dated to c.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Euclidean",
+      "target": "Euclid's Elements",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "Two examples are the Sieve of Eratosthenes , which was described in the Introduction to Arithmetic by Nicomachus , and the Euclidean algorithm , which was first described in Euclid's Elements ( c.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Euclid's Elements",
+      "target": "Euclidean",
+      "relation": "has part",
+      "confidence": 1.0,
+      "sentence": "Two examples are the Sieve of Eratosthenes , which was described in the Introduction to Arithmetic by Nicomachus , and the Euclidean algorithm , which was first described in Euclid's Elements ( c.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Ada Lovelace",
+      "target": "Charles Babbage",
+      "relation": "influenced by",
+      "confidence": 1.0,
+      "sentence": "\"The accurate automatic machine\" led immediately to \"mechanical automata \" in the 13th century and \"computational machines\"—the difference and analytical engines of Charles Babbage and Ada Lovelace in the mid-19th century.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Hollerith",
+      "target": "c. 1870s",
+      "relation": "inception",
+      "confidence": 1.0,
+      "sentence": "1870s ) was in use, as were Hollerith cards (c.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "Böhm-Jacopini",
+      "target": "SEQUENCE",
+      "relation": "has part",
+      "confidence": 1.0,
+      "sentence": "Tausworthe augments the three Böhm-Jacopini canonical structures : SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE.",
+      "doc": "",
+      "provenance": "rebel"
+    },
+    {
+      "source": "SEQUENCE",
+      "target": "Böhm-Jacopini",
+      "relation": "part of",
+      "confidence": 1.0,
+      "sentence": "Tausworthe augments the three Böhm-Jacopini canonical structures : SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE.",
+      "doc": "",
+      "provenance": "rebel"
+    }
+  ],
+  "stats": {
+    "num_nodes": 181,
+    "num_edges": 166
+  }
+}

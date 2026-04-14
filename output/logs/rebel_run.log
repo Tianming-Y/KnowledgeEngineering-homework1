@@ -1,0 +1,102 @@
+2026-04-14 22:35:23,998 [INFO] ============================================================
+2026-04-14 22:35:23,998 [INFO] REBEL 三元组抽取 开始
+2026-04-14 22:35:23,999 [INFO]   model: Babelscape/rebel-large
+2026-04-14 22:35:23,999 [INFO]   candidates: data/relation/candidates.jsonl
+2026-04-14 22:35:23,999 [INFO]   output: output/graphs/rebel_triples.jsonl
+2026-04-14 22:35:24,014 [INFO]   GPU: NVIDIA GeForce RTX 3050 Laptop GPU (4.0 GB)
+2026-04-14 22:35:24,015 [INFO]   fp16: True
+2026-04-14 22:35:24,015 [INFO]   batch_size: 8
+2026-04-14 22:35:24,040 [INFO]   候选对总数(过滤后): 1157
+2026-04-14 22:35:24,041 [INFO]   唯一句子数: 264
+2026-04-14 22:35:24,041 [INFO] 加载 REBEL 模型: Babelscape/rebel-large ...
+2026-04-14 22:36:05,527 [INFO] REBEL 模型加载完成
+2026-04-14 22:36:05,527 [INFO] REBEL 推理: 264 个唯一句子, batch_size=8, fp16=True
+2026-04-14 22:36:52,351 [INFO] 推理耗时: 88.4s
+2026-04-14 22:36:52,374 [INFO] REBEL 抽取完成:
+2026-04-14 22:36:52,375 [INFO]   REBEL 原始三元组总数: 363
+2026-04-14 22:36:52,375 [INFO]   对齐后三元组: 143
+2026-04-14 22:36:52,375 [INFO]   去重后三元组: 126
+2026-04-14 22:36:52,376 [INFO]   总耗时: 88.4s
+2026-04-14 22:36:52,376 [INFO]   输出: output/graphs/rebel_triples.jsonl
+2026-04-14 22:37:47,674 [INFO] ============================================================
+2026-04-14 22:37:47,678 [INFO] 谓词归一化 & 三元组合并
+2026-04-14 22:37:47,678 [INFO] 加载 REBEL 三元组: output/graphs/rebel_triples.jsonl
+2026-04-14 22:37:47,693 [INFO]   REBEL 三元组数: 126
+2026-04-14 22:37:47,693 [INFO] 谓词映射...
+2026-04-14 22:39:23,775 [INFO]   字面未映射谓词: 46, 尝试 embedding 映射...
+2026-04-14 22:39:23,965 [INFO]   模糊谓词(6条) -> output/logs\rebel_ambiguous_predicates.jsonl
+2026-04-14 22:39:23,965 [INFO]   谓词映射结果: 字面=17, embedding=5, 未映射=104
+2026-04-14 22:39:23,966 [INFO] QC 抽样 50 条 -> output/logs/rebel_sample_qc.jsonl
+2026-04-14 22:39:23,967 [INFO] 加载 Infobox 三元组: output/graphs/infobox_triples.jsonl
+2026-04-14 22:39:23,967 [INFO]   Infobox 三元组数: 21
+2026-04-14 22:39:23,967 [INFO] 加载 Silver 标注: data/relation/silver.jsonl
+2026-04-14 22:39:24,000 [INFO]   Silver 正例三元组数: 43
+2026-04-14 22:39:24,001 [INFO] 合并三元组（Infobox > Silver > REBEL）...
+2026-04-14 22:39:24,004 [INFO] 合并完成: 170 条 -> output/graphs/relation_triples.jsonl
+2026-04-14 22:39:24,006 [INFO] 耗时: 96.3s
+2026-04-14 22:39:24,006 [INFO] 三元组 provenance 分布:
+2026-04-14 22:39:24,006 [INFO]   rebel: 125
+2026-04-14 22:39:24,006 [INFO]   silver: 25
+2026-04-14 22:39:24,007 [INFO]   infobox: 21
+2026-04-14 22:39:24,007 [INFO] Top-10 关系类型:
+2026-04-14 22:39:24,007 [INFO]   authored_by: 15
+2026-04-14 22:39:24,007 [INFO]   part of: 10
+2026-04-14 22:39:24,007 [INFO]   notable work: 9
+2026-04-14 22:39:24,007 [INFO]   subject: 8
+2026-04-14 22:39:24,007 [INFO]   publication_date: 7
+2026-04-14 22:39:24,008 [INFO]   employer: 7
+2026-04-14 22:39:24,008 [INFO]   located in the administrative territorial entity: 7
+2026-04-14 22:39:24,008 [INFO]   birth_place: 6
+2026-04-14 22:39:24,008 [INFO]   point in time: 6
+2026-04-14 22:39:24,008 [INFO]   country: 6
+2026-04-14 23:05:28,760 [INFO] ============================================================
+2026-04-14 23:05:28,762 [INFO] REBEL 三元组抽取 开始
+2026-04-14 23:05:28,762 [INFO]   model: Babelscape/rebel-large
+2026-04-14 23:05:28,762 [INFO]   candidates: data/relation/candidates.jsonl
+2026-04-14 23:05:28,762 [INFO]   output: output/graphs/rebel_triples.jsonl
+2026-04-14 23:05:28,776 [INFO]   GPU: NVIDIA GeForce RTX 3050 Laptop GPU (4.0 GB)
+2026-04-14 23:05:28,776 [INFO]   fp16: True
+2026-04-14 23:05:28,776 [INFO]   batch_size: 8
+2026-04-14 23:05:28,782 [INFO]   候选对总数(过滤后): 1157
+2026-04-14 23:05:28,783 [INFO]   唯一句子数: 264
+2026-04-14 23:05:28,783 [INFO] 加载 REBEL 模型: Babelscape/rebel-large ...
+2026-04-14 23:06:12,033 [INFO] REBEL 模型加载完成
+2026-04-14 23:06:12,034 [INFO] REBEL 推理: 264 个唯一句子, batch_size=8, fp16=True
+2026-04-14 23:06:51,150 [INFO] 推理耗时: 82.4s
+2026-04-14 23:06:51,163 [INFO] REBEL 抽取完成:
+2026-04-14 23:06:51,163 [INFO]   REBEL 原始三元组总数: 363
+2026-04-14 23:06:51,163 [INFO]   对齐后三元组: 143
+2026-04-14 23:06:51,164 [INFO]   去重后三元组: 126
+2026-04-14 23:06:51,164 [INFO]   总耗时: 82.4s
+2026-04-14 23:06:51,164 [INFO]   输出: output/graphs/rebel_triples.jsonl
+2026-04-14 23:06:56,266 [INFO] ============================================================
+2026-04-14 23:06:56,267 [INFO] 谓词归一化 & 三元组合并
+2026-04-14 23:06:56,267 [INFO] 加载 REBEL 三元组: output/graphs/rebel_triples.jsonl
+2026-04-14 23:06:56,287 [INFO]   REBEL 三元组数: 126
+2026-04-14 23:06:56,288 [INFO] 谓词映射...
+2026-04-14 23:07:39,934 [INFO]   字面未映射谓词: 46, 尝试 embedding 映射...
+2026-04-14 23:07:40,082 [INFO]   模糊谓词(6条) -> output/logs\rebel_ambiguous_predicates.jsonl
+2026-04-14 23:07:40,082 [INFO]   谓词映射结果: 字面=17, embedding=5, 未映射=104
+2026-04-14 23:07:40,083 [INFO] QC 抽样 50 条 -> output/logs/rebel_sample_qc.jsonl
+2026-04-14 23:07:40,083 [INFO] 加载 Infobox 三元组: output/graphs/infobox_triples.jsonl
+2026-04-14 23:07:40,084 [INFO]   Infobox 三元组数: 21
+2026-04-14 23:07:40,084 [INFO] 加载 Silver 标注: data/relation/silver.jsonl
+2026-04-14 23:07:40,108 [INFO]   Silver 正例三元组数: 43
+2026-04-14 23:07:40,108 [INFO] 合并三元组（Infobox > Silver > REBEL）...
+2026-04-14 23:07:40,113 [INFO] 合并完成: 170 条 -> output/graphs/relation_triples.jsonl
+2026-04-14 23:07:40,113 [INFO] 耗时: 43.8s
+2026-04-14 23:07:40,113 [INFO] 三元组 provenance 分布:
+2026-04-14 23:07:40,113 [INFO]   rebel: 125
+2026-04-14 23:07:40,114 [INFO]   silver: 25
+2026-04-14 23:07:40,114 [INFO]   infobox: 21
+2026-04-14 23:07:40,114 [INFO] Top-10 关系类型:
+2026-04-14 23:07:40,114 [INFO]   authored_by: 15
+2026-04-14 23:07:40,114 [INFO]   part of: 10
+2026-04-14 23:07:40,115 [INFO]   notable work: 9
+2026-04-14 23:07:40,115 [INFO]   subject: 8
+2026-04-14 23:07:40,115 [INFO]   publication_date: 7
+2026-04-14 23:07:40,115 [INFO]   employer: 7
+2026-04-14 23:07:40,115 [INFO]   located in the administrative territorial entity: 7
+2026-04-14 23:07:40,116 [INFO]   birth_place: 6
+2026-04-14 23:07:40,116 [INFO]   point in time: 6
+2026-04-14 23:07:40,116 [INFO]   country: 6

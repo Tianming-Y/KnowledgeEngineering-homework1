@@ -1,0 +1,27 @@
+# Infobox key -> canonical relation name mapping
+# Keys are normalized (lowercased, spaces/nbsp replaced with _)
+
+alma_mater: educated_at
+born: birth_place
+died: death_place
+cause_of_death: cause_of_death
+known_for: known_for
+awards: award_received
+fields: field_of_work
+institutions: worked_at
+thesis: authored
+doctoral_advisor: doctoral_advisor
+doctoral_students: doctoral_student
+
+# Book-related
+author: authored_by
+language: language
+subject: subject
+genre: genre
+published: publication_date
+publication_place: publication_place
+
+# Journal/conference
+abbreviation: abbreviation
+discipline: discipline
+publisher: published_by

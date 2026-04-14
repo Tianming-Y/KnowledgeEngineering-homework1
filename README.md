@@ -28,54 +28,51 @@ KG-Turing/
 ├── README.md                        # 项目说明文档（本文件）
 ├── requirements.txt                 # Python 依赖清单
 ├── config/
+│   ├── relation_mapping.yaml        # Infobox → 关系映射
 │   └── settings.yaml                # 全局配置（爬取范围、模型参数等）
-│
+├── scripts/
+│   ├── fix_entities_json_to_jsonl.py
+│   └── run_pipeline.py              # 一键运行流水线脚本
+├── lib/                             # 前端/第三方静态资源与绑定（部分）
 ├── src/                             # 源代码主目录
 │   ├── __init__.py
-│   │
-│   ├── data_extraction/             #   模块 1：数据采集
+│   ├── data_extraction/             # 模块 1：数据采集
 │   │   ├── __init__.py
-│   │   ├── wiki_crawler.py          #    Wikipedia 页面爬取（多跳 BFS）
-│   │   ├── wiki_parser.py           #    HTML / Infobox / 段落解析
-│   │   ├── data_cleaner.py          #    文本清洗与去噪
-│   │   └── run_extraction.py        #    数据采集全流程运行脚本
-│   │
-│   ├── ner/                         #   模块 2：实体识别与消歧
+│   │   ├── wiki_crawler.py
+│   │   ├── wiki_parser.py
+│   │   ├── data_cleaner.py
+│   │   └── run_extraction.py
+│   ├── ner/                         # 模块 2：实体识别与消歧
 │   │   ├── __init__.py
-│   │   ├── ner_pipeline.py          #    NER 主流程（使用 spaCy）
-│   │   ├── spacy_ner.py             #    spaCy 预训练 / 简易预测接口
-│   │   ├── entity_linker.py         #    实体消歧（Wikidata 候选检索 + 可选向量排序）
-│   │   └── batch_process.py         #    批量处理脚本：批量 NER/EL、合并为 JSONL、进度显示
-│   │
-│   ├── relation_extraction/         #   模块 3：关系抽取（待完善）
+│   │   ├── spacy_ner.py
+│   │   ├── ner_pipeline.py
+│   │   ├── entity_linker.py
+│   │   └── batch_process.py
+│   ├── relation_extraction/         # 模块 3：关系抽取
 │   │   ├── __init__.py
-│   │   └── ...
-│   │
-│   ├── kg_construction/             #   模块 4：知识图谱构建与存储（待完善）
+│   │   ├── extract_infobox_triples.py
+│   │   ├── generate_candidates.py
+│   │   ├── build_silver_labels.py
+│   │   ├── rebel_extract.py
+│   │   ├── merge_triples.py
+│   │   └── apply_aliases.py         # 别名替换（最小化去重）
+│   ├── kg_construction/             # 模块 4：知识图谱构建与存储
 │   │   ├── __init__.py
-│   │   └── ...
-│   │
-│   ├── visualization/               #   模块 5：图谱可视化（待完善）
+│   │   └── build_graph.py
+│   ├── visualization/               # 模块 5：图谱可视化
 │   │   ├── __init__.py
-│   │   └── ...
-│   │
-│   └── query/                       #   模块 6：图谱查询（待完善）
-│       ├── __init__.py
-│       └── ...
-│
+│   │   └── visualize.py
+│   └── (其他模块/占位)
 ├── data/
 │   ├── raw/                         # 爬取的原始数据（HTML / JSON）
 │   └── processed/                   # 清洗后的结构化文本
-│
 ├── output/                          # 运行输出
-│   ├── entities/                    #    NER 识别结果
-│   ├── graphs/                      #    图谱数据文件
-│   └── visualizations/              #    可视化图片
-│
+│   ├── entities_all.jsonl           # 合并后的 NER 识别结果（单文件）
+│   ├── graphs/                      # 图谱数据文件
+│   └── visualizations/              # 可视化图片
 └── tests/                           # 单元测试
-    ├── test_crawler.py
-    ├── test_ner.py
-    └── ...
+  ├── test_ner.py
+  └── ...
 ```
 
 ---
@@ -277,31 +274,232 @@ python src/ner/batch_process.py --link True
 
 ---
 
-### 3.3 关系抽取（Relation Extraction）— *待完善*
+### 3.3 关系抽取（Relation Extraction）— 已实现
 
-计划从文本中抽取实体间的语义关系，形成 `(头实体, 关系, 尾实体)` 三元组。初步考虑：
-- **基于依存句法的规则模板**：利用 spaCy 依存树提取常见句式（如 "X was born in Y"、"X proposed Y"）。
-- **预训练关系抽取模型**：如基于 BERT 的关系分类器，对候选实体对进行关系预测。
-- **Wikidata 远程监督**：利用 Wikidata 已有三元组作为弱标注，自动构造训练数据。
+实现文件：
 
-具体技术方案将在课程关系抽取章节后确定。
+| 脚本                                                 | 功能                                                 |
+| ---------------------------------------------------- | ---------------------------------------------------- |
+| `src/relation_extraction/extract_infobox_triples.py` | Infobox 结构化三元组抽取                             |
+| `src/relation_extraction/generate_candidates.py`     | 候选实体对生成                                       |
+| `src/relation_extraction/build_silver_labels.py`     | 远程监督银标构建                                     |
+| `src/relation_extraction/rebel_extract.py`           | REBEL 模型三元组抽取与候选对对齐                     |
+| `src/relation_extraction/merge_triples.py`           | 谓词归一化与多来源三元组合并                         |
+| `src/relation_extraction/apply_aliases.py`           | 别名替换（最小化去重，例："Turing" → "Alan Turing"） |
+
+#### 3.3.1 目标
+
+从文本中抽取实体间的语义关系，形成 `(head, relation, tail)` 三元组。采用"Infobox 高精度 + 远程监督银标 + REBEL 模型扩展"的多来源融合策略，兼顾精度与覆盖率。
+
+#### 3.3.2 技术选型
+
+| 组件         | 技术                                              | 说明                                                                            |
+| ------------ | ------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Infobox 抽取 | 规则映射                                          | 通过 `config/relation_mapping.yaml` 将 Infobox 键值对映射为标准关系，置信度 1.0 |
+| 候选对生成   | 句内实体组合                                      | 对每个句子内的 NER 实体生成有序对，排除自身配对、双 DATE 和低价值类型           |
+| 远程监督     | Distant Supervision                               | 用 Infobox 三元组匹配候选对，构建银标训练数据                                   |
+| 文本抽取     | `REBEL` (Babelscape/rebel-large)                  | 预训练 Seq2Seq 模型，对候选句进行端到端三元组抽取                               |
+| 谓词归一化   | 字面映射 + `sentence-transformers` embedding 比对 | 将 REBEL 自由谓词文本映射到预定义关系标签                                       |
+| 合并         | 多来源去重合并                                    | 按优先级 Infobox > Silver > REBEL 合并，保留 `provenance` 与 `confidence`       |
+
+#### 3.3.3 抽取流程
+
+```
+entities_all.jsonl + data/processed/*.json
+        │
+        ▼
+┌────────────────────────────────────┐
+│  extract_infobox_triples.py       │
+│  ① 解析 Infobox 键值对            │
+│  ② 按 relation_mapping.yaml 映射  │
+│  ③ 输出 infobox_triples.jsonl     │
+│     (confidence=1.0)              │
+└────────────────────────────────────┘
+        │
+        ▼
+┌────────────────────────────────────┐
+│  generate_candidates.py           │
+│  ① 按句内实体生成有序对            │
+│  ② 过滤自身配对/双 DATE/低价值类型 │
+│  ③ 每句最多 10 对                  │
+│  ④ 输出 candidates.jsonl          │
+└────────────────────────────────────┘
+        │
+        ├──────────────────────────┐
+        ▼                          ▼
+┌──────────────────────┐  ┌──────────────────────────────┐
+│  build_silver_labels │  │  rebel_extract.py            │
+│  远程监督匹配 Infobox │  │  ① 去重获取唯一句子列表       │
+│  → silver.jsonl      │  │  ② 加载 REBEL checkpoint     │
+└──────────────────────┘  │  ③ GPU fp16 批量推理 + tqdm  │
+        │                  │  ④ 解析 REBEL 输出三元组      │
+        │                  │  ⑤ 与候选对对齐（精确/子串）  │
+        │                  │  ⑥ 替换为 NER/EL 实体信息     │
+        │                  │  → rebel_triples.jsonl       │
+        │                  └──────────────────────────────┘
+        │                          │
+        ▼                          ▼
+┌──────────────────────────────────────────────┐
+│  merge_triples.py                            │
+│  ① 谓词归一化（字面映射 + embedding 相似度）   │
+│  ② 合并三来源（Infobox > Silver > REBEL）     │
+│  ③ 按 (head, relation, tail) 去重             │
+│  ④ 输出 relation_triples.jsonl               │
+└──────────────────────────────────────────────┘
+```
+
+#### 3.3.7 别名替换（最小化去重）
+
+为保证合并后图谱中常见的人名提及不产生重复节点，项目在合并三元组后增加了一个最小化的别名替换步骤（Step 5.5）。当前实现针对常见表面形式进行了硬编码映射，目的是尽量以最小改动满足教学与可复现性的需求。
+
+- **实现位置**：`src/relation_extraction/apply_aliases.py`（提供函数调用与 CLI）。
+- **目的**：对 `output/graphs/relation_triples.jsonl` 中的 `head` / `tail` 文本应用别名映射（例如将 `Turing`、`Turing, A.` 等变体替换为 `Alan Turing`），并输出为 `output/graphs/relation_triples_aliased.jsonl`。
+- **使用示例**：
+```bash
+python src/relation_extraction/apply_aliases.py \
+  --in output/graphs/relation_triples.jsonl \
+  --out output/graphs/relation_triples_aliased.jsonl \
+  --backup
+```
+  - 当传入 `--backup` 时，会把原始 `relation_triples.jsonl` 另存为 `relation_triples.jsonl.bak`。
+- **流水线集成**：`scripts/run_pipeline.py` 已在合并步骤后（Step 5.5）调用该脚本，生成的 `relation_triples_aliased.jsonl` 会被后续的图谱构建步骤使用。
+- **注意**：当前别名映射为硬编码（最小化变更）；生产环境建议外部化映射文件（YAML/CSV），或使用 Wikidata QID 做严格的标准化/合并策略。
+
+
+#### 3.3.4 关键设计
+
+- **Infobox 优先**：来自 Infobox 的三元组置信度设为 1.0，在合并时具有最高优先级，保证高精度结构化知识直接入库。
+- **REBEL 端到端抽取**：REBEL 模型以句子为输入，直接生成 `<triplet> subject <subj> object <obj> predicate` 格式文本，无需额外训练即可覆盖 Infobox 未涵盖的关系类型。
+- **候选对对齐**：REBEL 输出的实体文本与候选对（来自 NER）做精确匹配或归一化子串匹配，匹配成功后将实体替换为 NER/EL 中的标准 mention 并附上 `wikidata_qid`，确保与上游实体识别结果一致。
+- **谓词映射两阶段**：
+  1. 字面映射：直接在 `config/relation_mapping.yaml` 中查找；
+  2. Embedding 相似度映射：使用 `sentence-transformers/all-MiniLM-L6-v2` 计算 REBEL 谓词与预定义关系标签的余弦相似度，`≥ 0.65` 接受映射、`[0.55, 0.65)` 区间导出为模糊谓词供人工审查、`< 0.55` 保留原谓词文本。
+- **OOM 自动降级**：REBEL 推理若遇显存不足，自动将 `batch_size` 减半（最多尝试 3 次），并在日志中记录降级理由。
+- **审计与质检**：
+  - 全程记录日志到 `output/logs/rebel_run.log`（环境信息、模型 checkpoint、batch size、fp16 启用与否、推理用时）；
+  - 对 REBEL 输出抽样 50 条检查对齐质量，记录到 `output/logs/rebel_sample_qc.jsonl`；
+  - 模糊谓词（相似度 `[0.55, 0.65)`）导出到 `output/logs/rebel_ambiguous_predicates.jsonl`。
+
+#### 3.3.5 输出格式
+
+`output/graphs/relation_triples.jsonl`（合并后的最终三元组，每行一条 JSON）：
+
+```json
+{
+  "head": "Alan Turing",
+  "head_qid": "Q7251",
+  "relation": "educated_at",
+  "tail": "King's College, Cambridge",
+  "tail_qid": "Q5025572",
+  "confidence": 1.0,
+  "provenance": "infobox",
+  "doc_ids": ["Alan Turing.json"],
+  "sentence": "Alma mater: King's College, Cambridge"
+}
+```
+
+#### 3.3.6 运行结果概况（前 5 篇文档）
+
+| 指标               | 数值                            |
+| ------------------ | ------------------------------- |
+| 候选对总数         | 1,157                           |
+| Infobox 三元组     | 21                              |
+| Silver 正例三元组  | 43                              |
+| REBEL 原始三元组   | 363                             |
+| REBEL 对齐后三元组 | 143                             |
+| REBEL 去重后三元组 | 126                             |
+| 合并后最终三元组   | 173                             |
+| REBEL 推理用时     | ≈ 37s (RTX 3050, fp16, batch=8) |
+
+合并后三元组 provenance 分布：Infobox 21 条、Silver 27 条、REBEL 125 条。Top-10 关系类型：`authored_by` (16)、`part of` (10)、`notable work` (9)、`subject` (8)、`publication_date` (7)、`employer` (7)、`located in the administrative territorial entity` (7)、`birth_place` (6)、`point in time` (6)、`country` (6)。
+
+示例命令：
+
+```bash
+conda activate KG-Turing
+
+# 一键运行完整关系抽取 + 图谱构建 + 可视化流程
+python scripts/run_pipeline.py
+
+# 或分步执行：
+# 1. Infobox 三元组
+python src/relation_extraction/extract_infobox_triples.py \
+  --docs data/processed --mapping config/relation_mapping.yaml \
+  --out output/graphs/infobox_triples.jsonl
+
+# 2. 候选对生成
+python src/relation_extraction/generate_candidates.py \
+  --entities output/entities_all.jsonl --docs data/processed \
+  --out data/relation/candidates.jsonl
+
+# 3. 银标构建
+python src/relation_extraction/build_silver_labels.py \
+  --candidates data/relation/candidates.jsonl \
+  --infobox output/graphs/infobox_triples.jsonl \
+  --out data/relation/silver.jsonl
+
+# 4. REBEL 抽取
+python src/relation_extraction/rebel_extract.py \
+  --candidates data/relation/candidates.jsonl \
+  --out output/graphs/rebel_triples.jsonl \
+  --model-name Babelscape/rebel-large --batch-size 8
+
+# 5. 谓词归一化 & 合并
+python src/relation_extraction/merge_triples.py \
+  --rebel output/graphs/rebel_triples.jsonl \
+  --infobox output/graphs/infobox_triples.jsonl \
+  --silver data/relation/silver.jsonl \
+  --mapping config/relation_mapping.yaml \
+  --out output/graphs/relation_triples.jsonl
+```
 
 ---
 
-### 3.4 知识图谱构建与存储（KG Construction）— *待完善*
+### 3.4 知识图谱构建与存储（KG Construction）— 已实现
 
-计划使用 **NetworkX** 在内存中构建有向知识图谱，后续可迁移至图数据库（如 Neo4j）。
-- 节点属性：`label`、`type`、`wikidata_qid`、`description`。
-- 边属性：`relation`、`confidence`、`source_sentence`。
-- 支持从三元组 JSON 文件批量加载、增量合并、冲突检测。
+实现文件：`src/kg_construction/build_graph.py`
+
+要点：
+- 使用 `networkx.DiGraph` 在内存中构建有向知识图谱，输入为关系三元组 JSONL（`output/graphs/relation_triples.jsonl`）。
+- 节点属性包含：`label`、`type`、`wikidata_qid`、`description`（若提供则从 `output/entities_all.jsonl` 中加载补全）；默认类型为 `UNKNOWN`。
+- 边属性包含：`relation`、`confidence`、`sentence`、`doc`、`provenance`。构建时若遇到相同 `(head, tail, relation)` 的边，会保留置信度更高的一条。
+- 提供图谱统计打印（节点数、边数、节点类型分布、关系分布、度数最高节点前 10 名），便于快速评估数据质量。
+- 输出多种持久化格式以便下游使用：
+  - GraphML（保留所有属性）: `output/graphs/knowledge_graph.graphml`
+  - GEXF（Gephi 兼容）: `output/graphs/knowledge_graph.gexf`
+  - JSON（节点+边列表）: `output/graphs/knowledge_graph.json`
+
+示例命令：
+```bash
+python src/kg_construction/build_graph.py \
+  --triples output/graphs/relation_triples.jsonl \
+  --entities output/entities_all.jsonl \
+  --output-dir output/graphs
+```
 
 ---
 
-### 3.5 可视化（Visualization）— *待完善*
+### 3.5 可视化（Visualization）— 已实现
 
-- **静态可视化**：NetworkX + Matplotlib，按实体类型着色，输出 PNG 图片。
-- **交互式可视化**：计划引入 `pyvis` 或 `D3.js`，支持节点拖拽、过滤、搜索。
-- **子图视图**：Ego 子图（以某节点为中心）、类型子图（仅展示特定类型节点）。
+实现文件：`src/visualization/visualize.py`
+
+已实现功能：
+- **静态可视化（Matplotlib）**：使用 `networkx` 的 `spring_layout` 布局，按实体类型着色（见 `TYPE_COLORS` 映射），节点大小按度数缩放；仅对度数较高的节点显示标签，边标签数量有限时显示关系标签，最终保存为 PNG（`output/visualizations/full_graph.png`）。
+- **交互式可视化（pyvis）**：生成 HTML（`output/visualizations/full_graph.html`），包含节点 tooltip（显示 QID、描述、度数），支持节点拖拽、悬停提示与物理仿真布局，边宽按置信度加权。
+- **Ego 子图**：按指定中心节点（默认 `Alan Turing`）和 radius（默认 2）同时生成静态 PNG 与交互式 HTML（文件名 `ego_{center}.png` / `.html`），便于聚焦某一实体的局部网络。
+
+主要实现细节：
+- Matplotlib 使用无头后端 `Agg` 以便在服务器/CI 环境生成图片。
+- pyvis 配置了物理引擎参数（forceAtlas2Based）以改善布局收敛性，并为每个节点构建富文本 tooltip（包含 `wikidata_qid`、`description` 与 degree）。
+
+示例命令：
+```bash
+python src/visualization/visualize.py \
+  --graph output/graphs/knowledge_graph.json \
+  --output-dir output/visualizations \
+  --ego-center "Alan Turing" \
+  --ego-radius 2
+```
 
 ---
 
@@ -316,22 +514,45 @@ python src/ner/batch_process.py --link True
 
 ## 四、环境要求
 
-- **Python** 3.10
-- **Conda** 环境名：`KG-Turing`
+- **Python**: 推荐 3.10.x（在本环境中测试为 3.10.20）。
+- **Conda 环境**: 建议使用名为 `KG-Turing` 的虚拟环境以便复现。
+
+安装与验证（推荐顺序）：
 
 ```bash
-# 创建并激活环境
+# 1) 创建并激活 Conda 环境
 conda create -n KG-Turing python=3.10 -y
 conda activate KG-Turing
 
-# 安装依赖
+# 2) PyTorch（必须/按是否有 GPU 选择）
+#  - 无 GPU（CPU-only）示例：
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#  - 有 NVIDIA GPU：请按你的 CUDA 版本从 https://pytorch.org/ 获取对应命令。
+#    示例（CUDA 11.8）：
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# 3) Transformers + 加速器（REBEL 依赖 transformers）
+pip install transformers accelerate
+
+# 4) 其它 Python 依赖（在安装好 torch/transformers 之后）
 pip install -r requirements.txt
 
-# 下载 spaCy 英文模型
+# 5) spaCy 英文模型
 python -m spacy download en_core_web_sm
-# （可选）下载 Transformer 模型以获得更好的 NER 效果
+# （可选）若使用 transformer-backed spaCy 模型：
 # python -m spacy download en_core_web_trf
 ```
+
+快速环境验证：
+
+```bash
+python -c "import sys, torch; print('Python', sys.version.split()[0]); print('torch', torch.__version__); print('CUDA available:', torch.cuda.is_available())"
+```
+
+注意：
+- REBEL/transformers 会在首次运行时自动下载模型文件，确保有足够的磁盘空间和网络带宽。
+- 若使用 GPU，请先安装合适的 NVIDIA 驱动与 CUDA 运行时，并根据系统选择与 `torch` 兼容的 CUDA 版本。
+- 在 Windows 上安装部分底层依赖可能需要 Microsoft Visual C++ Redistributable / Build Tools。
 
 ---
 
@@ -347,6 +568,8 @@ python -m spacy download en_core_web_sm
 | `matplotlib`                    | 静态图谱可视化             |
 | `pyyaml`                        | 配置文件解析               |
 | `sentence-transformers`（可选） | 实体消歧上下文相似度计算   |
+| `transformers`                  | REBEL 模型与序列到序列推理 |
+| `accelerate`                    | 模型加速与分布式推理支持   |
 | `tqdm`                          | 控制台进度条、批处理可视化 |
 
 ---
@@ -357,9 +580,10 @@ python -m spacy download en_core_web_sm
 | ------- | -------------- | -------- |
 | Phase 1 | 数据采集       | ✅ 已完成 |
 | Phase 2 | 实体识别与消歧 | ✅ 已完成 |
-| Phase 3 | 关系抽取       | ⬜ 待开始 |
-| Phase 4 | 知识图谱构建   | ⬜ 待开始 |
-| Phase 5 | 可视化 & 查询  | ⬜ 待开始 |
+| Phase 3 | 关系抽取       | ✅ 已完成 |
+| Phase 4 | 知识图谱构建   | ✅ 已完成 |
+| Phase 5 | 可视化         | ✅ 已完成 |
+| Phase 6 | 查询           | ❌ 未完成 |
 
 ---
 
