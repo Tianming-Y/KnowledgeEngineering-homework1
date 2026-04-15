@@ -164,7 +164,7 @@ def run_rebel_inference(
     tokenizer,
     model,
     device: torch.device,
-    batch_size: int = 8,
+    batch_size: int = 4,
     use_fp16: bool = True,
 ) -> dict[str, list[dict]]:
     """

@@ -2,7 +2,7 @@
 
 用法示例：
   python src/ner/batch_process.py --link False
-  python src/ner/batch_process.py --link True --max-docs 5
+  python src/ner/batch_process.py --link True --max-docs 5 --model en_core_web_trf
 
 默认会从 `config/settings.yaml` 读取 `paths.processed_data`，若不存在则使用 `data/processed`。
 """
@@ -28,7 +28,8 @@ if _PROJECT_ROOT not in sys.path:
 from src.ner import load_model
 from src.ner.ner_pipeline import process_text
 from src.ner.spacy_ner import predict
-from src.ner.entity_linker import link_mentions
+from src.ner.entity_linker import link_mentions, search_wikidata
+import logging
 
 
 def extract_text_from_doc(doc: dict) -> str:
@@ -109,6 +110,13 @@ def process_all(
         files = files[:max_docs]
 
     nlp = load_model(model_name)
+    # logger for more detailed status output
+    logger = logging.getLogger("batch_process")
+    if not logger.handlers:
+        h = logging.StreamHandler()
+        h.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
+        logger.addHandler(h)
+    logger.setLevel(logging.INFO)
     start_time = time.time()
     processed = 0
     skipped = 0
@@ -120,7 +128,9 @@ def process_all(
         with tqdm(total=total_files, unit="file", desc="Processing", ncols=100) as pbar:
             for idx, fp in enumerate(files, start=1):
                 name = os.path.basename(fp)
-                pbar.set_description(f"Processing {idx}/{total_files}: {name}")
+                pbar.set_description(
+                    f"Processing {idx}/{total_files}: {name} (link={'ON' if link else 'OFF'})"
+                )
                 try:
                     with open(fp, "r", encoding="utf-8") as fh:
                         doc = json.load(fh)
@@ -131,10 +141,29 @@ def process_all(
                     continue
 
                 text = extract_text_from_doc(doc)
+                logger.info(f"Start processing document: {name}")
+                logger.debug(f"  Extracted text length: {len(text)}")
+                doc_start = time.time()
+
                 # Run NER first so we know entity count for streaming display
+                pbar.write(f"  - Step: NER (running spaCy model: {model_name})")
                 ents = predict(text, nlp=nlp)
                 ent_count = len(ents)
-                # Define on_link callback to stream per-entity status
+                pbar.write(f"  - NER done: {ent_count} entities detected")
+
+                # prepare entity-level progress display
+                entity_pbar = None
+                if link and ent_count:
+                    entity_pbar = tqdm(
+                        total=ent_count,
+                        unit="ent",
+                        desc=f"Linking {name}",
+                        ncols=80,
+                        leave=False,
+                        position=1,
+                    )
+
+                # Define on_link callback to stream per-entity status and update inner progress
                 linked_count_acc = {"v": 0}
 
                 def _on_link(out):
@@ -150,17 +179,76 @@ def process_all(
                         cand_count = len(out.get("link_candidates") or [])
                     qid = out.get("wikidata_qid")
                     conf = out.get("link_confidence")
-                    pbar.write(
-                        f"  - Entity {i}/{ent_count}: '{mention}' [{s}:{t}] candidates={cand_count} used_embedding={used_emb} qid={qid} confidence={conf}"
-                    )
+                    # try to show top candidate label when available
+                    top_label = None
+                    cands = out.get("link_candidates") or []
+                    if cands:
+                        try:
+                            top_label = cands[0].get("label")
+                        except Exception:
+                            top_label = None
+
+                    # update inner progress bar if present
+                    if entity_pbar is not None:
+                        try:
+                            entity_pbar.update(1)
+                            # keep postfix concise
+                            pf = {
+                                "i": f"{i}/{ent_count}",
+                                "qid": qid or "-",
+                                "conf": f"{(conf or 0):.2f}",
+                            }
+                            entity_pbar.set_postfix(pf)
+                        except Exception:
+                            pass
+
+                    # always write a short line for visibility; full verbose only when requested
+                    if link_verbose:
+                        pbar.write(
+                            f"    - Entity {i}/{ent_count}: '{mention}' [{s}:{t}] candidates={cand_count} top_candidate={top_label} qid={qid} confidence={conf} used_embedding={used_emb}"
+                        )
 
                 if link:
-                    linked_ents = link_mentions(
-                        ents,
-                        text,
-                        top_k=top_k,
-                        verbose=link_verbose,
-                        on_link=_on_link if link_verbose else None,
+                    # Before linking, perform a quick connectivity check to Wikidata API
+                    try:
+                        test_res = search_wikidata("Alan Turing", limit=1)
+                        reachable = bool(test_res)
+                        if reachable:
+                            pbar.write(
+                                f"  - Wikidata API check: reachable (sample: {test_res[0].get('label')} / {test_res[0].get('id')})"
+                            )
+                        else:
+                            pbar.write(
+                                "  - Wikidata API check: reachable but returned no results for 'Alan Turing' (possible rate-limit or API change)"
+                            )
+                    except Exception as e:
+                        pbar.write(
+                            f"  - Wikidata API check failed: {type(e).__name__}: {str(e)[:200]}"
+                        )
+
+                    pbar.write("  - Step: Linking (Wikidata) ..")
+                    try:
+                        linked_ents = link_mentions(
+                            ents,
+                            text,
+                            top_k=top_k,
+                            verbose=link_verbose,
+                            on_link=_on_link,
+                        )
+                    except Exception as e:
+                        # Defensive: link_mentions should normally not raise, but capture any runtime error
+                        pbar.write(
+                            f"  - Linking failed for document {name}: {type(e).__name__}: {str(e)[:200]}"
+                        )
+                        linked_ents = ents
+                    finally:
+                        if entity_pbar is not None:
+                            try:
+                                entity_pbar.close()
+                            except Exception:
+                                pass
+                    pbar.write(
+                        f"  - Linking step finished: processed {linked_count_acc['v']} mentions"
                     )
                 else:
                     linked_ents = ents

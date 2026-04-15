@@ -79,7 +79,7 @@ def main():
         "--candidates data/relation/candidates.jsonl "
         "--out output/graphs/rebel_triples.jsonl "
         "--model-name Babelscape/rebel-large "
-        "--batch-size 8 "
+        "--batch-size 4 "
         "--log output/logs/rebel_run.log "
         f"--doc-ids {doc_list_arg}",
         "Step 4: REBEL 三元组抽取",
