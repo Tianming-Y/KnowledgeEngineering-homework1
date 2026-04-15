@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2026-04-14">
+  <meta lastmodifieddate="2026-04-15">
     <creator>NetworkX 3.4.2</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
@@ -19,9 +19,9 @@
     <nodes>
       <node id="Alan Turing Year" label="Alan Turing Year">
         <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q4707947" />
-          <attvalue for="2" value="international observance" />
+          <attvalue for="0" value="EVENT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="ATY" label="ATY">
@@ -48,8 +48,8 @@
       <node id="Alan Turing" label="Alan Turing">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q7251" />
-          <attvalue for="2" value="English computer scientist (1912–1954)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Maida Vale , London, England" label="Maida Vale , London, England">
@@ -83,8 +83,8 @@
       <node id="Princeton University" label="Princeton University">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q1708210" />
-          <attvalue for="2" value="independent publisher with close connections to Princeton University" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction &quot; The Chemical Basis of Morphogenesis &quot; Turing paradox" label="Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction &quot; The Chemical Basis of Morphogenesis &quot; Turing paradox">
@@ -117,16 +117,16 @@
       </node>
       <node id="Systems of Logic Based on Ordinals" label="Systems of Logic Based on Ordinals">
         <attvalues>
-          <attvalue for="0" value="UNKNOWN" />
+          <attvalue for="0" value="WORK_OF_ART" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Alonzo Church" label="Alonzo Church">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q92741" />
-          <attvalue for="2" value="American mathematician and logician (1903–1995)" />
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Robin Gandy Beatrice Worsley" label="Robin Gandy Beatrice Worsley">
@@ -146,15 +146,15 @@
       <node id="Andrew Hodges" label="Andrew Hodges">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q450154" />
-          <attvalue for="2" value="mathematician and popular science author" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="English" label="English">
         <attvalues>
-          <attvalue for="0" value="LANGUAGE" />
-          <attvalue for="1" value="Q328" />
-          <attvalue for="2" value="English-language edition of Wikipedia" />
+          <attvalue for="0" value="NORP" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Biography" label="Biography">
@@ -178,9 +178,23 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="The Alan Turing Year, 2012" label="The Alan Turing Year, 2012">
+      <node id="The Alan Turing Year" label="The Alan Turing Year">
         <attvalues>
-          <attvalue for="0" value="WORK_OF_ART" />
+          <attvalue for="0" value="EVENT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="the Alan Turing Law" label="the Alan Turing Law">
+        <attvalues>
+          <attvalue for="0" value="LAW" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="England" label="England">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -188,69 +202,83 @@
       <node id="London" label="London">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q84" />
-          <attvalue for="2" value="capital and largest city of England and the United Kingdom" />
-        </attvalues>
-      </node>
-      <node id="England" label="England">
-        <attvalues>
-          <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q179876" />
-          <attvalue for="2" value="historic kingdom on the British Isles (927–1649; 1660–1707)" />
-        </attvalues>
-      </node>
-      <node id="the United Kingdom" label="the United Kingdom">
-        <attvalues>
-          <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q174193" />
-          <attvalue for="2" value="historical sovereign state (1801–1922)" />
-        </attvalues>
-      </node>
-      <node id="Cambridge" label="Cambridge">
-        <attvalues>
-          <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q35794" />
-          <attvalue for="2" value="collegiate public research university in Cambridge, England, United Kingdom" />
-        </attvalues>
-      </node>
-      <node id="Church" label="Church">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q34651" />
-          <attvalue for="2" value="ecclesiological term" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Enigma" label="Enigma">
         <attvalues>
           <attvalue for="0" value="PRODUCT" />
-          <attvalue for="1" value="Q18416439" />
-          <attvalue for="2" value="musical group" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="The Chemical Basis of Morphogenesis" label="The Chemical Basis of Morphogenesis">
+      <node id="Manchester" label="Manchester">
         <attvalues>
-          <attvalue for="0" value="WORK_OF_ART" />
-          <attvalue for="1" value="Q769913" />
-          <attvalue for="2" value="1952 article by Alan Turing" />
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="al" label="al">
+      <node id="Maida Vale" label="Maida Vale">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="ICS" label="ICS">
+        <attvalues>
+          <attvalue for="0" value="ORG" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="the United Kingdom" label="the United Kingdom">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Cambridge" label="Cambridge">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Church" label="Church">
         <attvalues>
           <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Hodges" label="Hodges">
+      <node id="&quot; The Chemical Basis of Morphogenesis &quot;" label="&quot; The Chemical Basis of Morphogenesis &quot;">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="WORK_OF_ART" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="the Alan Turing Law" label="the Alan Turing Law">
+      <node id="Wilmslow" label="Wilmslow">
         <attvalues>
-          <attvalue for="0" value="WORK_OF_ART" />
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Hodges" label="Hodges">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="The Alan Turing" label="The Alan Turing">
+        <attvalues>
+          <attvalue for="0" value="LAW" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -258,20 +286,27 @@
       <node id="23 June 1912" label="23 June 1912">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q69259054" />
-          <attvalue for="2" value="date in Gregorian calendar" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Bolivia" label="Bolivia">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Cambridge University" label="Cambridge University">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q5025572" />
-          <attvalue for="2" value="Parliamentary constituency in the United Kingdom, 1801-1950" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="The Alan Turing Centenary Conference" label="The Alan Turing Centenary Conference">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="EVENT" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -279,15 +314,8 @@
       <node id="the University of Manchester" label="the University of Manchester">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q230899" />
-          <attvalue for="2" value="public research university in Manchester, England, United Kingdom" />
-        </attvalues>
-      </node>
-      <node id="Twitter" label="Twitter">
-        <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q918" />
-          <attvalue for="2" value="American social networking service founded in 2006" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="The Turing Year" label="The Turing Year">
@@ -300,13 +328,6 @@
       <node id="2012" label="2012">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q1489579" />
-          <attvalue for="2" value="natural number" />
-        </attvalues>
-      </node>
-      <node id="Alan Turing - His Work" label="Alan Turing - His Work">
-        <attvalues>
-          <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -314,158 +335,193 @@
       <node id="John Dermot Turing" label="John Dermot Turing">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q43075535" />
-          <attvalue for="2" value="British solicitor and author" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Bill" label="Bill">
+      <node id="the Policing and Crime Act 2017" label="the Policing and Crime Act 2017">
         <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q686822" />
-          <attvalue for="2" value="draft legal act presented in a legislature for consideration" />
+          <attvalue for="0" value="LAW" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="2015" label="2015">
+        <attvalues>
+          <attvalue for="0" value="DATE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="the Policing and Crime Bill" label="the Policing and Crime Bill">
+        <attvalues>
+          <attvalue for="0" value="LAW" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the British Government" label="the British Government">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q59641861" />
-          <attvalue for="2" value="doctoral thesis by P. Bell" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="John Leech" label="John Leech">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q750033" />
-          <attvalue for="2" value="British Liberal Democrat politician" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Manchester Withington" label="Manchester Withington">
         <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q3336781" />
-          <attvalue for="2" value="Parliamentary constituency in the United Kingdom, 1918 onwards" />
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Ed Miliband" label="Ed Miliband">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q216594" />
-          <attvalue for="2" value="British politician (born 1969)" />
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Labour Party" label="the Labour Party">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q56660525" />
-          <attvalue for="2" value="book; published in 2000 reprinted 2001" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Cameron" label="Cameron">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q24993844" />
-          <attvalue for="2" value="parish in Fife, Scotland, UK" />
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="The Conservative Party" label="The Conservative Party">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q5869155" />
-          <attvalue for="2" value="aspect of history" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Private" label="Private">
+      <node id="Policing and Crime Bill" label="Policing and Crime Bill">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q37001495" />
-          <attvalue for="2" value="family name" />
+          <attvalue for="0" value="LAW" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="October 2016" label="October 2016">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q27498044" />
-          <attvalue for="2" value="large cyberattack that affected Europe and North America in 2016" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Stonewall" label="Stonewall">
+      <node id="Sam Gyimah" label="Sam Gyimah">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q975048" />
-          <attvalue for="2" value="census-designated place in Gillespie County, Texas, United States" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="LGBT" label="LGBT">
+      <node id="Conservative" label="Conservative">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q1662673" />
-          <attvalue for="2" value="interdisciplinary academic field devoted to analysing gender identity and gendered representation" />
+          <attvalue for="0" value="NORP" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="James Chalmers" label="James Chalmers">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q101530859" />
-          <attvalue for="2" value="Est 1713 - 25 Aug 1764 Aberdeen" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the University of Glasgow" label="the University of Glasgow">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q99948563" />
-          <attvalue for="2" value="UK Statutory Instrument 1980 No. 715" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Sharkey" label="Sharkey">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Liberal" label="Liberal">
+        <attvalues>
+          <attvalue for="0" value="NORP" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Northern Ireland" label="Northern Ireland">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q7604693" />
-          <attvalue for="2" value="secondary legislation in Northern Ireland" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Scotland" label="Scotland">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q230791" />
-          <attvalue for="2" value="historic sovereign kingdom on the British Isles from the 9th century and up to 1707" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Michael Cashman" label="Michael Cashman">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q662660" />
-          <attvalue for="2" value="British politician (born 1950)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Lords" label="Lords">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q6680182" />
-          <attvalue for="2" value="1984 video game" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="28 June 2018" label="28 June 2018">
+        <attvalues>
+          <attvalue for="0" value="DATE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Matt Houlbrook" label="Matt Houlbrook">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q41555603" />
-          <attvalue for="2" value="British academic historian" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the University of Birmingham" label="the University of Birmingham">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q122684994" />
-          <attvalue for="2" value="single academy trust" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="King's College" label="King's College">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q245247" />
-          <attvalue for="2" value="public research university in London, United Kingdom" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Cypher School" label="Cypher School">
+      <node id="the Government Code and Cypher School" label="the Government Code and Cypher School">
         <attvalues>
           <attvalue for="0" value="ORG" />
           <attvalue for="1" value="" />
@@ -475,27 +531,48 @@
       <node id="Bletchley Park" label="Bletchley Park">
         <attvalues>
           <attvalue for="0" value="FAC" />
-          <attvalue for="1" value="Q155921" />
-          <attvalue for="2" value="WWII code-breaking site and British country house, and museum, United Kingdom" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Allies" label="Allies">
+        <attvalues>
+          <attvalue for="0" value="NORP" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Axis" label="Axis">
+        <attvalues>
+          <attvalue for="0" value="NORP" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="the Battle of the Atlantic" label="the Battle of the Atlantic">
+        <attvalues>
+          <attvalue for="0" value="EVENT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Automatic Computing Engine" label="the Automatic Computing Engine">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q58950012" />
-          <attvalue for="2" value="scientific article published in Nature" />
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the National Physical Laboratory" label="the National Physical Laboratory">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q60109752" />
-          <attvalue for="2" value="article published in 1932" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Max Newman's" label="Max Newman's">
+      <node id="7 June 1954" label="7 June 1954">
         <attvalues>
-          <attvalue for="0" value="PERSON" />
+          <attvalue for="0" value="DATE" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -503,55 +580,62 @@
       <node id="Gordon Brown" label="Gordon Brown">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q5584916" />
-          <attvalue for="2" value="English footballer born in 1929" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="British" label="British">
         <attvalues>
           <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="Q1973" />
-          <attvalue for="2" value="province of Canada" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="2017" label="2017">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q25052149" />
-          <attvalue for="2" value="general election held in United Kingdom" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Bank of England" label="Bank of England">
+        <attvalues>
+          <attvalue for="0" value="ORG" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="23 June 2021" label="23 June 2021">
+        <attvalues>
+          <attvalue for="0" value="DATE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="2019" label="2019">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q25274" />
-          <attvalue for="2" value="year" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="German" label="German">
         <attvalues>
           <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="Q188" />
-          <attvalue for="2" value="West Germanic language native to Central Europe" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Second World War" label="the Second World War">
         <attvalues>
           <attvalue for="0" value="EVENT" />
-          <attvalue for="1" value="Q362" />
-          <attvalue for="2" value="1939–1945 global conflict" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Nazi" label="Nazi">
         <attvalues>
           <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="Q37495593" />
-          <attvalue for="2" value="family name" />
-        </attvalues>
-      </node>
-      <node id="Max Newman 's" label="Max Newman 's">
-        <attvalues>
-          <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -559,57 +643,50 @@
       <node id="John Robert Turing" label="John Robert Turing">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q76197804" />
-          <attvalue for="2" value="(1793-1828)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Scottish" label="Scottish">
         <attvalues>
           <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="Q211113" />
-          <attvalue for="2" value="council area of Scotland" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Irish" label="Irish">
-        <attvalues>
-          <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="Q9142" />
-          <attvalue for="2" value="language native to Ireland" />
-        </attvalues>
-      </node>
-      <node id="County Tipperary" label="County Tipperary">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q184618" />
-          <attvalue for="2" value="county in Ireland" />
-        </attvalues>
-      </node>
-      <node id="County Longford" label="County Longford">
+      <node id="Julius" label="Julius">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q100558735" />
-          <attvalue for="2" value="Irish Statutory Instrument S.I. No. 6/1965" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="County Clare" label="County Clare">
+      <node id="Ethel" label="Ethel">
         <attvalues>
-          <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q106184641" />
-          <attvalue for="2" value="1831 United Kingdom of Great Britain and Ireland Act of Parliament 1 &amp; 2 Will 4 c. 27" />
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Ballsbridge" label="Ballsbridge">
+      <node id="Clyde Road" label="Clyde Road">
         <attvalues>
-          <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q104261197" />
-          <attvalue for="2" value="townland in Pembroke East, County Dublin, Ireland" />
+          <attvalue for="0" value="FAC" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Dublin" label="Dublin">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q16865980" />
-          <attvalue for="2" value="family name" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Ballsbridge" label="Ballsbridge">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Bengal Army" label="the Bengal Army">
@@ -621,93 +698,128 @@
       </node>
       <node id="British India" label="British India">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q129286" />
-          <attvalue for="2" value="British colonial rule on the Indian subcontinent (1858–1947)" />
-        </attvalues>
-      </node>
-      <node id="Dermot Turing" label="Dermot Turing">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q43075535" />
-          <attvalue for="2" value="British solicitor and author" />
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="John Ferrier Turing" label="John Ferrier Turing">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q76197853" />
-          <attvalue for="2" value="(1908-1983)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Natural Wonders" label="Natural Wonders">
+      <node id="Natural Wonders Every Child Should" label="Natural Wonders Every Child Should">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q73983266" />
-          <attvalue for="2" value="Book" />
+          <attvalue for="0" value="WORK_OF_ART" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Edwin Tenney Brewster" label="Edwin Tenney Brewster">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q60528313" />
-          <attvalue for="2" value="American physicist and popular science writer (1866–1960)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Hastings" label="Hastings">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Baston Lodge" label="Baston Lodge">
         <attvalues>
           <attvalue for="0" value="FAC" />
-          <attvalue for="1" value="Q26486888" />
-          <attvalue for="2" value="Villa in St Leonards-on-Sea, Hastings, UK" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="St Leonards" label="St Leonards">
+      <node id="St Leonards-on-Sea" label="St Leonards-on-Sea">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q5355974" />
-          <attvalue for="2" value="former state electoral district of New South Wales, Australia" />
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="23 June 2012" label="23 June 2012">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q17982261" />
-          <attvalue for="2" value="date" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Sherborne School" label="Sherborne School">
+      <node id="St Michael's" label="St Michael's">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q2278254" />
-          <attvalue for="2" value="school in Sherborne, Dorset, England, UK" />
+          <attvalue for="0" value="FAC" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Sherborne in Dorset" label="Sherborne in Dorset">
-        <attvalues>
-          <attvalue for="0" value="WORK_OF_ART" />
-          <attvalue for="1" value="Q115984240" />
-          <attvalue for="2" value="article published in 1984" />
-        </attvalues>
-      </node>
-      <node id="Christopher Collan Morcom" label="Christopher Collan Morcom">
+      <node id="Hazelhurst Preparatory School" label="Hazelhurst Preparatory School">
         <attvalues>
           <attvalue for="0" value="ORG" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="13 July 1911" label="13 July 1911">
+      <node id="Frant" label="Frant">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Sherborne School" label="Sherborne School">
+        <attvalues>
+          <attvalue for="0" value="ORG" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Sherborne" label="Sherborne">
+        <attvalues>
+          <attvalue for="0" value="GPE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="General Strike" label="General Strike">
+        <attvalues>
+          <attvalue for="0" value="EVENT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="1926" label="1926">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q69258466" />
-          <attvalue for="2" value="date in Gregorian calendar" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Christopher Collan Morcom" label="Christopher Collan Morcom">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="13 July 1911 –" label="13 July 1911 –">
+        <attvalues>
+          <attvalue for="0" value="DATE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Morcom" label="Morcom">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q16896846" />
-          <attvalue for="2" value="village in Dorset, England, UK" />
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Frances Isobel Morcom" label="Frances Isobel Morcom">
@@ -720,281 +832,239 @@
       <node id="13 February 1933" label="13 February 1933">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q69269953" />
-          <attvalue for="2" value="date in Gregorian calendar" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Trinity" label="Trinity">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q105396010" />
-          <attvalue for="2" value="given name" />
-        </attvalues>
-      </node>
-      <node id="King's" label="King's">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q245247" />
-          <attvalue for="2" value="public research university in London, United Kingdom" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Max Newman" label="Max Newman">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q707155" />
-          <attvalue for="2" value="British mathematician (1897–1984)" />
-        </attvalues>
-      </node>
-      <node id="On Computable Numbers" label="On Computable Numbers">
-        <attvalues>
-          <attvalue for="0" value="WORK_OF_ART" />
-          <attvalue for="1" value="Q20895949" />
-          <attvalue for="2" value="master's thesis by Alan Turing, 1936" />
-        </attvalues>
-      </node>
-      <node id="28 May of that year" label="28 May of that year">
-        <attvalues>
-          <attvalue for="0" value="DATE" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Kurt Gödel" label="Kurt Gödel">
+      <node id="An Unsolvable Problem of Elementary Number Theory" label="An Unsolvable Problem of Elementary Number Theory">
+        <attvalues>
+          <attvalue for="0" value="WORK_OF_ART" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Kurt Gödel 's" label="Kurt Gödel 's">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q41390" />
-          <attvalue for="2" value="Austrian-American logician, mathematician, and philosopher of mathematics (1906-1978)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="1931" label="1931">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q19241575" />
-          <attvalue for="2" value="natural number" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Entscheidungsproblem" label="Entscheidungsproblem">
+      <node id="a 'Universal Machine'" label="a 'Universal Machine'">
         <attvalues>
-          <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q818888" />
-          <attvalue for="2" value="ability to solve a problem in an effective manner" />
-        </attvalues>
-      </node>
-      <node id="David Hilbert" label="David Hilbert">
-        <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q41585" />
-          <attvalue for="2" value="German mathematician (1862–1943)" />
-        </attvalues>
-      </node>
-      <node id="Universal Machine'" label="Universal Machine'">
-        <attvalues>
-          <attvalue for="0" value="WORK_OF_ART" />
-          <attvalue for="1" value="Q2491922" />
-          <attvalue for="2" value="Polish general-purpose machine gun" />
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="John von Neumann" label="John von Neumann">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q17455" />
-          <attvalue for="2" value="Hungarian and American mathematician and physicist (1903–1957)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Briggs" label="Briggs">
+      <node id="Asa Briggs" label="Asa Briggs">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q530161" />
-          <attvalue for="2" value="Irish paleontologist (born 1950)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Bletchley and Turing's" label="Bletchley and Turing's">
+      <node id="Bletchley" label="Bletchley">
         <attvalues>
           <attvalue for="0" value="ORG" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Nazi Germany" label="Nazi Germany">
+      <node id="the Polish Cipher Bureau" label="the Polish Cipher Bureau">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q7319" />
-          <attvalue for="2" value="Germany in the time of National Socialism" />
-        </attvalues>
-      </node>
-      <node id="Polish" label="Polish">
-        <attvalues>
-          <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="Q809" />
-          <attvalue for="2" value="West Slavic language" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Warsaw" label="Warsaw">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q144488" />
-          <attvalue for="2" value="largest university in Poland" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Germany" label="Germany">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q41304" />
-          <attvalue for="2" value="Germany in the years 1918/1919–1933" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="4 September 1939" label="4 September 1939">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q69273667" />
-          <attvalue for="2" value="date in Gregorian calendar" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="GC&amp;CS" label="GC&amp;CS">
+        <attvalues>
+          <attvalue for="0" value="ORG" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="GCHQ" label="GCHQ">
+        <attvalues>
+          <attvalue for="0" value="ORG" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Prof" label="Prof">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="1948" label="1948">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="Q8403" />
-          <attvalue for="2" value="Games of the XIV Olympiad, in London, Great Britain" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="George VI" label="George VI">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q5545492" />
-          <attvalue for="2" value="English artist (1833-1893)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the British Empire" label="the British Empire">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q56491577" />
-          <attvalue for="2" value="doctoral thesis" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Winston Churchill" label="Winston Churchill">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q8016" />
-          <attvalue for="2" value="British statesman, soldier and writer (1874–1965)" />
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Milner-Barry" label="Milner-Barry">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q571435" />
-          <attvalue for="2" value="British codebreaker, civil servant, and chess player (1906–1995)" />
-        </attvalues>
-      </node>
-      <node id="Banburismus" label="Banburismus">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q4119888" />
-          <attvalue for="2" value="cryptanalytic process developed by Alan Turing during World War II" />
-        </attvalues>
-      </node>
-      <node id="Abraham Wald" label="Abraham Wald">
-        <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q240772" />
-          <attvalue for="2" value="American mathematician, statistician, and scientist (1902–1950)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="US Navy" label="US Navy">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q27713755" />
-          <attvalue for="2" value="journal" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the United States" label="the United States">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q30" />
-          <attvalue for="2" value="country located primarily in North America" />
-        </attvalues>
-      </node>
-      <node id="Hut 8" label="Hut 8">
-        <attvalues>
-          <attvalue for="0" value="FAC" />
-          <attvalue for="1" value="Q3304448" />
-          <attvalue for="2" value="section in the Government Code and Cypher School at Bletchley Park" />
-        </attvalues>
-      </node>
-      <node id="Hugh Alexander" label="Hugh Alexander">
-        <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q539878" />
-          <attvalue for="2" value="British cryptanalyst, chess player, and chess writer (1909–1974)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Alexander" label="Alexander">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q23852288" />
-          <attvalue for="2" value="article in Otto's encyclopedia" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Tommy Flowers" label="Tommy Flowers">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q954437" />
-          <attvalue for="2" value="British engineer, helped to design Colossus during World War II (1905–1998)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Colossus" label="Colossus">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q60374769" />
-          <attvalue for="2" value="1989 edition" />
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Bell Labs" label="Bell Labs">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q217365" />
-          <attvalue for="2" value="research and scientific development company" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="US" label="US">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q30" />
-          <attvalue for="2" value="country located primarily in North America" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Secret Service's" label="the Secret Service's">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q67651387" />
-          <attvalue for="2" value="item in the National Archives and Records Administration's holdings" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Radio Security Service" label="Radio Security Service">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q65244295" />
+          <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Delilah" label="Delilah">
         <attvalues>
-          <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q937827" />
-          <attvalue for="2" value="woman described in the Book of Judges" />
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="SIGSALY" label="SIGSALY">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q6120011" />
-          <attvalue for="2" value="secure speech system" />
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="First Draft of a Report" label="First Draft of a Report">
+      <node id="First Draft of a Report on the EDVAC" label="First Draft of a Report on the EDVAC">
         <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q5452926" />
-          <attvalue for="2" value="incomplete document containing the first published description of the logical design of a computer using the stored-program concept" />
+          <attvalue for="0" value="WORK_OF_ART" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Von Neumann 's" label="Von Neumann 's">
@@ -1007,27 +1077,27 @@
       <node id="the Official Secrets Act" label="the Official Secrets Act">
         <attvalues>
           <attvalue for="0" value="LAW" />
-          <attvalue for="1" value="Q99849964" />
-          <attvalue for="2" value="UK Statutory Instrument 2003 No. 1918" />
-        </attvalues>
-      </node>
-      <node id="Intelligent Machinery" label="Intelligent Machinery">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q20895966" />
-          <attvalue for="2" value="report by Alan Turing to NPL, 1948" />
-        </attvalues>
-      </node>
-      <node id="late 1947" label="late 1947">
-        <attvalues>
-          <attvalue for="0" value="DATE" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Pilot ACE" label="the Pilot ACE">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="DEUCE" label="DEUCE">
+        <attvalues>
+          <attvalue for="0" value="PRODUCT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="ACE" label="ACE">
+        <attvalues>
+          <attvalue for="0" value="PRODUCT" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -1035,8 +1105,8 @@
       <node id="Heinz Billing" label="Heinz Billing">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="Q98042" />
-          <attvalue for="2" value="German physicists (1914-2017)" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Max Planck Institute for Physics" label="the Max Planck Institute for Physics">
@@ -1046,11 +1116,18 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="CAPTCHA" label="CAPTCHA">
+      <node id="2023" label="2023">
+        <attvalues>
+          <attvalue for="0" value="DATE" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Hut 8" label="Hut 8">
         <attvalues>
           <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="Q107387231" />
-          <attvalue for="2" value="Python library" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Joan Clarke" label="Joan Clarke">
@@ -1062,14 +1139,14 @@
       </node>
       <node id="the Regal Cinema" label="the Regal Cinema">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="FAC" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Oxford Road" label="Oxford Road">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="FAC" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -1081,7 +1158,7 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Donald Maclean" label="Donald Maclean">
+      <node id="Guy Burgess" label="Guy Burgess">
         <attvalues>
           <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
@@ -1095,11 +1172,25 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
+      <node id="Donald Maclean" label="Donald Maclean">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
       <node id="UK" label="UK">
         <attvalues>
           <attvalue for="0" value="GPE" />
-          <attvalue for="1" value="Q145" />
-          <attvalue for="2" value="island country in north-west Europe" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Adlington Road" label="Adlington Road">
+        <attvalues>
+          <attvalue for="0" value="FAC" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="John" label="John">
@@ -1116,21 +1207,14 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Walt Disney" label="Walt Disney">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="" />
-          <attvalue for="2" value="" />
-        </attvalues>
-      </node>
-      <node id="Snow White" label="Snow White">
+      <node id="John Graham-Cumming" label="John Graham-Cumming">
         <attvalues>
           <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="John Graham-Cumming" label="John Graham-Cumming">
+      <node id="Christopher Chope" label="Christopher Chope">
         <attvalues>
           <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
@@ -1151,30 +1235,30 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="kitāb al-ḥisāb al-hindī" label="kitāb al-ḥisāb al-hindī">
+      <node id="Morten Tyldum" label="Morten Tyldum">
         <attvalues>
           <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Muḥammad" label="Muḥammad">
+      <node id="kitāb al-ḥisāb al-" label="kitāb al-ḥisāb al-">
+        <attvalues>
+          <attvalue for="0" value="WORK_OF_ART" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+        </attvalues>
+      </node>
+      <node id="Muḥammad ibn Mūsā al-Khwārizmī" label="Muḥammad ibn Mūsā al-Khwārizmī">
         <attvalues>
           <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="kitab al-jam'" label="kitab al-jam'">
+      <node id="Al-Khwarizmi's" label="Al-Khwarizmi's">
         <attvalues>
           <attvalue for="0" value="PERSON" />
-          <attvalue for="1" value="" />
-          <attvalue for="2" value="" />
-        </attvalues>
-      </node>
-      <node id="the Latinization of Al-Khwarizmi's" label="the Latinization of Al-Khwarizmi's">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -1188,21 +1272,21 @@
       </node>
       <node id="Geoffrey Chaucer" label="Geoffrey Chaucer">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="The Canterbury Tales" label="The Canterbury Tales">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="WORK_OF_ART" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="the Ifa Oracle" label="the Ifa Oracle">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="LAW" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -1228,20 +1312,6 @@
           <attvalue for="2" value="" />
         </attvalues>
       </node>
-      <node id="Euclidean" label="Euclidean">
-        <attvalues>
-          <attvalue for="0" value="NORP" />
-          <attvalue for="1" value="" />
-          <attvalue for="2" value="" />
-        </attvalues>
-      </node>
-      <node id="Euclid's Elements" label="Euclid's Elements">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="" />
-          <attvalue for="2" value="" />
-        </attvalues>
-      </node>
       <node id="Ada Lovelace" label="Ada Lovelace">
         <attvalues>
           <attvalue for="0" value="PERSON" />
@@ -1251,14 +1321,14 @@
       </node>
       <node id="Charles Babbage" label="Charles Babbage">
         <attvalues>
-          <attvalue for="0" value="ORG" />
+          <attvalue for="0" value="PERSON" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
       </node>
       <node id="Hollerith" label="Hollerith">
         <attvalues>
-          <attvalue for="0" value="PERSON" />
+          <attvalue for="0" value="ORG" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -1266,20 +1336,6 @@
       <node id="c. 1870s" label="c. 1870s">
         <attvalues>
           <attvalue for="0" value="DATE" />
-          <attvalue for="1" value="" />
-          <attvalue for="2" value="" />
-        </attvalues>
-      </node>
-      <node id="Böhm-Jacopini" label="Böhm-Jacopini">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
-          <attvalue for="1" value="" />
-          <attvalue for="2" value="" />
-        </attvalues>
-      </node>
-      <node id="SEQUENCE" label="SEQUENCE">
-        <attvalues>
-          <attvalue for="0" value="ORG" />
           <attvalue for="1" value="" />
           <attvalue for="2" value="" />
         </attvalues>
@@ -1313,25 +1369,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing Year" target="Alan Turing" id="3">
-        <attvalues>
-          <attvalue for="3" value="subject" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Alan Turing Year is known on Twitter as Alan Turing Years." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing Year" target="Twitter" id="4">
-        <attvalues>
-          <attvalue for="3" value="instance of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Alan Turing Year is known on Twitter as Alan Turing Years." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="Maida Vale , London, England" id="5">
+      <edge source="Alan Turing" target="Maida Vale , London, England" id="3">
         <attvalues>
           <attvalue for="3" value="birth_place" />
           <attvalue for="4" value="1.0" />
@@ -1340,7 +1378,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Wilmslow , Cheshire, England" id="6">
+      <edge source="Alan Turing" target="Wilmslow , Cheshire, England" id="4">
         <attvalues>
           <attvalue for="3" value="death_place" />
           <attvalue for="4" value="1.0" />
@@ -1349,7 +1387,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Suicide by cyanide poisoning" id="7">
+      <edge source="Alan Turing" target="Suicide by cyanide poisoning" id="5">
         <attvalues>
           <attvalue for="3" value="cause_of_death" />
           <attvalue for="4" value="1.0" />
@@ -1358,7 +1396,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="University of Cambridge" id="8">
+      <edge source="Alan Turing" target="University of Cambridge" id="6">
         <attvalues>
           <attvalue for="3" value="educated_at" />
           <attvalue for="4" value="1.0" />
@@ -1367,7 +1405,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Princeton University" id="9">
+      <edge source="Alan Turing" target="Princeton University" id="7">
         <attvalues>
           <attvalue for="3" value="educated_at" />
           <attvalue for="4" value="1.0" />
@@ -1376,7 +1414,7 @@
           <attvalue for="7" value="infobox,silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction &quot; The Chemical Basis of Morphogenesis &quot; Turing paradox" id="10">
+      <edge source="Alan Turing" target="Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction &quot; The Chemical Basis of Morphogenesis &quot; Turing paradox" id="8">
         <attvalues>
           <attvalue for="3" value="known_for" />
           <attvalue for="4" value="1.0" />
@@ -1385,7 +1423,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Smith's Prize" id="11">
+      <edge source="Alan Turing" target="Smith's Prize" id="9">
         <attvalues>
           <attvalue for="3" value="award_received" />
           <attvalue for="4" value="1.0" />
@@ -1394,7 +1432,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Logic mathematics cryptanalysis computer science mathematical and theoretical biology" id="12">
+      <edge source="Alan Turing" target="Logic mathematics cryptanalysis computer science mathematical and theoretical biology" id="10">
         <attvalues>
           <attvalue for="3" value="field_of_work" />
           <attvalue for="4" value="1.0" />
@@ -1403,7 +1441,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="University of Manchester Government Code and Cypher School National Physical Laboratory" id="13">
+      <edge source="Alan Turing" target="University of Manchester Government Code and Cypher School National Physical Laboratory" id="11">
         <attvalues>
           <attvalue for="3" value="worked_at" />
           <attvalue for="4" value="1.0" />
@@ -1412,7 +1450,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Systems of Logic Based on Ordinals" id="14">
+      <edge source="Alan Turing" target="Systems of Logic Based on Ordinals" id="12">
         <attvalues>
           <attvalue for="3" value="authored" />
           <attvalue for="4" value="1.0" />
@@ -1421,7 +1459,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Alonzo Church" id="15">
+      <edge source="Alan Turing" target="Alonzo Church" id="13">
         <attvalues>
           <attvalue for="3" value="doctoral_advisor" />
           <attvalue for="4" value="1.0" />
@@ -1430,7 +1468,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Robin Gandy Beatrice Worsley" id="16">
+      <edge source="Alan Turing" target="Robin Gandy Beatrice Worsley" id="14">
         <attvalues>
           <attvalue for="3" value="doctoral_student" />
           <attvalue for="4" value="1.0" />
@@ -1439,7 +1477,7 @@
           <attvalue for="7" value="infobox" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Alan Turing Year" id="17">
+      <edge source="Alan Turing" target="Alan Turing Year" id="15">
         <attvalues>
           <attvalue for="3" value="subject" />
           <attvalue for="4" value="0.8" />
@@ -1448,43 +1486,79 @@
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Andrew Hodges" id="18">
-        <attvalues>
-          <attvalue for="3" value="authored_by" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Barry Cooper ; Turing's biographer Andrew Hodges ; Wendy Hall , first person from outside North America elected President of the Association for Computing Machinery in July 2008; Simon Singh ; Hugh Loebner sponsor of the Loebner Prize for Artificial Intelligence (annual science contest based on the famous Turing test ) cyberneticist Kevin Warwick , author of 'March of the Machines' and 'I, Cyborg', and committee member Daniela Derbyshire, who is also handling international co-ordination of marketing and publicity." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="England" id="19">
+      <edge source="Alan Turing" target="England" id="16">
         <attvalues>
           <attvalue for="3" value="birth_place" />
           <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Born in London, Turing was raised in southern England." />
+          <attvalue for="5" value="The Turing law provisions came into force immediately in England and Wales, and on 28 June 2018 in Northern Ireland." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="the United Kingdom" id="20">
+      <edge source="Alan Turing" target="Enigma" id="17">
         <attvalues>
-          <attvalue for="3" value="publication_place" />
+          <attvalue for="3" value="known_for" />
           <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Turing's father's civil service commission was still active during Turing's childhood years, and his parents travelled between Hastings in the United Kingdom and India, leaving their two sons to stay with a retired Army couple." />
+          <attvalue for="5" value="Turing devised techniques for speeding the breaking of German ciphers, including improvements to the pre-war Polish bomba method, an electromechanical machine that could find settings for the Enigma machine." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Cambridge" id="21">
+      <edge source="Alan Turing" target="Manchester" id="18">
+        <attvalues>
+          <attvalue for="3" value="worked_at" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="Maida Vale" id="19">
+        <attvalues>
+          <attvalue for="3" value="birth_place" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Turing was born in Maida Vale , London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur , then in the Madras Presidency and presently in Odisha state, in India ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="London" id="20">
+        <attvalues>
+          <attvalue for="3" value="birth_place" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Turing was born in Maida Vale , London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur , then in the Madras Presidency and presently in Odisha state, in India ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="ICS" id="21">
+        <attvalues>
+          <attvalue for="3" value="discipline" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Turing was born in Maida Vale , London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur , then in the Madras Presidency and presently in Odisha state, in India ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="the United Kingdom" id="22">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The Alan Turing law is now an informal term for the law in the United Kingdom, contained in the Policing and Crime Act 2017 , which serves as an amnesty law to retroactively pardon men who were cautioned or convicted under historical legislation that outlawed homosexual acts." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="Cambridge" id="23">
         <attvalues>
           <attvalue for="3" value="educated_at" />
           <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="There, Turing studied the undergraduate course in Schedule B from February 1931 to November 1934 at King's College, Cambridge , where he was awarded first-class honours in mathematics." />
+          <attvalue for="5" value="After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Church" id="22">
+      <edge source="Alan Turing" target="Church" id="24">
         <attvalues>
           <attvalue for="3" value="doctoral_advisor" />
           <attvalue for="4" value="0.8" />
@@ -1493,25 +1567,7 @@
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Enigma" id="23">
-        <attvalues>
-          <attvalue for="3" value="known_for" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Within weeks of arriving at Bletchley Park, Turing had specified an electromechanical machine called the bombe , which could break Enigma more effectively than the Polish bomba kryptologiczna , from which its name was derived." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="London" id="24">
-        <attvalues>
-          <attvalue for="3" value="birth_place" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Between 1945 and 1947, Turing lived in Hampton , London, while he worked on the design of the ACE (Automatic Computing Engine) at the National Physical Laboratory (NPL) ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="The Chemical Basis of Morphogenesis" id="25">
+      <edge source="Alan Turing" target="&quot; The Chemical Basis of Morphogenesis &quot;" id="25">
         <attvalues>
           <attvalue for="3" value="known_for" />
           <attvalue for="4" value="0.8" />
@@ -1520,7 +1576,25 @@
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="the Alan Turing Law" id="26">
+      <edge source="Alan Turing" target="Andrew Hodges" id="26">
+        <attvalues>
+          <attvalue for="3" value="influenced by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="As Andrew Hodges , biographer of Turing, later wrote, &quot;This letter had an electric effect.&quot; Churchill wrote a memo to General Ismay , which read: &quot;ACTION THIS DAY." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="The Alan Turing" id="27">
+        <attvalues>
+          <attvalue for="3" value="subject" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="The Alan Turing law is now an informal term for the law in the United Kingdom, contained in the Policing and Crime Act 2017 , which serves as an amnesty law to retroactively pardon men who were cautioned or convicted under historical legislation that outlawed homosexual acts." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="the Alan Turing Law" id="28">
         <attvalues>
           <attvalue for="3" value="has effect" />
           <attvalue for="4" value="1.0" />
@@ -1529,7 +1603,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="1983" id="27">
+      <edge source="Alan Turing" target="1983" id="29">
         <attvalues>
           <attvalue for="3" value="publication_date" />
           <attvalue for="4" value="0.8" />
@@ -1538,7 +1612,16 @@
           <attvalue for="7" value="silver" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="Cambridge University" id="28">
+      <edge source="Alan Turing" target="Bolivia" id="30">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Barry Cooper&#10;The international impact of Turing's work is reflected in the list of countries in which Alan Turing Year was celebrated, including: Bolivia , Brazil , Canada , China , Czech Republic , France , Germany , Hong Kong , India , Israel , Italy , Netherlands , Mexico , New Zealand , Norway , Philippines , Portugal , Spain , Switzerland , the U.K." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="Cambridge University" id="31">
         <attvalues>
           <attvalue for="3" value="educated_at" />
           <attvalue for="4" value="1.0" />
@@ -1547,349 +1630,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Alan Turing" target="23 June 1912" id="29">
-        <attvalues>
-          <attvalue for="3" value="date of birth" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Alan Mathison Turing (; 23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="2017" id="30">
-        <attvalues>
-          <attvalue for="3" value="point in time" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The term &quot;Alan Turing law&quot; is used informally to refer to a 2017 law in the UK that retroactively pardoned men cautioned or convicted under historical legislation that outlawed homosexual acts." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="2019" id="31">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The audience vote in a 2019 BBC series named Turing the greatest scientist of the 20th century." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="Nazi" id="32">
-        <attvalues>
-          <attvalue for="3" value="notable work" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="It is fair to say we owe much to Alan Turing for the fact that we are not under Nazi rule today.&quot;" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="23 June 2012" id="33">
-        <attvalues>
-          <attvalue for="3" value="point in time" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The plaque was unveiled on 23 June 2012, the centenary of Turing's birth." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="Morcom" id="34">
-        <attvalues>
-          <attvalue for="3" value="notable work" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In a later letter, also written to Morcom's mother, Turing wrote:" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="Max Newman" id="35">
-        <attvalues>
-          <attvalue for="3" value="doctoral_student" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In mid-April 1936, Turing sent Max Newman the first draft typescript of his investigations." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="Universal Machine'" id="36">
-        <attvalues>
-          <attvalue for="3" value="subclass of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="It also included a notion of a 'Universal Machine' (now known as a universal Turing machine ), with the idea that such a machine could perform the tasks of any other computation machine (as indeed could Church's lambda calculus)." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="John von Neumann" id="37">
-        <attvalues>
-          <attvalue for="3" value="authored_by" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="John von Neumann acknowledged that the central concept of the modern computer was due to Turing's paper." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="Murray" id="38">
-        <attvalues>
-          <attvalue for="3" value="winner" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Murray told Turing that he and the burglar were acquainted, and Turing reported the crime to the police." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing" target="UK" id="39">
-        <attvalues>
-          <attvalue for="3" value="country" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Kjell intended to visit Turing in the UK but the authorities intercepted Kjell's postcard detailing his travel arrangements and were able to intercept and deport him before the two could meet." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing: The Enigma" target="Andrew Hodges" id="40">
-        <attvalues>
-          <attvalue for="3" value="authored_by" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Author: Andrew Hodges" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="infobox" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing: The Enigma" target="English" id="41">
-        <attvalues>
-          <attvalue for="3" value="language" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Language: English" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="infobox" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing: The Enigma" target="Alan Turing" id="42">
-        <attvalues>
-          <attvalue for="3" value="subject" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Subject: Alan Turing (1912–1954)" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="infobox" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing: The Enigma" target="Biography" id="43">
-        <attvalues>
-          <attvalue for="3" value="genre" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Genre: Biography" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="infobox" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing: The Enigma" target="1983" id="44">
-        <attvalues>
-          <attvalue for="3" value="publication_date" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Published: 1983 (Burnett Books/ Hutchinson , UK &amp; Simon &amp; Schuster , USA)" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="infobox" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing: The Enigma" target="United Kingdom" id="45">
-        <attvalues>
-          <attvalue for="3" value="publication_place" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Publication place: United Kingdom" />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="infobox" />
-        </attvalues>
-      </edge>
-      <edge source="Andrew Hodges" target="Alan Turing" id="46">
-        <attvalues>
-          <attvalue for="3" value="field_of_work" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Turing biographer Andrew Hodges theorised that Turing deliberately made his death look accidental in order to shield his mother from the knowledge that he had killed himself." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="1983" target="Alan Turing" id="47">
-        <attvalues>
-          <attvalue for="3" value="publication_date" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="The Alan Turing Year, 2012" target="Alan Turing" id="48">
-        <attvalues>
-          <attvalue for="3" value="subject" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="The Alan Turing Year, 2012" target="23 June 1912" id="49">
-        <attvalues>
-          <attvalue for="3" value="date of birth" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="London" target="Alan Turing" id="50">
-        <attvalues>
-          <attvalue for="3" value="birth_place" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Born in London, Turing was raised in southern England." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="England" target="Alan Turing" id="51">
-        <attvalues>
-          <attvalue for="3" value="birth_place" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the &quot;architect&quot; of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="England" target="the Alan Turing Law" id="52">
-        <attvalues>
-          <attvalue for="3" value="birth_place" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the &quot;architect&quot; of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="England" target="the United Kingdom" id="53">
-        <attvalues>
-          <attvalue for="3" value="country" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="England" target="London" id="54">
-        <attvalues>
-          <attvalue for="3" value="capital" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Born in London, Turing was raised in southern England." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="the United Kingdom" target="England" id="55">
-        <attvalues>
-          <attvalue for="3" value="contains administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Church" target="Alan Turing" id="56">
-        <attvalues>
-          <attvalue for="3" value="doctoral_advisor" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Enigma" target="1983" id="57">
-        <attvalues>
-          <attvalue for="3" value="publication_date" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Enigma" target="Alan Turing" id="58">
-        <attvalues>
-          <attvalue for="3" value="subject" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Enigma" target="Andrew Hodges" id="59">
-        <attvalues>
-          <attvalue for="3" value="authored_by" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Enigma" target="Nazi Germany" id="60">
-        <attvalues>
-          <attvalue for="3" value="country of origin" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="He concentrated on cryptanalysis of the Enigma cipher machine used by Nazi Germany , together with Dilly Knox , a senior GC&amp;CS codebreaker." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Enigma" target="German" id="61">
-        <attvalues>
-          <attvalue for="3" value="owned by" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Turing decided to tackle the particularly difficult problem of cracking the German naval use of Enigma &quot;because no one else was doing anything about it and I could have it to myself&quot;." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="al" target="Alan Turing" id="62">
-        <attvalues>
-          <attvalue for="3" value="published_by" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="found that in mice, removal of Hox genes causes an increase in the number of digits without an increase in the overall size of the limb, suggesting that Hox genes control digit formation by tuning the wavelength of a Turing-type mechanism." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="Hodges" target="Alan Turing" id="63">
-        <attvalues>
-          <attvalue for="3" value="authored_by" />
-          <attvalue for="4" value="0.8" />
-          <attvalue for="5" value="who, in his review of Hodges' book, recalls &quot;Turing's vulnerable position in the Cold War political climate&quot; and points out that &quot;Turing was found dead by a maid, who discovered him 'lying neatly in his bed'—hardly what one would expect of &quot;a man fighting for life against the suffocation induced by cyanide poisoning.&quot; Turing had given no hint of suicidal inclinations to his friends and had made no effort to put his affairs in order." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="silver" />
-        </attvalues>
-      </edge>
-      <edge source="the Alan Turing Law" target="Alan Turing" id="64">
-        <attvalues>
-          <attvalue for="3" value="facet of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the &quot;architect&quot; of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="The Alan Turing Centenary Conference" target="the University of Manchester" id="65">
-        <attvalues>
-          <attvalue for="3" value="location" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Alan Turing Centenary Conference was held at the University of Manchester during June 2012." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="The Turing Year" target="2012" id="66">
-        <attvalues>
-          <attvalue for="3" value="point in time" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Turing Year was coordinated by the Turing Centenary Advisory Committee (TCAC), representing a range of expertise and organisational involvement in the 2012 celebrations." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alan Turing - His Work" target="John Dermot Turing" id="67">
+      <edge source="Alan Turing" target="John Dermot Turing" id="32">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -1898,286 +1639,79 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Bill" target="the British Government" id="68">
+      <edge source="Alan Turing" target="the Policing and Crime Act 2017" id="33">
         <attvalues>
-          <attvalue for="3" value="legislated by" />
+          <attvalue for="3" value="part of" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="To implement the pardon, the British Government announced on 20 October 2016 that it would support an amendment to the Policing and Crime Bill that would provide a posthumous pardon, and provide a process whereby those still living could apply to have these offences disregarded." />
+          <attvalue for="5" value="&quot;Alan Turing law&quot; is an informal term for the portion of the Policing and Crime Act 2017 which serves to pardon men who were cautioned or convicted under obsolete laws criminalising homosexual acts." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Bill" target="Private" id="69">
-        <attvalues>
-          <attvalue for="3" value="instance of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In June 2016, John Nicolson MP introduced a Private Member's Bill , the Sexual Offences (Pardons Etc.) Bill 2016–17, intended to implement the proposal." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Bill" target="October 2016" id="70">
+      <edge source="Alan Turing" target="2015" id="34">
         <attvalues>
           <attvalue for="3" value="point in time" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In October 2016, the Conservative government announced that, instead of supporting the Private Member's Bill's original proposal for a blanket pardon for all, it would enact the proposed changes through an amendment to the forthcoming Policing and Crime Bill 2016 ." />
+          <attvalue for="5" value="Several proposals had been put forward for an Alan Turing law, and introducing such a law was government policy since 2015." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="the British Government" target="the United Kingdom" id="71">
+      <edge source="Alan Turing" target="28 June 2018" id="35">
         <attvalues>
-          <attvalue for="3" value="country" />
+          <attvalue for="3" value="publication_date" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales." />
+          <attvalue for="5" value="The Turing law provisions came into force immediately in England and Wales, and on 28 June 2018 in Northern Ireland." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="John Leech" target="Manchester Withington" id="72">
+      <edge source="Alan Turing" target="23 June 1912" id="36">
         <attvalues>
-          <attvalue for="3" value="member of political party" />
+          <attvalue for="3" value="date of birth" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Manchester Withington MP John Leech, often described as 'the architect' of the Alan Turing Law, led a high-profile campaign to pardon Turing and submitted several bills to parliament, leading to the eventual posthumous pardon." />
+          <attvalue for="5" value="Alan Mathison Turing (; 23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Ed Miliband" target="the Labour Party" id="73">
+      <edge source="Alan Turing" target="7 June 1954" id="37">
         <attvalues>
-          <attvalue for="3" value="member of political party" />
+          <attvalue for="3" value="date of death" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="While in opposition, the Labour Party under Ed Miliband announced that it would introduce an Alan Turing law if elected at the 2015 general election." />
+          <attvalue for="5" value="Turing died on 7 June 1954, aged 41, from cyanide poisoning." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Cameron" target="The Conservative Party" id="74">
-        <attvalues>
-          <attvalue for="3" value="member of political party" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Conservative Party under Cameron subsequently announced the same policy." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Stonewall" target="LGBT" id="75">
-        <attvalues>
-          <attvalue for="3" value="field_of_work" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Nicolson disagreed and, backed by the LGBT campaign group Stonewall , said that the government was attempting to &quot;hijack&quot; the law by announcing the amendment just prior to the second reading of his Private Member's Bill, and said that his bill already excluded cases where the offence was still considered a crime." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="James Chalmers" target="the University of Glasgow" id="76">
-        <attvalues>
-          <attvalue for="3" value="employer" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="This would still have to be done through the disregard process, leading to possible cases in which it would not be clear whether or not a pardon had been granted, described by James Chalmers, Regius Professor of Law at the University of Glasgow , as a &quot; Schrödinger's pardon &quot;." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Northern Ireland" target="Scotland" id="77">
-        <attvalues>
-          <attvalue for="3" value="shares border with" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Groups in Northern Ireland and Scotland campaigned for equivalent laws in their jurisdictions." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Scotland" target="Northern Ireland" id="78">
-        <attvalues>
-          <attvalue for="3" value="shares border with" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Groups in Northern Ireland and Scotland campaigned for equivalent laws in their jurisdictions." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Michael Cashman" target="Lords" id="79">
-        <attvalues>
-          <attvalue for="3" value="position held" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The assembly consented on 28 November, and Lexden's proposal was accepted at Lords report stage on 12 December, along with one from Michael Cashman extending the power of disregard and pardon to further offences." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Matt Houlbrook" target="the University of Birmingham" id="80">
-        <attvalues>
-          <attvalue for="3" value="employer" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Matt Houlbrook, Professor of Cultural History at the University of Birmingham , said that the announcement was of both &quot;symbolic and practical importance&quot; to gay men still living with the offences on their criminal record, but noted that using Alan Turing as a figurehead retroactively gave him an identity as a &quot;gay martyr&quot; that he never sought in life." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="King's College" target="Cambridge" id="81">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Cypher School" target="Bletchley Park" id="82">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Bletchley Park" target="Cypher School" id="83">
-        <attvalues>
-          <attvalue for="3" value="has part" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="the Automatic Computing Engine" target="the National Physical Laboratory" id="84">
-        <attvalues>
-          <attvalue for="3" value="manufacturer" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="After the war, Turing worked at the National Physical Laboratory, where he designed the Automatic Computing Engine, one of the first designs for a stored-program computer." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Max Newman's" target="the University of Manchester" id="85">
-        <attvalues>
-          <attvalue for="3" value="employer" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Gordon Brown" target="British" id="86">
-        <attvalues>
-          <attvalue for="3" value="position held" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Following a campaign in 2009, British prime minister Gordon Brown made an official public apology for &quot;the appalling way [Turing] was treated&quot;." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="British" target="1948" id="87">
+      <edge source="Alan Turing" target="2017" id="38">
         <attvalues>
           <attvalue for="3" value="point in time" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Turing tried out for the 1948 British Olympic team , but he was hampered by an injury." />
+          <attvalue for="5" value="The term &quot;Alan Turing law&quot; is used informally to refer to a 2017 law in the UK that retroactively pardoned men cautioned or convicted under historical legislation that outlawed homosexual acts." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="German" target="the Second World War" id="88">
+      <edge source="Alan Turing" target="2019" id="39">
         <attvalues>
           <attvalue for="3" value="part of" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="During the Second World War, Turing was a leading participant in the breaking of German ciphers at Bletchley Park ." />
+          <attvalue for="5" value="The audience vote in a 2019 BBC series named Turing the greatest scientist of the 20th century." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="German" target="Enigma" id="89">
+      <edge source="Alan Turing" target="Nazi" id="40">
         <attvalues>
-          <attvalue for="3" value="owner of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Turing decided to tackle the particularly difficult problem of cracking the German naval use of Enigma &quot;because no one else was doing anything about it and I could have it to myself&quot;." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Nazi" target="Alan Turing" id="90">
-        <attvalues>
-          <attvalue for="3" value="discoverer or inventor" />
+          <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
           <attvalue for="5" value="It is fair to say we owe much to Alan Turing for the fact that we are not under Nazi rule today.&quot;" />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Max Newman 's" target="the University of Manchester" id="91">
-        <attvalues>
-          <attvalue for="3" value="employer" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In 1948, Turing joined Max Newman 's Computing Machine Laboratory at the University of Manchester , where he contributed to the development of early Manchester computers and became interested in mathematical biology ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="John Robert Turing" target="Scottish" id="92">
-        <attvalues>
-          <attvalue for="3" value="country of citizenship" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="John Robert Turing, from a Scottish family of merchants that had been based in the Netherlands and included a baronet ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Irish" target="County Tipperary" id="93">
-        <attvalues>
-          <attvalue for="3" value="contains administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="County Tipperary" target="Irish" id="94">
-        <attvalues>
-          <attvalue for="3" value="located in the administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="County Longford" target="Irish" id="95">
-        <attvalues>
-          <attvalue for="3" value="located in the administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="County Clare" target="Irish" id="96">
-        <attvalues>
-          <attvalue for="3" value="located in the administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Ballsbridge" target="Dublin" id="97">
-        <attvalues>
-          <attvalue for="3" value="located in the administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Bartholomew's Church on Clyde Road in Ballsbridge , Dublin ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="the Bengal Army" target="British India" id="98">
-        <attvalues>
-          <attvalue for="3" value="country" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Julius's work with the ICS brought the family to British India, where his grandfather had been a general in the Bengal Army ." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Dermot Turing" target="John Ferrier Turing" id="99">
+      <edge source="Alan Turing" target="John Ferrier Turing" id="41">
         <attvalues>
           <attvalue for="3" value="father" />
           <attvalue for="4" value="1.0" />
@@ -2186,88 +1720,25 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Natural Wonders" target="Edwin Tenney Brewster" id="100">
+      <edge source="Alan Turing" target="23 June 2012" id="42">
         <attvalues>
-          <attvalue for="3" value="authored_by" />
+          <attvalue for="3" value="point in time" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In 1922, he discovered Natural Wonders Every Child Should Know by Edwin Tenney Brewster ." />
+          <attvalue for="5" value="The plaque was unveiled on 23 June 2012, the centenary of Turing's birth." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Baston Lodge" target="St Leonards" id="101">
+      <edge source="Alan Turing" target="Morcom" id="43">
         <attvalues>
-          <attvalue for="3" value="located in the administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="At Hastings, Turing stayed at Baston Lodge , Upper Maze Hill, St Leonards-on-Sea , now marked with a blue plaque." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Sherborne School" target="Sherborne in Dorset" id="102">
-        <attvalues>
-          <attvalue for="3" value="located in the administrative territorial entity" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In 1926, at the age of 13, he went on to Sherborne School , an independent boarding school in the market town of Sherborne in Dorset, where he boarded at Westcott House." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Christopher Collan Morcom" target="13 July 1911" id="103">
-        <attvalues>
-          <attvalue for="3" value="date of birth" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="At Sherborne, Turing formed a significant friendship with fellow pupil Christopher Collan Morcom (13 July 1911 – 13 February 1930), who has been described as Turing's first love." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Morcom" target="Frances Isobel Morcom" id="104">
-        <attvalues>
-          <attvalue for="3" value="mother" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In a letter to Morcom's mother, Frances Isobel Morcom (née Swan), Turing wrote:&#10;Turing's relationship with Morcom's mother continued long after Morcom's death, with her sending gifts to Turing, and him sending letters, typically on Morcom's birthday." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Morcom" target="13 February 1933" id="105">
-        <attvalues>
-          <attvalue for="3" value="date of death" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="A day before the third anniversary of Morcom's death (13 February 1933), he wrote to Mrs." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Morcom" target="Alan Turing" id="106">
-        <attvalues>
-          <attvalue for="3" value="creator" />
+          <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
           <attvalue for="5" value="In a later letter, also written to Morcom's mother, Turing wrote:" />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Trinity" target="Cambridge" id="107">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="King's" target="Cambridge" id="108">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Max Newman" target="Alan Turing" id="109">
+      <edge source="Alan Turing" target="Max Newman" id="44">
         <attvalues>
           <attvalue for="3" value="doctoral_student" />
           <attvalue for="4" value="1.0" />
@@ -2276,16 +1747,718 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="On Computable Numbers" target="28 May of that year" id="110">
+      <edge source="Alan Turing" target="a 'Universal Machine'" id="45">
         <attvalues>
-          <attvalue for="3" value="publication_date" />
+          <attvalue for="3" value="subclass of" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Finally, on 28 May of that year, he finished and delivered his 36-page paper for publication called &quot; On Computable Numbers, with an Application to the Entscheidungsproblem &quot;." />
+          <attvalue for="5" value="It also included a notion of a 'Universal Machine' (now known as a universal Turing machine ), with the idea that such a machine could perform the tasks of any other computation machine (as indeed could Church's lambda calculus)." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Kurt Gödel" target="1931" id="111">
+      <edge source="Alan Turing" target="John von Neumann" id="46">
+        <attvalues>
+          <attvalue for="3" value="authored_by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="John von Neumann acknowledged that the central concept of the modern computer was due to Turing's paper." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="2023" id="47">
+        <attvalues>
+          <attvalue for="3" value="publication_date" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="A study conducted in 2023 confirmed Turing's mathematical model hypothesis." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="Murray" id="48">
+        <attvalues>
+          <attvalue for="3" value="winner" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Murray told Turing that he and the burglar were acquainted, and Turing reported the crime to the police." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing" target="UK" id="49">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Kjell intended to visit Turing in the UK but the authorities intercepted Kjell's postcard detailing his travel arrangements and were able to intercept and deport him before the two could meet." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Alonzo Church" target="Alan Turing" id="50">
+        <attvalues>
+          <attvalue for="3" value="doctoral_advisor" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Between the springs of 1935 and 1936, at the same time as Alonzo Church , Turing worked on the decidability of problems, starting from Gödel's incompleteness theorems ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing: The Enigma" target="Andrew Hodges" id="51">
+        <attvalues>
+          <attvalue for="3" value="authored_by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Author: Andrew Hodges" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="infobox" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing: The Enigma" target="English" id="52">
+        <attvalues>
+          <attvalue for="3" value="language" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Language: English" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="infobox" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing: The Enigma" target="Alan Turing" id="53">
+        <attvalues>
+          <attvalue for="3" value="subject" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Subject: Alan Turing (1912–1954)" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="infobox" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing: The Enigma" target="Biography" id="54">
+        <attvalues>
+          <attvalue for="3" value="genre" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Genre: Biography" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="infobox" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing: The Enigma" target="1983" id="55">
+        <attvalues>
+          <attvalue for="3" value="publication_date" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Published: 1983 (Burnett Books/ Hutchinson , UK &amp; Simon &amp; Schuster , USA)" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="infobox" />
+        </attvalues>
+      </edge>
+      <edge source="Alan Turing: The Enigma" target="United Kingdom" id="56">
+        <attvalues>
+          <attvalue for="3" value="publication_place" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Publication place: United Kingdom" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="infobox" />
+        </attvalues>
+      </edge>
+      <edge source="Andrew Hodges" target="Alan Turing" id="57">
+        <attvalues>
+          <attvalue for="3" value="field_of_work" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing biographer Andrew Hodges theorised that Turing deliberately made his death look accidental in order to shield his mother from the knowledge that he had killed himself." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="1983" target="Alan Turing" id="58">
+        <attvalues>
+          <attvalue for="3" value="publication_date" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="The Alan Turing Year" target="Alan Turing" id="59">
+        <attvalues>
+          <attvalue for="3" value="subject" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="The Alan Turing Year" target="23 June 1912" id="60">
+        <attvalues>
+          <attvalue for="3" value="date of birth" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Alan Turing Law" target="Alan Turing" id="61">
+        <attvalues>
+          <attvalue for="3" value="facet of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the &quot;architect&quot; of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="England" target="Alan Turing" id="62">
+        <attvalues>
+          <attvalue for="3" value="birth_place" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the &quot;architect&quot; of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="England" target="the Alan Turing Law" id="63">
+        <attvalues>
+          <attvalue for="3" value="birth_place" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the &quot;architect&quot; of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="England" target="the United Kingdom" id="64">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="England" target="London" id="65">
+        <attvalues>
+          <attvalue for="3" value="capital" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Born in London, Turing was raised in southern England." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="London" target="Alan Turing" id="66">
+        <attvalues>
+          <attvalue for="3" value="birth_place" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="Born in London, Turing was raised in southern England." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Enigma" target="Nazi" id="67">
+        <attvalues>
+          <attvalue for="3" value="country of origin" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He concentrated on cryptanalysis of the Enigma cipher machine used by Nazi Germany , together with Dilly Knox , a senior GC&amp;CS codebreaker." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Enigma" target="German" id="68">
+        <attvalues>
+          <attvalue for="3" value="owned by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing decided to tackle the particularly difficult problem of cracking the German naval use of Enigma &quot;because no one else was doing anything about it and I could have it to myself&quot;." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the United Kingdom" target="England" id="69">
+        <attvalues>
+          <attvalue for="3" value="contains administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Cambridge" target="King's College" id="70">
+        <attvalues>
+          <attvalue for="3" value="has part" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="There, Turing studied the undergraduate course in Schedule B from February 1931 to November 1934 at King's College, Cambridge , where he was awarded first-class honours in mathematics." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Church" target="Alan Turing" id="71">
+        <attvalues>
+          <attvalue for="3" value="doctoral_advisor" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Wilmslow" target="Alan Turing" id="72">
+        <attvalues>
+          <attvalue for="3" value="death_place" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="On 8 June 1954, at his house at 43 Adlington Road, Wilmslow , Turing's housekeeper found him dead." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="Hodges" target="Alan Turing" id="73">
+        <attvalues>
+          <attvalue for="3" value="authored_by" />
+          <attvalue for="4" value="0.8" />
+          <attvalue for="5" value="who, in his review of Hodges' book, recalls &quot;Turing's vulnerable position in the Cold War political climate&quot; and points out that &quot;Turing was found dead by a maid, who discovered him 'lying neatly in his bed'—hardly what one would expect of &quot;a man fighting for life against the suffocation induced by cyanide poisoning.&quot; Turing had given no hint of suicidal inclinations to his friends and had made no effort to put his affairs in order." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="silver" />
+        </attvalues>
+      </edge>
+      <edge source="The Alan Turing Centenary Conference" target="the University of Manchester" id="74">
+        <attvalues>
+          <attvalue for="3" value="location" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The Alan Turing Centenary Conference was held at the University of Manchester during June 2012." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="The Turing Year" target="2012" id="75">
+        <attvalues>
+          <attvalue for="3" value="point in time" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The Turing Year was coordinated by the Turing Centenary Advisory Committee (TCAC), representing a range of expertise and organisational involvement in the 2012 celebrations." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Policing and Crime Act 2017" target="Alan Turing" id="76">
+        <attvalues>
+          <attvalue for="3" value="has part" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="&quot;Alan Turing law&quot; is an informal term for the portion of the Policing and Crime Act 2017 which serves to pardon men who were cautioned or convicted under obsolete laws criminalising homosexual acts." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Policing and Crime Act 2017" target="the United Kingdom" id="77">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The Alan Turing law is now an informal term for the law in the United Kingdom, contained in the Policing and Crime Act 2017 , which serves as an amnesty law to retroactively pardon men who were cautioned or convicted under historical legislation that outlawed homosexual acts." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Policing and Crime Bill" target="the British Government" id="78">
+        <attvalues>
+          <attvalue for="3" value="legislated by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="To implement the pardon, the British Government announced on 20 October 2016 that it would support an amendment to the Policing and Crime Bill that would provide a posthumous pardon, and provide a process whereby those still living could apply to have these offences disregarded." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the British Government" target="the United Kingdom" id="79">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="John Leech" target="Manchester Withington" id="80">
+        <attvalues>
+          <attvalue for="3" value="member of political party" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Manchester Withington MP John Leech, often described as 'the architect' of the Alan Turing Law, led a high-profile campaign to pardon Turing and submitted several bills to parliament, leading to the eventual posthumous pardon." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Ed Miliband" target="the Labour Party" id="81">
+        <attvalues>
+          <attvalue for="3" value="member of political party" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="While in opposition, the Labour Party under Ed Miliband announced that it would introduce an Alan Turing law if elected at the 2015 general election." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Cameron" target="The Conservative Party" id="82">
+        <attvalues>
+          <attvalue for="3" value="member of political party" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The Conservative Party under Cameron subsequently announced the same policy." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Policing and Crime Bill" target="October 2016" id="83">
+        <attvalues>
+          <attvalue for="3" value="point in time" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="In October 2016, the Conservative government announced that, instead of supporting the Private Member's Bill's original proposal for a blanket pardon for all, it would enact the proposed changes through an amendment to the forthcoming Policing and Crime Bill 2016 ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Sam Gyimah" target="Conservative" id="84">
+        <attvalues>
+          <attvalue for="3" value="member of political party" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="When Nicolson's bill was debated in Parliament on 21 October 2016, it was successfully filibustered by Conservative MP Sam Gyimah and failed to proceed." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="James Chalmers" target="the University of Glasgow" id="85">
+        <attvalues>
+          <attvalue for="3" value="employer" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="This would still have to be done through the disregard process, leading to possible cases in which it would not be clear whether or not a pardon had been granted, described by James Chalmers, Regius Professor of Law at the University of Glasgow , as a &quot; Schrödinger's pardon &quot;." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Sharkey" target="Liberal" id="86">
+        <attvalues>
+          <attvalue for="3" value="member of political party" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="On 19 October 2016, Liberal Baron Sharkey , with government support, had added the core amendment to the agenda for the Policing and Crime Bill 2016." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Northern Ireland" target="Scotland" id="87">
+        <attvalues>
+          <attvalue for="3" value="shares border with" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Groups in Northern Ireland and Scotland campaigned for equivalent laws in their jurisdictions." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Scotland" target="Northern Ireland" id="88">
+        <attvalues>
+          <attvalue for="3" value="shares border with" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Groups in Northern Ireland and Scotland campaigned for equivalent laws in their jurisdictions." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Michael Cashman" target="Lords" id="89">
+        <attvalues>
+          <attvalue for="3" value="position held" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The assembly consented on 28 November, and Lexden's proposal was accepted at Lords report stage on 12 December, along with one from Michael Cashman extending the power of disregard and pardon to further offences." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Matt Houlbrook" target="the University of Birmingham" id="90">
+        <attvalues>
+          <attvalue for="3" value="employer" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Matt Houlbrook, Professor of Cultural History at the University of Birmingham , said that the announcement was of both &quot;symbolic and practical importance&quot; to gay men still living with the offences on their criminal record, but noted that using Alan Turing as a figurehead retroactively gave him an identity as a &quot;gay martyr&quot; that he never sought in life." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="King's College" target="Cambridge" id="91">
+        <attvalues>
+          <attvalue for="3" value="part of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He graduated from King's College, Cambridge, and in 1938, earned a doctorate degree from Princeton University." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Government Code and Cypher School" target="Bletchley Park" id="92">
+        <attvalues>
+          <attvalue for="3" value="part of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Bletchley Park" target="the Government Code and Cypher School" id="93">
+        <attvalues>
+          <attvalue for="3" value="has part" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Allies" target="Axis" id="94">
+        <attvalues>
+          <attvalue for="3" value="opposite of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Axis" target="Allies" id="95">
+        <attvalues>
+          <attvalue for="3" value="opposite of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Battle of the Atlantic" target="Allies" id="96">
+        <attvalues>
+          <attvalue for="3" value="participant" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Automatic Computing Engine" target="the National Physical Laboratory" id="97">
+        <attvalues>
+          <attvalue for="3" value="manufacturer" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="After the war, Turing worked at the National Physical Laboratory, where he designed the Automatic Computing Engine, one of the first designs for a stored-program computer." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Gordon Brown" target="British" id="98">
+        <attvalues>
+          <attvalue for="3" value="position held" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Following a campaign in 2009, British prime minister Gordon Brown made an official public apology for &quot;the appalling way [Turing] was treated&quot;." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="British" target="1948" id="99">
+        <attvalues>
+          <attvalue for="3" value="point in time" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing tried out for the 1948 British Olympic team , but he was hampered by an injury." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Bank of England" target="23 June 2021" id="100">
+        <attvalues>
+          <attvalue for="3" value="start time" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="His portrait appears on the Bank of England £50 note, first released on 23 June 2021 to coincide with his birthday." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="German" target="the Second World War" id="101">
+        <attvalues>
+          <attvalue for="3" value="conflict" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing was in large part responsible not only for the concept of computers, incisive theorems about their powers, and a clear vision of the possibility of computer minds, but also for the cracking of German ciphers during the Second World War." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="German" target="Enigma" id="102">
+        <attvalues>
+          <attvalue for="3" value="owner of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing decided to tackle the particularly difficult problem of cracking the German naval use of Enigma &quot;because no one else was doing anything about it and I could have it to myself&quot;." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Nazi" target="Alan Turing" id="103">
+        <attvalues>
+          <attvalue for="3" value="discoverer or inventor" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="It is fair to say we owe much to Alan Turing for the fact that we are not under Nazi rule today.&quot;" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="John Robert Turing" target="Scottish" id="104">
+        <attvalues>
+          <attvalue for="3" value="country of citizenship" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="John Robert Turing, from a Scottish family of merchants that had been based in the Netherlands and included a baronet ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Julius" target="Ethel" id="105">
+        <attvalues>
+          <attvalue for="3" value="spouse" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Julius and Ethel married on 1 October 1907 at the Church of Ireland St." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Ethel" target="Julius" id="106">
+        <attvalues>
+          <attvalue for="3" value="spouse" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Julius and Ethel married on 1 October 1907 at the Church of Ireland St." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Clyde Road" target="Dublin" id="107">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Bartholomew's Church on Clyde Road in Ballsbridge , Dublin ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Ballsbridge" target="Dublin" id="108">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Bartholomew's Church on Clyde Road in Ballsbridge , Dublin ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="the Bengal Army" target="British India" id="109">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Julius's work with the ICS brought the family to British India, where his grandfather had been a general in the Bengal Army ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Natural Wonders Every Child Should" target="Edwin Tenney Brewster" id="110">
+        <attvalues>
+          <attvalue for="3" value="authored_by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="In 1922, he discovered Natural Wonders Every Child Should Know by Edwin Tenney Brewster ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Hastings" target="the United Kingdom" id="111">
+        <attvalues>
+          <attvalue for="3" value="country" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing's father's civil service commission was still active during Turing's childhood years, and his parents travelled between Hastings in the United Kingdom and India, leaving their two sons to stay with a retired Army couple." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Baston Lodge" target="St Leonards-on-Sea" id="112">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="At Hastings, Turing stayed at Baston Lodge , Upper Maze Hill, St Leonards-on-Sea , now marked with a blue plaque." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="St Michael's" target="St Leonards-on-Sea" id="113">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Turing's parents enrolled him at St Michael's, a primary school at 20 Charles Road, St Leonards-on-Sea , from the age of six to nine." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Hazelhurst Preparatory School" target="Frant" id="114">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="Between January 1922 and 1926, Turing was educated at Hazelhurst Preparatory School, an independent school in the village of Frant in Sussex (now East Sussex )." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Sherborne School" target="Sherborne" id="115">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="In 1926, at the age of 13, he went on to Sherborne School , an independent boarding school in the market town of Sherborne in Dorset, where he boarded at Westcott House." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="General Strike" target="1926" id="116">
+        <attvalues>
+          <attvalue for="3" value="point in time" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The first day of term coincided with the 1926 General Strike , in Britain, but Turing was so determined to attend that he rode his bicycle unaccompanied 60 miles (97 km) from Southampton to Sherborne, stopping overnight at an inn." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Christopher Collan Morcom" target="13 July 1911 –" id="117">
+        <attvalues>
+          <attvalue for="3" value="date of birth" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="At Sherborne, Turing formed a significant friendship with fellow pupil Christopher Collan Morcom (13 July 1911 – 13 February 1930), who has been described as Turing's first love." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Morcom" target="Frances Isobel Morcom" id="118">
+        <attvalues>
+          <attvalue for="3" value="mother" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="In a letter to Morcom's mother, Frances Isobel Morcom (née Swan), Turing wrote:&#10;Turing's relationship with Morcom's mother continued long after Morcom's death, with her sending gifts to Turing, and him sending letters, typically on Morcom's birthday." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Morcom" target="13 February 1933" id="119">
+        <attvalues>
+          <attvalue for="3" value="date of death" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="A day before the third anniversary of Morcom's death (13 February 1933), he wrote to Mrs." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Morcom" target="Alan Turing" id="120">
+        <attvalues>
+          <attvalue for="3" value="creator" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="In a later letter, also written to Morcom's mother, Turing wrote:" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Trinity" target="Cambridge" id="121">
+        <attvalues>
+          <attvalue for="3" value="part of" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Max Newman" target="Alan Turing" id="122">
+        <attvalues>
+          <attvalue for="3" value="doctoral_student" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="In mid-April 1936, Turing sent Max Newman the first draft typescript of his investigations." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="An Unsolvable Problem of Elementary Number Theory" target="Church" id="123">
+        <attvalues>
+          <attvalue for="3" value="authored_by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Kurt Gödel 's" target="1931" id="124">
         <attvalues>
           <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
@@ -2294,7 +2467,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="1931" target="Kurt Gödel" id="112">
+      <edge source="1931" target="Kurt Gödel 's" id="125">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -2303,16 +2476,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Entscheidungsproblem" target="David Hilbert" id="113">
-        <attvalues>
-          <attvalue for="3" value="discoverer or inventor" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="The Entscheidungsproblem (decision problem) was originally posed by German mathematician David Hilbert in 1928." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="John von Neumann" target="Alan Turing" id="114">
+      <edge source="John von Neumann" target="Alan Turing" id="126">
         <attvalues>
           <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
@@ -2321,7 +2485,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Briggs" target="Bletchley and Turing's" id="115">
+      <edge source="Asa Briggs" target="Bletchley" id="127">
         <attvalues>
           <attvalue for="3" value="employer" />
           <attvalue for="4" value="1.0" />
@@ -2330,7 +2494,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Polish" target="Warsaw" id="116">
+      <edge source="the Polish Cipher Bureau" target="Warsaw" id="128">
         <attvalues>
           <attvalue for="3" value="located in the administrative territorial entity" />
           <attvalue for="4" value="1.0" />
@@ -2339,7 +2503,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Germany" target="4 September 1939" id="117">
+      <edge source="Germany" target="4 September 1939" id="129">
         <attvalues>
           <attvalue for="3" value="point in time" />
           <attvalue for="4" value="1.0" />
@@ -2348,7 +2512,34 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="George VI" target="the British Empire" id="118">
+      <edge source="GC&amp;CS" target="GCHQ" id="130">
+        <attvalues>
+          <attvalue for="3" value="replaced by" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He wrote two papers discussing mathematical approaches, titled The Applications of Probability to Cryptography and Paper on Statistics of Repetitions , which were of such value to GC&amp;CS and its successor GCHQ that they were not released to the UK National Archives until April 2012, shortly before the centenary of his birth." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="GCHQ" target="GC&amp;CS" id="131">
+        <attvalues>
+          <attvalue for="3" value="replaces" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He wrote two papers discussing mathematical approaches, titled The Applications of Probability to Cryptography and Paper on Statistics of Repetitions , which were of such value to GC&amp;CS and its successor GCHQ that they were not released to the UK National Archives until April 2012, shortly before the centenary of his birth." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Prof" target="Enigma" id="132">
+        <attvalues>
+          <attvalue for="3" value="subject" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="He was known to his colleagues as &quot;Prof&quot; and his treatise on Enigma was known as the &quot;Prof's Book&quot;." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="George VI" target="the British Empire" id="133">
         <attvalues>
           <attvalue for="3" value="award_received" />
           <attvalue for="4" value="1.0" />
@@ -2357,7 +2548,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Winston Churchill" target="Alan Turing" id="119">
+      <edge source="Winston Churchill" target="Alan Turing" id="134">
         <attvalues>
           <attvalue for="3" value="influenced by" />
           <attvalue for="4" value="1.0" />
@@ -2366,7 +2557,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Milner-Barry" target="Bletchley Park" id="120">
+      <edge source="Milner-Barry" target="Bletchley Park" id="135">
         <attvalues>
           <attvalue for="3" value="employer" />
           <attvalue for="4" value="1.0" />
@@ -2375,25 +2566,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Banburismus" target="Abraham Wald" id="121">
-        <attvalues>
-          <attvalue for="3" value="discoverer or inventor" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="That same night, he also conceived of the idea of Banburismus , a sequential statistical technique (what Abraham Wald later called sequential analysis ) to assist in breaking the naval Enigma, &quot;though I was not sure that it would work in practice, and was not, in fact, sure until some days had actually broken&quot;." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Abraham Wald" target="Banburismus" id="122">
-        <attvalues>
-          <attvalue for="3" value="notable work" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="That same night, he also conceived of the idea of Banburismus , a sequential statistical technique (what Abraham Wald later called sequential analysis ) to assist in breaking the naval Enigma, &quot;though I was not sure that it would work in practice, and was not, in fact, sure until some days had actually broken&quot;." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="US Navy" target="the United States" id="123">
+      <edge source="US Navy" target="the United States" id="136">
         <attvalues>
           <attvalue for="3" value="country" />
           <attvalue for="4" value="1.0" />
@@ -2402,25 +2575,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Hut 8" target="Hugh Alexander" id="124">
-        <attvalues>
-          <attvalue for="3" value="chairperson" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="During his absence, Hugh Alexander had officially assumed the position of head of Hut 8, although Alexander had been de facto head for some time (Turing having little interest in the day-to-day running of the section)." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Hut 8" target="Joan Clarke" id="125">
-        <attvalues>
-          <attvalue for="3" value="has part" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In 1941, Turing proposed marriage to Hut 8 colleague Joan Clarke , a fellow mathematician and cryptanalyst, but their engagement was short-lived." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Alexander" target="Alan Turing" id="126">
+      <edge source="Alexander" target="Alan Turing" id="137">
         <attvalues>
           <attvalue for="3" value="influenced by" />
           <attvalue for="4" value="1.0" />
@@ -2429,7 +2584,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Tommy Flowers" target="Colossus" id="127">
+      <edge source="Tommy Flowers" target="Colossus" id="138">
         <attvalues>
           <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
@@ -2438,7 +2593,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Colossus" target="Tommy Flowers" id="128">
+      <edge source="Colossus" target="Tommy Flowers" id="139">
         <attvalues>
           <attvalue for="3" value="discoverer or inventor" />
           <attvalue for="4" value="1.0" />
@@ -2447,7 +2602,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Colossus" target="Alan Turing" id="129">
+      <edge source="Colossus" target="Alan Turing" id="140">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -2456,7 +2611,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Bell Labs" target="US" id="130">
+      <edge source="Bell Labs" target="US" id="141">
         <attvalues>
           <attvalue for="3" value="country" />
           <attvalue for="4" value="1.0" />
@@ -2465,7 +2620,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="the Secret Service's" target="Radio Security Service" id="131">
+      <edge source="the Secret Service's" target="Radio Security Service" id="142">
         <attvalues>
           <attvalue for="3" value="subsidiary" />
           <attvalue for="4" value="1.0" />
@@ -2474,7 +2629,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Radio Security Service" target="the Secret Service's" id="132">
+      <edge source="Radio Security Service" target="the Secret Service's" id="143">
         <attvalues>
           <attvalue for="3" value="parent organization" />
           <attvalue for="4" value="1.0" />
@@ -2483,7 +2638,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Delilah" target="Alan Turing" id="133">
+      <edge source="Delilah" target="Alan Turing" id="144">
         <attvalues>
           <attvalue for="3" value="discoverer or inventor" />
           <attvalue for="4" value="1.0" />
@@ -2492,7 +2647,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="SIGSALY" target="Bell Labs" id="134">
+      <edge source="SIGSALY" target="Bell Labs" id="145">
         <attvalues>
           <attvalue for="3" value="developer" />
           <attvalue for="4" value="1.0" />
@@ -2501,7 +2656,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="First Draft of a Report" target="Von Neumann 's" id="135">
+      <edge source="First Draft of a Report on the EDVAC" target="Von Neumann 's" id="146">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -2510,7 +2665,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="the Official Secrets Act" target="Bletchley Park" id="136">
+      <edge source="the Official Secrets Act" target="Bletchley Park" id="147">
         <attvalues>
           <attvalue for="3" value="subject" />
           <attvalue for="4" value="1.0" />
@@ -2519,16 +2674,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Intelligent Machinery" target="late 1947" id="137">
-        <attvalues>
-          <attvalue for="3" value="publication_date" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="In late 1947 he returned to Cambridge for a sabbatical year during which he produced a seminal work on Intelligent Machinery that was not published in his lifetime." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="the Pilot ACE" target="Cambridge" id="138">
+      <edge source="the Pilot ACE" target="Cambridge" id="148">
         <attvalues>
           <attvalue for="3" value="manufacturer" />
           <attvalue for="4" value="1.0" />
@@ -2537,7 +2683,25 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Heinz Billing" target="the Max Planck Institute for Physics" id="139">
+      <edge source="DEUCE" target="English" id="149">
+        <attvalues>
+          <attvalue for="3" value="manufacturer" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="It executed its first program on 10 May 1950, and a number of later computers around the world owe much to it, including the English Electric DEUCE and the American Bendix G-15 ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="ACE" target="Alan Turing" id="150">
+        <attvalues>
+          <attvalue for="3" value="discoverer or inventor" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The full version of Turing's ACE was not built until after his death." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Heinz Billing" target="the Max Planck Institute for Physics" id="151">
         <attvalues>
           <attvalue for="3" value="employer" />
           <attvalue for="4" value="1.0" />
@@ -2546,16 +2710,16 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="CAPTCHA" target="Alan Turing" id="140">
+      <edge source="Hut 8" target="Joan Clarke" id="152">
         <attvalues>
-          <attvalue for="3" value="instance of" />
+          <attvalue for="3" value="has part" />
           <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="A reversed form of the Turing test is widely used on the Internet; the CAPTCHA test is intended to determine whether the user is a human or a computer." />
+          <attvalue for="5" value="In 1941, Turing proposed marriage to Hut 8 colleague Joan Clarke , a fellow mathematician and cryptanalyst, but their engagement was short-lived." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Joan Clarke" target="Hut 8" id="141">
+      <edge source="Joan Clarke" target="Hut 8" id="153">
         <attvalues>
           <attvalue for="3" value="part of" />
           <attvalue for="4" value="1.0" />
@@ -2564,7 +2728,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="the Regal Cinema" target="Oxford Road" id="142">
+      <edge source="the Regal Cinema" target="Oxford Road" id="154">
         <attvalues>
           <attvalue for="3" value="located on street" />
           <attvalue for="4" value="1.0" />
@@ -2573,7 +2737,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Murray" target="Alan Turing" id="143">
+      <edge source="Murray" target="Alan Turing" id="155">
         <attvalues>
           <attvalue for="3" value="award_received" />
           <attvalue for="4" value="1.0" />
@@ -2582,7 +2746,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Donald Maclean" target="the Soviet Union" id="144">
+      <edge source="Guy Burgess" target="the Soviet Union" id="156">
         <attvalues>
           <attvalue for="3" value="country of citizenship" />
           <attvalue for="4" value="1.0" />
@@ -2591,7 +2755,25 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="John" target="Franz Greenbaum" id="145">
+      <edge source="Donald Maclean" target="the Soviet Union" id="157">
+        <attvalues>
+          <attvalue for="3" value="country of citizenship" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="His trial took place only months after the defection to the Soviet Union of Guy Burgess and Donald Maclean , in summer 1951, after which the Foreign Office started to consider anyone known to be homosexual as a potential security risk." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="Adlington Road" target="Wilmslow" id="158">
+        <attvalues>
+          <attvalue for="3" value="located in the administrative territorial entity" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="On 8 June 1954, at his house at 43 Adlington Road, Wilmslow , Turing's housekeeper found him dead." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="John" target="Franz Greenbaum" id="159">
         <attvalues>
           <attvalue for="3" value="sibling" />
           <attvalue for="4" value="1.0" />
@@ -2600,7 +2782,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Franz Greenbaum" target="John" id="146">
+      <edge source="Franz Greenbaum" target="John" id="160">
         <attvalues>
           <attvalue for="3" value="sibling" />
           <attvalue for="4" value="1.0" />
@@ -2609,25 +2791,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Walt Disney" target="Snow White" id="147">
-        <attvalues>
-          <attvalue for="3" value="notable work" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Hodges and a later biographer, David Leavitt , have both speculated that Turing was re-enacting a scene from the Walt Disney film Snow White and the Seven Dwarfs (1937), his favourite fairy tale." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Snow White" target="Walt Disney" id="148">
-        <attvalues>
-          <attvalue for="3" value="producer" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Hodges and a later biographer, David Leavitt , have both speculated that Turing was re-enacting a scene from the Walt Disney film Snow White and the Seven Dwarfs (1937), his favourite fairy tale." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="John Graham-Cumming" target="British" id="149">
+      <edge source="John Graham-Cumming" target="British" id="161">
         <attvalues>
           <attvalue for="3" value="country of citizenship" />
           <attvalue for="4" value="1.0" />
@@ -2636,7 +2800,16 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="The Imitation Game" target="Alan Turing" id="150">
+      <edge source="Christopher Chope" target="Conservative" id="162">
+        <attvalues>
+          <attvalue for="3" value="member of political party" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="At the bill's second reading in the House of Commons on 29 November 2013, Conservative MP Christopher Chope objected to the bill, delaying its passage." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="The Imitation Game" target="Alan Turing" id="163">
         <attvalues>
           <attvalue for="3" value="subject" />
           <attvalue for="4" value="1.0" />
@@ -2645,7 +2818,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="The Imitation Game" target="2014" id="151">
+      <edge source="The Imitation Game" target="2014" id="164">
         <attvalues>
           <attvalue for="3" value="publication_date" />
           <attvalue for="4" value="1.0" />
@@ -2654,7 +2827,16 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="kitāb al-ḥisāb al-hindī" target="Muḥammad" id="152">
+      <edge source="The Imitation Game" target="Morten Tyldum" id="165">
+        <attvalues>
+          <attvalue for="3" value="director" />
+          <attvalue for="4" value="1.0" />
+          <attvalue for="5" value="The book inspired the 2014 film The Imitation Game , directed by Morten Tyldum and starring Benedict Cumberbatch and Keira Knightley ." />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="rebel" />
+        </attvalues>
+      </edge>
+      <edge source="kitāb al-ḥisāb al-" target="Muḥammad ibn Mūsā al-Khwārizmī" id="166">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -2663,16 +2845,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="kitab al-jam'" target="Muḥammad" id="153">
-        <attvalues>
-          <attvalue for="3" value="authored_by" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Around 825 AD, Persian scientist and polymath Muḥammad ibn Mūsā al-Khwārizmī wrote kitāb al-ḥisāb al-hindī (&quot;Book of Indian computation&quot;) and kitab al-jam' wa'l-tafriq al-ḥisāb al-hindī (&quot;Addition and subtraction in Indian arithmetic&quot;)." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="the Latinization of Al-Khwarizmi's" target="Dixit Algoritmi" id="154">
+      <edge source="Al-Khwarizmi's" target="Dixit Algoritmi" id="167">
         <attvalues>
           <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
@@ -2681,7 +2854,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Dixit Algoritmi" target="the Latinization of Al-Khwarizmi's" id="155">
+      <edge source="Dixit Algoritmi" target="Al-Khwarizmi's" id="168">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -2690,7 +2863,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Geoffrey Chaucer" target="The Canterbury Tales" id="156">
+      <edge source="Geoffrey Chaucer" target="The Canterbury Tales" id="169">
         <attvalues>
           <attvalue for="3" value="notable work" />
           <attvalue for="4" value="1.0" />
@@ -2699,7 +2872,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="The Canterbury Tales" target="Geoffrey Chaucer" id="157">
+      <edge source="The Canterbury Tales" target="Geoffrey Chaucer" id="170">
         <attvalues>
           <attvalue for="3" value="authored_by" />
           <attvalue for="4" value="1.0" />
@@ -2708,7 +2881,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="the Ifa Oracle" target="Babylonian" id="158">
+      <edge source="the Ifa Oracle" target="Babylonian" id="171">
         <attvalues>
           <attvalue for="3" value="part of" />
           <attvalue for="4" value="1.0" />
@@ -2717,7 +2890,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Shuruppak" target="Sumerian" id="159">
+      <edge source="Shuruppak" target="Sumerian" id="172">
         <attvalues>
           <attvalue for="3" value="time period" />
           <attvalue for="4" value="1.0" />
@@ -2726,25 +2899,7 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Euclidean" target="Euclid's Elements" id="160">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Two examples are the Sieve of Eratosthenes , which was described in the Introduction to Arithmetic by Nicomachus , and the Euclidean algorithm , which was first described in Euclid's Elements ( c." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Euclid's Elements" target="Euclidean" id="161">
-        <attvalues>
-          <attvalue for="3" value="has part" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Two examples are the Sieve of Eratosthenes , which was described in the Introduction to Arithmetic by Nicomachus , and the Euclidean algorithm , which was first described in Euclid's Elements ( c." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Ada Lovelace" target="Charles Babbage" id="162">
+      <edge source="Ada Lovelace" target="Charles Babbage" id="173">
         <attvalues>
           <attvalue for="3" value="influenced by" />
           <attvalue for="4" value="1.0" />
@@ -2753,29 +2908,11 @@
           <attvalue for="7" value="rebel" />
         </attvalues>
       </edge>
-      <edge source="Hollerith" target="c. 1870s" id="163">
+      <edge source="Hollerith" target="c. 1870s" id="174">
         <attvalues>
           <attvalue for="3" value="inception" />
           <attvalue for="4" value="1.0" />
           <attvalue for="5" value="1870s ) was in use, as were Hollerith cards (c." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="Böhm-Jacopini" target="SEQUENCE" id="164">
-        <attvalues>
-          <attvalue for="3" value="has part" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Tausworthe augments the three Böhm-Jacopini canonical structures : SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE." />
-          <attvalue for="6" value="" />
-          <attvalue for="7" value="rebel" />
-        </attvalues>
-      </edge>
-      <edge source="SEQUENCE" target="Böhm-Jacopini" id="165">
-        <attvalues>
-          <attvalue for="3" value="part of" />
-          <attvalue for="4" value="1.0" />
-          <attvalue for="5" value="Tausworthe augments the three Böhm-Jacopini canonical structures : SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE." />
           <attvalue for="6" value="" />
           <attvalue for="7" value="rebel" />
         </attvalues>

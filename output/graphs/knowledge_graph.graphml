@@ -10,9 +10,9 @@
 <key id="d0" for="node" attr.name="label" attr.type="string"/>
 <graph edgedefault="directed"><node id="Alan Turing Year">
   <data key="d0">Alan Turing Year</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q4707947</data>
-  <data key="d3">international observance</data>
+  <data key="d1">EVENT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="ATY">
   <data key="d0">ATY</data>
@@ -35,8 +35,8 @@
 <node id="Alan Turing">
   <data key="d0">Alan Turing</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q7251</data>
-  <data key="d3">English computer scientist (1912–1954)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Maida Vale , London, England">
   <data key="d0">Maida Vale , London, England</data>
@@ -65,8 +65,8 @@
 <node id="Princeton University">
   <data key="d0">Princeton University</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q1708210</data>
-  <data key="d3">independent publisher with close connections to Princeton University</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction &quot; The Chemical Basis of Morphogenesis &quot; Turing paradox">
   <data key="d0">Cryptanalysis of the Enigma Turing's proof Turing machine Turing test unorganised machine Turing pattern Turing reduction " The Chemical Basis of Morphogenesis " Turing paradox</data>
@@ -94,15 +94,15 @@
 </node>
 <node id="Systems of Logic Based on Ordinals">
   <data key="d0">Systems of Logic Based on Ordinals</data>
-  <data key="d1">UNKNOWN</data>
+  <data key="d1">WORK_OF_ART</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Alonzo Church">
   <data key="d0">Alonzo Church</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q92741</data>
-  <data key="d3">American mathematician and logician (1903–1995)</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Robin Gandy Beatrice Worsley">
   <data key="d0">Robin Gandy Beatrice Worsley</data>
@@ -119,14 +119,14 @@
 <node id="Andrew Hodges">
   <data key="d0">Andrew Hodges</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q450154</data>
-  <data key="d3">mathematician and popular science author</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="English">
   <data key="d0">English</data>
-  <data key="d1">LANGUAGE</data>
-  <data key="d2">Q328</data>
-  <data key="d3">English-language edition of Wikipedia</data>
+  <data key="d1">NORP</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Biography">
   <data key="d0">Biography</data>
@@ -146,101 +146,125 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="The Alan Turing Year, 2012">
-  <data key="d0">The Alan Turing Year, 2012</data>
-  <data key="d1">WORK_OF_ART</data>
+<node id="The Alan Turing Year">
+  <data key="d0">The Alan Turing Year</data>
+  <data key="d1">EVENT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="the Alan Turing Law">
+  <data key="d0">the Alan Turing Law</data>
+  <data key="d1">LAW</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="England">
+  <data key="d0">England</data>
+  <data key="d1">GPE</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="London">
   <data key="d0">London</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q84</data>
-  <data key="d3">capital and largest city of England and the United Kingdom</data>
-</node>
-<node id="England">
-  <data key="d0">England</data>
-  <data key="d1">GPE</data>
-  <data key="d2">Q179876</data>
-  <data key="d3">historic kingdom on the British Isles (927–1649; 1660–1707)</data>
-</node>
-<node id="the United Kingdom">
-  <data key="d0">the United Kingdom</data>
-  <data key="d1">GPE</data>
-  <data key="d2">Q174193</data>
-  <data key="d3">historical sovereign state (1801–1922)</data>
-</node>
-<node id="Cambridge">
-  <data key="d0">Cambridge</data>
-  <data key="d1">GPE</data>
-  <data key="d2">Q35794</data>
-  <data key="d3">collegiate public research university in Cambridge, England, United Kingdom</data>
-</node>
-<node id="Church">
-  <data key="d0">Church</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q34651</data>
-  <data key="d3">ecclesiological term</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Enigma">
   <data key="d0">Enigma</data>
   <data key="d1">PRODUCT</data>
-  <data key="d2">Q18416439</data>
-  <data key="d3">musical group</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="The Chemical Basis of Morphogenesis">
-  <data key="d0">The Chemical Basis of Morphogenesis</data>
-  <data key="d1">WORK_OF_ART</data>
-  <data key="d2">Q769913</data>
-  <data key="d3">1952 article by Alan Turing</data>
+<node id="Manchester">
+  <data key="d0">Manchester</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="al">
-  <data key="d0">al</data>
+<node id="Maida Vale">
+  <data key="d0">Maida Vale</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="ICS">
+  <data key="d0">ICS</data>
+  <data key="d1">ORG</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="the United Kingdom">
+  <data key="d0">the United Kingdom</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Cambridge">
+  <data key="d0">Cambridge</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Church">
+  <data key="d0">Church</data>
   <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="&quot; The Chemical Basis of Morphogenesis &quot;">
+  <data key="d0">" The Chemical Basis of Morphogenesis "</data>
+  <data key="d1">WORK_OF_ART</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Wilmslow">
+  <data key="d0">Wilmslow</data>
+  <data key="d1">GPE</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Hodges">
   <data key="d0">Hodges</data>
-  <data key="d1">ORG</data>
+  <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="the Alan Turing Law">
-  <data key="d0">the Alan Turing Law</data>
-  <data key="d1">WORK_OF_ART</data>
+<node id="The Alan Turing">
+  <data key="d0">The Alan Turing</data>
+  <data key="d1">LAW</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="23 June 1912">
   <data key="d0">23 June 1912</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q69259054</data>
-  <data key="d3">date in Gregorian calendar</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Bolivia">
+  <data key="d0">Bolivia</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Cambridge University">
   <data key="d0">Cambridge University</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q5025572</data>
-  <data key="d3">Parliamentary constituency in the United Kingdom, 1801-1950</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="The Alan Turing Centenary Conference">
   <data key="d0">The Alan Turing Centenary Conference</data>
-  <data key="d1">ORG</data>
+  <data key="d1">EVENT</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="the University of Manchester">
   <data key="d0">the University of Manchester</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q230899</data>
-  <data key="d3">public research university in Manchester, England, United Kingdom</data>
-</node>
-<node id="Twitter">
-  <data key="d0">Twitter</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q918</data>
-  <data key="d3">American social networking service founded in 2006</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="The Turing Year">
   <data key="d0">The Turing Year</data>
@@ -251,149 +275,173 @@
 <node id="2012">
   <data key="d0">2012</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q1489579</data>
-  <data key="d3">natural number</data>
-</node>
-<node id="Alan Turing - His Work">
-  <data key="d0">Alan Turing - His Work</data>
-  <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="John Dermot Turing">
   <data key="d0">John Dermot Turing</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q43075535</data>
-  <data key="d3">British solicitor and author</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Bill">
-  <data key="d0">Bill</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q686822</data>
-  <data key="d3">draft legal act presented in a legislature for consideration</data>
+<node id="the Policing and Crime Act 2017">
+  <data key="d0">the Policing and Crime Act 2017</data>
+  <data key="d1">LAW</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="2015">
+  <data key="d0">2015</data>
+  <data key="d1">DATE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="the Policing and Crime Bill">
+  <data key="d0">the Policing and Crime Bill</data>
+  <data key="d1">LAW</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the British Government">
   <data key="d0">the British Government</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q59641861</data>
-  <data key="d3">doctoral thesis by P. Bell</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="John Leech">
   <data key="d0">John Leech</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q750033</data>
-  <data key="d3">British Liberal Democrat politician</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Manchester Withington">
   <data key="d0">Manchester Withington</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q3336781</data>
-  <data key="d3">Parliamentary constituency in the United Kingdom, 1918 onwards</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Ed Miliband">
   <data key="d0">Ed Miliband</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q216594</data>
-  <data key="d3">British politician (born 1969)</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the Labour Party">
   <data key="d0">the Labour Party</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q56660525</data>
-  <data key="d3">book; published in 2000 reprinted 2001</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Cameron">
   <data key="d0">Cameron</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q24993844</data>
-  <data key="d3">parish in Fife, Scotland, UK</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="The Conservative Party">
   <data key="d0">The Conservative Party</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q5869155</data>
-  <data key="d3">aspect of history</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Private">
-  <data key="d0">Private</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q37001495</data>
-  <data key="d3">family name</data>
+<node id="Policing and Crime Bill">
+  <data key="d0">Policing and Crime Bill</data>
+  <data key="d1">LAW</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="October 2016">
   <data key="d0">October 2016</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q27498044</data>
-  <data key="d3">large cyberattack that affected Europe and North America in 2016</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Stonewall">
-  <data key="d0">Stonewall</data>
+<node id="Sam Gyimah">
+  <data key="d0">Sam Gyimah</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q975048</data>
-  <data key="d3">census-designated place in Gillespie County, Texas, United States</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="LGBT">
-  <data key="d0">LGBT</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q1662673</data>
-  <data key="d3">interdisciplinary academic field devoted to analysing gender identity and gendered representation</data>
+<node id="Conservative">
+  <data key="d0">Conservative</data>
+  <data key="d1">NORP</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="James Chalmers">
   <data key="d0">James Chalmers</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q101530859</data>
-  <data key="d3">Est 1713 - 25 Aug 1764 Aberdeen</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the University of Glasgow">
   <data key="d0">the University of Glasgow</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q99948563</data>
-  <data key="d3">UK Statutory Instrument 1980 No. 715</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Sharkey">
+  <data key="d0">Sharkey</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Liberal">
+  <data key="d0">Liberal</data>
+  <data key="d1">NORP</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Northern Ireland">
   <data key="d0">Northern Ireland</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q7604693</data>
-  <data key="d3">secondary legislation in Northern Ireland</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Scotland">
   <data key="d0">Scotland</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q230791</data>
-  <data key="d3">historic sovereign kingdom on the British Isles from the 9th century and up to 1707</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Michael Cashman">
   <data key="d0">Michael Cashman</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q662660</data>
-  <data key="d3">British politician (born 1950)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Lords">
   <data key="d0">Lords</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q6680182</data>
-  <data key="d3">1984 video game</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="28 June 2018">
+  <data key="d0">28 June 2018</data>
+  <data key="d1">DATE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Matt Houlbrook">
   <data key="d0">Matt Houlbrook</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q41555603</data>
-  <data key="d3">British academic historian</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the University of Birmingham">
   <data key="d0">the University of Birmingham</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q122684994</data>
-  <data key="d3">single academy trust</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="King's College">
   <data key="d0">King's College</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q245247</data>
-  <data key="d3">public research university in London, United Kingdom</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Cypher School">
-  <data key="d0">Cypher School</data>
+<node id="the Government Code and Cypher School">
+  <data key="d0">the Government Code and Cypher School</data>
   <data key="d1">ORG</data>
   <data key="d2"></data>
   <data key="d3"></data>
@@ -401,122 +449,140 @@
 <node id="Bletchley Park">
   <data key="d0">Bletchley Park</data>
   <data key="d1">FAC</data>
-  <data key="d2">Q155921</data>
-  <data key="d3">WWII code-breaking site and British country house, and museum, United Kingdom</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Allies">
+  <data key="d0">Allies</data>
+  <data key="d1">NORP</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Axis">
+  <data key="d0">Axis</data>
+  <data key="d1">NORP</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="the Battle of the Atlantic">
+  <data key="d0">the Battle of the Atlantic</data>
+  <data key="d1">EVENT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the Automatic Computing Engine">
   <data key="d0">the Automatic Computing Engine</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q58950012</data>
-  <data key="d3">scientific article published in Nature</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the National Physical Laboratory">
   <data key="d0">the National Physical Laboratory</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q60109752</data>
-  <data key="d3">article published in 1932</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Max Newman's">
-  <data key="d0">Max Newman's</data>
-  <data key="d1">PERSON</data>
+<node id="7 June 1954">
+  <data key="d0">7 June 1954</data>
+  <data key="d1">DATE</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Gordon Brown">
   <data key="d0">Gordon Brown</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q5584916</data>
-  <data key="d3">English footballer born in 1929</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="British">
   <data key="d0">British</data>
   <data key="d1">NORP</data>
-  <data key="d2">Q1973</data>
-  <data key="d3">province of Canada</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="2017">
   <data key="d0">2017</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q25052149</data>
-  <data key="d3">general election held in United Kingdom</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Bank of England">
+  <data key="d0">Bank of England</data>
+  <data key="d1">ORG</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="23 June 2021">
+  <data key="d0">23 June 2021</data>
+  <data key="d1">DATE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="2019">
   <data key="d0">2019</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q25274</data>
-  <data key="d3">year</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="German">
   <data key="d0">German</data>
   <data key="d1">NORP</data>
-  <data key="d2">Q188</data>
-  <data key="d3">West Germanic language native to Central Europe</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the Second World War">
   <data key="d0">the Second World War</data>
   <data key="d1">EVENT</data>
-  <data key="d2">Q362</data>
-  <data key="d3">1939–1945 global conflict</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Nazi">
   <data key="d0">Nazi</data>
   <data key="d1">NORP</data>
-  <data key="d2">Q37495593</data>
-  <data key="d3">family name</data>
-</node>
-<node id="Max Newman 's">
-  <data key="d0">Max Newman 's</data>
-  <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="John Robert Turing">
   <data key="d0">John Robert Turing</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q76197804</data>
-  <data key="d3">(1793-1828)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Scottish">
   <data key="d0">Scottish</data>
   <data key="d1">NORP</data>
-  <data key="d2">Q211113</data>
-  <data key="d3">council area of Scotland</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Irish">
-  <data key="d0">Irish</data>
-  <data key="d1">NORP</data>
-  <data key="d2">Q9142</data>
-  <data key="d3">language native to Ireland</data>
-</node>
-<node id="County Tipperary">
-  <data key="d0">County Tipperary</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q184618</data>
-  <data key="d3">county in Ireland</data>
-</node>
-<node id="County Longford">
-  <data key="d0">County Longford</data>
+<node id="Julius">
+  <data key="d0">Julius</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q100558735</data>
-  <data key="d3">Irish Statutory Instrument S.I. No. 6/1965</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="County Clare">
-  <data key="d0">County Clare</data>
-  <data key="d1">GPE</data>
-  <data key="d2">Q106184641</data>
-  <data key="d3">1831 United Kingdom of Great Britain and Ireland Act of Parliament 1 &amp; 2 Will 4 c. 27</data>
+<node id="Ethel">
+  <data key="d0">Ethel</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Ballsbridge">
-  <data key="d0">Ballsbridge</data>
-  <data key="d1">GPE</data>
-  <data key="d2">Q104261197</data>
-  <data key="d3">townland in Pembroke East, County Dublin, Ireland</data>
+<node id="Clyde Road">
+  <data key="d0">Clyde Road</data>
+  <data key="d1">FAC</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Dublin">
   <data key="d0">Dublin</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q16865980</data>
-  <data key="d3">family name</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Ballsbridge">
+  <data key="d0">Ballsbridge</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the Bengal Army">
   <data key="d0">the Bengal Army</data>
@@ -526,81 +592,111 @@
 </node>
 <node id="British India">
   <data key="d0">British India</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q129286</data>
-  <data key="d3">British colonial rule on the Indian subcontinent (1858–1947)</data>
-</node>
-<node id="Dermot Turing">
-  <data key="d0">Dermot Turing</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q43075535</data>
-  <data key="d3">British solicitor and author</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="John Ferrier Turing">
   <data key="d0">John Ferrier Turing</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q76197853</data>
-  <data key="d3">(1908-1983)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Natural Wonders">
-  <data key="d0">Natural Wonders</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q73983266</data>
-  <data key="d3">Book</data>
+<node id="Natural Wonders Every Child Should">
+  <data key="d0">Natural Wonders Every Child Should</data>
+  <data key="d1">WORK_OF_ART</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Edwin Tenney Brewster">
   <data key="d0">Edwin Tenney Brewster</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q60528313</data>
-  <data key="d3">American physicist and popular science writer (1866–1960)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Hastings">
+  <data key="d0">Hastings</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Baston Lodge">
   <data key="d0">Baston Lodge</data>
   <data key="d1">FAC</data>
-  <data key="d2">Q26486888</data>
-  <data key="d3">Villa in St Leonards-on-Sea, Hastings, UK</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="St Leonards">
-  <data key="d0">St Leonards</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q5355974</data>
-  <data key="d3">former state electoral district of New South Wales, Australia</data>
+<node id="St Leonards-on-Sea">
+  <data key="d0">St Leonards-on-Sea</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="23 June 2012">
   <data key="d0">23 June 2012</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q17982261</data>
-  <data key="d3">date</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Sherborne School">
-  <data key="d0">Sherborne School</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q2278254</data>
-  <data key="d3">school in Sherborne, Dorset, England, UK</data>
+<node id="St Michael's">
+  <data key="d0">St Michael's</data>
+  <data key="d1">FAC</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Sherborne in Dorset">
-  <data key="d0">Sherborne in Dorset</data>
-  <data key="d1">WORK_OF_ART</data>
-  <data key="d2">Q115984240</data>
-  <data key="d3">article published in 1984</data>
-</node>
-<node id="Christopher Collan Morcom">
-  <data key="d0">Christopher Collan Morcom</data>
+<node id="Hazelhurst Preparatory School">
+  <data key="d0">Hazelhurst Preparatory School</data>
   <data key="d1">ORG</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="13 July 1911">
-  <data key="d0">13 July 1911</data>
+<node id="Frant">
+  <data key="d0">Frant</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Sherborne School">
+  <data key="d0">Sherborne School</data>
+  <data key="d1">ORG</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Sherborne">
+  <data key="d0">Sherborne</data>
+  <data key="d1">GPE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="General Strike">
+  <data key="d0">General Strike</data>
+  <data key="d1">EVENT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="1926">
+  <data key="d0">1926</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q69258466</data>
-  <data key="d3">date in Gregorian calendar</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Christopher Collan Morcom">
+  <data key="d0">Christopher Collan Morcom</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="13 July 1911 –">
+  <data key="d0">13 July 1911 –</data>
+  <data key="d1">DATE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Morcom">
   <data key="d0">Morcom</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q16896846</data>
-  <data key="d3">village in Dorset, England, UK</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Frances Isobel Morcom">
   <data key="d0">Frances Isobel Morcom</data>
@@ -611,242 +707,206 @@
 <node id="13 February 1933">
   <data key="d0">13 February 1933</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q69269953</data>
-  <data key="d3">date in Gregorian calendar</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Trinity">
   <data key="d0">Trinity</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q105396010</data>
-  <data key="d3">given name</data>
-</node>
-<node id="King's">
-  <data key="d0">King's</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q245247</data>
-  <data key="d3">public research university in London, United Kingdom</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Max Newman">
   <data key="d0">Max Newman</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q707155</data>
-  <data key="d3">British mathematician (1897–1984)</data>
-</node>
-<node id="On Computable Numbers">
-  <data key="d0">On Computable Numbers</data>
-  <data key="d1">WORK_OF_ART</data>
-  <data key="d2">Q20895949</data>
-  <data key="d3">master's thesis by Alan Turing, 1936</data>
-</node>
-<node id="28 May of that year">
-  <data key="d0">28 May of that year</data>
-  <data key="d1">DATE</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="Kurt Gödel">
-  <data key="d0">Kurt Gödel</data>
+<node id="An Unsolvable Problem of Elementary Number Theory">
+  <data key="d0">An Unsolvable Problem of Elementary Number Theory</data>
+  <data key="d1">WORK_OF_ART</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Kurt Gödel 's">
+  <data key="d0">Kurt Gödel 's</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q41390</data>
-  <data key="d3">Austrian-American logician, mathematician, and philosopher of mathematics (1906-1978)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="1931">
   <data key="d0">1931</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q19241575</data>
-  <data key="d3">natural number</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Entscheidungsproblem">
-  <data key="d0">Entscheidungsproblem</data>
-  <data key="d1">GPE</data>
-  <data key="d2">Q818888</data>
-  <data key="d3">ability to solve a problem in an effective manner</data>
-</node>
-<node id="David Hilbert">
-  <data key="d0">David Hilbert</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q41585</data>
-  <data key="d3">German mathematician (1862–1943)</data>
-</node>
-<node id="Universal Machine'">
-  <data key="d0">Universal Machine'</data>
-  <data key="d1">WORK_OF_ART</data>
-  <data key="d2">Q2491922</data>
-  <data key="d3">Polish general-purpose machine gun</data>
+<node id="a 'Universal Machine'">
+  <data key="d0">a 'Universal Machine'</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="John von Neumann">
   <data key="d0">John von Neumann</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q17455</data>
-  <data key="d3">Hungarian and American mathematician and physicist (1903–1957)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Briggs">
-  <data key="d0">Briggs</data>
+<node id="Asa Briggs">
+  <data key="d0">Asa Briggs</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q530161</data>
-  <data key="d3">Irish paleontologist (born 1950)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="Bletchley and Turing's">
-  <data key="d0">Bletchley and Turing's</data>
+<node id="Bletchley">
+  <data key="d0">Bletchley</data>
   <data key="d1">ORG</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="Nazi Germany">
-  <data key="d0">Nazi Germany</data>
+<node id="the Polish Cipher Bureau">
+  <data key="d0">the Polish Cipher Bureau</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q7319</data>
-  <data key="d3">Germany in the time of National Socialism</data>
-</node>
-<node id="Polish">
-  <data key="d0">Polish</data>
-  <data key="d1">NORP</data>
-  <data key="d2">Q809</data>
-  <data key="d3">West Slavic language</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Warsaw">
   <data key="d0">Warsaw</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q144488</data>
-  <data key="d3">largest university in Poland</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Germany">
   <data key="d0">Germany</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q41304</data>
-  <data key="d3">Germany in the years 1918/1919–1933</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="4 September 1939">
   <data key="d0">4 September 1939</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q69273667</data>
-  <data key="d3">date in Gregorian calendar</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="GC&amp;CS">
+  <data key="d0">GC&amp;CS</data>
+  <data key="d1">ORG</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="GCHQ">
+  <data key="d0">GCHQ</data>
+  <data key="d1">ORG</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Prof">
+  <data key="d0">Prof</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="1948">
   <data key="d0">1948</data>
   <data key="d1">DATE</data>
-  <data key="d2">Q8403</data>
-  <data key="d3">Games of the XIV Olympiad, in London, Great Britain</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="George VI">
   <data key="d0">George VI</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q5545492</data>
-  <data key="d3">English artist (1833-1893)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the British Empire">
   <data key="d0">the British Empire</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q56491577</data>
-  <data key="d3">doctoral thesis</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Winston Churchill">
   <data key="d0">Winston Churchill</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q8016</data>
-  <data key="d3">British statesman, soldier and writer (1874–1965)</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Milner-Barry">
   <data key="d0">Milner-Barry</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q571435</data>
-  <data key="d3">British codebreaker, civil servant, and chess player (1906–1995)</data>
-</node>
-<node id="Banburismus">
-  <data key="d0">Banburismus</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q4119888</data>
-  <data key="d3">cryptanalytic process developed by Alan Turing during World War II</data>
-</node>
-<node id="Abraham Wald">
-  <data key="d0">Abraham Wald</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q240772</data>
-  <data key="d3">American mathematician, statistician, and scientist (1902–1950)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="US Navy">
   <data key="d0">US Navy</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q27713755</data>
-  <data key="d3">journal</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the United States">
   <data key="d0">the United States</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q30</data>
-  <data key="d3">country located primarily in North America</data>
-</node>
-<node id="Hut 8">
-  <data key="d0">Hut 8</data>
-  <data key="d1">FAC</data>
-  <data key="d2">Q3304448</data>
-  <data key="d3">section in the Government Code and Cypher School at Bletchley Park</data>
-</node>
-<node id="Hugh Alexander">
-  <data key="d0">Hugh Alexander</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q539878</data>
-  <data key="d3">British cryptanalyst, chess player, and chess writer (1909–1974)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Alexander">
   <data key="d0">Alexander</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q23852288</data>
-  <data key="d3">article in Otto's encyclopedia</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Tommy Flowers">
   <data key="d0">Tommy Flowers</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q954437</data>
-  <data key="d3">British engineer, helped to design Colossus during World War II (1905–1998)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Colossus">
   <data key="d0">Colossus</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q60374769</data>
-  <data key="d3">1989 edition</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Bell Labs">
   <data key="d0">Bell Labs</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q217365</data>
-  <data key="d3">research and scientific development company</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="US">
   <data key="d0">US</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q30</data>
-  <data key="d3">country located primarily in North America</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the Secret Service's">
   <data key="d0">the Secret Service's</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q67651387</data>
-  <data key="d3">item in the National Archives and Records Administration's holdings</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Radio Security Service">
   <data key="d0">Radio Security Service</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q65244295</data>
+  <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Delilah">
   <data key="d0">Delilah</data>
-  <data key="d1">PERSON</data>
-  <data key="d2">Q937827</data>
-  <data key="d3">woman described in the Book of Judges</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="SIGSALY">
   <data key="d0">SIGSALY</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q6120011</data>
-  <data key="d3">secure speech system</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
-<node id="First Draft of a Report">
-  <data key="d0">First Draft of a Report</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q5452926</data>
-  <data key="d3">incomplete document containing the first published description of the logical design of a computer using the stored-program concept</data>
+<node id="First Draft of a Report on the EDVAC">
+  <data key="d0">First Draft of a Report on the EDVAC</data>
+  <data key="d1">WORK_OF_ART</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Von Neumann 's">
   <data key="d0">Von Neumann 's</data>
@@ -857,32 +917,32 @@
 <node id="the Official Secrets Act">
   <data key="d0">the Official Secrets Act</data>
   <data key="d1">LAW</data>
-  <data key="d2">Q99849964</data>
-  <data key="d3">UK Statutory Instrument 2003 No. 1918</data>
-</node>
-<node id="Intelligent Machinery">
-  <data key="d0">Intelligent Machinery</data>
-  <data key="d1">ORG</data>
-  <data key="d2">Q20895966</data>
-  <data key="d3">report by Alan Turing to NPL, 1948</data>
-</node>
-<node id="late 1947">
-  <data key="d0">late 1947</data>
-  <data key="d1">DATE</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="the Pilot ACE">
   <data key="d0">the Pilot ACE</data>
-  <data key="d1">ORG</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="DEUCE">
+  <data key="d0">DEUCE</data>
+  <data key="d1">PRODUCT</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="ACE">
+  <data key="d0">ACE</data>
+  <data key="d1">PRODUCT</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Heinz Billing">
   <data key="d0">Heinz Billing</data>
   <data key="d1">PERSON</data>
-  <data key="d2">Q98042</data>
-  <data key="d3">German physicists (1914-2017)</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="the Max Planck Institute for Physics">
   <data key="d0">the Max Planck Institute for Physics</data>
@@ -890,11 +950,17 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="CAPTCHA">
-  <data key="d0">CAPTCHA</data>
+<node id="2023">
+  <data key="d0">2023</data>
+  <data key="d1">DATE</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Hut 8">
+  <data key="d0">Hut 8</data>
   <data key="d1">ORG</data>
-  <data key="d2">Q107387231</data>
-  <data key="d3">Python library</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="Joan Clarke">
   <data key="d0">Joan Clarke</data>
@@ -904,13 +970,13 @@
 </node>
 <node id="the Regal Cinema">
   <data key="d0">the Regal Cinema</data>
-  <data key="d1">ORG</data>
+  <data key="d1">FAC</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Oxford Road">
   <data key="d0">Oxford Road</data>
-  <data key="d1">ORG</data>
+  <data key="d1">FAC</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
@@ -920,8 +986,8 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="Donald Maclean">
-  <data key="d0">Donald Maclean</data>
+<node id="Guy Burgess">
+  <data key="d0">Guy Burgess</data>
   <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
@@ -932,11 +998,23 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
+<node id="Donald Maclean">
+  <data key="d0">Donald Maclean</data>
+  <data key="d1">PERSON</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
 <node id="UK">
   <data key="d0">UK</data>
   <data key="d1">GPE</data>
-  <data key="d2">Q145</data>
-  <data key="d3">island country in north-west Europe</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Adlington Road">
+  <data key="d0">Adlington Road</data>
+  <data key="d1">FAC</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
 </node>
 <node id="John">
   <data key="d0">John</data>
@@ -950,20 +1028,14 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="Walt Disney">
-  <data key="d0">Walt Disney</data>
-  <data key="d1">ORG</data>
-  <data key="d2"></data>
-  <data key="d3"></data>
-</node>
-<node id="Snow White">
-  <data key="d0">Snow White</data>
+<node id="John Graham-Cumming">
+  <data key="d0">John Graham-Cumming</data>
   <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="John Graham-Cumming">
-  <data key="d0">John Graham-Cumming</data>
+<node id="Christopher Chope">
+  <data key="d0">Christopher Chope</data>
   <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
@@ -980,27 +1052,27 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="kitāb al-ḥisāb al-hindī">
-  <data key="d0">kitāb al-ḥisāb al-hindī</data>
+<node id="Morten Tyldum">
+  <data key="d0">Morten Tyldum</data>
   <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="Muḥammad">
-  <data key="d0">Muḥammad</data>
+<node id="kitāb al-ḥisāb al-">
+  <data key="d0">kitāb al-ḥisāb al-</data>
+  <data key="d1">WORK_OF_ART</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+</node>
+<node id="Muḥammad ibn Mūsā al-Khwārizmī">
+  <data key="d0">Muḥammad ibn Mūsā al-Khwārizmī</data>
   <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="kitab al-jam'">
-  <data key="d0">kitab al-jam'</data>
+<node id="Al-Khwarizmi's">
+  <data key="d0">Al-Khwarizmi's</data>
   <data key="d1">PERSON</data>
-  <data key="d2"></data>
-  <data key="d3"></data>
-</node>
-<node id="the Latinization of Al-Khwarizmi's">
-  <data key="d0">the Latinization of Al-Khwarizmi's</data>
-  <data key="d1">ORG</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
@@ -1012,19 +1084,19 @@
 </node>
 <node id="Geoffrey Chaucer">
   <data key="d0">Geoffrey Chaucer</data>
-  <data key="d1">ORG</data>
+  <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="The Canterbury Tales">
   <data key="d0">The Canterbury Tales</data>
-  <data key="d1">ORG</data>
+  <data key="d1">WORK_OF_ART</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="the Ifa Oracle">
   <data key="d0">the Ifa Oracle</data>
-  <data key="d1">ORG</data>
+  <data key="d1">LAW</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
@@ -1046,18 +1118,6 @@
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
-<node id="Euclidean">
-  <data key="d0">Euclidean</data>
-  <data key="d1">NORP</data>
-  <data key="d2"></data>
-  <data key="d3"></data>
-</node>
-<node id="Euclid's Elements">
-  <data key="d0">Euclid's Elements</data>
-  <data key="d1">ORG</data>
-  <data key="d2"></data>
-  <data key="d3"></data>
-</node>
 <node id="Ada Lovelace">
   <data key="d0">Ada Lovelace</data>
   <data key="d1">PERSON</data>
@@ -1066,31 +1126,19 @@
 </node>
 <node id="Charles Babbage">
   <data key="d0">Charles Babbage</data>
-  <data key="d1">ORG</data>
+  <data key="d1">PERSON</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="Hollerith">
   <data key="d0">Hollerith</data>
-  <data key="d1">PERSON</data>
+  <data key="d1">ORG</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
 <node id="c. 1870s">
   <data key="d0">c. 1870s</data>
   <data key="d1">DATE</data>
-  <data key="d2"></data>
-  <data key="d3"></data>
-</node>
-<node id="Böhm-Jacopini">
-  <data key="d0">Böhm-Jacopini</data>
-  <data key="d1">ORG</data>
-  <data key="d2"></data>
-  <data key="d3"></data>
-</node>
-<node id="SEQUENCE">
-  <data key="d0">SEQUENCE</data>
-  <data key="d1">ORG</data>
   <data key="d2"></data>
   <data key="d3"></data>
 </node>
@@ -1114,20 +1162,6 @@
   <data key="d6">Publisher: Turing Centenary Advisory Committee</data>
   <data key="d7"></data>
   <data key="d8">infobox</data>
-</edge>
-<edge source="Alan Turing Year" target="Alan Turing">
-  <data key="d4">subject</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Alan Turing Year is known on Twitter as Alan Turing Years.</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
-<edge source="Alan Turing Year" target="Twitter">
-  <data key="d4">instance of</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Alan Turing Year is known on Twitter as Alan Turing Years.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
 </edge>
 <edge source="Alan Turing" target="Maida Vale , London, England">
   <data key="d4">birth_place</data>
@@ -1221,31 +1255,59 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
-<edge source="Alan Turing" target="Andrew Hodges">
-  <data key="d4">authored_by</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Barry Cooper ; Turing's biographer Andrew Hodges ; Wendy Hall , first person from outside North America elected President of the Association for Computing Machinery in July 2008; Simon Singh ; Hugh Loebner sponsor of the Loebner Prize for Artificial Intelligence (annual science contest based on the famous Turing test ) cyberneticist Kevin Warwick , author of 'March of the Machines' and 'I, Cyborg', and committee member Daniela Derbyshire, who is also handling international co-ordination of marketing and publicity.</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
 <edge source="Alan Turing" target="England">
   <data key="d4">birth_place</data>
   <data key="d5">0.8</data>
-  <data key="d6">Born in London, Turing was raised in southern England.</data>
+  <data key="d6">The Turing law provisions came into force immediately in England and Wales, and on 28 June 2018 in Northern Ireland.</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Alan Turing" target="Enigma">
+  <data key="d4">known_for</data>
+  <data key="d5">0.8</data>
+  <data key="d6">Turing devised techniques for speeding the breaking of German ciphers, including improvements to the pre-war Polish bomba method, an electromechanical machine that could find settings for the Enigma machine.</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Alan Turing" target="Manchester">
+  <data key="d4">worked_at</data>
+  <data key="d5">0.8</data>
+  <data key="d6">In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology.</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Alan Turing" target="Maida Vale">
+  <data key="d4">birth_place</data>
+  <data key="d5">0.8</data>
+  <data key="d6">Turing was born in Maida Vale , London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur , then in the Madras Presidency and presently in Odisha state, in India .</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Alan Turing" target="London">
+  <data key="d4">birth_place</data>
+  <data key="d5">0.8</data>
+  <data key="d6">Turing was born in Maida Vale , London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur , then in the Madras Presidency and presently in Odisha state, in India .</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Alan Turing" target="ICS">
+  <data key="d4">discipline</data>
+  <data key="d5">0.8</data>
+  <data key="d6">Turing was born in Maida Vale , London, while his father, Julius Mathison Turing, was on leave from his position with the Indian Civil Service (ICS) of the British Raj government at Chatrapur , then in the Madras Presidency and presently in Odisha state, in India .</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
 <edge source="Alan Turing" target="the United Kingdom">
-  <data key="d4">publication_place</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Turing's father's civil service commission was still active during Turing's childhood years, and his parents travelled between Hastings in the United Kingdom and India, leaving their two sons to stay with a retired Army couple.</data>
+  <data key="d4">country</data>
+  <data key="d5">1.0</data>
+  <data key="d6">The Alan Turing law is now an informal term for the law in the United Kingdom, contained in the Policing and Crime Act 2017 , which serves as an amnesty law to retroactively pardon men who were cautioned or convicted under historical legislation that outlawed homosexual acts.</data>
   <data key="d7"></data>
-  <data key="d8">silver</data>
+  <data key="d8">rebel</data>
 </edge>
 <edge source="Alan Turing" target="Cambridge">
   <data key="d4">educated_at</data>
   <data key="d5">0.8</data>
-  <data key="d6">There, Turing studied the undergraduate course in Schedule B from February 1931 to November 1934 at King's College, Cambridge , where he was awarded first-class honours in mathematics.</data>
+  <data key="d6">After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter.</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
@@ -1256,24 +1318,24 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
-<edge source="Alan Turing" target="Enigma">
-  <data key="d4">known_for</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Within weeks of arriving at Bletchley Park, Turing had specified an electromechanical machine called the bombe , which could break Enigma more effectively than the Polish bomba kryptologiczna , from which its name was derived.</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
-<edge source="Alan Turing" target="London">
-  <data key="d4">birth_place</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Between 1945 and 1947, Turing lived in Hampton , London, while he worked on the design of the ACE (Automatic Computing Engine) at the National Physical Laboratory (NPL) .</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
-<edge source="Alan Turing" target="The Chemical Basis of Morphogenesis">
+<edge source="Alan Turing" target="&quot; The Chemical Basis of Morphogenesis &quot;">
   <data key="d4">known_for</data>
   <data key="d5">0.8</data>
   <data key="d6">When Turing was 39 years old in 1951, he turned to mathematical biology , finally publishing his masterpiece " The Chemical Basis of Morphogenesis " in January 1952.</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Alan Turing" target="Andrew Hodges">
+  <data key="d4">influenced by</data>
+  <data key="d5">1.0</data>
+  <data key="d6">As Andrew Hodges , biographer of Turing, later wrote, "This letter had an electric effect." Churchill wrote a memo to General Ismay , which read: "ACTION THIS DAY.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Alan Turing" target="The Alan Turing">
+  <data key="d4">subject</data>
+  <data key="d5">0.8</data>
+  <data key="d6">The Alan Turing law is now an informal term for the law in the United Kingdom, contained in the Policing and Crime Act 2017 , which serves as an amnesty law to retroactively pardon men who were cautioned or convicted under historical legislation that outlawed homosexual acts.</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
@@ -1291,6 +1353,14 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
+<edge source="Alan Turing" target="Bolivia">
+  <data key="d4">country</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Barry Cooper
+The international impact of Turing's work is reflected in the list of countries in which Alan Turing Year was celebrated, including: Bolivia , Brazil , Canada , China , Czech Republic , France , Germany , Hong Kong , India , Israel , Italy , Netherlands , Mexico , New Zealand , Norway , Philippines , Portugal , Spain , Switzerland , the U.K.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
 <edge source="Alan Turing" target="Cambridge University">
   <data key="d4">educated_at</data>
   <data key="d5">1.0</data>
@@ -1298,10 +1368,45 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
+<edge source="Alan Turing" target="John Dermot Turing">
+  <data key="d4">authored_by</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Members of TCAC include Honorary President, Sir John Dermot Turing; The Chair and founder of the committee, mathematician and author of Alan Turing - His Work and Impact S.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Alan Turing" target="the Policing and Crime Act 2017">
+  <data key="d4">part of</data>
+  <data key="d5">1.0</data>
+  <data key="d6">"Alan Turing law" is an informal term for the portion of the Policing and Crime Act 2017 which serves to pardon men who were cautioned or convicted under obsolete laws criminalising homosexual acts.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Alan Turing" target="2015">
+  <data key="d4">point in time</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Several proposals had been put forward for an Alan Turing law, and introducing such a law was government policy since 2015.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Alan Turing" target="28 June 2018">
+  <data key="d4">publication_date</data>
+  <data key="d5">1.0</data>
+  <data key="d6">The Turing law provisions came into force immediately in England and Wales, and on 28 June 2018 in Northern Ireland.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
 <edge source="Alan Turing" target="23 June 1912">
   <data key="d4">date of birth</data>
   <data key="d5">1.0</data>
   <data key="d6">Alan Mathison Turing (; 23 June 1912 – 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Alan Turing" target="7 June 1954">
+  <data key="d4">date of death</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Turing died on 7 June 1954, aged 41, from cyanide poisoning.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1326,6 +1431,13 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
+<edge source="Alan Turing" target="John Ferrier Turing">
+  <data key="d4">father</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Turing had an elder brother, John Ferrier Turing, father of Dermot Turing , 12th Baronet of the Turing baronets .</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
 <edge source="Alan Turing" target="23 June 2012">
   <data key="d4">point in time</data>
   <data key="d5">1.0</data>
@@ -1347,7 +1459,7 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Alan Turing" target="Universal Machine'">
+<edge source="Alan Turing" target="a 'Universal Machine'">
   <data key="d4">subclass of</data>
   <data key="d5">1.0</data>
   <data key="d6">It also included a notion of a 'Universal Machine' (now known as a universal Turing machine ), with the idea that such a machine could perform the tasks of any other computation machine (as indeed could Church's lambda calculus).</data>
@@ -1358,6 +1470,13 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
   <data key="d6">John von Neumann acknowledged that the central concept of the modern computer was due to Turing's paper.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Alan Turing" target="2023">
+  <data key="d4">publication_date</data>
+  <data key="d5">1.0</data>
+  <data key="d6">A study conducted in 2023 confirmed Turing's mathematical model hypothesis.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1374,6 +1493,13 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d6">Kjell intended to visit Turing in the UK but the authorities intercepted Kjell's postcard detailing his travel arrangements and were able to intercept and deport him before the two could meet.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
+</edge>
+<edge source="Alonzo Church" target="Alan Turing">
+  <data key="d4">doctoral_advisor</data>
+  <data key="d5">0.8</data>
+  <data key="d6">Between the springs of 1935 and 1936, at the same time as Alonzo Church , Turing worked on the decidability of problems, starting from Gödel's incompleteness theorems .</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
 </edge>
 <edge source="Alan Turing: The Enigma" target="Andrew Hodges">
   <data key="d4">authored_by</data>
@@ -1431,26 +1557,26 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
-<edge source="The Alan Turing Year, 2012" target="Alan Turing">
+<edge source="The Alan Turing Year" target="Alan Turing">
   <data key="d4">subject</data>
   <data key="d5">0.8</data>
   <data key="d6">The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912.</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
-<edge source="The Alan Turing Year, 2012" target="23 June 1912">
+<edge source="The Alan Turing Year" target="23 June 1912">
   <data key="d4">date of birth</data>
   <data key="d5">1.0</data>
   <data key="d6">The Alan Turing Year, 2012, marked the celebration of the life and scientific influence of Alan Turing during the centenary of his birth on 23 June 1912.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="London" target="Alan Turing">
-  <data key="d4">birth_place</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Born in London, Turing was raised in southern England.</data>
+<edge source="the Alan Turing Law" target="Alan Turing">
+  <data key="d4">facet of</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the "architect" of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women.</data>
   <data key="d7"></data>
-  <data key="d8">silver</data>
+  <data key="d8">rebel</data>
 </edge>
 <edge source="England" target="Alan Turing">
   <data key="d4">birth_place</data>
@@ -1480,42 +1606,14 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="the United Kingdom" target="England">
-  <data key="d4">contains administrative territorial entity</data>
-  <data key="d5">1.0</data>
-  <data key="d6">As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Church" target="Alan Turing">
-  <data key="d4">doctoral_advisor</data>
+<edge source="London" target="Alan Turing">
+  <data key="d4">birth_place</data>
   <data key="d5">0.8</data>
-  <data key="d6">That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work.</data>
+  <data key="d6">Born in London, Turing was raised in southern England.</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
-<edge source="Enigma" target="1983">
-  <data key="d4">publication_date</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
-<edge source="Enigma" target="Alan Turing">
-  <data key="d4">subject</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
-<edge source="Enigma" target="Andrew Hodges">
-  <data key="d4">authored_by</data>
-  <data key="d5">0.8</data>
-  <data key="d6">Alan Turing: The Enigma (1983) is a biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges.</data>
-  <data key="d7"></data>
-  <data key="d8">silver</data>
-</edge>
-<edge source="Enigma" target="Nazi Germany">
+<edge source="Enigma" target="Nazi">
   <data key="d4">country of origin</data>
   <data key="d5">1.0</data>
   <data key="d6">He concentrated on cryptanalysis of the Enigma cipher machine used by Nazi Germany , together with Dilly Knox , a senior GC&amp;CS codebreaker.</data>
@@ -1529,10 +1627,31 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="al" target="Alan Turing">
-  <data key="d4">published_by</data>
+<edge source="the United Kingdom" target="England">
+  <data key="d4">contains administrative territorial entity</data>
+  <data key="d5">1.0</data>
+  <data key="d6">As the three regions are separate jurisdictions, and many elements of criminal law are devolved matters in the United Kingdom, the British Government, by convention, only legislated a pardon for England and Wales.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Cambridge" target="King's College">
+  <data key="d4">has part</data>
+  <data key="d5">1.0</data>
+  <data key="d6">There, Turing studied the undergraduate course in Schedule B from February 1931 to November 1934 at King's College, Cambridge , where he was awarded first-class honours in mathematics.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Church" target="Alan Turing">
+  <data key="d4">doctoral_advisor</data>
   <data key="d5">0.8</data>
-  <data key="d6">found that in mice, removal of Hox genes causes an increase in the number of digits without an increase in the overall size of the limb, suggesting that Hox genes control digit formation by tuning the wavelength of a Turing-type mechanism.</data>
+  <data key="d6">That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work.</data>
+  <data key="d7"></data>
+  <data key="d8">silver</data>
+</edge>
+<edge source="Wilmslow" target="Alan Turing">
+  <data key="d4">death_place</data>
+  <data key="d5">0.8</data>
+  <data key="d6">On 8 June 1954, at his house at 43 Adlington Road, Wilmslow , Turing's housekeeper found him dead.</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
 </edge>
@@ -1542,13 +1661,6 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d6">who, in his review of Hodges' book, recalls "Turing's vulnerable position in the Cold War political climate" and points out that "Turing was found dead by a maid, who discovered him 'lying neatly in his bed'—hardly what one would expect of "a man fighting for life against the suffocation induced by cyanide poisoning." Turing had given no hint of suicidal inclinations to his friends and had made no effort to put his affairs in order.</data>
   <data key="d7"></data>
   <data key="d8">silver</data>
-</edge>
-<edge source="the Alan Turing Law" target="Alan Turing">
-  <data key="d4">facet of</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Due to his repeated attempts to bring attention to the issue, Leech is now regularly described as the "architect" of Turing's pardon and subsequently the Alan Turing Law, which went on to secure pardons for 75,000 other men and women.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
 </edge>
 <edge source="The Alan Turing Centenary Conference" target="the University of Manchester">
   <data key="d4">location</data>
@@ -1564,31 +1676,24 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Alan Turing - His Work" target="John Dermot Turing">
-  <data key="d4">authored_by</data>
+<edge source="the Policing and Crime Act 2017" target="Alan Turing">
+  <data key="d4">has part</data>
   <data key="d5">1.0</data>
-  <data key="d6">Members of TCAC include Honorary President, Sir John Dermot Turing; The Chair and founder of the committee, mathematician and author of Alan Turing - His Work and Impact S.</data>
+  <data key="d6">"Alan Turing law" is an informal term for the portion of the Policing and Crime Act 2017 which serves to pardon men who were cautioned or convicted under obsolete laws criminalising homosexual acts.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Bill" target="the British Government">
+<edge source="the Policing and Crime Act 2017" target="the United Kingdom">
+  <data key="d4">country</data>
+  <data key="d5">1.0</data>
+  <data key="d6">The Alan Turing law is now an informal term for the law in the United Kingdom, contained in the Policing and Crime Act 2017 , which serves as an amnesty law to retroactively pardon men who were cautioned or convicted under historical legislation that outlawed homosexual acts.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="the Policing and Crime Bill" target="the British Government">
   <data key="d4">legislated by</data>
   <data key="d5">1.0</data>
   <data key="d6">To implement the pardon, the British Government announced on 20 October 2016 that it would support an amendment to the Policing and Crime Bill that would provide a posthumous pardon, and provide a process whereby those still living could apply to have these offences disregarded.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Bill" target="Private">
-  <data key="d4">instance of</data>
-  <data key="d5">1.0</data>
-  <data key="d6">In June 2016, John Nicolson MP introduced a Private Member's Bill , the Sexual Offences (Pardons Etc.) Bill 2016–17, intended to implement the proposal.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Bill" target="October 2016">
-  <data key="d4">point in time</data>
-  <data key="d5">1.0</data>
-  <data key="d6">In October 2016, the Conservative government announced that, instead of supporting the Private Member's Bill's original proposal for a blanket pardon for all, it would enact the proposed changes through an amendment to the forthcoming Policing and Crime Bill 2016 .</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1620,10 +1725,17 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Stonewall" target="LGBT">
-  <data key="d4">field_of_work</data>
+<edge source="Policing and Crime Bill" target="October 2016">
+  <data key="d4">point in time</data>
   <data key="d5">1.0</data>
-  <data key="d6">Nicolson disagreed and, backed by the LGBT campaign group Stonewall , said that the government was attempting to "hijack" the law by announcing the amendment just prior to the second reading of his Private Member's Bill, and said that his bill already excluded cases where the offence was still considered a crime.</data>
+  <data key="d6">In October 2016, the Conservative government announced that, instead of supporting the Private Member's Bill's original proposal for a blanket pardon for all, it would enact the proposed changes through an amendment to the forthcoming Policing and Crime Bill 2016 .</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Sam Gyimah" target="Conservative">
+  <data key="d4">member of political party</data>
+  <data key="d5">1.0</data>
+  <data key="d6">When Nicolson's bill was debated in Parliament on 21 October 2016, it was successfully filibustered by Conservative MP Sam Gyimah and failed to proceed.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1631,6 +1743,13 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d4">employer</data>
   <data key="d5">1.0</data>
   <data key="d6">This would still have to be done through the disregard process, leading to possible cases in which it would not be clear whether or not a pardon had been granted, described by James Chalmers, Regius Professor of Law at the University of Glasgow , as a " Schrödinger's pardon ".</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Sharkey" target="Liberal">
+  <data key="d4">member of political party</data>
+  <data key="d5">1.0</data>
+  <data key="d6">On 19 October 2016, Liberal Baron Sharkey , with government support, had added the core amendment to the agenda for the Policing and Crime Bill 2016.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1669,17 +1788,38 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Cypher School" target="Bletchley Park">
+<edge source="the Government Code and Cypher School" target="Bletchley Park">
   <data key="d4">part of</data>
   <data key="d5">1.0</data>
   <data key="d6">During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Bletchley Park" target="Cypher School">
+<edge source="Bletchley Park" target="the Government Code and Cypher School">
   <data key="d4">has part</data>
   <data key="d5">1.0</data>
   <data key="d6">During World War II, Turing worked for the Government Code and Cypher School at Bletchley Park, Britain's codebreaking centre that produced Ultra intelligence.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Allies" target="Axis">
+  <data key="d4">opposite of</data>
+  <data key="d5">1.0</data>
+  <data key="d6">He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Axis" target="Allies">
+  <data key="d4">opposite of</data>
+  <data key="d5">1.0</data>
+  <data key="d6">He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="the Battle of the Atlantic" target="Allies">
+  <data key="d4">participant</data>
+  <data key="d5">1.0</data>
+  <data key="d6">He played a crucial role in cracking intercepted messages that enabled the Allies to defeat the Axis powers in the Battle of the Atlantic and other engagements.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1687,13 +1827,6 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d4">manufacturer</data>
   <data key="d5">1.0</data>
   <data key="d6">After the war, Turing worked at the National Physical Laboratory, where he designed the Automatic Computing Engine, one of the first designs for a stored-program computer.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Max Newman's" target="the University of Manchester">
-  <data key="d4">employer</data>
-  <data key="d5">1.0</data>
-  <data key="d6">In 1948, Turing joined Max Newman's Computing Machine Laboratory at the University of Manchester, where he contributed to the development of early Manchester computers and became interested in mathematical biology.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1711,10 +1844,17 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="German" target="the Second World War">
-  <data key="d4">part of</data>
+<edge source="Bank of England" target="23 June 2021">
+  <data key="d4">start time</data>
   <data key="d5">1.0</data>
-  <data key="d6">During the Second World War, Turing was a leading participant in the breaking of German ciphers at Bletchley Park .</data>
+  <data key="d6">His portrait appears on the Bank of England £50 note, first released on 23 June 2021 to coincide with his birthday.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="German" target="the Second World War">
+  <data key="d4">conflict</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Turing was in large part responsible not only for the concept of computers, incisive theorems about their powers, and a clear vision of the possibility of computer minds, but also for the cracking of German ciphers during the Second World War.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1732,13 +1872,6 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Max Newman 's" target="the University of Manchester">
-  <data key="d4">employer</data>
-  <data key="d5">1.0</data>
-  <data key="d6">In 1948, Turing joined Max Newman 's Computing Machine Laboratory at the University of Manchester , where he contributed to the development of early Manchester computers and became interested in mathematical biology .</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
 <edge source="John Robert Turing" target="Scottish">
   <data key="d4">country of citizenship</data>
   <data key="d5">1.0</data>
@@ -1746,31 +1879,24 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Irish" target="County Tipperary">
-  <data key="d4">contains administrative territorial entity</data>
+<edge source="Julius" target="Ethel">
+  <data key="d4">spouse</data>
   <data key="d5">1.0</data>
-  <data key="d6">The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .</data>
+  <data key="d6">Julius and Ethel married on 1 October 1907 at the Church of Ireland St.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="County Tipperary" target="Irish">
-  <data key="d4">located in the administrative territorial entity</data>
+<edge source="Ethel" target="Julius">
+  <data key="d4">spouse</data>
   <data key="d5">1.0</data>
-  <data key="d6">The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .</data>
+  <data key="d6">Julius and Ethel married on 1 October 1907 at the Church of Ireland St.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="County Longford" target="Irish">
+<edge source="Clyde Road" target="Dublin">
   <data key="d4">located in the administrative territorial entity</data>
   <data key="d5">1.0</data>
-  <data key="d6">The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="County Clare" target="Irish">
-  <data key="d4">located in the administrative territorial entity</data>
-  <data key="d5">1.0</data>
-  <data key="d6">The Stoneys were a Protestant Anglo-Irish gentry family from both County Tipperary and County Longford , while Ethel herself had spent much of her childhood in County Clare .</data>
+  <data key="d6">Bartholomew's Church on Clyde Road in Ballsbridge , Dublin .</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1788,35 +1914,56 @@ The international impact of Turing's work is reflected in the list of countries 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Dermot Turing" target="John Ferrier Turing">
-  <data key="d4">father</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Turing had an elder brother, John Ferrier Turing, father of Dermot Turing , 12th Baronet of the Turing baronets .</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Natural Wonders" target="Edwin Tenney Brewster">
+<edge source="Natural Wonders Every Child Should" target="Edwin Tenney Brewster">
   <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
   <data key="d6">In 1922, he discovered Natural Wonders Every Child Should Know by Edwin Tenney Brewster .</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Baston Lodge" target="St Leonards">
+<edge source="Hastings" target="the United Kingdom">
+  <data key="d4">country</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Turing's father's civil service commission was still active during Turing's childhood years, and his parents travelled between Hastings in the United Kingdom and India, leaving their two sons to stay with a retired Army couple.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Baston Lodge" target="St Leonards-on-Sea">
   <data key="d4">located in the administrative territorial entity</data>
   <data key="d5">1.0</data>
   <data key="d6">At Hastings, Turing stayed at Baston Lodge , Upper Maze Hill, St Leonards-on-Sea , now marked with a blue plaque.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Sherborne School" target="Sherborne in Dorset">
+<edge source="St Michael's" target="St Leonards-on-Sea">
+  <data key="d4">located in the administrative territorial entity</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Turing's parents enrolled him at St Michael's, a primary school at 20 Charles Road, St Leonards-on-Sea , from the age of six to nine.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Hazelhurst Preparatory School" target="Frant">
+  <data key="d4">located in the administrative territorial entity</data>
+  <data key="d5">1.0</data>
+  <data key="d6">Between January 1922 and 1926, Turing was educated at Hazelhurst Preparatory School, an independent school in the village of Frant in Sussex (now East Sussex ).</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Sherborne School" target="Sherborne">
   <data key="d4">located in the administrative territorial entity</data>
   <data key="d5">1.0</data>
   <data key="d6">In 1926, at the age of 13, he went on to Sherborne School , an independent boarding school in the market town of Sherborne in Dorset, where he boarded at Westcott House.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Christopher Collan Morcom" target="13 July 1911">
+<edge source="General Strike" target="1926">
+  <data key="d4">point in time</data>
+  <data key="d5">1.0</data>
+  <data key="d6">The first day of term coincided with the 1926 General Strike , in Britain, but Turing was so determined to attend that he rode his bicycle unaccompanied 60 miles (97 km) from Southampton to Sherborne, stopping overnight at an inn.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Christopher Collan Morcom" target="13 July 1911 –">
   <data key="d4">date of birth</data>
   <data key="d5">1.0</data>
   <data key="d6">At Sherborne, Turing formed a significant friendship with fellow pupil Christopher Collan Morcom (13 July 1911 – 13 February 1930), who has been described as Turing's first love.</data>
@@ -1852,13 +1999,6 @@ Turing's relationship with Morcom's mother continued long after Morcom's death, 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="King's" target="Cambridge">
-  <data key="d4">part of</data>
-  <data key="d5">1.0</data>
-  <data key="d6">After graduating from Sherborne, Turing applied for several Cambridge colleges scholarships, including Trinity and King's , eventually earning an £80 per annum scholarship (equivalent to about £4,300 as of 2023) to study at the latter.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
 <edge source="Max Newman" target="Alan Turing">
   <data key="d4">doctoral_student</data>
   <data key="d5">1.0</data>
@@ -1866,31 +2006,24 @@ Turing's relationship with Morcom's mother continued long after Morcom's death, 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="On Computable Numbers" target="28 May of that year">
-  <data key="d4">publication_date</data>
+<edge source="An Unsolvable Problem of Elementary Number Theory" target="Church">
+  <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
-  <data key="d6">Finally, on 28 May of that year, he finished and delivered his 36-page paper for publication called " On Computable Numbers, with an Application to the Entscheidungsproblem ".</data>
+  <data key="d6">That same month, Church published his An Unsolvable Problem of Elementary Number Theory , with similar conclusions to Turing's then-yet unpublished work.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Kurt Gödel" target="1931">
+<edge source="Kurt Gödel 's" target="1931">
   <data key="d4">notable work</data>
   <data key="d5">1.0</data>
   <data key="d6">In this paper, Turing reformulated Kurt Gödel 's 1931 results on the limits of proof and computation, replacing Gödel's universal arithmetic-based formal language with the formal and simple hypothetical devices that became known as Turing machines .</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="1931" target="Kurt Gödel">
+<edge source="1931" target="Kurt Gödel 's">
   <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
   <data key="d6">In this paper, Turing reformulated Kurt Gödel 's 1931 results on the limits of proof and computation, replacing Gödel's universal arithmetic-based formal language with the formal and simple hypothetical devices that became known as Turing machines .</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Entscheidungsproblem" target="David Hilbert">
-  <data key="d4">discoverer or inventor</data>
-  <data key="d5">1.0</data>
-  <data key="d6">The Entscheidungsproblem (decision problem) was originally posed by German mathematician David Hilbert in 1928.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1901,7 +2034,7 @@ Turing's relationship with Morcom's mother continued long after Morcom's death, 
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Briggs" target="Bletchley and Turing's">
+<edge source="Asa Briggs" target="Bletchley">
   <data key="d4">employer</data>
   <data key="d5">1.0</data>
   <data key="d6">The historian and wartime codebreaker Asa Briggs has said, "You needed exceptional talent, you needed genius at Bletchley and Turing's was that genius."
@@ -1909,7 +2042,7 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Polish" target="Warsaw">
+<edge source="the Polish Cipher Bureau" target="Warsaw">
   <data key="d4">located in the administrative territorial entity</data>
   <data key="d5">1.0</data>
   <data key="d6">Soon after the July 1939 meeting near Warsaw at which the Polish Cipher Bureau gave the British and French details of the wiring of Enigma machine's rotors and their method of decrypting Enigma machine 's messages, Turing and Knox developed a broader solution.</data>
@@ -1920,6 +2053,27 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d4">point in time</data>
   <data key="d5">1.0</data>
   <data key="d6">On 4 September 1939, the day after the UK declared war on Germany, Turing reported to Bletchley Park, the wartime station of GC&amp;CS.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="GC&amp;CS" target="GCHQ">
+  <data key="d4">replaced by</data>
+  <data key="d5">1.0</data>
+  <data key="d6">He wrote two papers discussing mathematical approaches, titled The Applications of Probability to Cryptography and Paper on Statistics of Repetitions , which were of such value to GC&amp;CS and its successor GCHQ that they were not released to the UK National Archives until April 2012, shortly before the centenary of his birth.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="GCHQ" target="GC&amp;CS">
+  <data key="d4">replaces</data>
+  <data key="d5">1.0</data>
+  <data key="d6">He wrote two papers discussing mathematical approaches, titled The Applications of Probability to Cryptography and Paper on Statistics of Repetitions , which were of such value to GC&amp;CS and its successor GCHQ that they were not released to the UK National Archives until April 2012, shortly before the centenary of his birth.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Prof" target="Enigma">
+  <data key="d4">subject</data>
+  <data key="d5">1.0</data>
+  <data key="d6">He was known to his colleagues as "Prof" and his treatise on Enigma was known as the "Prof's Book".</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -1944,38 +2098,10 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Banburismus" target="Abraham Wald">
-  <data key="d4">discoverer or inventor</data>
-  <data key="d5">1.0</data>
-  <data key="d6">That same night, he also conceived of the idea of Banburismus , a sequential statistical technique (what Abraham Wald later called sequential analysis ) to assist in breaking the naval Enigma, "though I was not sure that it would work in practice, and was not, in fact, sure until some days had actually broken".</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Abraham Wald" target="Banburismus">
-  <data key="d4">notable work</data>
-  <data key="d5">1.0</data>
-  <data key="d6">That same night, he also conceived of the idea of Banburismus , a sequential statistical technique (what Abraham Wald later called sequential analysis ) to assist in breaking the naval Enigma, "though I was not sure that it would work in practice, and was not, in fact, sure until some days had actually broken".</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
 <edge source="US Navy" target="the United States">
   <data key="d4">country</data>
   <data key="d5">1.0</data>
   <data key="d6">Turing travelled to the United States in November 1942 and worked with US Navy cryptanalysts on the naval Enigma and bombe construction in Washington.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Hut 8" target="Hugh Alexander">
-  <data key="d4">chairperson</data>
-  <data key="d5">1.0</data>
-  <data key="d6">During his absence, Hugh Alexander had officially assumed the position of head of Hut 8, although Alexander had been de facto head for some time (Turing having little interest in the day-to-day running of the section).</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Hut 8" target="Joan Clarke">
-  <data key="d4">has part</data>
-  <data key="d5">1.0</data>
-  <data key="d6">In 1941, Turing proposed marriage to Hut 8 colleague Joan Clarke , a fellow mathematician and cryptanalyst, but their engagement was short-lived.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -2042,7 +2168,7 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="First Draft of a Report" target="Von Neumann 's">
+<edge source="First Draft of a Report on the EDVAC" target="Von Neumann 's">
   <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
   <data key="d6">Von Neumann 's incomplete First Draft of a Report on the EDVAC had predated Turing's paper, but it was much less detailed and, according to John R.</data>
@@ -2056,17 +2182,24 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Intelligent Machinery" target="late 1947">
-  <data key="d4">publication_date</data>
-  <data key="d5">1.0</data>
-  <data key="d6">In late 1947 he returned to Cambridge for a sabbatical year during which he produced a seminal work on Intelligent Machinery that was not published in his lifetime.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
 <edge source="the Pilot ACE" target="Cambridge">
   <data key="d4">manufacturer</data>
   <data key="d5">1.0</data>
   <data key="d6">While he was at Cambridge, the Pilot ACE was being built in his absence.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="DEUCE" target="English">
+  <data key="d4">manufacturer</data>
+  <data key="d5">1.0</data>
+  <data key="d6">It executed its first program on 10 May 1950, and a number of later computers around the world owe much to it, including the English Electric DEUCE and the American Bendix G-15 .</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="ACE" target="Alan Turing">
+  <data key="d4">discoverer or inventor</data>
+  <data key="d5">1.0</data>
+  <data key="d6">The full version of Turing's ACE was not built until after his death.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -2077,10 +2210,10 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="CAPTCHA" target="Alan Turing">
-  <data key="d4">instance of</data>
+<edge source="Hut 8" target="Joan Clarke">
+  <data key="d4">has part</data>
   <data key="d5">1.0</data>
-  <data key="d6">A reversed form of the Turing test is widely used on the Internet; the CAPTCHA test is intended to determine whether the user is a human or a computer.</data>
+  <data key="d6">In 1941, Turing proposed marriage to Hut 8 colleague Joan Clarke , a fellow mathematician and cryptanalyst, but their engagement was short-lived.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -2105,10 +2238,24 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
+<edge source="Guy Burgess" target="the Soviet Union">
+  <data key="d4">country of citizenship</data>
+  <data key="d5">1.0</data>
+  <data key="d6">His trial took place only months after the defection to the Soviet Union of Guy Burgess and Donald Maclean , in summer 1951, after which the Foreign Office started to consider anyone known to be homosexual as a potential security risk.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
 <edge source="Donald Maclean" target="the Soviet Union">
   <data key="d4">country of citizenship</data>
   <data key="d5">1.0</data>
   <data key="d6">His trial took place only months after the defection to the Soviet Union of Guy Burgess and Donald Maclean , in summer 1951, after which the Foreign Office started to consider anyone known to be homosexual as a potential security risk.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Adlington Road" target="Wilmslow">
+  <data key="d4">located in the administrative territorial entity</data>
+  <data key="d5">1.0</data>
+  <data key="d6">On 8 June 1954, at his house at 43 Adlington Road, Wilmslow , Turing's housekeeper found him dead.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -2126,24 +2273,17 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Walt Disney" target="Snow White">
-  <data key="d4">notable work</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Hodges and a later biographer, David Leavitt , have both speculated that Turing was re-enacting a scene from the Walt Disney film Snow White and the Seven Dwarfs (1937), his favourite fairy tale.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Snow White" target="Walt Disney">
-  <data key="d4">producer</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Hodges and a later biographer, David Leavitt , have both speculated that Turing was re-enacting a scene from the Walt Disney film Snow White and the Seven Dwarfs (1937), his favourite fairy tale.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
 <edge source="John Graham-Cumming" target="British">
   <data key="d4">country of citizenship</data>
   <data key="d5">1.0</data>
   <data key="d6">In August 2009, British programmer John Graham-Cumming started a petition urging the British government to apologise for Turing's prosecution as a homosexual.</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="Christopher Chope" target="Conservative">
+  <data key="d4">member of political party</data>
+  <data key="d5">1.0</data>
+  <data key="d6">At the bill's second reading in the House of Commons on 29 November 2013, Conservative MP Christopher Chope objected to the bill, delaying its passage.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
@@ -2161,28 +2301,28 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="kitāb al-ḥisāb al-hindī" target="Muḥammad">
+<edge source="The Imitation Game" target="Morten Tyldum">
+  <data key="d4">director</data>
+  <data key="d5">1.0</data>
+  <data key="d6">The book inspired the 2014 film The Imitation Game , directed by Morten Tyldum and starring Benedict Cumberbatch and Keira Knightley .</data>
+  <data key="d7"></data>
+  <data key="d8">rebel</data>
+</edge>
+<edge source="kitāb al-ḥisāb al-" target="Muḥammad ibn Mūsā al-Khwārizmī">
   <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
   <data key="d6">Around 825 AD, Persian scientist and polymath Muḥammad ibn Mūsā al-Khwārizmī wrote kitāb al-ḥisāb al-hindī ("Book of Indian computation") and kitab al-jam' wa'l-tafriq al-ḥisāb al-hindī ("Addition and subtraction in Indian arithmetic").</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="kitab al-jam'" target="Muḥammad">
-  <data key="d4">authored_by</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Around 825 AD, Persian scientist and polymath Muḥammad ibn Mūsā al-Khwārizmī wrote kitāb al-ḥisāb al-hindī ("Book of Indian computation") and kitab al-jam' wa'l-tafriq al-ḥisāb al-hindī ("Addition and subtraction in Indian arithmetic").</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="the Latinization of Al-Khwarizmi's" target="Dixit Algoritmi">
+<edge source="Al-Khwarizmi's" target="Dixit Algoritmi">
   <data key="d4">notable work</data>
   <data key="d5">1.0</data>
   <data key="d6">Here, alghoarismi or algoritmi is the Latinization of Al-Khwarizmi's name; the text starts with the phrase Dixit Algoritmi , or "Thus spoke Al-Khwarizmi".</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Dixit Algoritmi" target="the Latinization of Al-Khwarizmi's">
+<edge source="Dixit Algoritmi" target="Al-Khwarizmi's">
   <data key="d4">authored_by</data>
   <data key="d5">1.0</data>
   <data key="d6">Here, alghoarismi or algoritmi is the Latinization of Al-Khwarizmi's name; the text starts with the phrase Dixit Algoritmi , or "Thus spoke Al-Khwarizmi".</data>
@@ -2217,20 +2357,6 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
-<edge source="Euclidean" target="Euclid's Elements">
-  <data key="d4">part of</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Two examples are the Sieve of Eratosthenes , which was described in the Introduction to Arithmetic by Nicomachus , and the Euclidean algorithm , which was first described in Euclid's Elements ( c.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Euclid's Elements" target="Euclidean">
-  <data key="d4">has part</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Two examples are the Sieve of Eratosthenes , which was described in the Introduction to Arithmetic by Nicomachus , and the Euclidean algorithm , which was first described in Euclid's Elements ( c.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
 <edge source="Ada Lovelace" target="Charles Babbage">
   <data key="d4">influenced by</data>
   <data key="d5">1.0</data>
@@ -2242,20 +2368,6 @@ From September 1938, Turing worked part-time with the Government Code and Cypher
   <data key="d4">inception</data>
   <data key="d5">1.0</data>
   <data key="d6">1870s ) was in use, as were Hollerith cards (c.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="Böhm-Jacopini" target="SEQUENCE">
-  <data key="d4">has part</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Tausworthe augments the three Böhm-Jacopini canonical structures : SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE.</data>
-  <data key="d7"></data>
-  <data key="d8">rebel</data>
-</edge>
-<edge source="SEQUENCE" target="Böhm-Jacopini">
-  <data key="d4">part of</data>
-  <data key="d5">1.0</data>
-  <data key="d6">Tausworthe augments the three Böhm-Jacopini canonical structures : SEQUENCE, IF-THEN-ELSE, and WHILE-DO, with two more: DO-WHILE and CASE.</data>
   <data key="d7"></data>
   <data key="d8">rebel</data>
 </edge>
