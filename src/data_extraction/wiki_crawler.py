@@ -1,7 +1,26 @@
-"""wiki_crawler.py — Wikipedia BFS 多跳爬虫
+"""Wikipedia 多跳 BFS 爬虫。
 
-以种子页面为起点，按广度优先策略爬取关联页面，并通过
-WikiParser 解析每个页面得到结构化 JSON，保存到 data/raw/。
+本文件负责数据采集阶段的“页面发现与调度”工作：从种子页面出发，按广度优先
+顺序访问 Wikipedia 页面，调用 ``WikiParser`` 把页面解析为结构化字典，并把结果
+持久化到 ``data/raw``。它决定了抓取范围、深度、增量跳过逻辑和页面相关性过滤策略。
+
+使用方式：
+- 通常由 ``src/data_extraction/run_extraction.py`` 读取 ``config/settings.yaml`` 后创建
+    ``WikiCrawler`` 实例并调用 ``crawl()``。
+- 也可以在其他脚本中手动传入 crawler 配置字典复用。
+
+输入：
+- ``settings.yaml`` 中 ``crawler`` 节的配置，如种子页面、最大深度、最大页面数、
+    请求间隔、User-Agent 和相关性过滤关键词。
+
+输出：
+- ``crawl()`` 返回成功爬取的页面标题列表。
+- 在磁盘上写出 ``data/raw/*.json``，每个文件包含标题、摘要、章节、Infobox、分类、
+    出链和抓取深度等字段。
+
+与其他文件的关系：
+- 依赖 ``src/data_extraction/wiki_parser.py`` 做单页解析。
+- 产出会被 ``src/data_extraction/data_cleaner.py`` 继续清洗，最终进入 NER 与关系抽取。
 """
 
 import json

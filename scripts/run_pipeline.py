@@ -1,14 +1,29 @@
-"""
-run_pipeline.py
-一键运行关系抽取 -> 知识图谱构建 -> 可视化全流程。
-仅处理 entities_all.jsonl 覆盖的前5个文档。
+"""关系抽取到可视化的一键演示脚本。
 
-关系抽取策略：
-  1. Infobox 三元组直接生成（confidence=1.0）
-  2. 候选对生成 + 银标构建
-  3. REBEL 模型对候选句子做三元组抽取，与候选对对齐
-  4. 谓词归一化（字面 + embedding 映射）
-  5. 合并三来源三元组（Infobox > Silver > REBEL）
+本文件负责把已经完成数据采集和 NER 的项目产物串成可复现的后半段流水线：
+从 Infobox 三元组抽取开始，依次完成候选对生成、银标构建、REBEL 抽取、
+三元组合并、别名标准化、图谱构建和图谱可视化。
+
+使用方式：
+- 直接执行 ``python scripts/run_pipeline.py``。
+- 当前脚本为教学演示而固定处理 5 个文档，并使用当前 Python 解释器依次调用
+    各子脚本，因此适合作为“关系抽取到展示层”的总入口。
+
+输入：
+- ``data/processed`` 中的已清洗文档。
+- ``output/entities_all.jsonl`` 中的实体识别与消歧结果。
+- ``config/relation_mapping.yaml`` 中的关系映射配置。
+
+输出：
+- ``data/relation`` 下的候选对与银标文件。
+- ``output/graphs`` 下的多阶段三元组和最终图谱文件。
+- ``output/visualizations`` 与 ``output/logs`` 下的可视化结果和日志。
+
+与其他文件的关系：
+- 调度 ``src/relation_extraction``、``src/kg_construction``、``src/visualization``
+    中的 CLI 脚本。
+- 默认假定 ``src/data_extraction/run_extraction.py`` 和 ``src/ner/batch_process.py``
+    已经先完成上游数据准备。
 """
 
 import subprocess

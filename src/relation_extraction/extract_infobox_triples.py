@@ -1,6 +1,23 @@
-"""
-extract_infobox_triples.py
-从 data/processed/*.json 的 infobox 字段中抽取高置信三元组。
+"""Infobox 三元组抽取脚本。
+
+本文件负责从 ``data/processed`` 文档中的 ``infobox`` 字段抽取高精度关系三元组，
+并通过 ``config/relation_mapping.yaml`` 把 Wikipedia 键名映射到统一的关系标签。
+这是关系抽取阶段最稳定、置信度最高的知识来源。
+
+使用方式：
+- 直接执行 ``python src/relation_extraction/extract_infobox_triples.py``。
+- 可通过 ``--doc-list`` 只处理指定文档，用于演示或调试。
+
+输入：
+- ``data/processed/*.json`` 中的 ``title`` 与 ``infobox``。
+- ``config/relation_mapping.yaml`` 中的键到关系映射。
+
+输出：
+- ``output/graphs/infobox_triples.jsonl``，每行一条带 ``confidence=1.0`` 的三元组。
+
+与其他文件的关系：
+- 其输出既直接参与最终三元组合并，也会被 ``build_silver_labels.py`` 当作远程监督的监督源。
+- 由 ``scripts/run_pipeline.py`` 调度，是关系抽取的第一步。
 """
 
 import json

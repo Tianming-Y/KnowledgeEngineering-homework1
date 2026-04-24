@@ -1,11 +1,24 @@
-"""data_cleaner.py — 文本清洗与去噪
+"""采集结果清洗与分句模块。
 
-对 data/raw/ 中的原始 JSON 文件进行清洗，输出到 data/processed/。
-清洗操作包括：
-  - 去除引用标记 [1][2] 等
-  - 去除 HTML 残留标签
-  - Unicode 规范化
-  - 分句处理
+本文件负责把 ``data/raw`` 中的原始 Wikipedia 页面 JSON 转换为更适合下游处理的
+``data/processed`` 文档。它统一执行文本去噪、Unicode 规范化、引用标记删除和句子切分，
+为 NER、候选对生成和关系抽取提供稳定输入。
+
+使用方式：
+- 通常由 ``src/data_extraction/run_extraction.py`` 在爬取完成后统一调用 ``clean_all()``。
+- 也可以单独实例化 ``DataCleaner`` 指向任意原始目录和输出目录。
+
+输入：
+- ``data/raw/*.json``，字段通常包含 ``summary``、``sections``、``infobox`` 等内容。
+
+输出：
+- ``data/processed/*.json``，保留原有结构并新增 ``summary_sentences`` 与每个 section 的
+    ``sentences`` 字段，便于后续按句子处理。
+
+与其他文件的关系：
+- 上游依赖 ``wiki_crawler.py`` / ``wiki_parser.py`` 生成原始页面文件。
+- 下游 ``src/ner/batch_process.py`` 和 ``src/relation_extraction/generate_candidates.py``
+    都直接消费这里的句子级输出。
 """
 
 import json

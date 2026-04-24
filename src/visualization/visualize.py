@@ -1,9 +1,24 @@
-"""
-visualize.py
-知识图谱可视化：
-1. 静态可视化（Matplotlib），按实体类型着色
-2. 交互式可视化（pyvis），支持节点拖拽和筛选
-3. Ego 子图视图（以某核心节点为中心）
+"""知识图谱可视化脚本。
+
+本文件负责把 ``build_graph.py`` 生成的图谱 JSON 渲染成可直接展示和分析的结果，
+包括静态 PNG、交互式 HTML，以及围绕某个核心节点生成的 Ego 子图。它是项目流水线的
+最后一环，面向结果解释、汇报展示和局部结构观察。
+
+使用方式：
+- 直接执行 ``python src/visualization/visualize.py``。
+- 可通过 ``--ego-center`` 和 ``--ego-radius`` 指定局部子图中心与半径。
+
+输入：
+- ``output/graphs/knowledge_graph.json``。
+
+输出：
+- ``output/visualizations/full_graph.png``。
+- ``output/visualizations/full_graph.html``。
+- ``output/visualizations/ego_<center>.png/.html``。
+
+与其他文件的关系：
+- 上游依赖 ``src/kg_construction/build_graph.py`` 生成的图结构文件。
+- 常由 ``scripts/run_pipeline.py`` 自动调用，也可以独立运行做不同中心实体的可视化。
 """
 
 import json

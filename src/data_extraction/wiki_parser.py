@@ -1,10 +1,24 @@
-"""wiki_parser.py — Wikipedia 页面解析器
+"""Wikipedia 页面解析器。
 
-从 HTML 页面与 wikipedia-api 返回的数据中提取：
-  - 正文段落文本（按章节分组）
-  - Infobox 键值对
-  - 分类 (Categories)
-  - 页面内部链接（出链）
+本文件负责把单个 Wikipedia 条目拆解成适合后续 NLP 处理的结构化数据，
+包括摘要、分章节正文、Infobox 键值对、分类和页面内部链接。它是爬虫阶段的
+“单页理解器”，只处理一页，不负责遍历整张链接图。
+
+使用方式：
+- ``WikiCrawler`` 在遍历页面标题时会调用 ``WikiParser.parse(title)``。
+- 开发时也可以直接实例化 ``WikiParser``，单独调试页面解析质量。
+
+输入：
+- 页面标题字符串。
+- 通过 MediaWiki API 返回的 HTML 与结构化响应。
+
+输出：
+- ``parse`` 返回一个字典，字段包括 ``title``、``url``、``summary``、``sections``、
+    ``infobox``、``categories``、``outlinks``；若页面不存在则返回 ``None``。
+
+与其他文件的关系：
+- 上游由 ``src/data_extraction/wiki_crawler.py`` 调度。
+- 下游由 ``src/data_extraction/data_cleaner.py`` 清洗其输出文本字段。
 """
 
 import re

@@ -1,6 +1,22 @@
-"""
-generate_candidates.py
-对每个文档的每个句子，生成实体对候选（head, tail），排除自身配对和双DATE配对。
+"""句内候选实体对生成脚本。
+
+本文件负责把 NER 结果和清洗后的句子边界结合起来，在每个句子内部枚举可能存在关系的
+实体对，为银标构建和 REBEL 抽取提供统一候选空间。它决定了后续关系抽取的覆盖范围。
+
+使用方式：
+- 直接执行 ``python src/relation_extraction/generate_candidates.py``。
+- 可通过 ``--max-pairs`` 控制每句保留的最大候选对数。
+
+输入：
+- ``output/entities_all.jsonl`` 中的实体识别与消歧结果。
+- ``data/processed/*.json`` 中的 ``summary_sentences`` 和 ``sections[].sentences``。
+
+输出：
+- ``data/relation/candidates.jsonl``，记录候选句子、头尾实体、实体类型、字符位置和 QID。
+
+与其他文件的关系：
+- 上游依赖 ``src/ner/batch_process.py``。
+- 下游 ``build_silver_labels.py`` 和 ``rebel_extract.py`` 都以这里的结果作为直接输入。
 """
 
 import json

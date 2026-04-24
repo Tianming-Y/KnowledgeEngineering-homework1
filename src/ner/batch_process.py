@@ -1,10 +1,25 @@
-"""批量处理 data/processed 中的 JSON 文档，执行 spaCy NER 并保存至 output/entities。
+"""目录级 NER 批处理脚本。
 
-用法示例：
-  python src/ner/batch_process.py --link False
-  python src/ner/batch_process.py --link True --max-docs 5 --model en_core_web_trf
+本文件负责遍历 ``data/processed`` 中的所有文档，抽取可供 NER 处理的正文文本，
+调用 spaCy 执行实体识别，并按需接入 Wikidata 实体链接，最终把结果汇总写入
+单个 ``output/entities_all.jsonl`` 或多个文档级 JSON 文件。
 
-默认会从 `config/settings.yaml` 读取 `paths.processed_data`，若不存在则使用 `data/processed`。
+使用方式：
+- 常用命令：``python src/ner/batch_process.py --link False``。
+- 启用消歧时可使用 ``--link True --top-k 3 --max-docs 5`` 等参数控制规模。
+
+输入：
+- ``config/settings.yaml`` 中的 ``paths.processed_data`` 或显式指定的 ``--processed-dir``。
+- ``data/processed/*.json`` 中的 summary、sections、text 等字段。
+
+输出：
+- 默认输出 ``output/entities_all.jsonl``，每行对应一个文档的实体列表。
+- 终端输出包含文档级进度、识别数量、链接数量和耗时统计。
+
+与其他文件的关系：
+- 上游依赖 ``spacy_ner.py`` 与 ``entity_linker.py``。
+- 下游 ``generate_candidates.py``、``build_graph.py`` 和 README 中描述的后续流程都直接依赖
+    这里生成的实体文件。
 """
 
 import os

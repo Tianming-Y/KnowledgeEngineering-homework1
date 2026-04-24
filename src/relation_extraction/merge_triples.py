@@ -1,9 +1,25 @@
-"""
-merge_triples.py
-谓词归一化 + 多来源三元组合并。
-1. 对 REBEL 三元组的 relation 进行字面映射/embedding 相似度映射
-2. 合并 Infobox、Silver、REBEL 三元组（优先级：Infobox > Silver > REBEL）
-3. 输出最终的 relation_triples.jsonl
+"""三元组归一化与多源融合脚本。
+
+本文件负责关系抽取阶段的收口工作：先把 REBEL 产生的自由谓词归一化到项目的标准关系集，
+再按 ``Infobox > Silver > REBEL`` 的优先级合并三类三元组，并输出统一格式的最终结果。
+
+使用方式：
+- 直接执行 ``python src/relation_extraction/merge_triples.py``。
+- 可通过 ``--st-model`` 指定谓词 embedding 映射模型，通过 ``--qc-out`` 输出抽样质检文件。
+
+输入：
+- ``output/graphs/rebel_triples.jsonl``。
+- ``output/graphs/infobox_triples.jsonl``。
+- ``data/relation/silver.jsonl``。
+- ``config/relation_mapping.yaml``。
+
+输出：
+- ``output/graphs/relation_triples.jsonl``。
+- ``output/logs`` 下的模糊谓词文件、抽样质检文件和合并日志。
+
+与其他文件的关系：
+- 上游依赖关系抽取子包的前四个步骤。
+- 下游 ``apply_aliases.py`` 和 ``build_graph.py`` 会直接消费它的输出。
 """
 
 import json

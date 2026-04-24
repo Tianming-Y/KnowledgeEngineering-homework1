@@ -1,11 +1,32 @@
-"""
-Wikidata-based entity linking helpers.
+"""Wikidata 实体链接模块。
 
-功能:
-- 通过 Wikidata `wbsearchentities` API 生成候选实体
-- （可选）使用 `sentence-transformers` 对上下文与候选描述进行相似度排序
+本文件负责把上游 NER 识别出的 mention 连接到 Wikidata 实体，补充
+``wikidata_qid``、标签、描述和链接置信度等字段，是 ``src/ner`` 中
+从“识别到名字”走向“统一实体标识”的关键一步。
 
-实现上尽量保持轻量、对依赖容错：若未安装 `sentence-transformers`，使用简单启发式排序。
+使用方式：
+- 其他模块通常通过 ``link_mention`` 处理单个 mention，或通过
+    ``link_mentions`` 批量处理实体列表。
+- ``src/ner/ner_pipeline.py`` 会在 spaCy NER 之后调用本模块。
+- ``src/ner/batch_process.py`` 会把这里返回的链接结果写入
+    ``output/entities_all.jsonl``，供关系抽取与图谱构建阶段复用。
+
+输入：
+- 单个 mention 文本，或带有 ``mention/type/start/end`` 字段的实体字典列表。
+- mention 所在句子或文档全文上下文，用于候选排序。
+- 可选的 ``top_k`` 候选数、日志开关和流式回调函数。
+
+输出：
+- 返回附加了 ``wikidata_qid``、``wikidata_label``、
+    ``wikidata_description``、``link_confidence`` 等字段的实体结果。
+- 若网络失败、无候选或向量模型不可用，会优雅降级为空结果或启发式打分，
+    不阻断整体 NER 流程。
+
+与其他文件的关系：
+- 上游依赖 ``src/ner/spacy_ner.py`` 产生的 mention。
+- 下游被 ``src/ner/ner_pipeline.py`` 和 ``src/ner/batch_process.py`` 调用。
+- 其输出中的 QID 会被 ``src/relation_extraction/generate_candidates.py``、
+    ``src/kg_construction/build_graph.py`` 等模块继续使用。
 """
 
 from functools import lru_cache

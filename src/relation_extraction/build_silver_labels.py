@@ -1,7 +1,21 @@
-"""
-build_silver_labels.py
-通过远程监督（Distant Supervision），将 Infobox 三元组匹配到候选对上，
-构建银标训练数据。
+"""基于远程监督的银标构建脚本。
+
+本文件利用 Infobox 三元组作为弱监督信号，把 ``generate_candidates.py`` 生成的候选实体对
+标注为具体关系或 ``none``，从而得到一份可分析、可训练、也可直接参与合并的银标数据。
+
+使用方式：
+- 直接执行 ``python src/relation_extraction/build_silver_labels.py``。
+
+输入：
+- ``data/relation/candidates.jsonl`` 中的候选对。
+- ``output/graphs/infobox_triples.jsonl`` 中的高精度三元组。
+
+输出：
+- ``data/relation/silver.jsonl``，在原候选对基础上增加 ``relation`` 字段。
+
+与其他文件的关系：
+- 上游依赖 ``extract_infobox_triples.py`` 和 ``generate_candidates.py``。
+- 下游 ``merge_triples.py`` 会把其中的正例转换成银标三元组参与最终合并。
 """
 
 import json

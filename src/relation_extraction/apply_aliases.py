@@ -1,10 +1,23 @@
-"""
-src/relation_extraction/apply_aliases.py
-把合并后三元组里的指定别名（当前仅 Turing 及其变体）标准化为 `Alan Turing`，供后续构建图谱使用。
+"""最终三元组的轻量别名标准化脚本。
 
-设计：
-- 提供 `apply_aliases_file(in_path, out_path, backup=False)` 以便在其他脚本中调用。
-- 提供 CLI 接口以便在流水线中执行。
+本文件在关系抽取全部完成后，对最终三元组中的头尾实体文本执行最小范围的别名替换，
+当前主要用于把 ``Turing`` 及其常见变体统一为 ``Alan Turing``，减少图谱构建阶段的重复节点。
+
+使用方式：
+- 直接执行 ``python src/relation_extraction/apply_aliases.py``。
+- 也可以在其他脚本中调用 ``apply_aliases_file`` 对任意 JSONL 三元组文件做同类处理。
+
+输入：
+- ``output/graphs/relation_triples.jsonl`` 或其他同结构 JSONL 文件。
+- 可选 ``--backup`` 参数，用于先把输入文件重命名为 ``.bak``。
+
+输出：
+- ``output/graphs/relation_triples_aliased.jsonl``。
+- 返回或打印处理总行数与替换次数。
+
+与其他文件的关系：
+- 通常由 ``scripts/run_pipeline.py`` 在合并三元组后调用。
+- 下游 ``src/kg_construction/build_graph.py`` 会优先使用别名标准化后的结果构建节点。
 """
 
 import argparse

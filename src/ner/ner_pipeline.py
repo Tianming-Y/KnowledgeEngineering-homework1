@@ -1,7 +1,24 @@
-"""
-NER 流水线：组织 spaCy NER 与 Wikidata 消歧并将结果写入文件。
+"""NER 与实体链接的轻量流水线封装。
 
-提供简单的 `process_text` 与 `process_texts` 接口，便于在数据采集流程中集成。
+本文件把 ``spacy_ner.py`` 的实体识别能力和 ``entity_linker.py`` 的 Wikidata 消歧能力
+组合为两个更接近业务使用的接口：``process_text`` 处理单条文本，``process_texts``
+批量处理多条文本并可直接落盘。
+
+使用方式：
+- 开发调试时可直接调用 ``process_text`` 或 ``process_texts``。
+- 当需要对少量字符串快速试运行 NER + 链接时，本文件比 ``batch_process.py`` 更合适。
+
+输入：
+- 文本字符串或文本列表。
+- 可选的 spaCy 模型名、是否启用链接、候选数 ``top_k`` 和日志开关。
+
+输出：
+- 返回形如 ``{"text": ..., "entities": [...]}`` 的结构化结果。
+- 若提供 ``output_dir``，会写出多个 ``doc_*.json`` 文件。
+
+与其他文件的关系：
+- 复用 ``spacy_ner.py`` 和 ``entity_linker.py``。
+- 与 ``batch_process.py`` 相比，本文件偏向函数接口和小规模调用，后者负责目录级批处理。
 """
 
 import os

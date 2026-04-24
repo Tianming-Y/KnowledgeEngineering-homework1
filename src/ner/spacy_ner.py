@@ -1,7 +1,23 @@
-"""
-spaCy NER helpers
+"""spaCy 命名实体识别封装。
 
-提供加载模型与批量预测的简易接口。
+本文件提供 NER 阶段最轻量的公共能力：加载 spaCy 模型，并把单条或多条文本
+转换为统一的实体列表格式。它只负责“识别实体”，不处理实体消歧、文件读写
+或项目级批处理。
+
+使用方式：
+- 其他模块通过 ``load_model`` 获取 ``nlp`` 对象，再调用 ``predict`` 处理字符串或字符串列表。
+- ``src/ner/ner_pipeline.py`` 和 ``src/ner/batch_process.py`` 都把本文件作为底层识别组件。
+
+输入：
+- 单个文本字符串或字符串列表。
+- 可选模型名、禁用的 spaCy pipeline 组件和 batch 大小。
+
+输出：
+- 返回实体字典列表，字段包含 ``mention``、``type``、``start``、``end``、``source``。
+
+与其他文件的关系：
+- 是 ``entity_linker.py`` 的直接上游。
+- 其输出会在 ``ner_pipeline.py`` 中被进一步补上 Wikidata 链接结果。
 """
 
 from typing import List, Dict, Union, Optional

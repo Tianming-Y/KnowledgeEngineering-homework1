@@ -1,7 +1,24 @@
-"""
-rebel_extract.py
-使用 REBEL (Babelscape/rebel-large) 对候选对所在句子进行三元组抽取，
-将 REBEL 输出与候选对对齐，产生正式的三元组。
+"""REBEL 关系抽取与候选对齐脚本。
+
+本文件负责加载 ``Babelscape/rebel-large`` 模型，对候选对所在句子执行生成式关系抽取，
+再把 REBEL 输出与上游候选实体对进行对齐，尽量把自由文本三元组落回到项目统一的
+实体 mention/QID 体系中。
+
+使用方式：
+- 直接执行 ``python src/relation_extraction/rebel_extract.py``。
+- 通过 ``--batch-size``、``--doc-ids`` 和 ``--log`` 控制推理规模、文档范围和日志输出。
+
+输入：
+- ``data/relation/candidates.jsonl``，其中提供句子文本、头尾实体和 QID。
+- 可选 GPU/CPU 运行环境以及 transformers 自动下载的 REBEL checkpoint。
+
+输出：
+- ``output/graphs/rebel_triples.jsonl``，字段包括头尾实体、关系、句子、文档、QID、来源等。
+- ``output/logs`` 中的运行日志可用于排查显存和推理问题。
+
+与其他文件的关系：
+- 上游依赖 ``generate_candidates.py``。
+- 下游由 ``merge_triples.py`` 负责谓词归一化与多源合并。
 """
 
 import json

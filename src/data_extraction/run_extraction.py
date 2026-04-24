@@ -1,4 +1,24 @@
-"""run_extraction.py — 运行数据采集全流程"""
+"""数据采集总入口脚本。
+
+本文件把“爬取页面”和“清洗文本”两个步骤串成一个可直接运行的前半段流水线。
+它从 ``config/settings.yaml`` 读取抓取与路径配置，依次调度 ``WikiCrawler`` 和
+``DataCleaner``，是项目从网络页面到本地结构化文档的统一入口。
+
+使用方式：
+- 直接执行 ``python src/data_extraction/run_extraction.py``。
+
+输入：
+- ``config/settings.yaml`` 中的 crawler 和 paths 配置。
+
+输出：
+- ``data/raw`` 中的原始页面 JSON。
+- ``data/processed`` 中的清洗后页面 JSON。
+- 终端中的阶段日志与汇总统计。
+
+与其他文件的关系：
+- 调用 ``src.data_extraction`` 子包导出的 ``WikiCrawler`` 与 ``DataCleaner``。
+- 它的输出构成整个项目其余模块的上游数据基础。
+"""
 
 import logging
 import json

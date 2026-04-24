@@ -1,6 +1,25 @@
-"""
-build_graph.py
-从关系三元组构建 NetworkX 有向图，并持久化为多种格式。
+"""知识图谱构建与持久化脚本。
+
+本文件负责把最终关系三元组转换成 ``networkx.DiGraph``，并把实体与关系补充为节点、边属性，
+随后导出为 GraphML、GEXF 和 JSON 三种格式。它是项目从“文本关系”过渡到“图结构数据”的关键节点。
+
+使用方式：
+- 直接执行 ``python src/kg_construction/build_graph.py``。
+- 一般由 ``scripts/run_pipeline.py`` 在关系抽取结束后自动调用。
+
+输入：
+- ``output/graphs/relation_triples_aliased.jsonl`` 或兼容结构的三元组文件。
+- 可选 ``output/entities_all.jsonl``，用于补全节点类型、QID 与描述。
+
+输出：
+- ``output/graphs/knowledge_graph.graphml``。
+- ``output/graphs/knowledge_graph.gexf``。
+- ``output/graphs/knowledge_graph.json``。
+- 终端打印图谱统计信息。
+
+与其他文件的关系：
+- 上游依赖 ``merge_triples.py`` 和 ``apply_aliases.py``。
+- 下游 ``src/visualization/visualize.py`` 直接加载这里生成的 JSON 图文件。
 """
 
 import json
