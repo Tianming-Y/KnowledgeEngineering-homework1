@@ -24,12 +24,14 @@
 import json
 import os
 import argparse
+import math
+from collections import Counter
 import networkx as nx
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib import font_manager
+from matplotlib.lines import Line2D
 from pyvis.network import Network
 
 # 实体类型 -> 颜色映射
@@ -52,9 +54,149 @@ TYPE_COLORS = {
     "UNKNOWN": "#bdc3c7",
 }
 
+RELATION_COLORS = [
+    "#c95b38",
+    "#1d7f77",
+    "#4d8a4f",
+    "#9b4f7d",
+    "#ae6831",
+    "#42516f",
+    "#d7a63c",
+    "#7a5db8",
+    "#3286a8",
+    "#8e6c35",
+    "#7b5f52",
+    "#2f7c64",
+]
+
 
 def get_color(node_type: str) -> str:
     return TYPE_COLORS.get(node_type, TYPE_COLORS["UNKNOWN"])
+
+
+def get_relation_color(relation: str) -> str:
+    normalized = (relation or "unknown").strip().lower()
+    color_key = sum((index + 1) * ord(char) for index, char in enumerate(normalized))
+    return RELATION_COLORS[color_key % len(RELATION_COLORS)]
+
+
+def _layout_extent(positions: dict) -> tuple[float, float]:
+    if not positions:
+        return 0.0, 0.0
+    xs = [float(value[0]) for value in positions.values()]
+    ys = [float(value[1]) for value in positions.values()]
+    return max(xs) - min(xs), max(ys) - min(ys)
+
+
+def _center_layout(positions: dict) -> dict:
+    if not positions:
+        return {}
+    avg_x = sum(float(value[0]) for value in positions.values()) / len(positions)
+    avg_y = sum(float(value[1]) for value in positions.values()) / len(positions)
+    return {
+        node: (float(value[0]) - avg_x, float(value[1]) - avg_y)
+        for node, value in positions.items()
+    }
+
+
+def _scale_layout_to_span(positions: dict, target_span: float) -> dict:
+    centered = _center_layout(positions)
+    width, height = _layout_extent(centered)
+    current_span = max(width, height, 1e-6)
+    scale = target_span / current_span
+    return {node: (x * scale, y * scale) for node, (x, y) in centered.items()}
+
+
+def _even_out_radial_density(positions: dict) -> dict:
+    centered = _center_layout(positions)
+    max_radius = max((math.hypot(x, y) for x, y in centered.values()), default=0.0)
+    if max_radius <= 1e-6:
+        return centered
+
+    redistributed = {}
+    for node, (x, y) in centered.items():
+        radius = math.hypot(x, y)
+        if radius <= 1e-9:
+            redistributed[node] = (0.0, 0.0)
+            continue
+        normalized = min(1.0, radius / max_radius)
+        adjusted = min(1.0, 0.58 * normalized + 0.42 * math.pow(normalized, 0.72))
+        factor = (adjusted * max_radius) / radius
+        redistributed[node] = (x * factor, y * factor)
+    return redistributed
+
+
+def _layout_connected_component(component_graph: nx.Graph, seed: int) -> dict:
+    nodes = list(component_graph.nodes())
+    node_count = component_graph.number_of_nodes()
+    if node_count == 1:
+        return {nodes[0]: (0.0, 0.0)}
+    if node_count == 2:
+        return {nodes[0]: (-1.2, 0.0), nodes[1]: (1.2, 0.0)}
+
+    base_graph = component_graph.to_undirected()
+    initial = nx.spectral_layout(base_graph, scale=1.0)
+    local_k = max(0.9, min(2.6, 2.2 / max(1.0, math.sqrt(node_count / 2.0))))
+    positions = nx.spring_layout(
+        base_graph,
+        pos=initial,
+        seed=seed,
+        k=local_k,
+        iterations=350,
+        scale=1.0,
+    )
+    positions = _even_out_radial_density(positions)
+    target_span = max(4.0, math.sqrt(node_count) * 3.0)
+    return _scale_layout_to_span(positions, target_span)
+
+
+def build_static_layout(G: nx.DiGraph) -> dict:
+    if G.number_of_nodes() == 0:
+        return {}
+
+    components = [
+        G.subgraph(nodes).copy() for nodes in nx.connected_components(G.to_undirected())
+    ]
+    components.sort(key=lambda graph: graph.number_of_nodes(), reverse=True)
+
+    prepared_layouts = []
+    max_component_span = 0.0
+    for index, component in enumerate(components):
+        local_positions = _layout_connected_component(component, seed=42 + index)
+        width, height = _layout_extent(local_positions)
+        span = max(width, height, 2.4)
+        prepared_layouts.append((local_positions, span))
+        max_component_span = max(max_component_span, span)
+
+    if len(prepared_layouts) == 1:
+        return prepared_layouts[0][0]
+
+    columns = math.ceil(math.sqrt(len(prepared_layouts)))
+    rows = math.ceil(len(prepared_layouts) / columns)
+    center_row = (rows - 1) / 2
+    center_col = (columns - 1) / 2
+    slots = sorted(
+        [(row, col) for row in range(rows) for col in range(columns)],
+        key=lambda slot: (
+            (slot[0] - center_row) ** 2 + (slot[1] - center_col) ** 2,
+            abs(slot[0] - center_row),
+            abs(slot[1] - center_col),
+        ),
+    )
+
+    cell_span = max_component_span + 5.0
+    merged_positions = {}
+    for (local_positions, _), (row, col) in zip(prepared_layouts, slots):
+        offset_x = (col - center_col) * cell_span
+        offset_y = (center_row - row) * cell_span
+        for node, (x, y) in local_positions.items():
+            merged_positions[node] = (x + offset_x, y + offset_y)
+
+    target_span = max(
+        20.0,
+        math.sqrt(G.number_of_nodes() + len(prepared_layouts) * 4) * 5.0,
+    )
+    return _scale_layout_to_span(merged_positions, target_span)
 
 
 def load_graph(graph_path: str) -> nx.DiGraph:
@@ -77,10 +219,14 @@ def visualize_static(
     G: nx.DiGraph, output_path: str, title: str = "Turing Knowledge Graph"
 ):
     """静态可视化 — Matplotlib"""
-    fig, ax = plt.subplots(1, 1, figsize=(20, 16))
-
-    # 使用 spring layout
-    pos = nx.spring_layout(G, k=2.0, iterations=50, seed=42)
+    node_count = max(1, G.number_of_nodes())
+    edge_count = max(1, G.number_of_edges())
+    pos = build_static_layout(G)
+    layout_width, layout_height = _layout_extent(pos)
+    scene_span = max(layout_width, layout_height, math.sqrt(node_count) * 4.0)
+    canvas_width = max(30, min(56, 22 + scene_span * 0.4))
+    canvas_height = max(24, min(44, 18 + scene_span * 0.33))
+    fig, ax = plt.subplots(1, 1, figsize=(canvas_width, canvas_height))
 
     # 按类型着色
     node_colors = [get_color(G.nodes[n].get("type", "UNKNOWN")) for n in G.nodes()]
@@ -88,18 +234,27 @@ def visualize_static(
     # 节点大小按度数
     degrees = dict(G.degree())
     max_deg = max(degrees.values()) if degrees else 1
-    node_sizes = [300 + 1500 * (degrees[n] / max_deg) for n in G.nodes()]
+    node_sizes = [420 + 1900 * (degrees[n] / max_deg) for n in G.nodes()]
 
     # 绘制边
+    edgelist = list(G.edges(data=True))
+    edge_colors = [
+        get_relation_color(data.get("relation", "unknown")) for _, _, data in edgelist
+    ]
+    edge_widths = [
+        1.4 + 1.6 * float(data.get("confidence", 0) or 0) for _, _, data in edgelist
+    ]
     nx.draw_networkx_edges(
         G,
         pos,
         ax=ax,
-        alpha=0.3,
+        edgelist=[(source, target) for source, target, _ in edgelist],
+        alpha=0.76,
         arrows=True,
-        arrowsize=10,
-        edge_color="#cccccc",
-        width=0.8,
+        arrowsize=14,
+        edge_color=edge_colors,
+        width=edge_widths,
+        connectionstyle="arc3,rad=0.05",
     )
 
     # 绘制节点
@@ -110,18 +265,26 @@ def visualize_static(
         node_color=node_colors,
         node_size=node_sizes,
         alpha=0.85,
+        linewidths=0.9,
+        edgecolors="#f8f4ed",
     )
 
-    # 标签 — 只标注度数较高的节点
-    degree_threshold = max(2, max_deg * 0.15) if max_deg > 1 else 1
-    labels = {n: n for n in G.nodes() if degrees[n] >= degree_threshold}
+    # 标签 — 为所有节点绘制标签，避免静态图在较小缩放下丢失节点信息
+    labels = {n: n for n in G.nodes()}
+    label_font_size = max(6, min(10, 10 - node_count // 40))
     nx.draw_networkx_labels(
         G,
         pos,
         labels,
         ax=ax,
-        font_size=8,
+        font_size=label_font_size,
         font_weight="bold",
+        bbox={
+            "facecolor": "#fffaf2",
+            "edgecolor": "#d7d0c0",
+            "boxstyle": "round,pad=0.2",
+            "alpha": 0.9,
+        },
     )
 
     # 边标签（关系）— 只标注非 none 的
@@ -130,13 +293,13 @@ def visualize_static(
         rel = d.get("relation", "")
         if rel and rel != "none":
             edge_labels[(u, v)] = rel
-    if len(edge_labels) < 100:  # 边标签太多会很乱
+    if len(edge_labels) <= 80:
         nx.draw_networkx_edge_labels(
             G,
             pos,
             edge_labels,
             ax=ax,
-            font_size=6,
+            font_size=max(5, min(7, label_font_size - 1)),
             alpha=0.7,
         )
 
@@ -146,13 +309,42 @@ def visualize_static(
     for t in sorted(used_types):
         color = get_color(t)
         legend_elements.append(plt.scatter([], [], c=color, s=100, label=t))
-    ax.legend(handles=legend_elements, loc="upper left", fontsize=8)
+    node_legend = ax.legend(
+        handles=legend_elements, loc="upper left", fontsize=8, framealpha=0.94
+    )
+    ax.add_artist(node_legend)
+
+    relation_counts = Counter(
+        data.get("relation", "unknown")
+        for _, _, data in edgelist
+        if data.get("relation")
+    )
+    relation_handles = [
+        Line2D(
+            [0],
+            [0],
+            color=get_relation_color(relation),
+            lw=3,
+            label=f"{relation} ({count})",
+        )
+        for relation, count in relation_counts.most_common(8)
+    ]
+    if relation_handles:
+        ax.legend(
+            handles=relation_handles,
+            loc="upper right",
+            fontsize=8,
+            title="Top Relations",
+            framealpha=0.94,
+        )
 
     ax.set_title(title, fontsize=16, fontweight="bold")
     ax.axis("off")
+    ax.margins(0.12)
 
     plt.tight_layout()
-    plt.savefig(output_path, dpi=150, bbox_inches="tight")
+    export_dpi = max(220, min(340, int(220 + node_count * 0.5 + edge_count * 0.2)))
+    plt.savefig(output_path, dpi=export_dpi, bbox_inches="tight", pad_inches=0.45)
     plt.close()
     print(f"[Vis] 静态图 -> {output_path}")
 
@@ -226,6 +418,7 @@ def visualize_interactive(
         rel = d.get("relation", "")
         conf = d.get("confidence", 0)
         prov = d.get("provenance", "")
+        relation_color = get_relation_color(rel)
         tooltip = f"<b>{rel}</b><br>Confidence: {conf:.2f}<br>Source: {prov}"
 
         net.add_edge(
@@ -233,9 +426,20 @@ def visualize_interactive(
             v,
             title=tooltip,
             label=rel,
-            font={"size": 9, "align": "middle"},
+            font={
+                "size": 9,
+                "align": "middle",
+                "color": relation_color,
+                "strokeWidth": 3,
+                "strokeColor": "#ffffff",
+            },
             arrows="to",
-            color={"color": "#aaaaaa", "highlight": "#333333"},
+            color={
+                "color": relation_color,
+                "highlight": relation_color,
+                "hover": relation_color,
+                "opacity": 0.85,
+            },
             width=1 + conf * 2,
         )
 

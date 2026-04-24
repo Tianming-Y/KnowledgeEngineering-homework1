@@ -4,10 +4,17 @@ wikipedia-api>=0.6
 spacy>=3.7
 networkx>=3.2
 matplotlib>=3.8
+pyvis>=0.3.2
 pyyaml>=6.0
 lxml>=4.9
 sentence-transformers>=2.2.0
-tqdm>=4.65
-pytest>=7.0
 transformers>=4.30.0
 accelerate>=0.21.0
+tqdm>=4.65
+
+# Optional web runtime dependency. The project falls back to the standard
+# library HTTP server when Flask is unavailable.
+flask>=3.0
+
+# Test dependency.
+pytest>=7.0

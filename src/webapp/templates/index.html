@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KG-Turing 控制台</title>
+    <link rel="stylesheet" href="/vendor/vis/vis-network.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Knowledge Graph Studio</p>
+                <h1>KG-Turing 图谱控制台</h1>
+                <p class="hero-copy">在一个界面里完成图谱查询、动态浏览、结果下载和脚本调度。</p>
+            </div>
+            <div class="hero-stats" id="summaryCards"></div>
+        </header>
+
+        <main class="workspace" id="workspace">
+            <section class="panel controls-panel">
+                <div class="panel-header">
+                    <h2>查询与控制</h2>
+                    <div class="panel-actions">
+                        <button class="ghost-button compact-button" id="toggleControlsBtn" type="button">折叠左栏</button>
+                        <button class="ghost-button" id="reloadGraphBtn" type="button">重载图谱</button>
+                    </div>
+                </div>
+
+                <form id="queryForm" class="query-form">
+                    <label for="keywordInput">关键词查询</label>
+                    <div class="query-row">
+                        <input id="keywordInput" name="keyword" type="text"
+                            placeholder="例如 Alan Turing / Enigma / Princeton">
+                        <button type="submit">搜索</button>
+                    </div>
+                    <div class="inline-fields">
+                        <label>
+                            结果数
+                            <input id="limitInput" type="number" min="1" max="30" value="8">
+                        </label>
+                        <label>
+                            子图半径
+                            <input id="radiusInput" type="number" min="1" max="3" value="1">
+                        </label>
+                    </div>
+                </form>
+
+                <div class="action-row">
+                    <button class="secondary-button" id="showFullGraphBtn" type="button">显示完整图谱</button>
+                    <button class="secondary-button" id="downloadCurrentPngBtn" type="button">下载当前视图 PNG</button>
+                </div>
+
+                <section class="subsection">
+                    <div class="subsection-header">
+                        <h3>匹配节点</h3>
+                        <span id="queryStatus" class="muted-text">等待查询</span>
+                    </div>
+                    <div id="queryResults" class="result-list empty-state">输入关键词后显示匹配结果。</div>
+                </section>
+
+                <section class="subsection">
+                    <div class="subsection-header">
+                        <h3>脚本运行</h3>
+                        <span class="muted-text">白名单脚本</span>
+                    </div>
+                    <div id="scriptList" class="script-list empty-state">正在加载脚本列表...</div>
+                    <div class="task-log-block">
+                        <div class="subsection-header compact">
+                            <h4>任务日志</h4>
+                            <span id="taskStatus" class="muted-text">暂无任务</span>
+                        </div>
+                        <pre id="taskLog" class="task-log">尚未执行任何任务。</pre>
+                    </div>
+                </section>
+
+                <section class="subsection">
+                    <div class="subsection-header">
+                        <h3>下载产物</h3>
+                        <span class="muted-text">图谱与可视化文件</span>
+                    </div>
+                    <div id="downloadList" class="download-list empty-state">正在加载下载项...</div>
+                </section>
+            </section>
+
+            <section class="graph-stage panel">
+                <div class="panel-header graph-header">
+                    <div>
+                        <h2>动态图谱</h2>
+                        <p id="graphCaption" class="panel-caption">完整图谱</p>
+                    </div>
+                    <div class="panel-actions graph-actions">
+                        <button class="ghost-button compact-button" id="graphToggleControlsBtn"
+                            type="button">折叠左栏</button>
+                        <button class="ghost-button compact-button" id="graphToggleDetailsBtn"
+                            type="button">折叠右栏</button>
+                    </div>
+                </div>
+                <div id="networkCanvas" class="network-canvas"></div>
+            </section>
+
+            <aside class="panel detail-panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>节点详情</h2>
+                        <span id="detailStatus" class="muted-text">未选择节点</span>
+                    </div>
+                    <button class="ghost-button compact-button" id="toggleDetailsBtn" type="button">折叠右栏</button>
+                </div>
+                <div id="nodeDetail" class="node-detail empty-state">点击查询结果或图谱节点以查看详细信息。</div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="/vendor/vis/vis-network.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

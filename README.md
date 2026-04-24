@@ -15,7 +15,7 @@
 | **关系抽取**       | 从文本中抽取实体间的语义关系，形成三元组                                     |
 | **知识图谱构建**   | 将三元组存储为有向图结构，支持增量更新与持久化                               |
 | **可视化**         | 生成多视角的图谱可视化图片及交互式页面                                       |
-| **图谱查询**       | 提供邻居查询、路径查询等接口，支持基础知识推理                               |
+| **图谱查询**       | 基于最终图谱提供关键词检索、节点详情、局部子图、Web API 与前端动态展示       |
 
 
 
@@ -31,9 +31,10 @@ KG-Turing/
 │   ├── relation_mapping.yaml        # Infobox 键到标准关系标签的映射
 │   └── settings.yaml                # 爬虫与路径配置
 ├── scripts/
-│   ├── check_deps.py                # 关键依赖与 spaCy 模型检查
+│   ├── check_deps.py                # 关键依赖、torch/CUDA、spaCy 模型与可选依赖检查
 │   ├── check_torch.py               # PyTorch / CUDA 环境检查
 │   └── run_pipeline.py              # 关系抽取 → 图构建 → 可视化一键脚本（演示 5 篇文档）
+│   └── run_webapp.py                # 启动查询与前端界面（Flask / 标准库双模式）
 ├── src/
 │   ├── __init__.py
 │   ├── data_extraction/
@@ -59,9 +60,20 @@ KG-Turing/
 │   ├── kg_construction/
 │   │   ├── __init__.py
 │   │   └── build_graph.py           # 三元组 → NetworkX 图谱
+│   ├── query/
+│   │   ├── __init__.py
+│   │   └── graph_query.py           # 图谱关键词检索、节点详情与子图提取
 │   └── visualization/
 │       ├── __init__.py
 │       └── visualize.py             # 静态图、交互图、Ego 子图
+│   └── webapp/
+│       ├── __init__.py
+│       ├── app.py                   # Web API、脚本调度与下载接口
+│       ├── templates/
+│       │   └── index.html           # 控制台页面模板
+│       └── static/
+│           ├── app.js               # 前端交互与动态图谱渲染
+│           └── style.css            # 前端样式
 ├── data/
 │   ├── raw/                         # 爬取后的原始页面 JSON
 │   ├── processed/                   # 清洗并分句后的页面 JSON
@@ -71,14 +83,16 @@ KG-Turing/
 │   ├── graphs/                      # 三元组与图谱文件
 │   ├── logs/                        # REBEL 与合并日志 / 质检结果
 │   └── visualizations/              # PNG / HTML 可视化结果
-├── lib/                             # 前端依赖与静态资源
+├── lib/                             # 前端依赖与静态资源（vis-network、tom-select 等）
 └── tests/
-    └── test_ner.py                  # 当前已有的 NER 单元测试
+  ├── test_ner.py                  # NER 单元测试
+  ├── test_graph_query.py          # 图谱查询服务测试
+  └── test_webapp_api.py           # Web API 测试
 ```
 
 ### 2.1 当前代码实现的整体工作流程
 
-项目已经打通从 Wikipedia 页面抓取到知识图谱可视化的完整链路。当前代码对应的端到端流程如下：
+项目已经打通从 Wikipedia 页面抓取到知识图谱查询与前端展示的完整链路。当前代码对应的端到端流程如下：
 
 ```text
 可选环境检查
@@ -114,6 +128,15 @@ KG-Turing/
 图谱可视化
   src/visualization/visualize.py
   输出：output/visualizations/full_graph.png / full_graph.html / ego_*.png / ego_*.html
+
+图谱查询与 Web 展示
+  src/query/graph_query.py
+    ├─ 关键词检索、节点详情、局部子图
+    └─ 直接消费 output/graphs/knowledge_graph.json
+  scripts/run_webapp.py / src/webapp/app.py
+    ├─ Flask 服务（若已安装）
+    └─ 标准库 http.server 回退实现
+  输出：浏览器中的动态图谱、查询结果、下载与脚本调度接口
 ```
 
 如果按推荐顺序执行，完整项目流程应为：
@@ -131,24 +154,29 @@ python src/ner/batch_process.py --link True
 
 # 4. 关系抽取、图构建与可视化
 python scripts/run_pipeline.py
+
+# 5. 可选：启动查询与前端界面
+python scripts/run_webapp.py
 ```
 
 说明：
 - `scripts/run_pipeline.py` 目前默认只处理 5 篇示例文档，用于演示与课程作业汇报。
 - 若要在全量数据上运行关系抽取，可分别执行 `src/relation_extraction/` 下的脚本并去掉文档子集限制。
+- `scripts/run_webapp.py` 默认监听 `http://127.0.0.1:5000`；若环境中没有 Flask，会自动回退到标准库 HTTP 服务。
 
 ### 2.2 当前已完成模块的工作流程
 
 下面的流程描述基于当前代码实现，而不是理想化设计。
 
-| 模块 | 入口文件 | 主要输入 | 主要输出 |
-| ---- | -------- | -------- | -------- |
-| 环境检查 | `scripts/check_deps.py` / `scripts/check_torch.py` | 当前 Python 环境 | 控制台诊断信息 |
-| 数据采集 | `src/data_extraction/run_extraction.py` | `config/settings.yaml` | `data/raw/*.json`, `data/processed/*.json` |
-| 实体识别与消歧 | `src/ner/batch_process.py` | `data/processed/*.json` | `output/entities_all.jsonl` |
-| 关系抽取 | `scripts/run_pipeline.py` 或各子脚本 | `data/processed/*.json`, `output/entities_all.jsonl` | `data/relation/*.jsonl`, `output/graphs/relation_triples*.jsonl` |
-| 图谱构建 | `src/kg_construction/build_graph.py` | `relation_triples_aliased.jsonl`, `entities_all.jsonl` | `knowledge_graph.graphml/gexf/json` |
-| 可视化 | `src/visualization/visualize.py` | `knowledge_graph.json` | `output/visualizations/*.png`, `*.html` |
+| 模块                | 入口文件                                            | 主要输入                                               | 主要输出                                                         |
+| ------------------- | --------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
+| 环境检查            | `scripts/check_deps.py` / `scripts/check_torch.py`  | 当前 Python 环境                                       | 控制台诊断信息                                                   |
+| 数据采集            | `src/data_extraction/run_extraction.py`             | `config/settings.yaml`                                 | `data/raw/*.json`, `data/processed/*.json`                       |
+| 实体识别与消歧      | `src/ner/batch_process.py`                          | `data/processed/*.json`                                | `output/entities_all.jsonl`                                      |
+| 关系抽取            | `scripts/run_pipeline.py` 或各子脚本                | `data/processed/*.json`, `output/entities_all.jsonl`   | `data/relation/*.jsonl`, `output/graphs/relation_triples*.jsonl` |
+| 图谱构建            | `src/kg_construction/build_graph.py`                | `relation_triples_aliased.jsonl`, `entities_all.jsonl` | `knowledge_graph.graphml/gexf/json`                              |
+| 可视化              | `src/visualization/visualize.py`                    | `knowledge_graph.json`                                 | `output/visualizations/*.png`, `*.html`                          |
+| 图谱查询 / Web 展示 | `src/query/graph_query.py`, `scripts/run_webapp.py` | `knowledge_graph.json`                                 | 关键词检索结果、节点详情、局部子图、HTTP 接口与前端页面          |
 
 #### 2.2.1 数据采集模块工作流程
 
@@ -252,8 +280,8 @@ python scripts/run_pipeline.py
 
 执行流程：
 1. 从 `output/graphs/knowledge_graph.json` 读取图数据。
-2. 使用 Matplotlib + NetworkX 生成按实体类型着色的全图静态 PNG。
-3. 使用 pyvis 生成可交互 HTML，支持悬浮提示、拖拽和物理布局。
+2. 使用 Matplotlib + NetworkX 生成组件感知布局的全图静态 PNG，按实体类型着色节点、按关系类型着色边，并为所有节点绘制标签。
+3. 使用 pyvis 生成可交互 HTML，支持悬浮提示、拖拽和物理布局，边颜色与关系类型保持一致。
 4. 以给定中心实体为核心提取 Ego 子图，同时生成对应的 PNG 和 HTML。
 
 模块输入输出：
@@ -590,13 +618,13 @@ python src/relation_extraction/apply_aliases.py \
 | 候选对总数         | 1,157                           |
 | Infobox 三元组     | 21                              |
 | Silver 正例三元组  | 43                              |
-| REBEL 原始三元组   | 363                             |
-| REBEL 对齐后三元组 | 143                             |
-| REBEL 去重后三元组 | 126                             |
-| 合并后最终三元组   | 173                             |
-| REBEL 推理用时     | ≈ 37s (RTX 3050, fp16, batch=8) |
+| REBEL 原始三元组   | 374                             |
+| REBEL 对齐后三元组 | 149                             |
+| REBEL 去重后三元组 | 132                             |
+| 合并后最终三元组   | 176                             |
+| REBEL 推理用时     | ≈ 63s (RTX 3050, fp16, batch=4) |
 
-合并后三元组 provenance 分布：Infobox 21 条、Silver 27 条、REBEL 125 条。Top-10 关系类型：`authored_by` (16)、`part of` (10)、`notable work` (9)、`subject` (8)、`publication_date` (7)、`employer` (7)、`located in the administrative territorial entity` (7)、`birth_place` (6)、`point in time` (6)、`country` (6)。
+合并后三元组 provenance 分布：Infobox 21 条、Silver 25 条、REBEL 131 条。Top-10 关系类型：`authored_by` (15)、`part of` (10)、`notable work` (9)、`subject` (8)、`publication_date` (7)、`country` (7)、`employer` (7)、`birth_place` (6)、`point in time` (6)、`has part` (6)。
 
 示例命令：
 
@@ -645,10 +673,11 @@ python src/relation_extraction/merge_triples.py \
 实现文件：`src/kg_construction/build_graph.py`
 
 要点：
-- 使用 `networkx.DiGraph` 在内存中构建有向知识图谱，输入为关系三元组 JSONL（`output/graphs/relation_triples.jsonl`）。
+- 使用 `networkx.DiGraph` 在内存中构建有向知识图谱，输入为关系三元组 JSONL（默认使用 `output/graphs/relation_triples_aliased.jsonl`）。
 - 节点属性包含：`label`、`type`、`wikidata_qid`、`description`（若提供则从 `output/entities_all.jsonl` 中加载补全）；默认类型为 `UNKNOWN`。
 - 边属性包含：`relation`、`confidence`、`sentence`、`doc`、`provenance`。构建时若遇到相同 `(head, tail, relation)` 的边，会保留置信度更高的一条。
 - 提供图谱统计打印（节点数、边数、节点类型分布、关系分布、度数最高节点前 10 名），便于快速评估数据质量。
+- 导出的 `knowledge_graph.json` 既是可视化输入，也是查询服务和 Web 前端的直接数据源。
 - 输出多种持久化格式以便下游使用：
   - GraphML（保留所有属性）: `output/graphs/knowledge_graph.graphml`
   - GEXF（Gephi 兼容）: `output/graphs/knowledge_graph.gexf`
@@ -657,7 +686,7 @@ python src/relation_extraction/merge_triples.py \
 示例命令：
 ```bash
 python src/kg_construction/build_graph.py \
-  --triples output/graphs/relation_triples.jsonl \
+  --triples output/graphs/relation_triples_aliased.jsonl \
   --entities output/entities_all.jsonl \
   --output-dir output/graphs
 ```
@@ -669,12 +698,13 @@ python src/kg_construction/build_graph.py \
 实现文件：`src/visualization/visualize.py`
 
 已实现功能：
-- **静态可视化（Matplotlib）**：使用 `networkx` 的 `spring_layout` 布局，按实体类型着色（见 `TYPE_COLORS` 映射），节点大小按度数缩放；仅对度数较高的节点显示标签，边标签数量有限时显示关系标签，最终保存为 PNG（`output/visualizations/full_graph.png`）。
-- **交互式可视化（pyvis）**：生成 HTML（`output/visualizations/full_graph.html`），包含节点 tooltip（显示 QID、描述、度数），支持节点拖拽、悬停提示与物理仿真布局，边宽按置信度加权。
+- **静态可视化（Matplotlib）**：采用组件感知布局与自适应画布尺寸，按实体类型着色节点、按关系类型着色边，节点大小按度数缩放，并为所有节点绘制标签，最终保存为 PNG（`output/visualizations/full_graph.png`）。
+- **交互式可视化（pyvis）**：生成 HTML（`output/visualizations/full_graph.html`），包含节点 tooltip（显示 QID、描述、度数），支持节点拖拽、悬停提示与物理仿真布局，边颜色与关系类型保持一致。
 - **Ego 子图**：按指定中心节点（默认 `Alan Turing`）和 radius（默认 2）同时生成静态 PNG 与交互式 HTML（文件名 `ego_{center}.png` / `.html`），便于聚焦某一实体的局部网络。
 
 主要实现细节：
 - Matplotlib 使用无头后端 `Agg` 以便在服务器/CI 环境生成图片。
+- 静态图会为高频关系生成图例，并通过组件布局尽量保留小连通分量的可见性。
 - pyvis 配置了物理引擎参数（forceAtlas2Based）以改善布局收敛性，并为每个节点构建富文本 tooltip（包含 `wikidata_qid`、`description` 与 degree）。
 
 示例命令：
@@ -688,12 +718,35 @@ python src/visualization/visualize.py \
 
 ---
 
-### 3.6 图谱查询（Query）— *待完善*
+### 3.6 图谱查询（Query）— 已实现
 
-- 邻居查询：给定实体，返回其直接关联的实体与关系。
-- 路径查询：查找两实体之间的最短路径。
-- 类型查询：按实体类型或关系类型筛选子图。
-- 后续可对接 SPARQL 或 Cypher 查询语言。
+实现文件：
+
+- `src/query/graph_query.py`
+- `src/webapp/app.py`
+- `scripts/run_webapp.py`
+- `src/webapp/templates/index.html`
+- `src/webapp/static/app.js`
+- `src/webapp/static/style.css`
+
+已实现能力：
+
+- **关键词检索**：基于 `knowledge_graph.json` 建立节点索引，支持按实体名、QID、类型和描述做打分匹配。
+- **节点详情**：返回节点属性、度数、入边、出边以及相关邻居信息。
+- **局部子图提取**：可按中心节点和半径生成子图，直接服务前端动态图谱展示。
+- **图谱概览**：支持统计节点数、边数、主要实体类型和主要关系类型。
+- **Web API 与前端界面**：提供动态图谱、关键词查询、产物下载、白名单脚本执行与任务轮询。
+
+运行方式：
+
+```bash
+python scripts/run_webapp.py
+```
+
+说明：
+- 默认访问地址为 `http://127.0.0.1:5000`。
+- 若环境中安装了 Flask，则优先使用 Flask 提供服务；否则自动回退到标准库 `http.server`。
+- 当前查询层直接消费 `output/graphs/knowledge_graph.json`，不依赖关系抽取阶段的中间文件。
 
 ---
 
@@ -741,10 +794,17 @@ python scripts/check_deps.py
 python scripts/check_torch.py
 ```
 
+若需要使用浏览器界面，可在图谱文件生成后执行：
+
+```bash
+python scripts/run_webapp.py
+```
+
 注意：
 - REBEL/transformers 会在首次运行时自动下载模型文件，确保有足够的磁盘空间和网络带宽。
 - 若使用 GPU，请先安装合适的 NVIDIA 驱动与 CUDA 运行时，并根据系统选择与 `torch` 兼容的 CUDA 版本。
 - 在 Windows 上安装部分底层依赖可能需要 Microsoft Visual C++ Redistributable / Build Tools。
+- `scripts/check_deps.py` 还会检查 `pyvis` 以及可选依赖 `flask`、`pytest`；其中 `flask` 缺失不会阻止前端启动，因为项目会自动回退到标准库 HTTP 服务。
 
 ---
 
@@ -756,26 +816,31 @@ python scripts/check_torch.py
 | `beautifulsoup4`                | HTML 解析                  |
 | `wikipedia-api`                 | Wikipedia 结构化数据获取   |
 | `spacy`                         | NER、依存解析、实体链接    |
+| `torch`                         | REBEL 推理与 GPU/CPU 计算  |
 | `networkx`                      | 图结构构建与算法           |
 | `matplotlib`                    | 静态图谱可视化             |
+| `pyvis`                         | 交互式图谱 HTML 可视化     |
 | `pyyaml`                        | 配置文件解析               |
+| `lxml`                          | HTML / XML 解析加速        |
 | `sentence-transformers`（可选） | 实体消歧上下文相似度计算   |
 | `transformers`                  | REBEL 模型与序列到序列推理 |
 | `accelerate`                    | 模型加速与分布式推理支持   |
 | `tqdm`                          | 控制台进度条、批处理可视化 |
+| `flask`（可选）                 | Web 服务运行时             |
+| `pytest`（测试）                | 查询层与 Web API 测试      |
 
 ---
 
 ## 六、开发进度
 
-| 阶段    | 模块           | 状态     |
-| ------- | -------------- | -------- |
-| Phase 1 | 数据采集       | ✅ 已完成 |
-| Phase 2 | 实体识别与消歧 | ✅ 已完成 |
-| Phase 3 | 关系抽取       | ✅ 已完成 |
-| Phase 4 | 知识图谱构建   | ✅ 已完成 |
-| Phase 5 | 可视化         | ✅ 已完成 |
-| Phase 6 | 查询           | ❌ 未完成 |
+| 阶段    | 模块            | 状态     |
+| ------- | --------------- | -------- |
+| Phase 1 | 数据采集        | ✅ 已完成 |
+| Phase 2 | 实体识别与消歧  | ✅ 已完成 |
+| Phase 3 | 关系抽取        | ✅ 已完成 |
+| Phase 4 | 知识图谱构建    | ✅ 已完成 |
+| Phase 5 | 可视化          | ✅ 已完成 |
+| Phase 6 | 查询 / Web 前端 | ✅ 已完成 |
 
 ---
 
