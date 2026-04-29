@@ -561,23 +561,6 @@ entities_all.jsonl + data/processed/*.json
 └──────────────────────────────────────────────┘
 ```
 
-#### 3.3.7 别名替换（最小化去重）
-
-为保证合并后图谱中常见的人名提及不产生重复节点，项目在合并三元组后增加了一个最小化的别名替换步骤（Step 5.5）。当前实现针对常见表面形式进行了硬编码映射，目的是尽量以最小改动满足教学与可复现性的需求。
-
-- **实现位置**：`src/relation_extraction/apply_aliases.py`（提供函数调用与 CLI）。
-- **目的**：对 `output/graphs/relation_triples.jsonl` 中的 `head` / `tail` 文本应用别名映射（例如将 `Turing`、`Turing, A.` 等变体替换为 `Alan Turing`），并输出为 `output/graphs/relation_triples_aliased.jsonl`。
-- **使用示例**：
-```bash
-python src/relation_extraction/apply_aliases.py \
-  --in output/graphs/relation_triples.jsonl \
-  --out output/graphs/relation_triples_aliased.jsonl \
-  --backup
-```
-  - 当传入 `--backup` 时，会把原始 `relation_triples.jsonl` 另存为 `relation_triples.jsonl.bak`。
-- **流水线集成**：`scripts/run_pipeline.py` 已在合并步骤后（Step 5.5）调用该脚本，生成的 `relation_triples_aliased.jsonl` 会被后续的图谱构建步骤使用。
-- **注意**：当前别名映射为硬编码（最小化变更）；生产环境建议外部化映射文件（YAML/CSV），或使用 Wikidata QID 做严格的标准化/合并策略。
-
 
 #### 3.3.4 关键设计
 
