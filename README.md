@@ -50,13 +50,13 @@ KG-Turing/
 │   │   ├── ner_pipeline.py          # 文本级 NER + 链接接口
 │   │   └── batch_process.py         # 目录级批处理，输出 entities_all.jsonl
 │   ├── relation_extraction/
-│   │   ├── __init__.py
-│   │   ├── extract_infobox_triples.py
-│   │   ├── generate_candidates.py
-│   │   ├── build_silver_labels.py
-│   │   ├── rebel_extract.py
-│   │   ├── merge_triples.py
-│   │   └── apply_aliases.py
+│   │   ├── __init__.py              # 关系抽取模块初始化
+│   │   ├── extract_infobox_triples.py # 从 Infobox 抽取高置信三元组
+│   │   ├── generate_candidates.py    # 基于实体识别结果生成句内候选实体对
+│   │   ├── build_silver_labels.py    # 用 Infobox 远程监督构建银标关系样本
+│   │   ├── rebel_extract.py          # 调用 REBEL 模型抽取文本三元组并对齐候选实体
+│   │   ├── merge_triples.py          # 归一化谓词并合并 Infobox/Silver/REBEL 三元组
+│   │   └── apply_aliases.py          # 标准化实体别名，减少重复节点
 │   ├── kg_construction/
 │   │   ├── __init__.py
 │   │   └── build_graph.py           # 三元组 → NetworkX 图谱
@@ -396,7 +396,7 @@ python scripts/run_webapp.py
 
 ---
 
-### 3.2 实体识别与消歧模块（NER & Entity Disambiguation）
+### 3.2 实体识别与消歧模块
 
 #### 3.2.1 目标
 
@@ -487,7 +487,7 @@ python src/ner/batch_process.py --link True
 
 ---
 
-### 3.3 关系抽取（Relation Extraction）— 已实现
+### 3.3 关系抽取
 
 实现文件：
 
@@ -651,7 +651,7 @@ python src/relation_extraction/merge_triples.py \
 
 ---
 
-### 3.4 知识图谱构建与存储（KG Construction）— 已实现
+### 3.4 知识图谱构建与存储
 
 实现文件：`src/kg_construction/build_graph.py`
 
@@ -676,7 +676,7 @@ python src/kg_construction/build_graph.py \
 
 ---
 
-### 3.5 可视化（Visualization）— 已实现
+### 3.5 可视化
 
 实现文件：`src/visualization/visualize.py`
 
@@ -701,7 +701,7 @@ python src/visualization/visualize.py \
 
 ---
 
-### 3.6 图谱查询（Query）— 已实现
+### 3.6 图谱查询
 
 实现文件：
 
