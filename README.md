@@ -33,7 +33,7 @@ KG-Turing/
 ├── scripts/
 │   ├── check_deps.py                # 关键依赖、torch/CUDA、spaCy 模型与可选依赖检查
 │   ├── check_torch.py               # PyTorch / CUDA 环境检查
-│   └── run_pipeline.py              # 关系抽取 → 图构建 → 可视化一键脚本（演示 5 篇文档）
+│   ├── run_pipeline.py              # 关系抽取 → 图构建 → 可视化一键脚本（演示 5 篇文档）
 │   └── run_webapp.py                # 启动查询与前端界面（Flask / 标准库双模式）
 ├── src/
 │   ├── __init__.py
@@ -63,9 +63,9 @@ KG-Turing/
 │   ├── query/
 │   │   ├── __init__.py
 │   │   └── graph_query.py           # 图谱关键词检索、节点详情与子图提取
-│   └── visualization/
-│       ├── __init__.py
-│       └── visualize.py             # 静态图、交互图、Ego 子图
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   └── visualize.py             # 静态图、交互图、Ego 子图
 │   └── webapp/
 │       ├── __init__.py
 │       ├── app.py                   # Web API、脚本调度与下载接口
@@ -85,9 +85,9 @@ KG-Turing/
 │   └── visualizations/              # PNG / HTML 可视化结果
 ├── lib/                             # 前端依赖与静态资源（vis-network、tom-select 等）
 └── tests/
-  ├── test_ner.py                  # NER 单元测试
-  ├── test_graph_query.py          # 图谱查询服务测试
-  └── test_webapp_api.py           # Web API 测试
+    ├── test_ner.py                  # NER 单元测试
+    ├── test_graph_query.py          # 图谱查询服务测试
+    └── test_webapp_api.py           # Web API 测试
 ```
 
 ### 2.1 当前代码实现的整体工作流程
@@ -160,7 +160,7 @@ python scripts/run_webapp.py
 ```
 
 说明：
-- `scripts/run_pipeline.py` 目前默认只处理 5 篇示例文档，用于演示与课程作业汇报。
+- `scripts/run_pipeline.py` 目前按 5 篇示例文档组织演示流程，用于课程作业汇报；候选对生成仍以当前 `output/entities_all.jsonl` 中已有的文档为准。
 - 若要在全量数据上运行关系抽取，可分别执行 `src/relation_extraction/` 下的脚本并去掉文档子集限制。
 - `scripts/run_webapp.py` 默认监听 `http://127.0.0.1:5000`；若环境中没有 Flask，会自动回退到标准库 HTTP 服务。
 
@@ -168,15 +168,15 @@ python scripts/run_webapp.py
 
 下面的流程描述基于当前代码实现，而不是理想化设计。
 
-| 模块                | 入口文件                                            | 主要输入                                               | 主要输出                                                         |
-| ------------------- | --------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
-| 环境检查            | `scripts/check_deps.py` / `scripts/check_torch.py`  | 当前 Python 环境                                       | 控制台诊断信息                                                   |
-| 数据采集            | `src/data_extraction/run_extraction.py`             | `config/settings.yaml`                                 | `data/raw/*.json`, `data/processed/*.json`                       |
-| 实体识别与消歧      | `src/ner/batch_process.py`                          | `data/processed/*.json`                                | `output/entities_all.jsonl`                                      |
-| 关系抽取            | `scripts/run_pipeline.py` 或各子脚本                | `data/processed/*.json`, `output/entities_all.jsonl`   | `data/relation/*.jsonl`, `output/graphs/relation_triples*.jsonl` |
-| 图谱构建            | `src/kg_construction/build_graph.py`                | `relation_triples_aliased.jsonl`, `entities_all.jsonl` | `knowledge_graph.graphml/gexf/json`                              |
-| 可视化              | `src/visualization/visualize.py`                    | `knowledge_graph.json`                                 | `output/visualizations/*.png`, `*.html`                          |
-| 图谱查询 / Web 展示 | `src/query/graph_query.py`, `scripts/run_webapp.py` | `knowledge_graph.json`                                 | 关键词检索结果、节点详情、局部子图、HTTP 接口与前端页面          |
+| 模块                | 入口文件                                            | 主要输入                                             | 主要输出                                                         |
+| ------------------- | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| 环境检查            | `scripts/check_deps.py` / `scripts/check_torch.py`  | 当前 Python 环境                                     | 控制台诊断信息                                                   |
+| 数据采集            | `src/data_extraction/run_extraction.py`             | `config/settings.yaml`                               | `data/raw/*.json`, `data/processed/*.json`                       |
+| 实体识别与消歧      | `src/ner/batch_process.py`                          | `data/processed/*.json`                              | `output/entities_all.jsonl`                                      |
+| 关系抽取            | `scripts/run_pipeline.py` 或各子脚本                | `data/processed/*.json`, `output/entities_all.jsonl` | `data/relation/*.jsonl`, `output/graphs/relation_triples*.jsonl` |
+| 图谱构建            | `src/kg_construction/build_graph.py`                | `relation_triples*.jsonl`, `entities_all.jsonl`      | `knowledge_graph.graphml/gexf/json`                              |
+| 可视化              | `src/visualization/visualize.py`                    | `knowledge_graph.json`                               | `output/visualizations/*.png`, `*.html`                          |
+| 图谱查询 / Web 展示 | `src/query/graph_query.py`, `scripts/run_webapp.py` | `knowledge_graph.json`                               | 关键词检索结果、节点详情、局部子图、HTTP 接口与前端页面          |
 
 #### 2.2.1 数据采集模块工作流程
 
@@ -254,7 +254,7 @@ python scripts/run_webapp.py
   - `output/graphs/relation_triples_aliased.jsonl`
 
 与下游关系：
-- `build_graph.py` 默认使用 `relation_triples_aliased.jsonl` 作为建图输入。
+- `scripts/run_pipeline.py` 会把 `relation_triples_aliased.jsonl` 传给 `build_graph.py` 作为建图输入；若单独执行 `build_graph.py` 且不传 `--triples`，脚本默认读取 `relation_triples.jsonl`。
 
 #### 2.2.4 知识图谱构建模块工作流程
 
@@ -270,7 +270,7 @@ python scripts/run_webapp.py
 6. 导出 GraphML、GEXF 和 JSON 三种格式，供分析与展示。
 
 模块输入输出：
-- 输入：`output/graphs/relation_triples_aliased.jsonl`，可选 `output/entities_all.jsonl`。
+- 输入：`output/graphs/relation_triples.jsonl` 或 `output/graphs/relation_triples_aliased.jsonl`，可选 `output/entities_all.jsonl`。
 - 输出：`output/graphs/knowledge_graph.graphml`、`knowledge_graph.gexf`、`knowledge_graph.json`。
 
 #### 2.2.5 可视化模块工作流程
@@ -300,12 +300,12 @@ python scripts/run_webapp.py
 
 #### 3.1.2 技术选型
 
-| 组件          | 技术                         | 说明                                                                    |
-| ------------- | ---------------------------- | ----------------------------------------------------------------------- |
-| HTTP 请求     | `requests`                   | 稳定的 HTTP 客户端，配合 `User-Agent` 和速率限制遵守 Wikipedia 爬虫协议 |
-| HTML 解析     | `BeautifulSoup4`             | 解析 wiki 页面 DOM，提取正文段落、Infobox、分类等                       |
-| Wikipedia API | `wikipedia-api`（Python 库） | 通过 MediaWiki API 获取页面摘要、链接列表、分类等结构化数据             |
-| 数据存储      | JSON 文件                    | 每个页面保存为一个 JSON 文件，包含标题、摘要、正文、Infobox、出链等字段 |
+| 组件          | 技术                | 说明                                                                    |
+| ------------- | ------------------- | ----------------------------------------------------------------------- |
+| HTTP 请求     | `requests`          | 稳定的 HTTP 客户端，配合 `User-Agent` 和速率限制遵守 Wikipedia 爬虫协议 |
+| HTML 解析     | `BeautifulSoup4`    | 解析 wiki 页面 DOM，提取正文段落、Infobox、分类等                       |
+| MediaWiki API | `requests` 直接调用 | 获取页面 HTML、摘要、链接列表、分类等结构化数据                         |
+| 数据存储      | JSON 文件           | 每个页面保存为一个 JSON 文件，包含标题、摘要、正文、Infobox、出链等字段 |
 
 #### 3.1.3 爬取流程
 
@@ -327,7 +327,7 @@ python scripts/run_webapp.py
    │  ① 解析正文段落文本       │
    │  ② 提取 Infobox 键值对   │
    │  ③ 提取分类 (Categories)  │
-   │  ④ 提取内部链接锚文本     │
+   │  ④ 提取内部链接标题       │
    └──────────────────────────┘
         │
         ▼
@@ -349,7 +349,7 @@ python scripts/run_webapp.py
 - **相关性过滤**：仅保留与计算机科学 / 图灵相关的出链页面，过滤策略包括：
   - 排除"消歧义"、"文件:"、"模板:"等 Wikipedia 系统页面；
   - 基于种子关键词列表（Turing, computation, cryptography, AI, Bletchley Park 等）进行标题过滤；
-  - 对超出关键词范围的链接可通过分类标签 (Category) 进行二次筛选。
+  - 分类标签会保存在页面 JSON 中，供后续分析或人工检查使用。
 - **请求速率限制**：遵循 Wikipedia `robots.txt`，每次请求间隔 ≥ 1 秒，设置合理的 `User-Agent`。
 - **增量爬取**：已爬取页面记录在 `data/raw/` 中，再次运行时跳过已存在页面，支持断点续爬。
 - **Infobox 提取**：从 Infobox 表格中提取键值对（如出生日期、国籍、母校、领域等），作为实体属性的重要来源。
@@ -400,36 +400,38 @@ python scripts/run_webapp.py
 
 #### 3.2.1 目标
 
-从采集到的文本中自动识别实体（人物、地点、组织、概念、著作、装置等），并将同一现实世界实体的不同提及（mention）映射到唯一标识，消除歧义。
+从采集到的文本中自动识别实体（人物、地点、组织、日期、作品等），并将现实世界实体的文本提及（mention）映射到 Wikidata 标识，降低跨文档歧义。
 
 #### 3.2.2 技术选型
 
-| 组件     | 技术               | 说明                                                                 |
-| -------- | ------------------ | -------------------------------------------------------------------- |
-| 基础 NER | `spaCy`            | Transformer / CNN 预训练模型，识别 PERSON、ORG、GPE、DATE 等通用实体 |
-| 实体消歧 | Wikidata API       | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                    |
-| 指代消解 | `spaCy` 实验性组件 | 将代词 (he/his/it) 还原为对应实体，提高下游召回率                    |
+| 组件     | 技术                                 | 说明                                                                |
+| -------- | ------------------------------------ | ------------------------------------------------------------------- |
+| 基础 NER | `spaCy`                              | 默认加载 `en_core_web_sm`，识别 PERSON、ORG、GPE、DATE 等通用实体   |
+| 实体消歧 | Wikidata Search API                  | 将候选实体链接至 Wikidata QID，实现跨文档统一标识                   |
+| 候选排序 | `sentence-transformers` + 启发式降级 | 优先用上下文向量相似度排序，模型不可用时退回标签/描述文本启发式打分 |
 
 #### 3.2.3 实体消歧策略
 
 1. **候选实体生成**：对每个识别出的 mention，调用 Wikidata Search API (`wbsearchentities`) 获取 Top-K 候选 QID。
-2. **上下文相似度排序**：将 mention 的上下文窗口文本与各候选 QID 的 Wikidata 描述 (description) 计算余弦相似度（使用 `sentence-transformers` 或 TF-IDF），选取得分最高者。
-3. **Infobox 属性辅助**：若 mention 来自 Infobox 字段（如 `Alma mater: King's College, Cambridge`），利用字段名语义直接约束候选类型。
-4. **一致性约束**：同一文档中相同表面形式的 mention 映射到同一 QID。
+2. **上下文相似度排序**：优先将全文上下文与候选 QID 的 Wikidata 标签/描述计算向量相似度，选取得分最高者。
+3. **启发式降级**：若 `sentence-transformers` 不可用或向量打分失败，则退回标签精确匹配与描述词重叠打分。
+4. **鲁棒处理**：网络失败、无候选或模型不可用时返回空 QID，不阻断整体 NER 批处理。
 
 #### 3.2.4 实体类型体系
 
-| 类型        | 标签      | 示例                                                     |
-| ----------- | --------- | -------------------------------------------------------- |
-| 人物        | `PERSON`  | Alan Turing, Alonzo Church, Max Newman                   |
-| 组织 / 机构 | `ORG`     | University of Cambridge, Bletchley Park, ACM             |
-| 地点        | `GPE`     | London, Manchester, Princeton                            |
-| 概念 / 理论 | `CONCEPT` | Turing Machine, Halting Problem, Artificial Intelligence |
-| 著作 / 系统 | `WORK`    | *On Computable Numbers*, ACE, Manchester Mark 1          |
-| 装置        | `DEVICE`  | Enigma, Bombe                                            |
-| 事件        | `EVENT`   | World War II                                             |
-| 奖项 / 荣誉 | `AWARD`   | OBE, FRS, ACM Turing Award                               |
-| 日期        | `DATE`    | 23 June 1912                                             |
+当前实现直接保留 spaCy 原生实体标签，不额外映射为自定义本体类型。常见标签示例如下：
+
+| 类型        | 标签          | 示例                                   |
+| ----------- | ------------- | -------------------------------------- |
+| 人物        | `PERSON`      | Alan Turing, Alonzo Church, Max Newman |
+| 组织 / 机构 | `ORG`         | University of Cambridge, ACM           |
+| 地缘实体    | `GPE`         | London, Manchester, Princeton          |
+| 国籍 / 群体 | `NORP`        | British, American                      |
+| 著作 / 作品 | `WORK_OF_ART` | *On Computable Numbers*, *The Enigma*  |
+| 产品 / 系统 | `PRODUCT`     | Manchester Mark 1, ACE                 |
+| 法律 / 条例 | `LAW`         | Artificial Intelligence Act            |
+| 事件        | `EVENT`       | World War II                           |
+| 日期        | `DATE`        | 23 June 1912                           |
 
 #### 3.2.5 输出格式
 
@@ -445,13 +447,13 @@ python scripts/run_webapp.py
     "source": "spacy"
   },
   {
-    "mention": "Turing Machine",
-    "type": "CONCEPT",
+    "mention": "Turing machine",
+    "type": "PRODUCT",
     "start": 156,
     "end": 170,
     "wikidata_qid": "Q163310",
     "link_confidence": 1.0,
-    "source": "rule"
+    "source": "spacy"
   }
 ]
 ```
@@ -578,7 +580,7 @@ entities_all.jsonl + data/processed/*.json
 
 #### 3.3.5 输出格式
 
-`output/graphs/relation_triples.jsonl`（合并后的最终三元组，每行一条 JSON）：
+`output/graphs/relation_triples.jsonl`（谓词归一化与多源合并后的基础三元组，每行一条 JSON；一键流程随后会生成 `relation_triples_aliased.jsonl` 用于建图）：
 
 ```json
 {
@@ -598,16 +600,16 @@ entities_all.jsonl + data/processed/*.json
 
 | 指标               | 数值                            |
 | ------------------ | ------------------------------- |
-| 候选对总数         | 1,157                           |
+| 候选对总数         | 1,290                           |
 | Infobox 三元组     | 21                              |
-| Silver 正例三元组  | 43                              |
-| REBEL 原始三元组   | 374                             |
-| REBEL 对齐后三元组 | 149                             |
-| REBEL 去重后三元组 | 132                             |
-| 合并后最终三元组   | 176                             |
-| REBEL 推理用时     | ≈ 63s (RTX 3050, fp16, batch=4) |
+| Silver 正例三元组  | 59                              |
+| REBEL 原始三元组   | 392                             |
+| REBEL 对齐后三元组 | 155                             |
+| REBEL 去重后三元组 | 135                             |
+| 合并后最终三元组   | 182                             |
+| REBEL 推理用时     | ≈ 56s (RTX 3050, fp16, batch=4) |
 
-合并后三元组 provenance 分布：Infobox 21 条、Silver 25 条、REBEL 131 条。Top-10 关系类型：`authored_by` (15)、`part of` (10)、`notable work` (9)、`subject` (8)、`publication_date` (7)、`country` (7)、`employer` (7)、`birth_place` (6)、`point in time` (6)、`has part` (6)。
+合并后三元组 provenance 分布：Infobox 21 条、Silver 27 条、REBEL 135 条。Top-10 关系类型：`authored_by` (14)、`country` (10)、`subject` (8)、`point in time` (8)、`located in the administrative territorial entity` (8)、`birth_place` (7)、`part of` (7)、`notable work` (7)、`publication_date` (6)、`member of political party` (6)。
 
 示例命令：
 
@@ -656,7 +658,7 @@ python src/relation_extraction/merge_triples.py \
 实现文件：`src/kg_construction/build_graph.py`
 
 要点：
-- 使用 `networkx.DiGraph` 在内存中构建有向知识图谱，输入为关系三元组 JSONL（默认使用 `output/graphs/relation_triples_aliased.jsonl`）。
+- 使用 `networkx.DiGraph` 在内存中构建有向知识图谱，输入为关系三元组 JSONL；脚本自身默认读取 `output/graphs/relation_triples.jsonl`，一键流程会显式传入 `output/graphs/relation_triples_aliased.jsonl`。
 - 节点属性包含：`label`、`type`、`wikidata_qid`、`description`（若提供则从 `output/entities_all.jsonl` 中加载补全）；默认类型为 `UNKNOWN`。
 - 边属性包含：`relation`、`confidence`、`sentence`、`doc`、`provenance`。构建时若遇到相同 `(head, tail, relation)` 的边，会保留置信度更高的一条。
 - 提供图谱统计打印（节点数、边数、节点类型分布、关系分布、度数最高节点前 10 名），便于快速评估数据质量。
@@ -793,24 +795,24 @@ python scripts/run_webapp.py
 
 ## 五、主要依赖
 
-| 包名                            | 用途                       |
-| ------------------------------- | -------------------------- |
-| `requests`                      | HTTP 请求                  |
-| `beautifulsoup4`                | HTML 解析                  |
-| `wikipedia-api`                 | Wikipedia 结构化数据获取   |
-| `spacy`                         | NER、依存解析、实体链接    |
-| `torch`                         | REBEL 推理与 GPU/CPU 计算  |
-| `networkx`                      | 图结构构建与算法           |
-| `matplotlib`                    | 静态图谱可视化             |
-| `pyvis`                         | 交互式图谱 HTML 可视化     |
-| `pyyaml`                        | 配置文件解析               |
-| `lxml`                          | HTML / XML 解析加速        |
-| `sentence-transformers`（可选） | 实体消歧上下文相似度计算   |
-| `transformers`                  | REBEL 模型与序列到序列推理 |
-| `accelerate`                    | 模型加速与分布式推理支持   |
-| `tqdm`                          | 控制台进度条、批处理可视化 |
-| `flask`（可选）                 | Web 服务运行时             |
-| `pytest`（测试）                | 查询层与 Web API 测试      |
+| 包名                    | 用途                                                  |
+| ----------------------- | ----------------------------------------------------- |
+| `requests`              | HTTP 请求                                             |
+| `beautifulsoup4`        | HTML 解析                                             |
+| `wikipedia-api`         | 兼容/预留客户端；主流程用 `requests` 调 MediaWiki API |
+| `spacy`                 | NER 与文本处理                                        |
+| `torch`                 | REBEL 推理与 GPU/CPU 计算                             |
+| `networkx`              | 图结构构建与算法                                      |
+| `matplotlib`            | 静态图谱可视化                                        |
+| `pyvis`                 | 交互式图谱 HTML 可视化                                |
+| `pyyaml`                | 配置文件解析                                          |
+| `lxml`                  | HTML / XML 解析加速                                   |
+| `sentence-transformers` | 实体消歧相似度计算、REBEL 谓词映射                    |
+| `transformers`          | REBEL 模型与序列到序列推理                            |
+| `accelerate`            | 模型加速与分布式推理支持                              |
+| `tqdm`                  | 控制台进度条、批处理可视化                            |
+| `flask`（可选）         | Web 服务运行时                                        |
+| `pytest`（测试）        | 查询层与 Web API 测试                                 |
 
 ---
 
